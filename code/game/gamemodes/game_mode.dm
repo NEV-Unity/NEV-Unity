@@ -265,6 +265,9 @@ Implants;
 
 			comm.messagetitle.Add("Cent. Com. Status Summary")
 			comm.messagetext.Add(intercepttext)
+	//Unity - Sets up the shift mission. See code/modules/missions
+	//Placing this here so that various game modes can set if a mission is sent or not. (Blob, for example, wouldn't want a mission)
+	send_mss()
 	world << sound('sound/AI/commandreport.ogg')
 
 /*	command_alert("Summary downloaded and printed out at all communications consoles.", "Enemy communication intercept. Security Level Elevated.")
