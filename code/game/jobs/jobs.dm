@@ -91,6 +91,7 @@ var/list/science_positions = list(
 	"Geneticist",	//Part of both medical and science
 	"Roboticist",
 	"Xenobiologist",
+	"Forensic Technician",
 	"Lab Assistant"
 )
 
@@ -116,7 +117,6 @@ var/list/security_positions = list(
 	"Head of Security",
 	"Warden",
 	"Detective",
-	"Forensic Technician",
 	"Security Officer",
 	"Security Cadet"
 )

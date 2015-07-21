@@ -19,7 +19,7 @@
 #define POWER_FACTOR 3.0 //bumping this up a bit until I can do some more serious diving into SM operation.
 #define DECAY_FACTOR 700             //Affects how fast the supermatter power decays
 #define CRITICAL_TEMPERATURE 800     //K
-#define CHARGING_FACTOR 0.15
+#define CHARGING_FACTOR 0.10
 #define DAMAGE_RATE_LIMIT 3                 //damage rate cap at power = 300, scales linearly with power
 
 

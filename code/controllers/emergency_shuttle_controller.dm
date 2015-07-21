@@ -46,7 +46,6 @@ var/global/datum/emergency_shuttle_controller/emergency_shuttle
 				world << sound('sound/AI/shuttledock.ogg')
 			else
 				captain_announce("The scheduled Crew Transfer is now commencing. The new shift will start in [round(emergency_shuttle.estimate_launch_time()/60,1)] minutes.")
-Shuttle has docked with the station
 		//arm the escape pods
 		if (evac)
 			for (var/datum/shuttle/ferry/escape_pod/pod in escape_pods)

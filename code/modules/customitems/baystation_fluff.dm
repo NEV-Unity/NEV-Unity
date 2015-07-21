@@ -136,13 +136,6 @@
 		O.show_message(text("[] shows you: \icon[] [].", user, src, src.name), 1)
 	src.add_fingerprint(user)
 
-/obj/item/fluff/ana_issek_2 //suethecake: Ana Issek
-	name = "Faded Badge"
-	desc = "A faded badge, backed with leather, that reads 'NT Security Force' across the front. It bears the emblem of the Forensic division."
-	icon_state = "ana_badge"
-	item_state = "ana_badge"
-	item_color = "ana_badge"
-
 /obj/item/fluff/ana_issek_2/attack_self(mob/user as mob)
 	if(isliving(user))
 		user.visible_message("\red [user] flashes their golden security badge.\nIt reads: Ana Issek, NT Security.","\red You display the faded bage.\nIt reads: Ana Issek, NT Security.")
