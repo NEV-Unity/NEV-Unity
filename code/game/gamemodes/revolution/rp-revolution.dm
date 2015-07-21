@@ -203,7 +203,7 @@
 	for(var/mob/living/carbon/human/player in world)
 		if(player.mind)
 			var/role = player.mind.assigned_role
-			if(role in list("Captain", "Head of Security", "Head of Personnel", "Chief Engineer", "Research Director", "Security Officer", "Forensic Technician", "AI"))
+			if(role in list("Captain", "Head of Security", "Head of Personnel", "Chief Engineer", "Research Director", "Security Officer", "AI"))
 				ucs += player.mind
 
 	return ucs

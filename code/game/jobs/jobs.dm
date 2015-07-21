@@ -30,7 +30,7 @@ var/const/PSYCHIATRIST		=(1<<8)
 var/const/ROBOTICIST		=(1<<9)
 var/const/XENOBIOLOGIST		=(1<<10)
 var/const/INTERN_MED		=(1<<11)
-var/const/INTERN_SCI		=(1<<12)
+var/const/INTERN_SCI		=(1<<13)
 
 
 
