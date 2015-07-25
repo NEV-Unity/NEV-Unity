@@ -84,7 +84,7 @@
 			if(MOVIE_RELEASE)
 				newMsg.body += "From the [pick("desk","home town","homeworld","mind")] of [pick("acclaimed","award-winning","popular","stellar")] \
 				[pick("playwright","author","director","actor","TV star")] [random_name(pick(MALE,FEMALE))] comes the latest sensation: '\
-				[pick("Deadly","The last","Lost","Dead")] [pick("Starships","Warriors","outcasts","Tajarans","Unathi","Skrell")] \
+				[pick("Deadly","The last","Lost","Dead")] [pick("Starships","Warriors","outcasts","Tesaus","Unathi","Skrell")] \
 				[pick("of","from","raid","go hunting on","visit","ravage","pillage","destroy")] \
 				[pick("Moghes","Earth","Biesel","Ahdomai","S'randarr","the Void","the Edge of Space")]'.\
 				. Own it on webcast today, or visit the galactic premier on [affected_dest.name]!"
@@ -181,16 +181,16 @@
 	"Survey: 80% Of People on [affected_dest.name] Love Clog-Dancing",\
 	"Giant Hairball Has Perfect Grammar But Rolls rr's Too Much, Linguists Say",\
 	"[affected_dest.name] Phonebooks Print All Wrong Numbers; Results In 15 New Marriages",\
-	"Tajaran Burglar Spotted on [affected_dest.name], Mistaken For Dalmatian",\
+	"Tesau Burglar Spotted on [affected_dest.name], Mistaken For Dalmatian",\
 	"Gibson Gazette Updates Frequently Absurd, Poll Indicates",\
 	"Esoteric Verbosity Culminates In Communicative Ennui, [affected_dest.name] Academics Note",\
 	"Taj Demand Longer Breaks, Cleaner Litter, Slower Mice",\
 	"Survey: 3 Out Of 5 Skrell Loathe Modern Art",\
 	"Skrell Scientist Discovers Gravity While Falling Down Stairs",\
-	"Boy Saves Tajaran From Tree on [affected_dest.name], Thousands Cheer",\
+	"Boy Saves Tesau From Tree on [affected_dest.name], Thousands Cheer",\
 	"Shipment Of Apples Overturns, [affected_dest.name] Diner Offers Applesauce Special",\
 	"Spotted Owl Spotted on [affected_dest.name]",\
-	"Humans Everywhere Agree: Purring Tajarans Are Happy Tajarans",\
+	"Humans Everywhere Agree: Purring Tesaus Are Happy Tesaus",\
 	"From The Desk Of Wise Guy Sammy: One Word In This Gazette Is Sdrawkcab",\
 	"From The Desk Of Wise Guy Sammy: It's Hard To Have Too Much Shelf Space",\
 	"From The Desk Of Wise Guy Sammy: Wine And Friendships Get Better With Age",\

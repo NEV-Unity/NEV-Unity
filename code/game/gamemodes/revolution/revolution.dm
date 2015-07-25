@@ -14,7 +14,7 @@
 /datum/game_mode/revolution
 	name = "revolution"
 	config_tag = "revolution"
-	restricted_jobs = list("Security Officer", "Warden", "Detective", "AI", "Cyborg","Captain", "Head of Personnel", "Head of Security", "Chief Engineer", "Research Director", "Chief Medical Officer")
+	restricted_jobs = list("Espatier", "Chief Petty Officer", "Marshal", "AI", "Cyborg","Captain", "Executive Officer", "Commander", "Chief Engineer", "Research Director", "Chief Medical Officer")
 	required_players = 4
 	required_players_secret = 15
 	required_enemies = 3
@@ -436,4 +436,4 @@
 	return istype(mind) && \
 		istype(mind.current, /mob/living/carbon/human) && \
 		!(mind.assigned_role in command_positions) && \
-		!(mind.assigned_role in list("Security Officer", "Detective", "Warden"))
+		!(mind.assigned_role in list("Espatier", "Marshal", "Chief Petty Officer"))

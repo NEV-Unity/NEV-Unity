@@ -138,7 +138,7 @@
 	suicide()
 		if(key && species.name != "Human")
 			switch(species.name)
-				if("Tajaran")
+				if("Tesau")
 					bsc()
 				if("Machine")
 					bsb()
@@ -171,8 +171,8 @@
 		return
 
 	proc/bsc() //because we all have our unrealistic snowflakes right?
-		if(set_species("Tajaran"))
-			h_style = "Tajaran Ears"
+		if(set_species("Tesau"))
+			h_style = "Tesau Ears"
 			name = "Bluespace Cat"
 			voice_name = "Bluespace Cat"
 			real_name = "Bluespace Cat"

@@ -154,7 +154,7 @@
 /*		var/obj/item/clothing/mask/cigarette/CIG = new /obj/item/clothing/mask/cigarette(H)
 		CIG.light("")
 		H.equip_to_slot_or_del(CIG, slot_wear_mask)	*/
-		if(H.species.name == "Tajaran")
+		if(H.species.name == "Tesau")
 			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/tajara(H), slot_gloves)
 		if(H.species.name == "Unathi")
 			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/unathi(H), slot_gloves)

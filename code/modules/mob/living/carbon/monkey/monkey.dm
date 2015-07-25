@@ -97,7 +97,7 @@
 
 	..()
 	dna.mutantrace = "tajaran"
-	greaterform = "Tajaran"
+	greaterform = "Tesau"
 	add_language("Siik'Maas")
 
 /mob/living/carbon/monkey/diona/New()

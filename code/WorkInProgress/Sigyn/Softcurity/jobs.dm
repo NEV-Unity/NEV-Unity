@@ -60,7 +60,7 @@
 
 
 /datum/job/detective
-	title = "Detective"
+	title = "Marshal"
 	flag = DETECTIVE
 	department_flag = ENGSEC
 	faction = "Station"
@@ -124,7 +124,7 @@
 		return 1
 
 /datum/job/hop
-	title = "Head of Personnel"
+	title = "Executive Officer"
 	flag = HOP
 	department_flag = CIVILIAN
 	faction = "Station"

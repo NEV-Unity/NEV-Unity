@@ -469,8 +469,8 @@
 //////////// Gloves ////////////
 
 /obj/item/clothing/gloves/fluff/murad_hassim_1
-	name = "Tajaran Surgical Gloves"
-	desc = "Reinforced sterile gloves custom tailored to comfortably accommodate Tajaran claws."
+	name = "Tesau Surgical Gloves"
+	desc = "Reinforced sterile gloves custom tailored to comfortably accommodate Tesau claws."
 	icon_state = "latex"
 	item_state = "lgloves"
 	siemens_coefficient = 0.30
@@ -766,7 +766,7 @@
 
 /obj/item/clothing/tie/fluff/altair_locket
 	name = "small locket"
-	desc = "A small golden locket attached to an Ii'rka-reed string. Inside the locket is a holo-picture of a female Tajaran, and an inscription writtin in Siik'mas."
+	desc = "A small golden locket attached to an Ii'rka-reed string. Inside the locket is a holo-picture of a female Tesau, and an inscription writtin in Siik'mas."
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "altair_locket"
 	item_state = "altair_locket"
@@ -813,7 +813,7 @@
 
 /obj/item/clothing/tie/fluff/nasir_khayyam_1
 	name = "medallion"
-	desc = "This silvered medallion bears the symbol of the Hadii Clan of the Tajaran."
+	desc = "This silvered medallion bears the symbol of the Hadii Clan of the Tesau."
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "nasir_khayyam_1"
 	flags = FPRINT|TABLEPASS
@@ -906,7 +906,7 @@
 ///// Deckard .44 - Callum Leamas - Roaper
 /obj/item/weapon/gun/projectile/detective/fluff/callum_leamas
 	name = "Deckard .44"
-	desc = "A custom built revolver, based off the semi-popular Detective Special model."
+	desc = "A custom built revolver, based off the semi-popular Marshal Special model."
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "leamas-empty"
 

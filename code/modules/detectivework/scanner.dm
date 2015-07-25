@@ -1,4 +1,4 @@
-//CONTAINS: Detective's Scanner
+//CONTAINS: Marshal's Scanner
 
 
 /obj/item/device/detective_scanner

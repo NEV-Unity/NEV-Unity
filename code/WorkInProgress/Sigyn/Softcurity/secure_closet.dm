@@ -30,7 +30,7 @@
 
 
 /obj/structure/closet/secure_closet/hop
-	name = "Head of Personnel's Locker"
+	name = "Executive Officer's Locker"
 	req_access = list(access_hop)
 	icon_state = "hopsecure1"
 	icon_closed = "hopsecure"
@@ -131,7 +131,7 @@
 
 
 /obj/structure/closet/secure_closet/detective
-	name = "Detective's Cabinet"
+	name = "Marshal's Cabinet"
 	req_access = list(access_forensics_lockers)
 	icon_state = "cabinetdetective_locked"
 	icon_closed = "cabinetdetective"

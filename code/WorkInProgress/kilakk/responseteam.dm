@@ -75,7 +75,7 @@ var/global/admin_emergency_team = 0 // Used for admin-spawned response teams
 	var/time_passed = world.time
 
 	for(var/mob/dead/observer/G in player_list)
-		if(!jobban_isbanned(G, "Syndicate") && !jobban_isbanned(G, "Emergency Response Team") && !jobban_isbanned(G, "Security Officer"))
+		if(!jobban_isbanned(G, "Syndicate") && !jobban_isbanned(G, "Emergency Response Team") && !jobban_isbanned(G, "Espatier"))
 			spawn(0)
 				switch(alert(G, "Do you want to be considered for the Emergency Response Team? Please answer in 30 seconds!",,"Yes","No"))
 					if("Yes")

@@ -314,7 +314,7 @@
 
 /obj/item/weapon/reagent_containers/food/condi/h_packet
 	name = "Hot Sauce Packet"
-	desc = "A tiny packet of hot sauce, for any food dishes.Tajaran Beware."
+	desc = "A tiny packet of hot sauce, for any food dishes.Tesau Beware."
 	icon_state = "condi_hotsauce"
 	possible_transfer_amounts = list(1,10) //for clown turning the lid off
 	amount_per_transfer_from_this = 1

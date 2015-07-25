@@ -1,5 +1,5 @@
 /datum/job/hos
-	title = "Head of Security"
+	title = "Commander"
 	flag = HOS
 	department_flag = ENGSEC
 	faction = "Station"
@@ -29,7 +29,7 @@
 		H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/head_of_security(H), slot_w_uniform)
 		H.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots(H), slot_shoes)
 		H.equip_to_slot_or_del(new /obj/item/device/pda/heads/hos(H), slot_belt)
-		if(H.species.name == "Tajaran")
+		if(H.species.name == "Tesau")
 			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/tajara(H), slot_gloves)
 		if(H.species.name == "Unathi")
 			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/unathi(H), slot_gloves)
@@ -55,13 +55,13 @@
 
 
 /datum/job/warden
-	title = "Warden"
+	title = "Chief Petty Officer"
 	flag = WARDEN
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of security"
+	supervisors = "the Commander"
 	selection_color = "#ffeeee"
 	access = list(access_security, access_sec_doors, access_brig, access_armory, access_court, access_maint_tunnels, access_morgue, access_external_airlocks)
 	minimal_access = list(access_security, access_sec_doors, access_brig, access_armory, access_court, access_maint_tunnels, access_external_airlocks)
@@ -77,7 +77,7 @@
 		H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/warden(H), slot_w_uniform)
 		H.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots(H), slot_shoes)
 		H.equip_to_slot_or_del(new /obj/item/device/pda/warden(H), slot_belt)
-		if(H.species.name == "Tajaran")
+		if(H.species.name == "Tesau")
 			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/tajara(H), slot_gloves)
 		if(H.species.name == "Unathi")
 			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/unathi(H), slot_gloves)
@@ -97,18 +97,17 @@
 
 
 /datum/job/detective
-	title = "Detective"
+	title = "Marshal"
 	flag = DETECTIVE
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of security"
+	supervisors = "the executive officer"
 	selection_color = "#ffeeee"
 
 	access = list(access_security, access_sec_doors, access_morgue, access_maint_tunnels, access_court, access_detective)
 	minimal_access = list(access_security, access_sec_doors, access_morgue, access_maint_tunnels, access_court, access_detective)
-	alt_titles = list("Investigator")
 	minimal_player_age = 10
 	equip(var/mob/living/carbon/human/H)
 		if(!H)	return 0
@@ -123,7 +122,7 @@
 /*		var/obj/item/clothing/mask/cigarette/CIG = new /obj/item/clothing/mask/cigarette(H)
 		CIG.light("")
 		H.equip_to_slot_or_del(CIG, slot_wear_mask)	*/
-		if(H.species.name == "Tajaran")
+		if(H.species.name == "Tesau")
 			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/tajara(H), slot_gloves)
 		if(H.species.name == "Unathi")
 			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/unathi(H), slot_gloves)
@@ -144,13 +143,13 @@
 
 
 /datum/job/officer
-	title = "Security Officer"
+	title = "Espatier"
 	flag = OFFICER
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "the head of security"
+	supervisors = "the commander"
 	selection_color = "#ffeeee"
 	access = list(access_security, access_sec_doors, access_brig, access_court, access_maint_tunnels, access_morgue, access_external_airlocks)
 	minimal_access = list(access_security, access_sec_doors, access_brig, access_court, access_maint_tunnels, access_external_airlocks)

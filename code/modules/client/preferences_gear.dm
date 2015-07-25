@@ -422,14 +422,14 @@ proc/populate_gear_list()
 	path = /obj/item/clothing/under/dress/dress_hop
 //	slot = slot_w_uniform
 	cost = 3
-	allowed_roles = list("Head of Personnel")
+	allowed_roles = list("Executive Officer")
 
 /datum/gear/uniform_hr
 	display_name = "HR director uniform"
 	path = /obj/item/clothing/under/dress/dress_hr
 //	slot = slot_w_uniform
 	cost = 3
-	allowed_roles = list("Head of Personnel")
+	allowed_roles = list("Executive Officer")
 
 /datum/gear/kilt
 	display_name = "kilt"
@@ -454,25 +454,25 @@ proc/populate_gear_list()
 	path = /obj/item/clothing/glasses/hud/security
 	cost = 3
 //	slot = slot_glasses
-	allowed_roles = list("Security Officer","Head of Security","Warden")
+	allowed_roles = list("Espatier","Commander","Chief Petty Officer")
 
 /datum/gear/black_vest
 	display_name = "black webbing vest"
 	path = /obj/item/clothing/tie/storage/black_vest
 	cost = 3
-	allowed_roles = list("Security Officer","Head of Security","Warden")
+	allowed_roles = list("Espatier","Commander","Chief Petty Officer")
 
 /datum/gear/armpit
 	display_name = "shoulder holster"
 	path = /obj/item/clothing/tie/holster/armpit
 	cost = 3
-	allowed_roles = list("Captain", "Head of Personnel", "Security Officer", "Head of Security", "Warden")
+	allowed_roles = list("Captain", "Executive Officer", "Espatier", "Commander", "Chief Petty Officer")
 
 /datum/gear/waist
 	display_name = "waist holster"
 	path = /obj/item/clothing/tie/holster/waist
 	cost = 3
-	allowed_roles = list("Captain", "Head of Personnel", "Security Officer", "Head of Security", "Warden")
+	allowed_roles = list("Captain", "Executive Officer", "Espatier", "Commander", "Chief Petty Officer")
 
 
 /datum/gear/normal_beret
@@ -485,7 +485,7 @@ proc/populate_gear_list()
 	path = /obj/item/clothing/head/beret/sec
 	cost = 1
 //	slot = slot_head
-	allowed_roles = list("Security Officer","Head of Security","Warden")
+	allowed_roles = list("Espatier","Commander","Chief Petty Officer")
 
 /*
 // Disabled until there is an alt-uniform for each department
@@ -501,7 +501,7 @@ proc/populate_gear_list()
 	display_name = "officer's formal cap"
 	path = /obj/item/clothing/head/helmet/secfcap
 	cost = 2
-	allowed_roles = list("Security Officer","Head of Security","Warden")
+	allowed_roles = list("Security Officer","Commander","Warden")
 
 /datum/gear/formal_uniw
 	display_name = "formal warden's uniform"
@@ -516,16 +516,16 @@ proc/populate_gear_list()
 	allowed_roles = list("Warden")
 
 /datum/gear/formal_unihos
-	display_name = "formal Head of Security's uniform"
+	display_name = "formal Commander's uniform"
 	path = /obj/item/clothing/under/rank/head_of_security/formal
 	cost = 3
-	allowed_roles = list("Head of Security")
+	allowed_roles = list("Commander")
 
 /datum/gear/formal_jackethos
-	display_name = "formal Head of Security's jacket"
+	display_name = "formal Commander's jacket"
 	path = /obj/item/clothing/suit/armor/hos/formal
 	cost = 2
-	allowed_roles = list("Head of Security")
+	allowed_roles = list("Commander")
 */
 
 //Engineering
@@ -565,14 +565,14 @@ proc/populate_gear_list()
 	path = /obj/item/clothing/suit/tajaran/furs
 	cost = 3
 //	slot = slot_wear_suit
-	whitelisted = "Tajaran"
+	whitelisted = "Tesau"
 
 /datum/gear/zhan_scarf
 	display_name = "Zhan-Khazan headscarf"
 	path = /obj/item/clothing/head/tajaran/scarf
 	cost = 2
 //	slot = slot_head
-	whitelisted = "Tajaran"
+	whitelisted = "Tesau"
 */
 
 /datum/gear/unathi_robe

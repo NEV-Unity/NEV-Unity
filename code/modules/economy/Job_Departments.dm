@@ -22,7 +22,7 @@ var/list/station_departments = list("Command", "Medical", "Engineering", "Scienc
 
 /datum/job/mining/department = "Civilian"
 
-/datum/job/janitor/department = "Civilian"
+/datum/job/janitor/department = "Engineering"
 
 /datum/job/librarian/department = "Civilian"
 
@@ -69,7 +69,7 @@ var/list/station_departments = list("Command", "Medical", "Engineering", "Scienc
 
 /datum/job/detective/department = "Security"
 
-/datum/job/forensics/department = "Security"
+/datum/job/forensics/department = "Science"
 
 /datum/job/officer/department = "Security"
 

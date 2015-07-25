@@ -939,7 +939,7 @@
 
 /obj/item/weapon/book/manual/detective
 	name = "The Film Noir: Proper Procedures for Investigations"
-	icon_state ="bookDetective"
+	icon_state ="bookMarshal"
 	author = "NanoTrasen"
 	title = "The Film Noir: Proper Procedures for Investigations"
 
@@ -955,7 +955,7 @@
 				</style>
 				</head>
 				<body>
-				<h1>Detective Work</h1>
+				<h1>Marshal Work</h1>
 
 				Between your bouts of self-narration and drinking whiskey on the rocks, you might get a case or two to solve.<br>
 				To have the best chance to solve your case, follow these directions:

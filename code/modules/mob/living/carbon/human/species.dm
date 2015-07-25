@@ -247,8 +247,8 @@
 	base_color = "#066000"
 
 /datum/species/tajaran
-	name = "Tajaran"
-	name_plural = "Tajaran"
+	name = "Tesau"
+	name_plural = "Tesau"
 	icobase = 'icons/mob/human_races/r_tajaran.dmi'
 	deform = 'icons/mob/human_races/r_def_tajaran.dmi'
 	language = "Siik'Maas"
