@@ -14,7 +14,7 @@ var/const/AI				=(1<<9)
 var/const/CYBORG			=(1<<10)
 var/const/INTERN_SEC		=(1<<11)
 var/const/INTERN_ENG		=(1<<12)
-var/const/FORENSICS			=(1<<13)
+
 
 var/const/MEDSCI			=(1<<1)
 
@@ -29,7 +29,8 @@ var/const/VIROLOGIST		=(1<<7)
 var/const/PSYCHIATRIST		=(1<<8)
 var/const/ROBOTICIST		=(1<<9)
 var/const/XENOBIOLOGIST		=(1<<10)
-var/const/INTERN_MED		=(1<<11)
+var/const/FORENSICS			=(1<<11)
+var/const/INTERN_MED		=(1<<12)
 var/const/INTERN_SCI		=(1<<13)
 
 

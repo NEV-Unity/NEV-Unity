@@ -913,6 +913,8 @@
 		var/datum/organ/internal/I = internal_organs_by_name["eyes"]
 		if(I.status & ORGAN_CUT_AWAY)
 			return 2
+		if(istype(I, /datum/organ/internal/eyes/shielded))
+			number += 1
 	else
 		return 2
 

@@ -20,7 +20,8 @@
 		"lungs" =   list(/obj/item/organ/lungs,  40),
 		"kidneys" = list(/obj/item/organ/kidneys,20),
 		"eyes" =    list(/obj/item/organ/eyes,   30),
-		"liver" =   list(/obj/item/organ/liver,  50)
+		"liver" =   list(/obj/item/organ/liver,  50),
+		"shielded visual prosthetic" = list(/obj/item/organ/eyes/shielded, 200)
 		)
 
 /obj/machinery/bioprinter/prosthetics
