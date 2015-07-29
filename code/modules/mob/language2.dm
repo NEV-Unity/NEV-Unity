@@ -149,14 +149,14 @@ proc/populate_language_list()
 	return (copytext(message, length(message)) == "!") ? 4 : 2
 
 /datum/language/unathi
-	name = "Sinta'unathi"
+	name = "Sinta"
 	desc = "The common language of Moghes, composed of sibilant hisses and rattles. Spoken natively by Unathi."
 	speech_verb = "hisses"
 	ask_verb = "hisses"
 	exclaim_verb = "roars"
 	colour = "soghun"
 	key = "o"
-	flags = WHITELISTED
+	cost = 4
 	syllables = list("ss","ss","ss","ss","skak","seeki","resh","las","esi","kor","sh")
 
 /datum/language/unathi/get_random_name()
@@ -189,7 +189,7 @@ proc/populate_language_list()
 	ask_verb = "mrowls"
 	exclaim_verb = "yowls"
 	colour = "tajaran"
-	key = "l"
+	key = "z"
 	cost = 4
 	syllables = list("rr","rr","kir","ruj","kii","mir","kru","uhk","nul","vuh","khuz","jri","run","durr", \
 	"mi","jri","dynh","munq","rhe","zur","rrhuz","eech","thuu","dru","jurl","muh","sunu","dru","ii'r","zic", "tus", \
@@ -197,11 +197,11 @@ proc/populate_language_list()
 	"hul","ket","jurl","muh","tul","cresh","uzu","rugh")
 
 /datum/language/tesausign
-	name = "pekhota sign"
+	name = "Pekhota sign"
 	desc = "A mixture of manual comunication and body language used by Pekhota tesau for ."
 	speech_verb = "signs"
 	signlang_verb = list("reports")
-	key = "4"
+	key = "5"
 	flags = SIGNLANG
 	cost = 4
 
@@ -214,7 +214,7 @@ proc/populate_language_list()
 	exclaim_verb = "warbles"
 	colour = "skrell"
 	key = "k"
-	flags = WHITELISTED
+	cost = 4
 	syllables = list("qr","qrr","xuq","qil","quum","xuqm","vol","xrim","zaoo","qu-uu","qix","qoo","zix","*","!")
 
 /datum/language/sign
@@ -224,6 +224,7 @@ proc/populate_language_list()
 	signlang_verb = list("signs")
 	key = "4"
 	flags = SIGNLANG
+	cost = 2
 
 /datum/language/sini
 	name = "Sini"
@@ -231,7 +232,7 @@ proc/populate_language_list()
 	speech_verb = "sings"
 	colour = "skrell"
 	key = "z"
-	flags = WHITELISTED
+	cost = 4
 	syllables = list("qr","qrr","xuq","qil","quum","xuqm","vol","xrim","zaoo","qu-uu","qix","qoo","zix","*","!")
 
 
@@ -277,8 +278,8 @@ proc/populate_language_list()
 	return new_name
 
 /datum/language/common
-	name = "Ceti Basic"
-	desc = "The common galactic tongue."
+	name = "Angelic"
+	desc = "The common galactic tongue, derived from a precurser language that is a mash of Germanic and Romance languages. Native to humanity."
 	speech_verb = "says"
 	whisper_verb = "whispers"
 	key = "0"
@@ -295,13 +296,13 @@ proc/populate_language_list()
 	return speech_verb
 
 /datum/language/human
-	name = "Sol Common"
-	desc = "A bastardized hybrid of informal English and elements of Mandarin Chinese; the common language of the Sol system."
+	name = "Zho"
+	desc = "A common tounge spoken in the Sol system, based off of a number of chinese dialects."
 	speech_verb = "says"
 	whisper_verb = "whispers"
 	colour = "solcom"
 	key = "1"
-	flags = RESTRICTED
+	cost = 4
 	syllables = list("tao","shi","tzu","yi","com","be","is","i","op","vi","ed","lec","mo","cle","te","dis","e")
 
 /datum/language/human/get_spoken_verb(var/msg_end)
@@ -320,6 +321,7 @@ proc/populate_language_list()
 	colour = "say_quote"
 	key = "2"
 	space_chance = 100
+	cost = 2
 	syllables = list("lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit",
 					 "sed", "do", "eiusmod", "tempor", "incididunt", "ut", "labore", "et", "dolore",
 					 "magna", "aliqua", "ut", "enim", "ad", "minim", "veniam", "quis", "nostrud",
@@ -335,6 +337,7 @@ proc/populate_language_list()
 	speech_verb = "growls"
 	colour = "rough"
 	key = "3"
+	cost = 2
 	syllables = list ("gra","ba","ba","breh","bra","rah","dur","ra","ro","gro","go","ber","bar","geh","heh", "gra")
 
 /datum/language/xenocommon
@@ -344,7 +347,7 @@ proc/populate_language_list()
 	speech_verb = "hisses"
 	ask_verb = "hisses"
 	exclaim_verb = "hisses"
-	key = "5"
+	key = "6"
 	flags = RESTRICTED
 	syllables = list("sss","sSs","SSS")
 
