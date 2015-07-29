@@ -108,7 +108,6 @@
 
 /datum/species/human
 	name = "Human"
-	language = "Sol Common"
 	primitive = /mob/living/carbon/monkey
 	unarmed_type = /datum/unarmed_attack/punch
 
@@ -121,7 +120,6 @@
 	name = "Unathi"
 	icobase = 'icons/mob/human_races/r_lizard.dmi'
 	deform = 'icons/mob/human_races/r_def_lizard.dmi'
-	language = "Sinta'unathi"
 	tail = "sogtail"
 	unarmed_type = /datum/unarmed_attack/claws
 	primitive = /mob/living/carbon/monkey/unathi
@@ -146,7 +144,6 @@
 	name = "Tesau"
 	icobase = 'icons/mob/human_races/r_tajaran.dmi'
 	deform = 'icons/mob/human_races/r_def_tajaran.dmi'
-	language = "Siik'Maas"
 	tail = "tajtail"
 	unarmed_type = /datum/unarmed_attack/claws
 	darksight = 8
@@ -170,7 +167,6 @@
 	name = "Skrell"
 	icobase = 'icons/mob/human_races/r_skrell.dmi'
 	deform = 'icons/mob/human_races/r_def_skrell.dmi'
-	language = "Skrellian"
 	primitive = /mob/living/carbon/monkey/skrell
 	unarmed_type = /datum/unarmed_attack/punch
 
@@ -256,7 +252,6 @@
 	name = "Diona"
 	icobase = 'icons/mob/human_races/r_diona.dmi'
 	deform = 'icons/mob/human_races/r_def_plant.dmi'
-	language = "Rootspeak"
 	unarmed_type = /datum/unarmed_attack/diona
 	primitive = /mob/living/carbon/monkey/diona
 
@@ -304,7 +299,6 @@
 	name = "Machine"
 	icobase = 'icons/mob/human_races/r_machine.dmi'
 	deform = 'icons/mob/human_races/r_machine.dmi'
-	language = "Tradeband"
 	unarmed_type = /datum/unarmed_attack/punch
 
 	eyes = "blank_eyes"
@@ -362,7 +356,6 @@
 	name = "Kocasslani"
 	icobase = 'icons/mob/human_races/r_kocasslani.dmi'
 	deform = 'icons/mob/human_races/r_def_kocasslani.dmi'
-	language = "Sini"
 	darksight = 8
 
 	cold_level_1 = 160 //Default 260

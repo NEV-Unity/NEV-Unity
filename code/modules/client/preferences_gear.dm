@@ -13,10 +13,146 @@ proc/populate_gear_list()
 	var/list/allowed_roles //Roles that can spawn with this item.
 	var/whitelisted        //Term to check the whitelist for..
 
+//Uncertain
+
+
+
 //Standard gear datums.
+//Small Items and simple visual accessories are 1 point
+
+/datum/gear/armband
+	display_name = "armband (red)"
+	path = /obj/item/clothing/tie/armband
+	cost = 1
+
+/datum/gear/armband_cargo
+	display_name = "armband (cargo)"
+	path = /obj/item/clothing/tie/armband/cargo
+	cost = 1
+
+/datum/gear/armband_engineering
+	display_name = "armband (engineering)"
+	path = /obj/item/clothing/tie/armband/engine
+	cost = 1
+
+/datum/gear/armband_science
+	display_name = "armband (science)"
+	path = /obj/item/clothing/tie/armband/science
+	cost = 1
+
+/datum/gear/armband_hydroponics
+	display_name = "armband (hydroponics)"
+	path = /obj/item/clothing/tie/armband/hydro
+	cost = 1
+
+/datum/gear/armband_medical
+	display_name = "armband (medical)"
+	path = /obj/item/clothing/tie/armband/med
+	cost = 1
+
+/datum/gear/armband_emt
+	display_name = "armband (EMT)"
+	path = /obj/item/clothing/tie/armband/medgreen
+	cost = 1
+
+/datum/gear/cards
+	display_name = "deck of cards"
+	path = /obj/item/weapon/deck
+	cost = 1
+
+/datum/gear/clipboard
+	display_name = "clipboard"
+	path = /obj/item/weapon/clipboard
+	cost = 1
+
 /datum/gear/dice
 	display_name = "d20"
 	path = /obj/item/weapon/dice/d20
+	cost = 1
+
+/datum/gear/redpen
+	display_name = "pen (red)"
+	path = /obj/item/weapon/pen/red
+	cost = 1
+
+/datum/gear/bluepen
+	display_name = "pen (blue)"
+	path = /obj/item/weapon/pen/blue
+	cost = 1
+
+/datum/gear/comb
+	display_name = "purple comb"
+	path = /obj/item/weapon/fluff/cado_keppel_1
+	cost = 1
+
+/datum/gear/tie_blue
+	display_name = "tie (blue)"
+	path = /obj/item/clothing/tie/blue
+	cost = 1
+
+/datum/gear/sandal
+	display_name = "sandals"
+	path = /obj/item/clothing/shoes/sandal
+	cost = 1
+
+/datum/gear/black_shoes
+	display_name = "shoes (black)"
+	path = /obj/item/clothing/shoes/black
+	cost = 1
+
+/datum/gear/blue_shoes
+	display_name = "shoes (blue)"
+	path = /obj/item/clothing/shoes/blue
+	cost = 1
+
+/datum/gear/brown_shoes
+	display_name = "shoes (brown)"
+	path = /obj/item/clothing/shoes/brown
+	cost = 1
+
+/datum/gear/green_shoes
+	display_name = "shoes (green)"
+	path = /obj/item/clothing/shoes/green
+	cost = 1
+
+/datum/gear/orange_shoes
+	display_name = "shoes (orange)"
+	path = /obj/item/clothing/shoes/orange
+	cost = 1
+
+/datum/gear/purple_shoes
+	display_name = "shoes (purple)"
+	path = /obj/item/clothing/shoes/purple
+	cost = 1
+
+/datum/gear/red_shoes
+	display_name = "shoes (red)"
+	path = /obj/item/clothing/shoes/red
+	cost = 1
+
+/datum/gear/white_shoes
+	display_name = "shoes (white)"
+	path = /obj/item/clothing/shoes/white
+	cost = 1
+
+/datum/gear/yellow_shoes
+	display_name = "shoes (yellow)"
+	path = /obj/item/clothing/shoes/yellow
+	cost = 1
+
+/datum/gear/tie_horrible
+	display_name = "tie (horrible)"
+	path = /obj/item/clothing/tie/horrible
+	cost = 1
+
+/datum/gear/tie_red
+	display_name = "tie (red)"
+	path = /obj/item/clothing/tie/red
+	cost = 1
+
+/datum/gear/wallet
+	display_name = "wallet"
+	path = /obj/item/weapon/storage/wallet
 	cost = 1
 
 /datum/gear/watch
@@ -24,15 +160,33 @@ proc/populate_gear_list()
 	path = /obj/item/clothing/gloves/watch
 	cost = 1
 
-/datum/gear/wallet
-	display_name = "wallet"
-	path = /obj/item/weapon/storage/wallet
+
+
+
+
+
+
+//Items with an actual use are two points
+
+/datum/gear/bandana
+	display_name = "pirate bandana"
+	path = /obj/item/clothing/head/bandana
 	cost = 2
 
-/datum/gear/comb
-	display_name = "purple comb"
-	path = /obj/item/weapon/fluff/cado_keppel_1
-	cost = 1
+/datum/gear/hairflower
+	display_name = "hair flower pin"
+	path = /obj/item/clothing/head/hairflower
+	cost = 2
+
+/datum/gear/zippolighter
+	display_name = "zippo lighter"
+	path = /obj/item/weapon/lighter/zippo
+	cost = 2
+
+/datum/gear/camera
+	display_name = "camera"
+	path = /obj/item/device/camera
+	cost = 2
 
 /datum/gear/cane
 	display_name = "cane"
@@ -44,552 +198,275 @@ proc/populate_gear_list()
 	path = /obj/item/weapon/storage/briefcase
 	cost = 2
 
-/datum/gear/securebriefcase
-	display_name = "secure briefcase"
-	path = /obj/item/weapon/storage/secure/briefcase
-	cost = 3
-
-/datum/gear/zippolighter
-	display_name = "zippo lighter"
-	path = /obj/item/weapon/lighter/zippo
-	cost = 1
-
 /datum/gear/recorder
 	display_name = "universal recorder"
 	path = /obj/item/device/taperecorder
 	cost = 2
-
-/datum/gear/camera
-	display_name = "camera"
-	path = /obj/item/device/camera
-	cost = 1
-
-/datum/gear/clipboard
-	display_name = "clipboard"
-	path = /obj/item/weapon/clipboard
-	cost = 1
-
-/datum/gear/redpen
-	display_name = "red pen"
-	path = /obj/item/weapon/pen/red
-	cost = 1
-
-/datum/gear/bluepen
-	display_name = "blue pen"
-	path = /obj/item/weapon/pen/blue
-	cost = 1
 
 /datum/gear/flask
 	display_name = "flask"
 	path = /obj/item/weapon/reagent_containers/food/drinks/flask/barflask
 	cost = 2
 
-/datum/gear/cards
-	display_name = "deck of cards"
-	path = /obj/item/weapon/deck
-	cost = 1
-
-/datum/gear/tie_horrible
-	display_name = "horrible tie"
-	path = /obj/item/clothing/tie/horrible
-	cost = 2
-
-/datum/gear/tie_blue
-	display_name = "blue tie"
-	path = /obj/item/clothing/tie/blue
-	cost = 2
-
-/datum/gear/tie_red
-	display_name = "red tie"
-	path = /obj/item/clothing/tie/red
-	cost = 2
-
-/datum/gear/hairflower
-	display_name = "hair flower pin"
-	path = /obj/item/clothing/head/hairflower
-	cost = 2
-//	slot = slot_head
-
-/datum/gear/bandana
-	display_name = "pirate bandana"
-	path = /obj/item/clothing/head/bandana
-	cost = 3
-//	slot = slot_head
-
 /datum/gear/overalls
 	display_name = "overalls"
 	path = /obj/item/clothing/suit/apron/overalls
 	cost = 2
-//	slot = slot_wear_suit
 
 /datum/gear/wcoat
 	display_name = "waistcoat"
 	path = /obj/item/clothing/suit/wcoat
 	cost = 2
-//	slot = slot_wear_suit
 
-/datum/gear/prescription
-	display_name = "prescription sunglasses"
-	path = /obj/item/clothing/glasses/sunglasses/prescription
-	cost = 3
-//	slot = slot_glasses
 
 /datum/gear/eyepatch
 	display_name = "eyepatch"
 	path = /obj/item/clothing/glasses/eyepatch
-	cost = 3
-//	slot = slot_glasses
+	cost = 2
 
 /datum/gear/flatcap
 	display_name = "flat cap"
 	path = /obj/item/clothing/head/flatcap
 	cost = 2
-//	slot = slot_head
+
 
 /datum/gear/redsoftcap
 	display_name = "red softcap"
 	path = /obj/item/clothing/head/soft/red
 	cost = 2
-//	slot = slot_head
 
 /datum/gear/bluesoftcap
 	display_name = "blue softcap"
 	path = /obj/item/clothing/head/soft/blue
 	cost = 2
-//	slot = slot_head
 
 /datum/gear/greensoftcap
 	display_name = "green softcap"
 	path = /obj/item/clothing/head/soft/green
 	cost = 2
-//	slot = slot_head
 
 /datum/gear/greysoftcap
 	display_name = "grey softcap"
 	path = /obj/item/clothing/head/soft/grey
 	cost = 2
-//	slot = slot_head
 
 /datum/gear/purplesoftcap
 	display_name = "purple softcap"
 	path = /obj/item/clothing/head/soft/purple
 	cost = 2
-//	slot = slot_head
-
-/datum/gear/labcoat
-	display_name = "labcoat"
-	path = /obj/item/clothing/suit/storage/labcoat
-	cost = 2
-//	slot = slot_wear_suit
-
-/datum/gear/bluescrubs
-	display_name = "blue scrubs"
-	path = /obj/item/clothing/under/rank/medical/blue
-	cost = 3
-
-/datum/gear/purplescrubs
-	display_name = "purple scrubs"
-	path = /obj/item/clothing/under/rank/medical/purple
-	cost = 3
-
-/datum/gear/greenscrubs
-	display_name = "green scrubs"
-	path = /obj/item/clothing/under/rank/medical/green
-	cost = 3
-
-/datum/gear/surgeryapron
-	display_name = "surgical apron"
-	path = /obj/item/clothing/suit/apron/surgery
-	cost = 2
-
-
-/datum/gear/sandal
-	display_name = "sandals"
-	path = /obj/item/clothing/shoes/sandal
-	cost = 1
-//	slot = slot_shoes
 
 /datum/gear/work_boots
 	display_name = "work boots"
 	path = /obj/item/clothing/shoes/work_boots
 	cost = 2
 
+/datum/gear/jackboots
+	display_name = "jackboots"
+	path = /obj/item/clothing/shoes/jackboots
+	cost = 2
+
 /datum/gear/leather
 	display_name = "leather shoes"
 	path = /obj/item/clothing/shoes/leather
 	cost = 2
-//	slot = slot_shoes
 
 /datum/gear/dress_shoes
 	display_name = "dress shoes"
 	path = /obj/item/clothing/shoes/centcom
 	cost = 2
-//	slot = slot_shoes
 
 /datum/gear/black_gloves
 	display_name = "black gloves"
 	path = /obj/item/clothing/gloves/black
-	cost = 1
-//	slot = slot_gloves
+	cost = 2
 
 /datum/gear/red_gloves
 	display_name = "red gloves"
 	path = /obj/item/clothing/gloves/red
-	cost = 1
-//	slot = slot_gloves
+	cost = 2
 
 /datum/gear/blue_gloves
 	display_name = "blue gloves"
 	path = /obj/item/clothing/gloves/blue
-	cost = 1
-//	slot = slot_gloves
+	cost = 2
 
 /datum/gear/orange_gloves
 	display_name = "orange gloves"
 	path = /obj/item/clothing/gloves/orange
-	cost = 1
-//	slot = slot_gloves
+	cost = 2
 
 /datum/gear/purple_gloves
 	display_name = "purple gloves"
 	path = /obj/item/clothing/gloves/purple
-	cost = 1
-//	slot = slot_gloves
+	cost = 2
 
 /datum/gear/brown_gloves
 	display_name = "brown gloves"
 	path = /obj/item/clothing/gloves/brown
-	cost = 1
-//	slot = slot_gloves
+	cost = 2
 
 /datum/gear/green_gloves
 	display_name = "green gloves"
 	path = /obj/item/clothing/gloves/green
-	cost = 1
-//	slot = slot_gloves
-
-/datum/gear/white_gloves
-	display_name = "white gloves"
-	path = /obj/item/clothing/gloves/white
-	cost = 1
-//	slot = slot_gloves
-
-/datum/gear/black_shoes
-	display_name = "black shoes"
-	path = /obj/item/clothing/shoes/black
 	cost = 2
-//	slot = slot_shoes
-
-/datum/gear/blue_shoes
-	display_name = "blue shoes"
-	path = /obj/item/clothing/shoes/blue
-	cost = 2
-//	slot = slot_shoes
-
-/datum/gear/brown_shoes
-	display_name = "brown shoes"
-	path = /obj/item/clothing/shoes/brown
-	cost = 2
-//	slot = slot_shoes
-
-/datum/gear/green_shoes
-	display_name = "green shoes"
-	path = /obj/item/clothing/shoes/green
-	cost = 2
-//	slot = slot_shoes
-
-/datum/gear/orange_shoes
-	display_name = "orange shoes"
-	path = /obj/item/clothing/shoes/orange
-	cost = 2
-//	slot = slot_shoes
-
-/datum/gear/purple_shoes
-	display_name = "purple shoes"
-	path = /obj/item/clothing/shoes/purple
-	cost = 2
-//	slot = slot_shoes
-
-/datum/gear/red_shoes
-	display_name = "red shoes"
-	path = /obj/item/clothing/shoes/red
-	cost = 2
-//	slot = slot_shoes
-
-/datum/gear/white_shoes
-	display_name = "white shoes"
-	path = /obj/item/clothing/shoes/white
-	cost = 2
-//	slot = slot_shoes
-
-/datum/gear/yellow_shoes
-	display_name = "yellow shoes"
-	path = /obj/item/clothing/shoes/yellow
-	cost = 2
-//	slot = slot_shoes
-
-/datum/gear/jackboots
-	display_name = "jackboots"
-	path = /obj/item/clothing/shoes/jackboots
-	cost = 2
-//	slot = slot_shoes
-
-/datum/gear/webbing
-	display_name = "webbing"
-	path = /obj/item/clothing/tie/storage/webbing
-	cost = 1
-
-/datum/gear/armband
-	display_name = "red armband"
-	path = /obj/item/clothing/tie/armband
-	cost = 1
-
-/datum/gear/armband_cargo
-	display_name = "cargo armband"
-	path = /obj/item/clothing/tie/armband/cargo
-	cost = 1
-
-/datum/gear/armband_engineering
-	display_name = "engineering armband"
-	path = /obj/item/clothing/tie/armband/engine
-	cost = 1
-
-/datum/gear/armband_science
-	display_name = "science armband"
-	path = /obj/item/clothing/tie/armband/science
-	cost = 1
-
-/datum/gear/armband_hydroponics
-	display_name = "hydroponics armband"
-	path = /obj/item/clothing/tie/armband/hydro
-	cost = 1
-
-/datum/gear/armband_medical
-	display_name = "medical armband"
-	path = /obj/item/clothing/tie/armband/med
-	cost = 1
-
-/datum/gear/armband_emt
-	display_name = "EMT armband"
-	path = /obj/item/clothing/tie/armband/medgreen
-	cost = 1
-
-/datum/gear/skirt_blue
-	display_name = "blue plaid skirt"
-	path = /obj/item/clothing/under/dress/plaid_blue
-//	slot = slot_w_uniform
-	cost = 3
-
-/datum/gear/skirt_red
-	display_name = "red plaid skirt"
-	path = /obj/item/clothing/under/dress/plaid_red
-//	slot = slot_w_uniform
-	cost = 3
-
-/datum/gear/skirt_purple
-	display_name = "purple plaid skirt"
-	path = /obj/item/clothing/under/dress/plaid_purple
-//	slot = slot_w_uniform
-	cost = 3
-
-/datum/gear/skirt_green
-	display_name = "green plaid skirt"
-	path = /obj/item/clothing/under/dress/plaid_green
-//	slot = slot_w_uniform
-	cost = 3
-
-/datum/gear/skirt_black
-	display_name = "black skirt"
-	path = /obj/item/clothing/under/blackskirt
-//	slot = slot_w_uniform
-	cost = 3
-
-/datum/gear/sundress
-	display_name = "sundress"
-	path = /obj/item/clothing/under/sundress
-//	slot = slot_w_uniform
-	cost = 3
-
-/datum/gear/uniform_captain
-	display_name = "captain dress uniform"
-	path = /obj/item/clothing/under/dress/dress_cap
-//	slot = slot_w_uniform
-	cost = 3
-	allowed_roles = list("Captain")
-
-/datum/gear/uniform_hop
-	display_name = "HoP dress uniform"
-	path = /obj/item/clothing/under/dress/dress_hop
-//	slot = slot_w_uniform
-	cost = 3
-	allowed_roles = list("Executive Officer")
-
-/datum/gear/uniform_hr
-	display_name = "HR director uniform"
-	path = /obj/item/clothing/under/dress/dress_hr
-//	slot = slot_w_uniform
-	cost = 3
-	allowed_roles = list("Executive Officer")
-
-/datum/gear/kilt
-	display_name = "kilt"
-	path = /obj/item/clothing/under/kilt
-//	slot = slot_w_uniform
-	cost = 3
-
-/datum/gear/exec_suit
-	display_name = "executive suit"
-	path = /obj/item/clothing/under/suit_jacket/really_black
-//	slot = slot_w_uniform
-	cost = 3
-
-/datum/gear/oldmansuit
-	display_name = "old man suit"
-	path = /obj/item/clothing/under/lawyer/oldman
-	cost = 3
-
-//Security
-/datum/gear/security
-	display_name = "Security HUD"
-	path = /obj/item/clothing/glasses/hud/security
-	cost = 3
-//	slot = slot_glasses
-	allowed_roles = list("Espatier","Commander","Chief Petty Officer")
-
-/datum/gear/black_vest
-	display_name = "black webbing vest"
-	path = /obj/item/clothing/tie/storage/black_vest
-	cost = 3
-	allowed_roles = list("Espatier","Commander","Chief Petty Officer")
-
-/datum/gear/armpit
-	display_name = "shoulder holster"
-	path = /obj/item/clothing/tie/holster/armpit
-	cost = 3
-	allowed_roles = list("Captain", "Executive Officer", "Espatier", "Commander", "Chief Petty Officer")
-
-/datum/gear/waist
-	display_name = "waist holster"
-	path = /obj/item/clothing/tie/holster/waist
-	cost = 3
-	allowed_roles = list("Captain", "Executive Officer", "Espatier", "Commander", "Chief Petty Officer")
-
 
 /datum/gear/normal_beret
 	display_name = "beret"
 	path = /obj/item/clothing/head/beret
-	cost = 3
+	cost = 2
 
 /datum/gear/sec_beret
 	display_name = "security beret"
 	path = /obj/item/clothing/head/beret/sec
-	cost = 1
-//	slot = slot_head
-	allowed_roles = list("Espatier","Commander","Chief Petty Officer")
-
-/*
-// Disabled until there is an alt-uniform for each department
-// Uniforms cost 3 points.
-
-/datum/gear/formal_uni
-	display_name = "formal officer's uniform"
-	path = /obj/item/clothing/under/rank/security/formal
-	cost = 3
-	allowed_roles = list("Security Officer")
-
-/datum/gear/formal_cap
-	display_name = "officer's formal cap"
-	path = /obj/item/clothing/head/helmet/secfcap
 	cost = 2
-	allowed_roles = list("Security Officer","Commander","Warden")
 
-/datum/gear/formal_uniw
-	display_name = "formal warden's uniform"
-	path = /obj/item/clothing/under/rank/warden/formal
-	cost = 3
-	allowed_roles = list("Warden")
-
-/datum/gear/formal_jacketw
-	display_name = "formal warden's jacket"
-	path = /obj/item/clothing/suit/armor/vest/warden/jacket
-	cost = 2
-	allowed_roles = list("Warden")
-
-/datum/gear/formal_unihos
-	display_name = "formal Commander's uniform"
-	path = /obj/item/clothing/under/rank/head_of_security/formal
-	cost = 3
-	allowed_roles = list("Commander")
-
-/datum/gear/formal_jackethos
-	display_name = "formal Commander's jacket"
-	path = /obj/item/clothing/suit/armor/hos/formal
-	cost = 2
-	allowed_roles = list("Commander")
-*/
-
-//Engineering
 /datum/gear/eng_beret
 	display_name = "engineering beret"
 	path = /obj/item/clothing/head/beret/eng
-	cost = 1
-//	slot = slot_head
-	allowed_roles = list("Station Engineer","Atmospheric Technician","Chief Engineer")
-
-/datum/gear/brown_vest
-	display_name = "brown webbing vest"
-	path = /obj/item/clothing/tie/storage/brown_vest
-	cost = 3
-	allowed_roles = list("Station Engineer","Atmospheric Technician","Chief Engineer")
+	cost = 2
 
 /datum/gear/engineer_bandana
 	display_name = "engineering bandana"
 	path = /obj/item/clothing/head/helmet/greenbandana/fluff/taryn_kifer_1
 	cost = 2
-//	slot = slot_head
-	allowed_roles = list("Station Engineer","Atmospheric Technician","Chief Engineer")
 
-//Science
 /datum/gear/scanning_goggles
 	display_name = "scanning goggles"
 	path = /obj/item/clothing/glasses/fluff/uzenwa_sissra_1
 	cost = 2
-	allowed_roles = list("Roboticist", "Scientist", "Research Director")
 
-//Species-specific gear datums.
-
-//Taken out until fixes are done
-/*
-/datum/gear/zhan_furs
-	display_name = "Zhan-Khazan furs"
-	path = /obj/item/clothing/suit/tajaran/furs
-	cost = 3
-//	slot = slot_wear_suit
-	whitelisted = "Tesau"
-
-/datum/gear/zhan_scarf
-	display_name = "Zhan-Khazan headscarf"
-	path = /obj/item/clothing/head/tajaran/scarf
-	cost = 2
-//	slot = slot_head
-	whitelisted = "Tesau"
-*/
-
-/datum/gear/unathi_robe
-	display_name = "roughspun robe"
-	path = /obj/item/clothing/suit/unathi/robe
-	cost = 3
-//	slot = slot_wear_suit
-	whitelisted = "Unathi"
-
-/datum/gear/unathi_mantle
-	display_name = "hide mantle"
-	path = /obj/item/clothing/suit/unathi/mantle
-	cost = 2
-//	slot = slot_wear_suit
-	whitelisted = "Unathi"
+//Edge case department gear
 
 /datum/gear/cigar_case
 	display_name = "cigar case"
 	path = /obj/item/weapon/storage/fancy/cigars
 	cost = 3
+
+/datum/gear/white_gloves
+	display_name = "white gloves"
+	path = /obj/item/clothing/gloves/white
+	cost = 3
+
+/datum/gear/armpit
+	display_name = "shoulder holster"
+	path = /obj/item/clothing/tie/holster/armpit
+	cost = 3
+
+/datum/gear/waist
+	display_name = "waist holster"
+	path = /obj/item/clothing/tie/holster/waist
+	cost = 3
+
+/datum/gear/webbing
+	display_name = "webbing"
+	path = /obj/item/clothing/tie/storage/webbing
+	cost = 3
+
+/datum/gear/securebriefcase
+	display_name = "secure briefcase"
+	path = /obj/item/weapon/storage/secure/briefcase
+	cost = 3
+
+//"Department locked" gear. (No actual department locks) and uniforms
+
+/datum/gear/skirt_blue
+	display_name = "blue plaid skirt"
+	path = /obj/item/clothing/under/dress/plaid_blue
+	cost = 4
+
+/datum/gear/skirt_red
+	display_name = "red plaid skirt"
+	path = /obj/item/clothing/under/dress/plaid_red
+	cost = 4
+
+/datum/gear/skirt_purple
+	display_name = "purple plaid skirt"
+	path = /obj/item/clothing/under/dress/plaid_purple
+	cost = 4
+
+/datum/gear/skirt_green
+	display_name = "green plaid skirt"
+	path = /obj/item/clothing/under/dress/plaid_green
+	cost = 4
+
+/datum/gear/skirt_black
+	display_name = "black skirt"
+	path = /obj/item/clothing/under/blackskirt
+	cost = 4
+
+/datum/gear/kilt
+	display_name = "kilt"
+	path = /obj/item/clothing/under/kilt
+	cost = 4
+
+/datum/gear/sundress
+	display_name = "sundress"
+	path = /obj/item/clothing/under/sundress
+	cost = 4
+
+/datum/gear/exec_suit
+	display_name = "executive suit"
+	path = /obj/item/clothing/under/suit_jacket/really_black
+	cost = 4
+
+/datum/gear/oldmansuit
+	display_name = "old man suit"
+	path = /obj/item/clothing/under/lawyer/oldman
+	cost = 4
+
+/datum/gear/prescription
+	display_name = "prescription sunglasses"
+	path = /obj/item/clothing/glasses/sunglasses/prescription
+	cost = 4
+
+/datum/gear/labcoat
+	display_name = "labcoat"
+	path = /obj/item/clothing/suit/storage/labcoat
+	cost = 4
+
+/datum/gear/bluescrubs
+	display_name = "blue scrubs"
+	path = /obj/item/clothing/under/rank/medical/blue
+	cost = 4
+
+/datum/gear/purplescrubs
+	display_name = "purple scrubs"
+	path = /obj/item/clothing/under/rank/medical/purple
+	cost = 4
+
+/datum/gear/greenscrubs
+	display_name = "green scrubs"
+	path = /obj/item/clothing/under/rank/medical/green
+	cost = 4
+
+/datum/gear/surgeryapron
+	display_name = "surgical apron"
+	path = /obj/item/clothing/suit/apron/surgery
+	cost = 4
+
+/datum/gear/unathi_robe
+	display_name = "roughspun robe"
+	path = /obj/item/clothing/suit/unathi/robe
+	cost = 4
+
+/datum/gear/unathi_mantle
+	display_name = "hide mantle"
+	path = /obj/item/clothing/suit/unathi/mantle
+	cost = 4
+
+//REALLY GOOD department gear
+
+/datum/gear/yellow_gloves
+	display_name = "yellow gloves"
+	path = /obj/item/clothing/gloves/yellow
+	cost = 5
+
+/datum/gear/black_vest
+	display_name = "black webbing vest"
+	path = /obj/item/clothing/tie/storage/black_vest
+	cost = 5
+
+/datum/gear/brown_vest
+	display_name = "brown webbing vest"
+	path = /obj/item/clothing/tie/storage/brown_vest
+	cost = 5
