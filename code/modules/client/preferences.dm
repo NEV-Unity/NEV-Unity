@@ -76,8 +76,9 @@ datum/preferences
 	var/g_eyes = 0						//Eye color
 	var/b_eyes = 0						//Eye color
 	var/species = "Human"               //Species datum to use.
-	var/language = "None"				//Secondary language
+	var/language = "None"				//Primary language
 	var/list/gear						//Custom/fluff item loadout.
+	var/list/languages					//Secondary languages
 
 		//Some faction information.
 	var/home_system = "Unset"           //System of birth.
@@ -148,6 +149,7 @@ datum/preferences
 	signature_font = "Verdanta"
 
 	gear = list()
+	languages = list()
 
 /datum/preferences/proc/ZeroSkills(var/forced = 0)
 	for(var/V in SKILLS) for(var/datum/skill/S in SKILLS[V])
@@ -299,9 +301,28 @@ datum/preferences
 		dat += "none."
 
 	if(total_cost < MAX_GEAR_COST)
-		dat += " <a href='byond://?src=\ref[user];preference=loadout;task=input'>\[add\]</a>"
+		dat += " <a href='byond://?src=\ref[user];preference=loadout;task=input'>\[add gear\]</a>"
 		if(gear && gear.len)
-			dat += " <a href='byond://?src=\ref[user];preference=loadout;task=remove'>\[remove\]</a>"
+			dat += " <a href='byond://?src=\ref[user];preference=loadout;task=remove'>\[remove gear\]</a>"
+
+/* Language code WIP
+	if(languages && languages.len)
+		dat += "<br>"
+		for(var/languages_name in languages)
+			if(languages_datums[languages_name])
+				var/datum/languages/L = languages_datums[languages_name]
+				total_cost += L.cost
+				dat += "[languages_name] <a href='byond://?src=\ref[user];preference=loadout;task=remove;languages=[languages_name]'>\[remove\]</a><br>"
+
+		dat += "<b>Used:</b> [total_cost] points."
+	else
+		dat += "none."
+
+	if(total_cost < MAX_languages_COST)
+		dat += " <a href='byond://?src=\ref[user];preference=loadout;task=input'>\[add languages\]</a>"
+		if(languages && languages.len)
+			dat += " <a href='byond://?src=\ref[user];preference=loadout;task=remove'>\[remove languages\]</a>"
+*/
 
 	dat += "<br><br><b>Occupation Choices</b><br>"
 	dat += "\t<a href='?_src_=prefs;preference=job;task=menu'><b>Set Preferences</b></a><br>"
@@ -310,7 +331,7 @@ datum/preferences
 	dat += "(<a href='?_src_=prefs;preference=all;task=random'>&reg;</A>)"
 	dat += "<br>"
 	dat += "Species: <a href='byond://?src=\ref[user];preference=species;task=input'>[species]</a><br>"
-	dat += "Secondary Language:<br><a href='byond://?src=\ref[user];preference=language;task=input'>[language]</a><br>"
+	dat += "Primary Language:<br><a href='byond://?src=\ref[user];preference=language;task=input'>[language]</a><br>"
 	dat += "Blood Type: <a href='byond://?src=\ref[user];preference=b_type;task=input'>[b_type]</a><br>"
 	dat += "Skin Tone: <a href='?_src_=prefs;preference=s_tone;task=input'>[-s_tone + 35]/220<br></a>"
 	//dat += "Skin pattern: <a href='byond://?src=\ref[user];preference=skin_style;task=input'>Adjust</a><br>"
@@ -1195,7 +1216,7 @@ datum/preferences
 							if(!(lang.flags & RESTRICTED))
 								new_languages += lang.name
 
-					language = input("Please select a secondary language", "Character Generation", null) in new_languages
+					language = input("Please select a primary language", "Character Generation", null) in new_languages
 
 				if("metadata")
 					var/new_metadata = input(user, "Enter any information you'd like others to see, such as Roleplay-preferences:", "Game Preference" , metadata)  as message|null
@@ -1208,7 +1229,7 @@ datum/preferences
 						b_type = new_b_type
 
 				if("hair")
-					if(species == "Human" || species == "Unathi" || species == "Tajaran" || species == "Skrell")
+					if(species == "Human" || species == "Unathi" || species == "Tesau" || species == "Skrell")
 						var/new_hair = input(user, "Choose your character's hair colour:", "Character Preference") as color|null
 						if(new_hair)
 							r_hair = hex2num(copytext(new_hair, 2, 4))
@@ -1290,7 +1311,7 @@ datum/preferences
 						s_tone = 35 - max(min( round(new_s_tone), 220),1)
 
 				if("skin")
-					if(species == "Unathi" || species == "Tajaran" || species == "Skrell" || species == "Machine")
+					if(species == "Unathi" || species == "Tesau" || species == "Skrell" || species == "Machine")
 						var/new_skin = input(user, "Choose your character's skin colour: ", "Character Preference") as color|null
 						if(new_skin)
 							r_skin = hex2num(copytext(new_skin, 2, 4))

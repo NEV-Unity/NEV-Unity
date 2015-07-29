@@ -1581,7 +1581,7 @@ datum/design/nuclear_gun
 
 datum/design/stunrevolver
 	name = "Stun Revolver"
-	desc = "Occasionally prize of the Head of Security, but usually of asshole scientists."
+	desc = "Occasionally prize of the Commander, but usually of asshole scientists."
 	id = "stunrevolver"
 	req_tech = list("combat" = 3, "materials" = 3, "powerstorage" = 2)
 	build_type = PROTOLATHE

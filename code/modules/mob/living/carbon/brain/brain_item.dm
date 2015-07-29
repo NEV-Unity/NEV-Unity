@@ -15,7 +15,7 @@
 	prosthetic_icon = "brain-prosthetic"
 	organ_tag = "brain"
 	organ_type = /datum/organ/internal/brain
-	
+
 	var/mob/living/carbon/brain/brainmob = null
 
 /obj/item/organ/brain/xeno
@@ -78,3 +78,4 @@
 			brainmob.mind.transfer_to(target)
 		else
 			target.key = brainmob.key
+	..()

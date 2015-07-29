@@ -1,0 +1,8 @@
+Attention [station_name],
+
+A recent audit within our region has revealed several glaring accounting errors, resulting in vast profit loss across your region. In an effort to restore some of our lost profits, we have offered up a new initiative.
+
+All staff within your region are urged to find and produce new means of increased profitability for your facility, effective immediately. The facility with the greatest increase in productivity will be granted a substantial salary bonus at the end of the financial year.
+
+Best of luck [station_name],
+Elliot Spaulding

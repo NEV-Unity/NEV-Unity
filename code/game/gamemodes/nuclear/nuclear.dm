@@ -248,8 +248,8 @@
 		switch(race)
 			if("Unathi")
 				new_suit.species_restricted = list("Unathi")
-			if("Tajaran")
-				new_suit.species_restricted = list("Tajaran")
+			if("Tesau")
+				new_suit.species_restricted = list("Tesau")
 			if("Skrell")
 				new_suit.species_restricted = list("Skrell")
 

@@ -67,7 +67,7 @@
 		new /obj/item/device/radio/headset(src)
 
 /obj/structure/closet/secure_closet/janitor_personal
-	name = "Janitor's Locker"
+	name = "Sanitation Engineer's Locker"
 	req_access = list(ACCESS_JANITOR)
 
 	New()

@@ -62,8 +62,8 @@
 
 
 /obj/item/clothing/under/rank/head_of_personnel
-	desc = "It's a jumpsuit worn by someone who works in the position of \"Head of Personnel\"."
-	name = "head of personnel's jumpsuit"
+	desc = "It's a jumpsuit worn by someone who works in the position of \"Executive Officer\"."
+	name = "executive officer's jumpsuit"
 	icon_state = "hop"
 	item_state = "b_suit"
 	item_color = "hop"
@@ -71,7 +71,7 @@
 
 /obj/item/clothing/under/rank/head_of_personnel_whimsy
 	desc = "A blue jacket and red tie, with matching red cuffs! Snazzy. Wearing this makes you feel more important than your job title does."
-	name = "head of personnel's suit"
+	name = "executive officer's suit"
 	icon_state = "hopwhimsy"
 	item_state = "hopwhimsy"
 	item_color = "hopwhimsy"
@@ -99,7 +99,7 @@
 
 /obj/item/clothing/under/rank/janitor
 	desc = "It's the official uniform of the station's janitor. It has minor protection from biohazards."
-	name = "janitor's jumpsuit"
+	name = "sanitation engineer's jumpsuit"
 	icon_state = "janitor"
 	item_color = "janitor"
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 10, rad = 0)

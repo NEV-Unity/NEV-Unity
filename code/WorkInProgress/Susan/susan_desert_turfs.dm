@@ -102,15 +102,15 @@ turf/simulated/wall/impassable_rock
 	corpseidaccess = "Captain"
 
 /obj/effect/landmark/corpse/officer
-	name = "Security Officer"
+	name = "Espatier"
 	corpseuniform = /obj/item/clothing/under/rank/navysecurity
 	corpsesuit = /obj/item/clothing/suit/armor/navysecvest
 	corpseradio = /obj/item/device/radio/headset/headset_sec
 	corpseshoes = /obj/item/clothing/shoes/swat
 	corpsehelmet = /obj/item/clothing/head/beret/navysec
 	corpseid = 1
-	corpseidjob = "Security Officer"
-	corpseidaccess = "Security Officer"
+	corpseidjob = "Espatier"
+	corpseidaccess = "Espatier"
 
 /*
  * Weeds
@@ -246,7 +246,7 @@ Alien plants should do something if theres a lot of poison
 //clothing, weapons, and other items that can be worn or used in some way
 
 /obj/item/clothing/under/rank/navywarden
-	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for more robust protection. It has the word \"Warden\" written on the shoulders."
+	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for more robust protection. It has the word \"Chief Petty Officer\" written on the shoulders."
 	name = "warden's jumpsuit"
 	icon_state = "wardendnavyclothes"
 	item_state = "wardendnavyclothes"
@@ -255,7 +255,7 @@ Alien plants should do something if theres a lot of poison
 	flags = FPRINT | TABLEPASS
 
 /obj/item/clothing/under/rank/navysecurity
-	name = "security officer's jumpsuit"
+	name = "espatier's jumpsuit"
 	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for robust protection."
 	icon_state = "officerdnavyclothes"
 	item_state = "officerdnavyclothes"
@@ -264,8 +264,8 @@ Alien plants should do something if theres a lot of poison
 	flags = FPRINT | TABLEPASS
 
 /obj/item/clothing/under/rank/navyhead_of_security
-	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Head of Security\". It has additional armor to protect the wearer."
-	name = "head of security's jumpsuit"
+	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Commander\". It has additional armor to protect the wearer."
+	name = "Commander's jumpsuit"
 	icon_state = "hosdnavyclothes"
 	item_state = "hosdnavyclothes"
 	item_color = "hosdnavyclothes"
@@ -306,7 +306,7 @@ Alien plants should do something if theres a lot of poison
 	armor = list(melee = 50, bullet = 15, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/armor/navywardenvest
-	name = "Warden's jacket"
+	name = "Chief Petty Officer's jacket"
 	desc = "An armoured jacket with silver rank pips and livery."
 	icon_state = "wardendnavyjacket"
 	item_state = "armor"

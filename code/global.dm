@@ -81,11 +81,11 @@ var/blobevent = 0
 var/diary = null
 var/diaryofmeanpeople = null
 var/href_logfile = null
-var/station_name = "NSS Aurora"
+var/station_name = "NEV Unity MK2"
 var/game_version = "Baystation12"
 var/changelog_hash = ""
 var/game_year = (text2num(time2text(world.realtime, "YYYY")) + 442)
-var/forum_link = "http://aurorastation.org/forums/"
+var/forum_link = "http://forum.nevunity.space/index/"
 
 var/datum/air_tunnel/air_tunnel1/SS13_airtunnel = null
 var/going = 1.0

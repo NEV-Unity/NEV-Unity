@@ -87,7 +87,7 @@
 	channels = list("Science" = 1, "Command" = 1)
 
 /obj/item/device/encryptionkey/heads/hos
-	name = "Head of Security's Encryption Key"
+	name = "Commander's Encryption Key"
 	desc = "An encyption key for a radio headset.  Contains cypherkeys."
 	icon_state = "hos_cypherkey"
 	channels = list("Security" = 1, "Command" = 1)
@@ -105,7 +105,7 @@
 	channels = list("Medical" = 1, "Command" = 1)
 
 /obj/item/device/encryptionkey/heads/hop
-	name = "Head of Personnel's Encryption Key"
+	name = "Executive Officer's Encryption Key"
 	desc = "An encyption key for a radio headset.  Contains cypherkeys."
 	icon_state = "hop_cypherkey"
 	channels = list("Supply" = 1, "Command" = 1, "Security" = 0)

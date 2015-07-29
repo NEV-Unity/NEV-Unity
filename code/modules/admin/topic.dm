@@ -2529,7 +2529,7 @@
 						M.req_one_access = list(access_brig,access_engine)
 				message_admins("[key_name_admin(usr)] made all maint doors engineering and brig access-only.")
 			if("infinite_sec")
-				var/datum/job/J = job_master.GetJob("Security Officer")
+				var/datum/job/J = job_master.GetJob("Espatier")
 				if(!J) return
 				J.total_positions = -1
 				J.spawn_positions = -1

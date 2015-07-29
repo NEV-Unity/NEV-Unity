@@ -287,7 +287,7 @@ var/world_topic_spam_protect_time = world.timeofday
 	if (config && config.server_name)
 		s += "<b>[config.server_name]</b> &#8212; "
 
-	s += "<b>[station_name()] - Heavy Roleplay</b>";
+	s += "<b>[station_name()]</b>";
 	s += " ("
 	s += "<a href=\"[forum_link()]\">" //Change this to wherever you want the hub to link to.
 //	s += "[game_version]"

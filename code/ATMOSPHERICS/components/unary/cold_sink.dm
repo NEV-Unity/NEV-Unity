@@ -16,7 +16,7 @@
 	use_power = 0
 	idle_power_usage = 5			//5 Watts for thermostat related circuitry
 
-	var/max_power_rating = 20000 //power rating when the usage is turned up to 100
+	var/max_power_rating = 10000 //power rating when the usage is turned up to 100
 	var/power_setting = 100
 
 	var/set_temperature = T20C	//thermostat

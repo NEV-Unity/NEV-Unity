@@ -16,10 +16,10 @@
 */
 
 //Controls how much power is produced by each collector in range - this is the main parameter for tweaking SM balance, as it basically controls how the power variable relates to the rest of the game.
-#define POWER_FACTOR 1.0
+#define POWER_FACTOR 3.0 //bumping this up a bit until I can do some more serious diving into SM operation.
 #define DECAY_FACTOR 700             //Affects how fast the supermatter power decays
 #define CRITICAL_TEMPERATURE 800     //K
-#define CHARGING_FACTOR 0.05
+#define CHARGING_FACTOR 0.10
 #define DAMAGE_RATE_LIMIT 3                 //damage rate cap at power = 300, scales linearly with power
 
 
@@ -70,7 +70,7 @@
 
 	//Temporary values so that we can optimize this
 	//How much the bullets damage should be multiplied by when it is added to the internal variables
-	var/config_bullet_energy = 2
+	var/config_bullet_energy = 6
 	//How much of the power is left after processing is finished?
 //        var/config_power_reduction_per_tick = 0.5
 	//How much hallucination should it produce per unit of power?

@@ -2,7 +2,7 @@
 
 	hub = "Exadv1.spacestation13"
 	hub_password = "kMZy3U5jJHSiBQjr"
-	name = "NEV Unity MK2 - Heavy Roleplay - Custom Map"
+	name = "NEV Unity MK2"
 /* This is for any host that would like their server to appear on the main SS13 hub.
 To use it, simply replace the password above, with the password found below, and it should work.
 If not, let us know on the main tgstation IRC channel of irc.rizon.net #tgstation13 we can help you there.

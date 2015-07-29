@@ -216,8 +216,8 @@
 		new /obj/item/clothing/under/rank/captain(src)
 
 /obj/item/wardrobe/hop
-	name = "\improper Head of Personnel Wardrobe"
-	descriptor = "clothing and basic equipment for a Head of Personnel"
+	name = "\improper Executive Officer Wardrobe"
+	descriptor = "clothing and basic equipment for a Executive Officer"
 
 	New()
 		..()
@@ -364,8 +364,8 @@
 		new /obj/item/clothing/suit/storage/labcoat/chemist(src)
 
 /obj/item/wardrobe/hos
-	name = "\improper Head of Security Wardrobe"
-	descriptor = "clothing and basic equipment for a Head of Security"
+	name = "\improper Commander Wardrobe"
+	descriptor = "clothing and basic equipment for a Commander"
 
 	New()
 		..()
@@ -387,8 +387,8 @@
 		new /obj/item/clothing/under/rank/head_of_security(src)
 
 /obj/item/wardrobe/warden
-	name = "\improper Warden Wardrobe"
-	descriptor = "clothing and basic equipment for a Warden"
+	name = "\improper Chief Petty Officer Wardrobe"
+	descriptor = "clothing and basic equipment for a Chief Petty Officer"
 
 	New()
 		..()
@@ -412,8 +412,8 @@
 		new /obj/item/weapon/pepperspray(src)
 
 /obj/item/wardrobe/detective
-	name = "\improper Detective Wardrobe"
-	descriptor = "clothing and basic equipment for a Detective"
+	name = "\improper Marshal Wardrobe"
+	descriptor = "clothing and basic equipment for a Marshal"
 
 	New()
 		..()
@@ -436,8 +436,8 @@
 		new /obj/item/weapon/camera_film(src)
 
 /obj/item/wardrobe/officer
-	name = "\improper Security Officer Wardrobe"
-	descriptor = "clothing and basic equipment for a Security Officer"
+	name = "\improper Espatier Wardrobe"
+	descriptor = "clothing and basic equipment for a Espatier"
 
 	New()
 		..()
@@ -565,8 +565,8 @@
 		new /obj/item/clothing/gloves/fingerless/black(src)
 
 /obj/item/wardrobe/janitor
-	name = "\improper Janitor Wardrobe"
-	descriptor = "clothing and basic equipment for a Janitor"
+	name = "\improper Sanitation Engineer Wardrobe"
+	descriptor = "clothing and basic equipment for a Sanitation Engineer"
 
 	New()
 		..()

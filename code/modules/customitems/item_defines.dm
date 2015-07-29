@@ -414,7 +414,7 @@
 	var/emagged = 0
 	var/insults = 0
 	var/list/insultmsg = list("BOB'S A PERVERT!", "I HATE YOU ALL!", "ALL SECURITY TO SHOOT ME ON SIGHT!", "I HAVE A BOMB!", "CAPTAIN IS A COMDOM!", "FOR THE SYNDICATE!")
-	var/list/empmsg = list("Lusty Xenomorph Maid", "Tajara Nymphomaniac Se'xual Hea'Ling", "Uneth Hermaphrodite Tai'L S'ex", "Skrellian Pornstar Hen-Tai")
+	var/list/empmsg = list("Lusty Xenomorph Maid", "Tesau Nymphomaniac Se'xual Hea'Ling", "Uneth Hermaphrodite Tai'L S'ex", "Skrellian Pornstar Hen-Tai")
 	var/emped = 0
 
 	verb/synth()
@@ -1129,8 +1129,8 @@ BEGIN R I P HAZERI
 END R I P HAZERI
 */
 
-/obj/item/clothing/tie/fluff/kane_badge // Detective's Badge - Kane DeWitt - Joe Kane
-	name = "Detective's Badge"
+/obj/item/clothing/tie/fluff/kane_badge // Marshal's Badge - Kane DeWitt - Joe Kane
+	name = "Marshal's Badge"
 	desc = "A shiny brass detective's badge, backed by brown leather. Inscribed on the front is 'Kane DeWitt, DeWitt Detective Agency'."
 	icon = 'icons/obj/custom_items/kane_badge.dmi'
 	icon_state = "kane_badge"

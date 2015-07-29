@@ -48,7 +48,7 @@
 	//Set species_restricted list
 	switch(target_species)
 		if("Human", "Skrell")	//humanoid bodytypes
-			species_restricted = list("exclude","Unathi","Tajaran","Diona","Vox")
+			species_restricted = list("exclude","Unathi","Tesau","Diona","Vox")
 		else
 			species_restricted = list(target_species)
 
@@ -67,9 +67,9 @@
 	//Set species_restricted list
 	switch(target_species)
 		if("Skrell")
-			species_restricted = list("exclude","Unathi","Tajaran","Diona","Vox")
+			species_restricted = list("exclude","Unathi","Tesau","Diona","Vox")
 		if("Human")
-			species_restricted = list("exclude","Skrell","Unathi","Tajaran","Diona","Vox")
+			species_restricted = list("exclude","Skrell","Unathi","Tesau","Diona","Vox")
 		else
 			species_restricted = list(target_species)
 
@@ -190,7 +190,7 @@ BLIND     // can't see anything
 	body_parts_covered = HANDS
 	slot_flags = SLOT_GLOVES
 	attack_verb = list("challenged")
-	species_restricted = list("exclude","Unathi","Tajaran")
+	species_restricted = list("exclude","Unathi","Tesau")
 	sprite_sheets = list("Vox" = 'icons/mob/species/vox/gloves.dmi')
 
 /obj/item/clothing/gloves/examine()
@@ -232,7 +232,7 @@ BLIND     // can't see anything
 		desc = "[desc]<br>They have had the fingertips cut off of them."
 		if("exclude" in species_restricted)
 			species_restricted -= "Unathi"
-			species_restricted -= "Tajaran"
+			species_restricted -= "Tesau"
 		return
 
 //Head
@@ -278,7 +278,7 @@ BLIND     // can't see anything
 
 	permeability_coefficient = 0.50
 	slowdown = SHOES_SLOWDOWN
-	species_restricted = list("exclude","Unathi","Tajaran")
+	species_restricted = list("exclude","Unathi","Tesau")
 	sprite_sheets = list("Vox" = 'icons/mob/species/vox/shoes.dmi')
 	var/silent = 0
 

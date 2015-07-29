@@ -5,7 +5,7 @@
 /datum/game_mode/traitor/autotraitor
 	name = "AutoTraitor"
 	config_tag = "extend-a-traitormongous"
-	restricted_jobs = list("Cyborg", "Internal Affairs Agent", "Head of Security", "Captain") //To ensure the setting stay from /traitor
+	restricted_jobs = list("Cyborg", "Internal Affairs Agent", "Commander", "Captain") //To ensure the setting stay from /traitor
 
 	var/list/possible_traitors
 	var/num_players = 0

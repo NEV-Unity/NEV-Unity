@@ -42,11 +42,10 @@ var/global/datum/emergency_shuttle_controller/emergency_shuttle
 			set_launch_countdown(SHUTTLE_LEAVETIME)	//get ready to return
 
 			if (evac)
-				captain_announce("The Emergency Shuttle has docked with the station. You have approximately [round(estimate_launch_time()/60,1)] minutes to board the Emergency Shuttle.")
+				captain_announce("The Escape Pods are primed. You have [round(estimate_launch_time()/60,1)] minutes to unil evacuation.")
 				world << sound('sound/AI/shuttledock.ogg')
 			else
-				captain_announce("The scheduled Crew Transfer Shuttle has docked with the station. It will depart in approximately [round(emergency_shuttle.estimate_launch_time()/60,1)] minutes.")
-
+				captain_announce("The scheduled Crew Transfer is now commencing. The new shift will start in [round(emergency_shuttle.estimate_launch_time()/60,1)] minutes.")
 		//arm the escape pods
 		if (evac)
 			for (var/datum/shuttle/ferry/escape_pod/pod in escape_pods)
@@ -74,7 +73,7 @@ var/global/datum/emergency_shuttle_controller/emergency_shuttle
 	shuttle.move_time = SHUTTLE_TRANSIT_DURATION
 
 	evac = 1
-	captain_announce("An emergency evacuation shuttle has been called. It will arrive in approximately [round(estimate_arrival_time()/60)] minutes.")
+	captain_announce("An emergency evacuation has been called. The escape pods will be primed in approximately [round(estimate_arrival_time()/60)] minutes.")
 	world << sound('sound/AI/shuttlecalled.ogg')
 	for(var/area/A in world)
 		if(istype(A, /area/hallway))
@@ -92,7 +91,7 @@ var/global/datum/emergency_shuttle_controller/emergency_shuttle
 	//reset the shuttle transit time if we need to
 	shuttle.move_time = SHUTTLE_TRANSIT_DURATION
 
-	captain_announce("A crew transfer has been scheduled. The shuttle has been called. It will arrive in approximately [round(estimate_arrival_time()/60)] minutes.")
+	captain_announce("A crew transfer has been scheduled. The shift will end in approximately [round(estimate_arrival_time()/60)] minutes.")
 
 //recalls the shuttle
 /datum/emergency_shuttle_controller/proc/recall()
@@ -102,7 +101,7 @@ var/global/datum/emergency_shuttle_controller/emergency_shuttle
 	shuttle.cancel_launch(src)
 
 	if (evac)
-		captain_announce("The emergency shuttle has been recalled.")
+		captain_announce("The emergency evacuation has been cancelled.")
 		world << sound('sound/AI/shuttlerecalled.ogg')
 
 		for(var/area/A in world)
