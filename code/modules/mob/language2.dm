@@ -312,7 +312,7 @@ proc/populate_language_list()
 
 /datum/language/common
 	name = "Angelic"
-	desc = "A langu."
+	desc = "A language based on the human trade language English, with heavy influences from romance and germanic languages."
 	speech_verb = "says"
 	whisper_verb = "whispers"
 	key = "0"
