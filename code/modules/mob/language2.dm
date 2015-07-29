@@ -1,3 +1,21 @@
+/*
+Language  and radio Key quickref 
+1 - Zho			2 - Tradeband		3 - Gutter		4 - Sign
+5 - Xenomorph		6 - Pekhota Sign	7 - Weis'unathi		8 - Ara
+9 - Hindi		0 - Angelic		! - Emote		+ - Special radio channel
+a - Xeno Hivemind	b - binary		c - command		d - drone
+e - engineering		f - Uwe'unathi		g - ling		h - departent
+i - intercomm		j - Rewar		k - Skrelian		l - left ear/hand
+m - medical		n - science		o - Sitra'Unathi	p - Kida
+q - Rootspeak		r - right ear/hand	s - security		t - syndicate
+u - cargo		v - vox			w - whisper		x - borer
+y - Sini		z - Zawan		* - Emote
+
+Availible keys
+-=@#$%^&() - Need to double-check if they can work as keys.
+
+*/
+
 #define SCRAMBLE_CACHE_LEN 20
 
 var/global/list/language_datums = list()
@@ -148,24 +166,6 @@ proc/populate_language_list()
 	// if you make a loud noise (screams etc), you'll be heard from 4 tiles over instead of two
 	return (copytext(message, length(message)) == "!") ? 4 : 2
 
-/datum/language/unathi
-	name = "Sinta"
-	desc = "The common language of Moghes, composed of sibilant hisses and rattles. Spoken natively by Unathi."
-	speech_verb = "hisses"
-	ask_verb = "hisses"
-	exclaim_verb = "roars"
-	colour = "soghun"
-	key = "o"
-	cost = 4
-	syllables = list("ss","ss","ss","ss","skak","seeki","resh","las","esi","kor","sh")
-
-/datum/language/unathi/get_random_name()
-
-	var/new_name = ..()
-	while(findtextEx(new_name,"sss",1,null))
-		new_name = replacetext(new_name, "sss", "ss")
-	return capitalize(new_name)
-
 //Tesau Languages
 
 /datum/language/tesaunoble
@@ -197,25 +197,109 @@ proc/populate_language_list()
 	"hul","ket","jurl","muh","tul","cresh","uzu","rugh")
 
 /datum/language/tesausign
-	name = "Pekhota sign"
+	name = "pekhota sign"
 	desc = "A mixture of manual comunication and body language used by Pekhota tesau for ."
 	speech_verb = "signs"
 	signlang_verb = list("reports")
-	key = "5"
+	key = "6"
 	flags = SIGNLANG
 	cost = 4
 
+//Unathi Languages
+
+/datum/language/unathisinta
+	name = "Sinta'unathi"
+	desc = "A language composed of sililant hisses and rattles originating from the Sinta region of Moghes. Native to the Unathi."
+	speech_verb = "hisses"
+	ask_verb = "hisses"
+	exclaim_verb = "roars"
+	colour = "soghun"
+	key = "o"
+	syllables = list("ss","ss","ss","ss","skak","seeki","resh","las","esi","kor","sh")
+	cost = 4
+
+/datum/language/unathiue
+	name = "Uwe'unathi"
+	desc = "A language composed of sililant hisses and rattles originating from the Uwe region of Moghes. Native to the Unathi."
+	speech_verb = "hisses"
+	ask_verb = "hisses"
+	exclaim_verb = "roars"
+	colour = "soghun"
+	key = "f"
+	syllables = list("ss","ss","ss","ss","sauk","ssekri","rish","lash","si","kor","sah")
+	cost = 4
+
+/datum/language/unathweis
+	name = "Weis'unathi"
+	desc = "A language composed of sililant hisses and rattles originating from the Weisa region of Moghes. Native to the Unathi."
+	speech_verb = "hisses"
+	ask_verb = "hisses"
+	exclaim_verb = "roars"
+	colour = "soghun"
+	key = "7"
+	syllables = list("ss","ss","ss","ss","wausk","ssewri","rush","kash","ui","korwa","swe")
+	cost = 4
+
+//Skrell Languages
 
 /datum/language/skrell
 	name = "Skrellian"
-	desc = "A melodic and complex language spoken by the Skrell of Qerrbalak. Some of the notes are inaudible to humans."
+	desc = "A melodic and complex language spoken by the Skrell. Some of the notes are inaudible to humans."
 	speech_verb = "warbles"
 	ask_verb = "warbles"
 	exclaim_verb = "warbles"
 	colour = "skrell"
 	key = "k"
-	cost = 4
 	syllables = list("qr","qrr","xuq","qil","quum","xuqm","vol","xrim","zaoo","qu-uu","qix","qoo","zix","*","!")
+	cost = 4
+
+/datum/language/sini
+	name = "Sini"
+	desc = "A melodic and complex language spoken by the Kocasslani Skrell. Some of the notes are inaudible to humans."
+	speech_verb = "sings"
+	colour = "skrell"
+	key = "y"
+	syllables = list("ur","urr","xuu","uil","uuum","xuum","gol","xrim","gaoo","uu-uu","uix","uoo","zix","*","!")
+	cost = 4
+
+//Kida - We may get more of these if kida become more popular
+
+/datum/language/kida
+	name = "Kida"
+	desc = "A language made of clicks and sputters, native to the Kida"
+	speech_verb = "clicks"
+	colour = "vaurca"
+	key = "p"
+	flags = WHITELISTED
+	syllables = list("kic","klic","\'tic","kit","lit","xic","vil","xrit","tshh","qix","qlit","zix","\'","!")
+	cost = 4
+
+//Trade and common Languages
+
+/datum/language/trader
+	name = "Tradeband"
+	desc = "Maintained by the various trading cartels in major systems, this elegant, structured language is used for bartering and bargaining."
+	speech_verb = "enunciates"
+	colour = "say_quote"
+	key = "2"
+	space_chance = 100
+	syllables = list("lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit",
+					 "sed", "do", "eiusmod", "tempor", "incididunt", "ut", "labore", "et", "dolore",
+					 "magna", "aliqua", "ut", "enim", "ad", "minim", "veniam", "quis", "nostrud",
+					 "exercitation", "ullamco", "laboris", "nisi", "ut", "aliquip", "ex", "ea", "commodo",
+					 "consequat", "duis", "aute", "irure", "dolor", "in", "reprehenderit", "in",
+					 "voluptate", "velit", "esse", "cillum", "dolore", "eu", "fugiat", "nulla",
+					 "pariatur", "excepteur", "sint", "occaecat", "cupidatat", "non", "proident", "sunt",
+					 "in", "culpa", "qui", "officia", "deserunt", "mollit", "anim", "id", "est", "laborum")
+
+/datum/language/gutter
+	name = "Gutter"
+	desc = "Much like Ceti Basic, this crude pidgin tongue descended from numerous languages and serves as Tradeband for criminal elements."
+	speech_verb = "growls"
+	colour = "rough"
+	key = "3"
+	syllables = list ("gra","ba","ba","breh","bra","rah","dur","ra","ro","gro","go","ber","bar","geh","heh", "gra")
+
 
 /datum/language/sign
 	name = "Sign language"
@@ -226,24 +310,83 @@ proc/populate_language_list()
 	flags = SIGNLANG
 	cost = 2
 
-/datum/language/sini
-	name = "Sini"
-	desc = "Kocasslani traditional language"
-	speech_verb = "sings"
-	colour = "skrell"
-	key = "z"
+/datum/language/common
+	name = "Angelic"
+	desc = "A language based on the human trade language English, with heavy influences from romance and germanic languages."
+	speech_verb = "says"
+	whisper_verb = "whispers"
+	key = "0"
+	flags = RESTRICTED
+	syllables = list("blah","blah","blah","bleh","meh","neh","nah","wah")
+
+//TODO flag certain languages to use the mob-type specific say_quote and then get rid of these.
+/datum/language/common/get_spoken_verb(var/msg_end)
+	switch(msg_end)
+		if("!")
+			return pick("exclaims","shouts","yells") //TODO: make the basic proc handle lists of verbs.
+		if("?")
+			return ask_verb
+	return speech_verb
+
+
+//Human Native Languages
+
+/datum/language/zho
+	name = "Zho"
+	desc = "A melodic language based on Mandarin Chinese; Native to humanity."
+	speech_verb = "says"
+	whisper_verb = "whispers"
+	colour = "solcom"
+	key = "1"
 	cost = 4
-	syllables = list("qr","qrr","xuq","qil","quum","xuqm","vol","xrim","zaoo","qu-uu","qix","qoo","zix","*","!")
+	syllables = list("tao","shi","tzu","yi","com","be","is","i","op","vi","ed","lec","mo","cle","te","dis","e")
+
+/datum/language/zho/get_spoken_verb(var/msg_end)
+	switch(msg_end)
+		if("!")
+			return pick("exclaims","shouts","yells") //TODO: make the basic proc handle lists of verbs.
+		if("?")
+			return ask_verb
+	return speech_verb
+
+/datum/language/ara
+	name = "Ara"
+	desc = "A language based on Arabic; Native to humanity."
+	speech_verb = "says"
+	whisper_verb = "whispers"
+	colour = "solcom"
+	key = "8"
+	cost = 4
+	syllables = list("tao","shi","tzu","yi","com","be","is","i","op","vi","ed","lec","mo","cle","te","dis","e")
+
+/datum/language/ara/get_spoken_verb(var/msg_end)
+	switch(msg_end)
+		if("!")
+			return pick("exclaims","shouts","yells") //TODO: make the basic proc handle lists of verbs.
+		if("?")
+			return ask_verb
+	return speech_verb
+
+/datum/language/hindi
+	name = "Hindi"
+	desc = "A language based on traditional Hini; Native to humanity."
+	speech_verb = "says"
+	whisper_verb = "whispers"
+	colour = "solcom"
+	key = "9"
+	cost = 4
+	syllables = list("tao","shi","tzu","yi","com","be","is","i","op","vi","ed","lec","mo","cle","te","dis","e")
+
+/datum/language/hindi/get_spoken_verb(var/msg_end)
+	switch(msg_end)
+		if("!")
+			return pick("exclaims","shouts","yells") //TODO: make the basic proc handle lists of verbs.
+		if("?")
+			return ask_verb
+	return speech_verb
 
 
-/datum/language/vaurcese
-	name = "Vaurcese"
-	desc = "Vaurca native language made of clicks and sputters, \"It's a bugs life.\""
-	speech_verb = "clicks"
-	colour = "vaurca"
-	key = "p"
-	flags = WHITELISTED
-	syllables = list("kic","klic","\'tic","kit","lit","xic","vil","xrit","tshh","qix","qlit","zix","\'","!")
+//Vox - All vox speak vox-pidgin, nobody else can. They are speshul
 
 
 /datum/language/vox
@@ -261,6 +404,8 @@ proc/populate_language_list()
 /datum/language/vox/get_random_name()
 	return ..(FEMALE,1,6)
 
+//PLANTMENS - Nobody gets this but the plants. They are speshul
+
 /datum/language/diona
 	name = "Rootspeak"
 	desc = "A creaking, subvocal language spoken instinctively by the Dionaea. Due to the unique makeup of the average Diona, a phrase of Rootspeak can be a combination of anywhere from one to twelve individual voices and notes."
@@ -277,68 +422,7 @@ proc/populate_language_list()
 	new_name += " [pick(list("the Void","the Sky","Encroaching Night","Planetsong","Starsong","the Wandering Star","the Empty Day","Daybreak","Nightfall","the Rain"))]"
 	return new_name
 
-/datum/language/common
-	name = "Angelic"
-	desc = "The common galactic tongue, derived from a precurser language that is a mash of Germanic and Romance languages. Native to humanity."
-	speech_verb = "says"
-	whisper_verb = "whispers"
-	key = "0"
-	flags = RESTRICTED
-	syllables = list("blah","blah","blah","bleh","meh","neh","nah","wah")
-
-//TODO flag certain languages to use the mob-type specific say_quote and then get rid of these.
-/datum/language/common/get_spoken_verb(var/msg_end)
-	switch(msg_end)
-		if("!")
-			return pick("exclaims","shouts","yells") //TODO: make the basic proc handle lists of verbs.
-		if("?")
-			return ask_verb
-	return speech_verb
-
-/datum/language/human
-	name = "Zho"
-	desc = "A common tounge spoken in the Sol system, based off of a number of chinese dialects."
-	speech_verb = "says"
-	whisper_verb = "whispers"
-	colour = "solcom"
-	key = "1"
-	cost = 4
-	syllables = list("tao","shi","tzu","yi","com","be","is","i","op","vi","ed","lec","mo","cle","te","dis","e")
-
-/datum/language/human/get_spoken_verb(var/msg_end)
-	switch(msg_end)
-		if("!")
-			return pick("exclaims","shouts","yells") //TODO: make the basic proc handle lists of verbs.
-		if("?")
-			return ask_verb
-	return speech_verb
-
-// Galactic common languages (systemwide accepted standards).
-/datum/language/trader
-	name = "Tradeband"
-	desc = "Maintained by the various trading cartels in major systems, this elegant, structured language is used for bartering and bargaining."
-	speech_verb = "enunciates"
-	colour = "say_quote"
-	key = "2"
-	space_chance = 100
-	cost = 2
-	syllables = list("lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit",
-					 "sed", "do", "eiusmod", "tempor", "incididunt", "ut", "labore", "et", "dolore",
-					 "magna", "aliqua", "ut", "enim", "ad", "minim", "veniam", "quis", "nostrud",
-					 "exercitation", "ullamco", "laboris", "nisi", "ut", "aliquip", "ex", "ea", "commodo",
-					 "consequat", "duis", "aute", "irure", "dolor", "in", "reprehenderit", "in",
-					 "voluptate", "velit", "esse", "cillum", "dolore", "eu", "fugiat", "nulla",
-					 "pariatur", "excepteur", "sint", "occaecat", "cupidatat", "non", "proident", "sunt",
-					 "in", "culpa", "qui", "officia", "deserunt", "mollit", "anim", "id", "est", "laborum")
-
-/datum/language/gutter
-	name = "Gutter"
-	desc = "Much like Ceti Basic, this crude pidgin tongue descended from numerous languages and serves as Tradeband for criminal elements."
-	speech_verb = "growls"
-	colour = "rough"
-	key = "3"
-	cost = 2
-	syllables = list ("gra","ba","ba","breh","bra","rah","dur","ra","ro","gro","go","ber","bar","geh","heh", "gra")
+//Xenos and other restricted languages
 
 /datum/language/xenocommon
 	name = "Xenomorph"
@@ -347,7 +431,7 @@ proc/populate_language_list()
 	speech_verb = "hisses"
 	ask_verb = "hisses"
 	exclaim_verb = "hisses"
-	key = "6"
+	key = "5"
 	flags = RESTRICTED
 	syllables = list("sss","sSs","SSS")
 
