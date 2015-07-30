@@ -302,27 +302,29 @@ datum/preferences
 
 	if(total_cost < MAX_GEAR_COST)
 		dat += " <a href='byond://?src=\ref[user];preference=loadout;task=input'>\[add gear\]</a>"
-		if(gear && gear.len)
-			dat += " <a href='byond://?src=\ref[user];preference=loadout;task=remove'>\[remove gear\]</a>"
+//		if(gear && gear.len)
+//			dat += " <a href='byond://?src=\ref[user];preference=loadout;task=remove'>\[remove gear\]</a>"
 
-/* Language code WIP
+// Language code WIP
+	if(isnull(languages) || !islist(languages)) languages = list()
+
 	if(languages && languages.len)
 		dat += "<br>"
 		for(var/languages_name in languages)
-			if(languages_datums[languages_name])
-				var/datum/languages/L = languages_datums[languages_name]
+			if(language_datums[languages_name])
+				var/datum/languages/L = language_datums[languages_name]
 				total_cost += L.cost
-				dat += "[languages_name] <a href='byond://?src=\ref[user];preference=loadout;task=remove;languages=[languages_name]'>\[remove\]</a><br>"
+				dat += "[languages_name] <a href='byond://?src=\ref[user];preference=speech;task=remove;languages=[languages_name]'>\[remove\]</a><br>"
 
 		dat += "<b>Used:</b> [total_cost] points."
 	else
 		dat += "none."
 
-	if(total_cost < MAX_languages_COST)
-		dat += " <a href='byond://?src=\ref[user];preference=loadout;task=input'>\[add languages\]</a>"
-		if(languages && languages.len)
-			dat += " <a href='byond://?src=\ref[user];preference=loadout;task=remove'>\[remove languages\]</a>"
-*/
+	if(total_cost < MAX_GEAR_COST)
+		dat += " <a href='byond://?src=\ref[user];preference=speech;task=input'>\[add languages\]</a>"
+//		if(languages && languages.len)
+//			dat += " <a href='byond://?src=\ref[user];preference=speech;task=remove'>\[remove languages\]</a>"
+//
 
 	dat += "<br><br><b>Occupation Choices</b><br>"
 	dat += "\t<a href='?_src_=prefs;preference=job;task=menu'><b>Set Preferences</b></a><br>"
@@ -915,6 +917,7 @@ datum/preferences
 				else
 					user << "\red That item will exceed the maximum loadout cost of [MAX_GEAR_COST] points."
 
+
 		else if(href_list["task"] == "remove")
 			var/to_remove = href_list["gear"]
 			if(!to_remove) return
@@ -922,7 +925,50 @@ datum/preferences
 				if(gear_name == to_remove)
 					gear -= gear_name
 					break
+//
+	else if (href_list["preference"] == "speech")
 
+		if(href_list["task"] == "input")
+
+			var/list/valid_language_choices = list()
+
+			for(var/language_name in language_datums)
+				var/datum/language/L = language_datums[language_name]
+				if(L.whitelisted && !is_alien_whitelisted(user, L.whitelisted))
+					continue
+				valid_language_choices += language_name
+
+			var/choice = input(user, "Select language to add: ") as null|anything in valid_language_choices
+
+			if(choice && language_datums[choice])
+
+				var/total_cost = 0
+
+				if(isnull(languages) || !islist(languages)) language = list()
+
+				if(languages && languages.len)
+					for(var/language_name in language)
+						if(language_datums[language_name])
+							var/datum/language/L = language_datums[language_name]
+							total_cost += L.cost
+
+				var/datum/language/C = language_datums[choice]
+				total_cost += C.cost
+				if(C && total_cost <= MAX_GEAR_COST)
+					language += choice
+					user << "\blue Added [choice] for [C.cost] points ([MAX_GEAR_COST - total_cost] points remaining)."
+				else
+					user << "\red That item will exceed the maximum loadout cost of [MAX_GEAR_COST] points."
+
+
+		else if(href_list["task"] == "remove")
+			var/to_remove = href_list["language"]
+			if(!to_remove) return
+			for(var/language_name in language)
+				if(language_name == to_remove)
+					language -= language_name
+					break
+//
 	else if(href_list["preference"] == "flavor_text")
 		switch(href_list["task"])
 			if("open")

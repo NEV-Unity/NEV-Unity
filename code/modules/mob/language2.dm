@@ -1,3 +1,21 @@
+/*
+Language  and radio Key quickref
+1 - Zho			2 - Tradeband		3 - Gutter		4 - Sign
+5 - Xenomorph		6 - Pekhota Sign	7 - Weis'unathi		8 - Ara
+9 - Hindi		0 - Angelic		! - Emote		+ - Special radio channel
+a - Xeno Hivemind	b - binary		c - command		d - drone
+e - engineering		f - Uwe'unathi		g - ling		h - departent
+i - intercomm		j - Rewar		k - Skrelian		l - left ear/hand
+m - medical		n - science		o - Sitra'Unathi	p - Kida
+q - Rootspeak		r - right ear/hand	s - security		t - syndicate
+u - cargo		v - vox			w - whisper		x - borer
+y - Sini		z - Zawan		* - Emote
+
+Availible keys
+-=@#$%^&() - Need to double-check if they can work as keys.
+
+*/
+
 #define SCRAMBLE_CACHE_LEN 20
 
 var/global/list/language_datums = list()
@@ -148,24 +166,6 @@ proc/populate_language_list()
 	// if you make a loud noise (screams etc), you'll be heard from 4 tiles over instead of two
 	return (copytext(message, length(message)) == "!") ? 4 : 2
 
-/datum/language/unathi
-	name = "Sinta'unathi"
-	desc = "The common language of Moghes, composed of sibilant hisses and rattles. Spoken natively by Unathi."
-	speech_verb = "hisses"
-	ask_verb = "hisses"
-	exclaim_verb = "roars"
-	colour = "soghun"
-	key = "o"
-	flags = WHITELISTED
-	syllables = list("ss","ss","ss","ss","skak","seeki","resh","las","esi","kor","sh")
-
-/datum/language/unathi/get_random_name()
-
-	var/new_name = ..()
-	while(findtextEx(new_name,"sss",1,null))
-		new_name = replacetext(new_name, "sss", "ss")
-	return capitalize(new_name)
-
 //Tesau Languages
 
 /datum/language/tesaunoble
@@ -189,7 +189,7 @@ proc/populate_language_list()
 	ask_verb = "mrowls"
 	exclaim_verb = "yowls"
 	colour = "tajaran"
-	key = "l"
+	key = "z"
 	cost = 4
 	syllables = list("rr","rr","kir","ruj","kii","mir","kru","uhk","nul","vuh","khuz","jri","run","durr", \
 	"mi","jri","dynh","munq","rhe","zur","rrhuz","eech","thuu","dru","jurl","muh","sunu","dru","ii'r","zic", "tus", \
@@ -197,122 +197,85 @@ proc/populate_language_list()
 	"hul","ket","jurl","muh","tul","cresh","uzu","rugh")
 
 /datum/language/tesausign
-	name = "pekhota sign"
+	name = "Pekhota sign"
 	desc = "A mixture of manual comunication and body language used by Pekhota tesau for ."
 	speech_verb = "signs"
 	signlang_verb = list("reports")
-	key = "4"
+	key = "6"
 	flags = SIGNLANG
 	cost = 4
 
+//Unathi Languages
+
+/datum/language/unathisinta
+	name = "Sinta"
+	desc = "A language composed of sililant hisses and rattles originating from the Sinta region of Moghes. Native to the Unathi."
+	speech_verb = "hisses"
+	ask_verb = "hisses"
+	exclaim_verb = "roars"
+	colour = "soghun"
+	key = "o"
+	syllables = list("ss","ss","ss","ss","skak","seeki","resh","las","esi","kor","sh")
+	cost = 4
+
+/datum/language/unathiue
+	name = "Uwe"
+	desc = "A language composed of sililant hisses and rattles originating from the Uwe region of Moghes. Native to the Unathi."
+	speech_verb = "hisses"
+	ask_verb = "hisses"
+	exclaim_verb = "roars"
+	colour = "soghun"
+	key = "f"
+	syllables = list("ss","ss","ss","ss","sauk","ssekri","rish","lash","si","kor","sah")
+	cost = 4
+
+/datum/language/unathweis
+	name = "Weis"
+	desc = "A language composed of sililant hisses and rattles originating from the Weisa region of Moghes. Native to the Unathi."
+	speech_verb = "hisses"
+	ask_verb = "hisses"
+	exclaim_verb = "roars"
+	colour = "soghun"
+	key = "7"
+	syllables = list("ss","ss","ss","ss","wausk","ssewri","rush","kash","ui","korwa","swe")
+	cost = 4
+
+//Skrell Languages
 
 /datum/language/skrell
 	name = "Skrellian"
-	desc = "A melodic and complex language spoken by the Skrell of Qerrbalak. Some of the notes are inaudible to humans."
+	desc = "A melodic and complex language spoken by the Skrell. Some of the notes are inaudible to humans."
 	speech_verb = "warbles"
 	ask_verb = "warbles"
 	exclaim_verb = "warbles"
 	colour = "skrell"
 	key = "k"
-	flags = WHITELISTED
 	syllables = list("qr","qrr","xuq","qil","quum","xuqm","vol","xrim","zaoo","qu-uu","qix","qoo","zix","*","!")
-
-/datum/language/sign
-	name = "Sign language"
-	desc = "A mixture of manual communication and body-languaged, used to communication with those who have impaired hearing."
-	speech_verb = "signs"
-	signlang_verb = list("signs")
-	key = "4"
-	flags = SIGNLANG
+	cost = 4
 
 /datum/language/sini
 	name = "Sini"
-	desc = "Kocasslani traditional language"
+	desc = "A melodic and complex language spoken by the Kocasslani Skrell. Some of the notes are inaudible to humans."
 	speech_verb = "sings"
 	colour = "skrell"
-	key = "z"
-	flags = WHITELISTED
-	syllables = list("qr","qrr","xuq","qil","quum","xuqm","vol","xrim","zaoo","qu-uu","qix","qoo","zix","*","!")
+	key = "y"
+	syllables = list("ur","urr","xuu","uil","uuum","xuum","gol","xrim","gaoo","uu-uu","uix","uoo","zix","*","!")
+	cost = 4
 
+//Kida - We may get more of these if kida become more popular
 
-/datum/language/vaurcese
-	name = "Vaurcese"
-	desc = "Vaurca native language made of clicks and sputters, \"It's a bugs life.\""
+/datum/language/kida
+	name = "Kida"
+	desc = "A language made of clicks and sputters, native to the Kida"
 	speech_verb = "clicks"
 	colour = "vaurca"
 	key = "p"
 	flags = WHITELISTED
 	syllables = list("kic","klic","\'tic","kit","lit","xic","vil","xrit","tshh","qix","qlit","zix","\'","!")
+	cost = 4
 
+//Trade and common Languages
 
-/datum/language/vox
-	name = "Vox-pidgin"
-	desc = "The common tongue of the various Vox ships making up the Shoal. It sounds like chaotic shrieking to everyone else."
-	speech_verb = "shrieks"
-	ask_verb = "creels"
-	exclaim_verb = "SHRIEKS"
-	colour = "vox"
-	key = "v"
-	flags = WHITELISTED
-	syllables = list("ti","ti","ti","hi","hi","ki","ki","ki","ki","ya","ta","ha","ka","ya","chi","cha","kah", \
-	"SKRE","AHK","EHK","RAWK","KRA","AAA","EEE","KI","II","KRI","KA")
-
-/datum/language/vox/get_random_name()
-	return ..(FEMALE,1,6)
-
-/datum/language/diona
-	name = "Rootspeak"
-	desc = "A creaking, subvocal language spoken instinctively by the Dionaea. Due to the unique makeup of the average Diona, a phrase of Rootspeak can be a combination of anywhere from one to twelve individual voices and notes."
-	speech_verb = "creaks and rustles"
-	ask_verb = "creaks"
-	exclaim_verb = "rustles"
-	colour = "soghun"
-	key = "q"
-	flags = RESTRICTED
-	syllables = list("hs","zt","kr","st","sh")
-
-/datum/language/diona/get_random_name()
-	var/new_name = "[pick(list("To Sleep Beneath","Wind Over","Embrace of","Dreams of","Witnessing","To Walk Beneath","Approaching the"))]"
-	new_name += " [pick(list("the Void","the Sky","Encroaching Night","Planetsong","Starsong","the Wandering Star","the Empty Day","Daybreak","Nightfall","the Rain"))]"
-	return new_name
-
-/datum/language/common
-	name = "Ceti Basic"
-	desc = "The common galactic tongue."
-	speech_verb = "says"
-	whisper_verb = "whispers"
-	key = "0"
-	flags = RESTRICTED
-	syllables = list("blah","blah","blah","bleh","meh","neh","nah","wah")
-
-//TODO flag certain languages to use the mob-type specific say_quote and then get rid of these.
-/datum/language/common/get_spoken_verb(var/msg_end)
-	switch(msg_end)
-		if("!")
-			return pick("exclaims","shouts","yells") //TODO: make the basic proc handle lists of verbs.
-		if("?")
-			return ask_verb
-	return speech_verb
-
-/datum/language/human
-	name = "Sol Common"
-	desc = "A bastardized hybrid of informal English and elements of Mandarin Chinese; the common language of the Sol system."
-	speech_verb = "says"
-	whisper_verb = "whispers"
-	colour = "solcom"
-	key = "1"
-	flags = RESTRICTED
-	syllables = list("tao","shi","tzu","yi","com","be","is","i","op","vi","ed","lec","mo","cle","te","dis","e")
-
-/datum/language/human/get_spoken_verb(var/msg_end)
-	switch(msg_end)
-		if("!")
-			return pick("exclaims","shouts","yells") //TODO: make the basic proc handle lists of verbs.
-		if("?")
-			return ask_verb
-	return speech_verb
-
-// Galactic common languages (systemwide accepted standards).
 /datum/language/trader
 	name = "Tradeband"
 	desc = "Maintained by the various trading cartels in major systems, this elegant, structured language is used for bartering and bargaining."
@@ -336,6 +299,130 @@ proc/populate_language_list()
 	colour = "rough"
 	key = "3"
 	syllables = list ("gra","ba","ba","breh","bra","rah","dur","ra","ro","gro","go","ber","bar","geh","heh", "gra")
+
+
+/datum/language/sign
+	name = "Sign language"
+	desc = "A mixture of manual communication and body-languaged, used to communication with those who have impaired hearing."
+	speech_verb = "signs"
+	signlang_verb = list("signs")
+	key = "4"
+	flags = SIGNLANG
+	cost = 2
+
+/datum/language/common
+	name = "Angelic"
+	desc = "A language based on the human trade language English, with heavy influences from romance and germanic languages."
+	speech_verb = "says"
+	whisper_verb = "whispers"
+	key = "0"
+	flags = RESTRICTED
+	syllables = list("blah","blah","blah","bleh","meh","neh","nah","wah")
+
+//TODO flag certain languages to use the mob-type specific say_quote and then get rid of these.
+/datum/language/common/get_spoken_verb(var/msg_end)
+	switch(msg_end)
+		if("!")
+			return pick("exclaims","shouts","yells") //TODO: make the basic proc handle lists of verbs.
+		if("?")
+			return ask_verb
+	return speech_verb
+
+
+//Human Native Languages
+
+/datum/language/zho
+	name = "Zho"
+	desc = "A melodic language based on Mandarin Chinese; Native to humanity."
+	speech_verb = "says"
+	whisper_verb = "whispers"
+	colour = "solcom"
+	key = "1"
+	cost = 4
+	syllables = list("tao","shi","tzu","yi","com","be","is","i","op","vi","ed","lec","mo","cle","te","dis","e")
+
+/datum/language/zho/get_spoken_verb(var/msg_end)
+	switch(msg_end)
+		if("!")
+			return pick("exclaims","shouts","yells") //TODO: make the basic proc handle lists of verbs.
+		if("?")
+			return ask_verb
+	return speech_verb
+
+/datum/language/ara
+	name = "Ara"
+	desc = "A language based on Arabic; Native to humanity."
+	speech_verb = "says"
+	whisper_verb = "whispers"
+	colour = "solcom"
+	key = "8"
+	cost = 4
+	syllables = list("tao","shi","tzu","yi","com","be","is","i","op","vi","ed","lec","mo","cle","te","dis","e")
+
+/datum/language/ara/get_spoken_verb(var/msg_end)
+	switch(msg_end)
+		if("!")
+			return pick("exclaims","shouts","yells") //TODO: make the basic proc handle lists of verbs.
+		if("?")
+			return ask_verb
+	return speech_verb
+
+/datum/language/hindi
+	name = "Hindi"
+	desc = "A language based on traditional Hini; Native to humanity."
+	speech_verb = "says"
+	whisper_verb = "whispers"
+	colour = "solcom"
+	key = "9"
+	cost = 4
+	syllables = list("tao","shi","tzu","yi","com","be","is","i","op","vi","ed","lec","mo","cle","te","dis","e")
+
+/datum/language/hindi/get_spoken_verb(var/msg_end)
+	switch(msg_end)
+		if("!")
+			return pick("exclaims","shouts","yells") //TODO: make the basic proc handle lists of verbs.
+		if("?")
+			return ask_verb
+	return speech_verb
+
+
+//Vox - All vox speak vox-pidgin, nobody else can. They are speshul
+
+
+/datum/language/vox
+	name = "Vox-pidgin"
+	desc = "The common tongue of the various Vox ships making up the Shoal. It sounds like chaotic shrieking to everyone else."
+	speech_verb = "shrieks"
+	ask_verb = "creels"
+	exclaim_verb = "SHRIEKS"
+	colour = "vox"
+	key = "v"
+	flags = WHITELISTED
+	syllables = list("ti","ti","ti","hi","hi","ki","ki","ki","ki","ya","ta","ha","ka","ya","chi","cha","kah", \
+	"SKRE","AHK","EHK","RAWK","KRA","AAA","EEE","KI","II","KRI","KA")
+
+/datum/language/vox/get_random_name()
+	return ..(FEMALE,1,6)
+
+//PLANTMENS - Nobody gets this but the plants. They are speshul
+
+/datum/language/diona
+	name = "Rootspeak"
+	desc = "A creaking, subvocal language spoken instinctively by the Dionaea. Due to the unique makeup of the average Diona, a phrase of Rootspeak can be a combination of anywhere from one to twelve individual voices and notes."
+	speech_verb = "creaks and rustles"
+	ask_verb = "creaks"
+	exclaim_verb = "rustles"
+	colour = "soghun"
+	key = "q"
+	flags = RESTRICTED
+	syllables = list("hs","zt","kr","st","sh")
+
+/datum/language/diona/get_random_name()
+	var/new_name = "[pick(list("To Sleep Beneath","Wind Over","Embrace of","Dreams of","Witnessing","To Walk Beneath","Approaching the"))]"
+	new_name += " [pick(list("the Void","the Sky","Encroaching Night","Planetsong","Starsong","the Wandering Star","the Empty Day","Daybreak","Nightfall","the Rain"))]"
+	return new_name
+
+//Xenos and other restricted languages
 
 /datum/language/xenocommon
 	name = "Xenomorph"
