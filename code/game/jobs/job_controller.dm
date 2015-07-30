@@ -443,7 +443,7 @@ var/global/datum/controller/occupations/job_master
 
 			switch(rank)
 				if("Cyborg")
-					H.Robotize()
+//					H.Robotize()
 					return 1
 				if("AI","Clown")	//don't need bag preference stuff!
 				else

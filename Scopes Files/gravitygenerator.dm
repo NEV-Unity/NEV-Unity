@@ -490,7 +490,6 @@ var/list/gravity_field_generators = list() // We will keep track of this by addi
 		/area/vox_station,
 		/area/prison,
 		/area/mine,
-		/area/research_outpost,
 		/area/derelict,
 		/area/djstation,
 		/area/tcommsat,

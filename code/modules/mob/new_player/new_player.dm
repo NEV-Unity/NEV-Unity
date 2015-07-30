@@ -41,7 +41,6 @@
 		//Station Directives
 		if(config.invasive_directives)
 			output += "<p><a href='byond://?src=\ref[src];showdirectives=1'>Station Directives</a></p>"
-l
 		if(!IsGuestKey(src.key))
 			establish_db_connection()
 
@@ -346,8 +345,10 @@ l
 
 		else
 			if(character.mind.assigned_role == "Cyborg")
+				data_core.manifest_inject(character)
 				character.Robotize()
 			else
+				data_core.manifest_inject(character)
 				character.AIize()
 				for(var/mob/M in player_list)
 					if(!istype(M,/mob/new_player))
@@ -418,8 +419,8 @@ l
 		if(chosen_language)
 			if(is_alien_whitelisted(src, client.prefs.language) || !config.usealienwhitelist || !(chosen_language.flags & WHITELISTED) || (new_character.species && (chosen_language.name in new_character.species.secondary_langs)))
 				new_character.add_language("[client.prefs.language]")
-//		for(var/datum/language/L in client.prefs.languages)
-//			new_character.add_language(L)//LANGUAGE CODE, UNCOMMENT LATER
+		for(var/L in client.prefs.languages)
+			new_character.add_language("[L]")//LANGUAGE CODE, UNCOMMENT LATER
 		if(ticker.random_players)
 			new_character.gender = pick(MALE, FEMALE)
 			client.prefs.real_name = random_name(new_character.gender)

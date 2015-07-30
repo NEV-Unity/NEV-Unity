@@ -1,5 +1,5 @@
 /*
-Language  and radio Key quickref 
+Language  and radio Key quickref
 1 - Zho			2 - Tradeband		3 - Gutter		4 - Sign
 5 - Xenomorph		6 - Pekhota Sign	7 - Weis'unathi		8 - Ara
 9 - Hindi		0 - Angelic		! - Emote		+ - Special radio channel
@@ -197,7 +197,7 @@ proc/populate_language_list()
 	"hul","ket","jurl","muh","tul","cresh","uzu","rugh")
 
 /datum/language/tesausign
-	name = "pekhota sign"
+	name = "Pekhota sign"
 	desc = "A mixture of manual comunication and body language used by Pekhota tesau for ."
 	speech_verb = "signs"
 	signlang_verb = list("reports")
@@ -208,7 +208,7 @@ proc/populate_language_list()
 //Unathi Languages
 
 /datum/language/unathisinta
-	name = "Sinta'unathi"
+	name = "Sinta"
 	desc = "A language composed of sililant hisses and rattles originating from the Sinta region of Moghes. Native to the Unathi."
 	speech_verb = "hisses"
 	ask_verb = "hisses"
@@ -219,7 +219,7 @@ proc/populate_language_list()
 	cost = 4
 
 /datum/language/unathiue
-	name = "Uwe'unathi"
+	name = "Uwe"
 	desc = "A language composed of sililant hisses and rattles originating from the Uwe region of Moghes. Native to the Unathi."
 	speech_verb = "hisses"
 	ask_verb = "hisses"
@@ -230,7 +230,7 @@ proc/populate_language_list()
 	cost = 4
 
 /datum/language/unathweis
-	name = "Weis'unathi"
+	name = "Weis"
 	desc = "A language composed of sililant hisses and rattles originating from the Weisa region of Moghes. Native to the Unathi."
 	speech_verb = "hisses"
 	ask_verb = "hisses"
