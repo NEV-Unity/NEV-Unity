@@ -3225,16 +3225,17 @@ datum
 			reagent_state = LIQUID
 			nutriment_factor = 0 //So alcohol can fill you up! If they want to.
 			color = "#404030" // rgb: 64, 64, 48
+			overdose = 60
 			var/boozepwr = 5 //higher numbers mean the booze will have an effect faster.
 			var/dizzy_adj = 3
 			var/adj_drowsy = 0
 			var/adj_sleepy = 0
 			var/slurr_adj = 3
 			var/confused_adj = 2
-			var/slur_start = 90			//amount absorbed after which mob starts slurring
-			var/confused_start = 150	//amount absorbed after which mob starts confusing directions
-			var/blur_start = 300	//amount absorbed after which mob starts getting blurred vision
-			var/pass_out = 400	//amount absorbed after which mob starts passing out
+			var/slur_start = 180			//amount absorbed after which mob starts slurring
+			var/confused_start = 300	//amount absorbed after which mob starts confusing directions
+			var/blur_start = 600	//amount absorbed after which mob starts getting blurred vision
+			var/pass_out = 800	//amount absorbed after which mob starts passing out
 
 			reaction_mob(var/mob/living/M, var/method=TOUCH, var/volume, var/alien)//Splashing people with welding fuel to make them easy to ignite!
 				if(!istype(M, /mob/living))
@@ -3266,15 +3267,19 @@ datum
 				if(d >= slur_start && d < pass_out)
 					if (!M:slurring) M:slurring = 1
 					M:slurring += slurr_adj
+					if(prob(1)) M << "\blue You feel warm"
 				if(d >= confused_start && prob(33))
 					if (!M:confused) M:confused = 1
 					M.confused = max(M:confused+confused_adj,0)
+					if(prob(1)) M << "\blue You feel tipsy!"
 				if(d >= blur_start)
 					M.eye_blurry = max(M.eye_blurry, 10)
 					M:drowsyness  = max(M:drowsyness, 0)
+					if(prob(1)) M << "\blue You feel sleepy..."
 				if(d >= pass_out)
 					M:paralysis = max(M:paralysis, 20)
 					M:drowsyness  = max(M:drowsyness, 30)
+					if(prob(1)) M << "\red You feel nauseous!"
 					if(ishuman(M))
 						var/mob/living/carbon/human/H = M
 						var/datum/organ/internal/liver/L = H.internal_organs_by_name["liver"]
