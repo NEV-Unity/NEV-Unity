@@ -1,0 +1,82 @@
+"aa" = (/turf/space,/area/space)
+"ab" = (/obj/effect/landmark/corpse/engineer/rig,/turf/space,/area/space)
+"ac" = (/obj/item/weapon/shard,/turf/space,/area/space)
+"ad" = (/obj/item/stack/rods,/turf/space,/area/space)
+"ae" = (/turf/simulated/wall,/area/space)
+"af" = (/obj/structure/shuttle/engine/propulsion/burst{dir = 4},/turf/simulated/floor/plating/airless,/area/space)
+"ag" = (/obj/effect/alien/resin,/turf/space,/area/space)
+"ah" = (/obj/structure/shuttle/engine/heater{dir = 8},/turf/simulated/floor/plating/airless,/area/space)
+"ai" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area/space)
+"aj" = (/turf/simulated/floor/plating/airless,/area/space)
+"ak" = (/obj/effect/landmark/corpse/doctor,/obj/item/weapon/gun/projectile/pistol,/turf/simulated/floor/plating/airless,/area/space)
+"al" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating/airless,/area/space)
+"am" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/plating/airless,/area/space)
+"an" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area/space)
+"ao" = (/turf/space,/area)
+"ap" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area/space)
+"aq" = (/obj/effect/landmark/corpse/scientist,/obj/item/weapon/gun/energy/gun/pistol,/turf/simulated/floor{icon_state = "white"},/area/space)
+"ar" = (/turf/simulated/floor{icon_state = "white"},/area/space)
+"as" = (/obj/item/weapon/shard,/turf/simulated/floor/plating/airless{broken = 1},/area/space)
+"at" = (/obj/item/stack/sheet/metal,/turf/simulated/floor/plating/airless{broken = 1},/area/space)
+"au" = (/obj/item/weapon/shard,/obj/item/stack/rods,/turf/simulated/floor/plating/airless{broken = 1},/area/space)
+"av" = (/obj/effect/decal/cleanable/blood,/turf/simulated/floor/plating/airless,/area/space)
+"aw" = (/obj/structure/table,/turf/simulated/floor{icon_state = "white"},/area/space)
+"ax" = (/obj/effect/decal/cleanable/ash,/obj/effect/alien/acid,/turf/simulated/floor{icon_state = "white"},/area/space)
+"ay" = (/obj/effect/alien/weeds,/turf/simulated/floor/airless,/area/space)
+"az" = (/obj/effect/decal/cleanable/blood/xeno,/obj/effect/alien/weeds,/turf/simulated/floor/airless,/area/space)
+"aA" = (/obj/effect/alien/weeds/node,/turf/simulated/floor/airless,/area/space)
+"aB" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"aC" = (/turf/simulated/wall,/area)
+"aD" = (/obj/effect/alien/resin,/turf/simulated/floor/airless,/area/space)
+"aE" = (/turf/simulated/floor/airless,/area/space)
+"aF" = (/obj/item/apc_frame,/turf/simulated/floor/airless,/area)
+"aG" = (/obj/structure/table,/obj/item/weapon/gun/energy/gun/pistol,/turf/simulated/floor/airless,/area)
+"aH" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
+"aI" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/airless,/area/space)
+"aJ" = (/obj/effect/alien/acid,/obj/effect/landmark/corpse/commander,/obj/item/weapon/gun/energy/laser,/turf/simulated/floor{icon_state = "white"},/area/space)
+"aK" = (/obj/machinery/deployable/barrier,/turf/simulated/floor/airless,/area/space)
+"aL" = (/obj/effect/landmark/corpse/bridgeofficer,/obj/structure/stool/bed/chair/office/dark{dir = 4},/turf/simulated/floor/airless,/area)
+"aM" = (/obj/structure/computerframe,/turf/simulated/floor/airless,/area)
+"aN" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
+"aO" = (/obj/effect/alien/acid,/turf/simulated/floor{icon_state = "white"},/area/space)
+"aP" = (/obj/effect/decal/cleanable/blood/oil,/turf/simulated/floor{icon_state = "white"},/area/space)
+"aQ" = (/obj/effect/decal/cleanable/blood/oil,/turf/simulated/floor/airless,/area/space)
+"aR" = (/obj/structure/stool/bed/chair/office/dark{dir = 4},/turf/simulated/floor/airless,/area)
+"aS" = (/turf/simulated/floor/airless,/area)
+"aT" = (/obj/structure/table,/turf/simulated/floor/airless,/area)
+"aU" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
+"aV" = (/obj/machinery/sleeper,/turf/simulated/floor,/area/space)
+"aW" = (/obj/machinery/sleep_console,/turf/simulated/floor,/area/space)
+"aX" = (/turf/simulated/floor{dir = 8; icon_state = "whitegreen"},/area/space)
+"aY" = (/obj/effect/decal/cleanable/blood/xeno,/turf/simulated/floor/airless,/area/space)
+"aZ" = (/obj/item/weapon/shard,/turf/simulated/floor/airless,/area/space)
+"ba" = (/obj/machinery/bodyscanner,/turf/simulated/floor,/area/space)
+"bb" = (/obj/machinery/body_scanconsole{density = 0},/turf/simulated/floor,/area/space)
+"bc" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/plating/airless,/area/space)
+"bd" = (/obj/structure/grille,/turf/simulated/floor/plating/airless,/area/space)
+"be" = (/obj/effect/alien/weeds,/turf/simulated/floor/plating/airless,/area/space)
+"bf" = (/obj/effect/alien/acid,/obj/effect/alien/weeds,/turf/simulated/floor/plating/airless,/area/space)
+"bg" = (/obj/effect/alien/weeds,/turf/space,/area/space)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaacadaaaaaaaaaaaaaaaaaa
+aeaeaaaaaaaaaaaaaaaaaaaaaaaaadaaaaaaaaaa
+afaeaeaeaeaeagagagagagadaaaaadaaaaacaaaa
+afahaiajakaealamamanaeaaaaadacaaaaaoaoao
+afahapajajaeaqarararaeasasatauaeaaaoaoao
+afaeaeavajaeawawaxaraeayazayaAaeaeaBaCaC
+aeaeajajajaeararararaeaDayazayaeaEaFaGaH
+aaaeajajajaIaJawararaKaDaDayayaIaEaLaMaN
+aaaeajajajaIaOawaraPaEaQaEaEaEaIaEaRaMaN
+aeaeavajajaeararararaeaEaEaEaEaeaEaSaTaU
+afaeaeajavaeaVaWaXaraeaEaYaZaYaeaeaCaCaC
+afahaiajajaebabbaXaraealbcbdanaeaaaoaoao
+afahapbebeaealamamanaeaaacaaaaaaaaaoaoao
+afaeaebfaeaeagagagagagaaaaaaaaaaaaaaaaaa
+aeaebgbgbgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

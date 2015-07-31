@@ -1,0 +1,28 @@
+"a" = (/turf/unsimulated/floor/grass,/area/awaymission/habit)
+"b" = (/turf/unsimulated/beach/water,/area/awaymission/habit)
+"c" = (/obj/structure/flora/ausbushes/reedbush,/turf/unsimulated/floor/grass,/area/awaymission/habit)
+"d" = (/obj/structure/flora/ausbushes/stalkybush,/turf/unsimulated/floor/grass,/area/awaymission/habit)
+"e" = (/obj/structure/flora/ausbushes/sparsegrass,/turf/unsimulated/floor/grass,/area/awaymission/habit)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaa
+aaabccaaaaaaaaaaaaaa
+adbbbbcaaaaaeaaaaaaa
+adbbbbcaeaeeeaaaaaaa
+abbbbbaaeeeaaaabaaaa
+abbbbbcaaeeeaaabdaaa
+abbbbbbcaaeeaaabdaaa
+abbbbbbcaaaeaaabaaaa
+abbbbbbaaaeaaadbaaaa
+abbbbbbaaeaaadbbaaaa
+abbbbbbaaeaaaabbaaaa
+abbbbbbaeeaaabbbaaaa
+adbbbbcaeaaadbbbaaaa
+adbbcbaaeaaadbbdaaaa
+adbbcbaeeeaadbbdaaaa
+aaabbbaeaeaaabbdaaaa
+aaabbbaaaaaaabbaaaaa
+aaaacaaaaaeaabdaaaaa
+aaaaaaaaaeeeaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+"}

@@ -1,0 +1,40 @@
+"a" = (/turf/unsimulated/floor/grass,/area/awaymission/habit)
+"b" = (/turf/simulated/mineral/random/high_chance,/area/awaymission/habit)
+"c" = (/turf/simulated/floor/plating/airless/asteroid,/area/awaymission/habit)
+"d" = (/turf/simulated/wall/mineral/sandstone,/area/awaymission/habit)
+"e" = (/obj/structure/cult/pylon,/turf/unsimulated/floor{tag = "icon-carpetside (NORTHWEST)"; icon_state = "carpetside"; dir = 9},/area/awaymission/habit)
+"f" = (/turf/unsimulated/floor{tag = "icon-carpet14-10"; icon_state = "carpet14-10"},/area/awaymission/habit)
+"g" = (/obj/item/clothing/suit/magusred,/obj/item/clothing/head/wizard/magus,/obj/item/weapon/staff,/obj/structure/table/woodentable,/turf/unsimulated/floor{tag = "icon-carpet14-10"; icon_state = "carpet14-10"},/area/awaymission/habit)
+"h" = (/obj/structure/cult/pylon,/turf/unsimulated/floor{tag = "icon-carpetside (NORTHEAST)"; icon_state = "carpetside"; dir = 5},/area/awaymission/habit)
+"i" = (/turf/unsimulated/floor{tag = "icon-carpet5-1"; icon_state = "carpet5-1"},/area/awaymission/habit)
+"j" = (/turf/unsimulated/floor{tag = "icon-carpet13-5"; icon_state = "carpet13-5"},/area/awaymission/habit)
+"k" = (/turf/unsimulated/floor{tag = "icon-carpet9-4"; icon_state = "carpet9-4"},/area/awaymission/habit)
+"l" = (/obj/structure/mineral_door/sandstone,/turf/simulated/floor/plating/airless/asteroid,/area/awaymission/habit)
+"m" = (/obj/structure/mineral_door/sandstone,/turf/unsimulated/floor{tag = "icon-carpet2-0"; icon_state = "carpet2-0"},/area/awaymission/habit)
+"n" = (/turf/simulated/floor/engine,/area/awaymission/habit)
+"o" = (/turf/unsimulated/floor{tag = "icon-carpet3-0"; icon_state = "carpet3-0"},/area/awaymission/habit)
+"p" = (/obj/machinery/artifact,/turf/simulated/floor/engine,/area/awaymission/habit)
+"q" = (/obj/structure/mineral_door/sandstone,/turf/unsimulated/floor{tag = "icon-carpet1-0"; icon_state = "carpet1-0"},/area/awaymission/habit)
+
+(1,1,1) = {"
+abbabbbbbbaaaabbbaaa
+abbbbbbbbbbbbbbbbbbb
+bbbbbccccccccccccbbb
+bbbccccccccccccccbbb
+abcccdddddddddddccbb
+abcccdefffgfffhdccbb
+abcccdijjjjjjjkdcbbb
+bbcccddlddmddlddcbbb
+bbcccdnnndodnnndcbaa
+bbcccdnnndodnnndcbaa
+bbcccdnpndodnpndcbba
+bbcccdnnndodnnndcbba
+bbcccdddddqdddddcbbb
+bbcccccccccccccccbbb
+bbbbbcccccccccccccbb
+abbbbcccccccccccccbb
+abbbbbbcccccccbbbbba
+bbbbbbbaaaaaaaabbbba
+aabbbaaaaaaaaaaaaaba
+aaaaaaaaaaaaaaaaaaaa
+"}

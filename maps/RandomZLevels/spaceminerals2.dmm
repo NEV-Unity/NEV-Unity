@@ -1,0 +1,25 @@
+"a" = (/turf/space,/area)
+"b" = (/turf/simulated/mineral/random/high_chance,/area)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaa
+aaabbaaaaaaabbbaaaaa
+aaabbbaaaaaabbbaaaaa
+aaabbbaaaaaabbbaaaaa
+aabbbbaaaaaabbbaaaaa
+aabbbbaaaaabbbbaaaaa
+aabbbbaaaabbbbbaaaaa
+aabbbbbaaabbbbbaaaaa
+aabbbbaaaabbbbbbbaaa
+aabbbbaaaabbbbbbbaaa
+aabbbbaaaabbbbbbbaaa
+aabbbbaaaabbbbbbbaaa
+aabbbbbaaabbbbbbbaaa
+aabbbbbaaaaabbbbbaaa
+aaaabbbaaaaabbbbbaaa
+aaaabbbaaaaabbbbbaaa
+aaaabbbaaaaabbbbbaaa
+aaaabbbaaaaabbbbbaaa
+aaaaaaaabbbabbbbbaaa
+aaaaaaaabbbabbbbbaaa
+"}

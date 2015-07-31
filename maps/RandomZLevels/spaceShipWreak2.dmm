@@ -1,0 +1,63 @@
+"a" = (/turf/space,/area)
+"b" = (/obj/item/stack/rods,/turf/space,/area)
+"c" = (/obj/effect/decal/cleanable/blood,/turf/space,/area)
+"d" = (/obj/item/weapon/shard,/turf/space,/area)
+"e" = (/obj/item/weapon/shard,/obj/effect/decal/cleanable/blood,/turf/space,/area)
+"f" = (/obj/structure/lattice,/turf/space,/area)
+"g" = (/turf/simulated/wall,/area)
+"h" = (/obj/item/weapon/shard,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"i" = (/obj/item/stack/sheet/metal,/turf/space,/area)
+"j" = (/obj/item/weapon/shard,/obj/item/stack/rods,/turf/space,/area)
+"k" = (/obj/item/stack/sheet/metal,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"l" = (/obj/item/weapon/shard,/obj/item/stack/rods,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"m" = (/obj/effect/decal/cleanable/blood,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"n" = (/obj/item/weapon/cable_coil{amount = 2},/obj/effect/decal/cleanable/blood,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"o" = (/obj/item/weapon/stock_parts/console_screen,/turf/space,/area)
+"p" = (/obj/structure/girder,/turf/simulated/floor/plating/airless,/area)
+"q" = (/obj/item/weapon/cable_coil{amount = 2},/obj/effect/decal/cleanable/blood,/turf/space,/area)
+"r" = (/turf/simulated/floor/plating/airless{broken = 1},/area)
+"s" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"t" = (/obj/structure/shuttle/engine/propulsion/burst{dir = 4},/turf/simulated/floor/plating/airless,/area)
+"u" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/airless,/area)
+"v" = (/obj/structure/girder,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"w" = (/obj/item/apc_frame,/turf/simulated/floor/airless,/area)
+"x" = (/obj/structure/table,/turf/simulated/floor/airless,/area)
+"y" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
+"z" = (/obj/structure/shuttle/engine/heater{dir = 8},/turf/simulated/floor/plating/airless,/area)
+"A" = (/turf/simulated/floor/airless,/area)
+"B" = (/obj/effect/decal/cleanable/blood,/turf/simulated/floor/airless,/area)
+"C" = (/obj/effect/landmark/corpse/bridgeofficer,/obj/structure/stool/bed/chair/office/dark{dir = 4},/turf/simulated/floor/airless,/area)
+"D" = (/obj/structure/computerframe,/turf/simulated/floor/airless,/area)
+"E" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
+"F" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
+"G" = (/obj/machinery/light/small,/turf/simulated/floor/airless,/area)
+"H" = (/obj/structure/stool/bed/chair/office/dark{dir = 4},/turf/simulated/floor/airless,/area)
+"I" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating/airless,/area)
+"J" = (/turf/simulated/floor/plating/airless,/area)
+"K" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/plating/airless,/area)
+"L" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating/airless,/area)
+"M" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/plating/airless,/area)
+"N" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaabbaaaaaaaaaa
+aabaaaaaaaaaacaabaaa
+aaaaaaaaaaaaacaaaaba
+adaaaadaaaadcaaaaaaa
+daaaaaddadabdaaaadaa
+aadadcbaaaaaddaaddaa
+aaaacabbbbaaaadabaaa
+adbbeddbabddbdddbaaa
+adabfdaadbbaababaaaa
+aghhffafdijfddklgaaa
+agmnofplfffplqodgaaa
+ggmmrrprfffprramgsgg
+tggpugggpfgggvuggwxy
+tzyAAAAABAAAAAAAuCDE
+tzFGBABBGAAAAGAAuHDE
+tgggIggggIggggIggAxF
+ggJKJJgJKJJgJKJJgggg
+agJJJJgJJJJgJJJJgaaa
+agLMMNgLMMNgLMMNgaaa
+"}

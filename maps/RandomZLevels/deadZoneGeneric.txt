@@ -1,0 +1,2 @@
+maps/RandomZLevels/deadZoneGeneric.dmm
+maps/RandomZlevels/deadworldprobecrash.dmm

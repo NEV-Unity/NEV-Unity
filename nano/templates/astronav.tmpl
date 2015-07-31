@@ -1,0 +1,66 @@
+<!-- 
+Title: Astronavigation UI 
+Used In File(s): \code\modules\navigation\navconsoles.dm
+
+NOTICE: BROKEN - NEED TO DIAGNOSE ISSUE SECTION BY SECTION
+
+ -->
+
+<h3>Detected Systems:</h3>
+<div class="item">
+	<div class="itemContent">
+		{{:helper.link(data.systemname1, 'gear', {'setarget1': 1})}}
+		{{:helper.link(data.systemname2, 'gear', {'setarget2': 1})}}
+		{{if data.cursystem}}
+      {{:helper.link(data.cursystem, 'gear', {'setargetcur': 1})}}
+    {{/if}}
+	</div>
+</div>
+<h3>Target System:</h3>
+<div class="item">
+  <div class="itemContent">
+    {{if data.systemname}}
+      System name: {{:data.systemname}} <br>
+      Star Type:   
+      {{if data.systembinary}}
+        Binary 
+      {{else}}
+    
+      {{/if}}
+      {{:data.systemtype}} <br>
+      Star luminosity : {{:data.systemlum}} <br>
+      {{if data.systembinary}}
+      Binary star luminosity : {{:data.systembinary}}
+      {{else}}
+      {{/if}}
+    {{else}}
+        Select a target to scan!
+    {{/if}}
+  </div>
+  <div class="item">
+	<div class="itemContentWide" style="width: 100%;">
+    {{for data.planets}}
+      {{:helper.link(data.planet_name,'gear',{'setplanet': data.planet_name})}}
+    {{/for}}
+	</div>
+</div>
+<h3>Target Site:</h3>
+<div class="item">
+  <div class="itemContent">
+    {{if data.aplanet}}
+      Planet name: {{:data.aplanet}} <br>
+      Orbit: {{:data.p_orb}}<br>
+      Surface temp: {{:data.p_temp}}°K<br>
+      Size: {{:data.p_size}} <br>
+      Radiation Level: {{:data.p_rads}} <br><br>
+      Features: <br>
+      {{for data.zones}}
+        {{:data.feature}} <br>
+      {{/for}}
+    {{/if}}
+
+  
+  <div class=itemContent">
+    {{:helper.link('Clear scans', 'gear' ,{ 'clear': 1})}}
+  </div>
+</div>

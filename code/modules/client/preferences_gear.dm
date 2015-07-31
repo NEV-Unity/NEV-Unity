@@ -310,6 +310,11 @@ proc/populate_gear_list()
 	path = /obj/item/clothing/gloves/green
 	cost = 2
 
+/datum/gear/white_gloves
+	display_name = "white gloves"
+	path = /obj/item/clothing/gloves/white
+	cost = 2
+
 /datum/gear/normal_beret
 	display_name = "beret"
 	path = /obj/item/clothing/head/beret
@@ -340,11 +345,6 @@ proc/populate_gear_list()
 /datum/gear/cigar_case
 	display_name = "cigar case"
 	path = /obj/item/weapon/storage/fancy/cigars
-	cost = 3
-
-/datum/gear/white_gloves
-	display_name = "white gloves"
-	path = /obj/item/clothing/gloves/white
 	cost = 3
 
 /datum/gear/armpit
@@ -457,8 +457,18 @@ proc/populate_gear_list()
 //REALLY GOOD department gear
 
 /datum/gear/yellow_gloves
-	display_name = "yellow gloves"
+	display_name = "insulated gloves"
 	path = /obj/item/clothing/gloves/yellow
+	cost = 5
+
+/datum/gear/yellow_gloves_t
+	display_name = "tesau insulated gloves"
+	path = /obj/item/clothing/gloves/yellow/specialt
+	cost = 5
+
+/datum/gear/yellow_gloves_u
+	display_name = "unathi insulated gloves"
+	path = /obj/item/clothing/gloves/yellow/specialu
 	cost = 5
 
 /datum/gear/black_vest

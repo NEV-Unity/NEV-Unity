@@ -1,0 +1,34 @@
+"a" = (/turf/space,/area)
+"b" = (/obj/item/weapon/shard,/turf/space,/area)
+"c" = (/obj/item/stack/rods,/turf/space,/area)
+"d" = (/turf/simulated/wall,/area)
+"e" = (/turf/simulated/floor/plating/airless,/area)
+"f" = (/obj/structure/lattice,/turf/space,/area)
+"g" = (/obj/item/weapon/shard,/obj/item/stack/rods,/turf/space,/area)
+"h" = (/obj/structure/lattice,/obj/item/weapon/shard,/turf/space,/area)
+"i" = (/obj/structure/lattice,/obj/effect/landmark/corpse/clown,/obj/item/weapon/bikehorn,/turf/space,/area)
+"j" = (/obj/item/weapon/shard,/turf/simulated/floor/plating/airless,/area)
+"k" = (/obj/structure/lattice,/obj/item/stack/rods,/turf/space,/area)
+
+(1,1,1) = {"
+aabbaaaaaaaaaaaaaaaa
+aaabaaaaaaaaaaababaa
+aaaaaaaaabbaaaaaabaa
+aaaaaaacccaaaddaabaa
+abaaaaaaaaaaaeeaaaaa
+abadddaaaaaccafaccaa
+abaaeeaaafacaffacaaa
+aaaaafaaafaaaffaaaaa
+aaaacffaafaabffaaaaa
+aaabghfaafabbffdaaaa
+aaabaffffifjafedaaaa
+aaabbfffaffeffedabaa
+aaaabcffaaaaafedabaa
+aaadfkfeeffafffaabaa
+aaadfffffaaaaabaaaaa
+aaadeeaaaaaaaabccaaa
+aaaaaffaccadaaaaccaa
+aaaaacdaakfdaaaabaaa
+aabbccdfhhaaaaabbaaa
+aaaaaaaaaaaaaaaaaaaa
+"}

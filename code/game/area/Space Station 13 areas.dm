@@ -1802,6 +1802,26 @@ var/list/ghostteleportlocs = list()
 
 
 // Away Missions
+// Away Missions
+
+//All random zones need to be equal in size
+/area/randomzones/homemap //This is placed on your randomly selectable locations on the HOME map.Each one needs to be labeled with a seperate zonenum on map generation
+	name = "\improper Strange Location"
+
+/area/randomzones/homemap/shipwreak1
+/area/randomzones/homemap/shipwreak2
+/area/randomzones/homemap/shipwreak3
+/area/randomzones/homemap/shipwreak4
+/area/randomzones/homemap/shipwreak5
+
+/area/randomzones/awaymap //This zone goes on your away map. Each zone will randomly select a valid zonenumber from the availible home maps.
+	name = "\improper Strange Location"
+	icon_state = "away"
+/area/randomzones/awaymap/away1
+/area/randomzones/awaymap/away2
+/area/randomzones/awaymap/away3
+/area/randomzones/awaymap/away4
+/area/randomzones/awaymap/away5
 /area/awaymission
 	name = "\improper Strange Location"
 	icon_state = "away"
@@ -1890,6 +1910,19 @@ var/list/ghostteleportlocs = list()
 /area/awaymission/listeningpost
 	name = "\improper Listening Post"
 	icon_state = "away"
+	requires_power = 0
+
+/area/awaymission/landing
+	name = "\improper Landing Zone"
+	icon_state = "null"
+	luminosity = 1
+	lighting_use_dynamic = 0
+	requires_power = 0
+/area/awaymission/habit
+	name = "Planet"
+	icon_state = "null"
+	luminosity = 1
+	lighting_use_dynamic = 0
 	requires_power = 0
 
 /area/awaymission/beach
