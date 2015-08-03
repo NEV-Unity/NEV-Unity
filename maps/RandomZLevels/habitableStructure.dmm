@@ -1,0 +1,57 @@
+"a" = (/turf/unsimulated/floor/grass,/area/awaymission/habit)
+"b" = (/obj/structure/flora/ausbushes/sparsegrass,/turf/unsimulated/floor/grass,/area/awaymission/habit)
+"c" = (/turf/unsimulated/wall{icon_state = "iron6"},/area/awaymission/habit)
+"d" = (/turf/unsimulated/wall{icon_state = "iron12"},/area/awaymission/habit)
+"e" = (/turf/unsimulated/wall{icon_state = "iron10"},/area/awaymission/habit)
+"f" = (/turf/unsimulated/wall{icon_state = "iron3"},/area/awaymission/habit)
+"g" = (/obj/structure/closet/gmcloset{icon_closed = "black"; icon_state = "black"; name = "formal wardrobe"},/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"h" = (/obj/structure/closet/secure_closet/bar,/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"i" = (/obj/structure/table/woodentable,/obj/item/weapon/book/manual/barman_recipes,/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"j" = (/obj/structure/table/woodentable,/obj/item/weapon/reagent_containers/food/drinks/shaker,/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"k" = (/obj/structure/table/woodentable,/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"l" = (/obj/structure/table/woodentable,/obj/item/clothing/glasses/sunglasses,/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"m" = (/obj/machinery/vending/boozeomat{emagged = 1},/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"n" = (/obj/machinery/vending/cigarette,/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"o" = (/obj/machinery/vending/cola,/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"p" = (/obj/machinery/vending/snack,/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"q" = (/turf/unsimulated/wall{icon_state = "iron1"; tag = "icon-sandstone1"},/area/awaymission/habit)
+"r" = (/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"s" = (/obj/structure/mineral_door/wood{tag = "icon-wood"; icon_state = "wood"},/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"t" = (/turf/unsimulated/wall{tag = "icon-rwall0"; icon_state = "rwall0"},/area/awaymission/habit)
+"u" = (/obj/structure/stool,/turf/unsimulated/floor/grass,/area/awaymission/habit)
+"v" = (/obj/structure/mineral_door/wood{tag = "icon-wood"; icon_state = "wood"},/turf/unsimulated/floor/grass,/area/awaymission/habit)
+"w" = (/turf/unsimulated/wall{icon_state = "iron14"},/area/awaymission/habit)
+"x" = (/turf/unsimulated/wall/fakeglass{icon_state = "fakewindows"; dir = 8},/area/awaymission/habit)
+"y" = (/turf/unsimulated/wall/fakeglass{icon_state = "fakewindows"; dir = 4},/area/awaymission/habit)
+"z" = (/obj/structure/closet,/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"A" = (/obj/structure/stool,/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"B" = (/obj/structure/stool/bed/chair/comfy/black{dir = 4},/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"C" = (/obj/structure/table,/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"D" = (/obj/structure/stool/bed/chair/comfy/black{dir = 8},/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"E" = (/obj/structure/stool/bed,/obj/item/weapon/bedsheet/red,/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"F" = (/turf/unsimulated/wall{icon_state = "iron5"},/area/awaymission/habit)
+"G" = (/turf/unsimulated/wall{icon_state = "iron13"},/area/awaymission/habit)
+"H" = (/turf/unsimulated/wall{icon_state = "iron9"},/area/awaymission/habit)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaa
+aabbaaabaabbbaabbaaa
+abbbbaabbbbbbbbbbbba
+abbbbacddddddddddeba
+aabbbbfghijklmnopfba
+aaaaabqrrrrrrrrrrfbb
+aaaaaasrrrrrrrrrrfba
+aaaaaatkkkkkkkkkkqba
+aaaaaaauuuuuuuuuuaba
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aabbacdvddwdxydveaaa
+abbbbfzrrzfrrrrrfbaa
+aabbbfArrAfBCCDrfbba
+aaabbfCEECfBCCDrfbaa
+aaaaaFddddGdxyddHaaa
+aaaaaaaabbbbabbbbbaa
+aaaaaaaaaabbabbaaaaa
+"}

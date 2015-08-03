@@ -196,6 +196,20 @@
 /*
  * Hydrant
  */
+/obj/structure/closet/wall
+	name = "equipment closet"
+	desc = "It's a storage unit."
+	icon_state = "hydrant"
+	icon_closed = "hydrant"
+	icon_opened = "hydrant_open"
+	anchored = 1
+	density = 0
+	wall_mounted = 1
+
+/obj/structure/closet/hydrant/New()
+	..()
+	sleep(2)
+
 /obj/structure/closet/hydrant //wall mounted fire closet
 	name = "fire-safety closet"
 	desc = "It's a storage unit for fire-fighting supplies."

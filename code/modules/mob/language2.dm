@@ -291,6 +291,7 @@ proc/populate_language_list()
 					 "voluptate", "velit", "esse", "cillum", "dolore", "eu", "fugiat", "nulla",
 					 "pariatur", "excepteur", "sint", "occaecat", "cupidatat", "non", "proident", "sunt",
 					 "in", "culpa", "qui", "officia", "deserunt", "mollit", "anim", "id", "est", "laborum")
+	cost = 2
 
 /datum/language/gutter
 	name = "Gutter"
@@ -299,7 +300,7 @@ proc/populate_language_list()
 	colour = "rough"
 	key = "3"
 	syllables = list ("gra","ba","ba","breh","bra","rah","dur","ra","ro","gro","go","ber","bar","geh","heh", "gra")
-
+	cost = 2
 
 /datum/language/sign
 	name = "Sign language"
@@ -311,7 +312,7 @@ proc/populate_language_list()
 	cost = 2
 
 /datum/language/common
-	name = "Angelic"
+	name = "Anglic"
 	desc = "A language based on the human trade language English, with heavy influences from romance and germanic languages."
 	speech_verb = "says"
 	whisper_verb = "whispers"

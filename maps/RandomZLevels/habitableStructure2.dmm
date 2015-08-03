@@ -1,0 +1,38 @@
+"a" = (/turf/unsimulated/floor/grass,/area/awaymission/habit)
+"b" = (/obj/structure/flora/ausbushes/sparsegrass,/turf/unsimulated/floor/grass,/area/awaymission/habit)
+"c" = (/turf/unsimulated/wall{icon_state = "iron6"},/area/awaymission/habit)
+"d" = (/turf/unsimulated/wall{icon_state = "iron12"},/area/awaymission/habit)
+"e" = (/turf/unsimulated/wall{icon_state = "iron14"},/area/awaymission/habit)
+"f" = (/turf/unsimulated/wall{icon_state = "iron10"},/area/awaymission/habit)
+"g" = (/turf/unsimulated/wall{icon_state = "iron3"},/area/awaymission/habit)
+"h" = (/obj/structure/closet,/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"i" = (/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"j" = (/obj/structure/table,/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"k" = (/obj/structure/stool/bed,/obj/item/weapon/bedsheet/red,/turf/unsimulated/floor{tag = "icon-wood"; icon_state = "wood"},/area/awaymission/habit)
+"l" = (/turf/unsimulated/wall{icon_state = "iron5"},/area/awaymission/habit)
+"m" = (/obj/structure/mineral_door/wood{tag = "icon-wood"; icon_state = "wood"},/turf/unsimulated/floor/grass,/area/awaymission/habit)
+"n" = (/turf/unsimulated/wall{icon_state = "iron13"},/area/awaymission/habit)
+"o" = (/turf/unsimulated/wall{icon_state = "iron9"},/area/awaymission/habit)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaa
+aababbbbbbbbbbbbaaaa
+aabbbbbabbabbbbbbbaa
+aabbaaaabbbaabbbbbaa
+aaabbaaaaaaaaaaabbba
+aabbbbaaaaaaaaaaaaba
+aabbabaaaaaaaaaaaaaa
+aaabbaaaaaaaaaaaaaaa
+aaacddeddeddfbbaaaaa
+aaaghighighigabbaaaa
+abbgjkgjkgjkgbbbbaaa
+aaaldmndmndmobbaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaacdmedmedmfaaaaaaa
+abbghighighigbbaaaaa
+aabgjkgjkgjkgbbbaaaa
+aablddnddnddobbaaaaa
+aaaaabbabbbbbbbaaaaa
+aaaaaabbaaaaaaaaaaaa
+"}
