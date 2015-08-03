@@ -8,9 +8,9 @@
 	icon_state = null
 	item_state = "atoxinbottle"
 	amount_per_transfer_from_this = 10
-	possible_transfer_amounts = list(5,10,15,25,30)
+	possible_transfer_amounts = list(5,10,15,30,60)
 	flags = FPRINT | TABLEPASS | OPENCONTAINER
-	volume = 30
+	volume = 60
 
 	New()
 		..()
@@ -32,7 +32,7 @@
 
 	New()
 		..()
-		reagents.add_reagent("inaprovaline", 30)
+		reagents.add_reagent("inaprovaline", 60)
 
 /obj/item/weapon/reagent_containers/glass/bottle/toxin
 	name = "toxin bottle"
@@ -42,7 +42,7 @@
 
 	New()
 		..()
-		reagents.add_reagent("toxin", 30)
+		reagents.add_reagent("toxin", 60)
 
 /obj/item/weapon/reagent_containers/glass/bottle/cyanide
 	name = "cyanide bottle"
@@ -52,7 +52,7 @@
 
 	New()
 		..()
-		reagents.add_reagent("cyanide", 30)
+		reagents.add_reagent("cyanide", 60)
 
 /obj/item/weapon/reagent_containers/glass/bottle/stoxin
 	name = "sleep-toxin bottle"
@@ -62,7 +62,7 @@
 
 	New()
 		..()
-		reagents.add_reagent("stoxin", 30)
+		reagents.add_reagent("stoxin", 60)
 
 /obj/item/weapon/reagent_containers/glass/bottle/chloralhydrate
 	name = "Chloral Hydrate Bottle"
@@ -75,14 +75,14 @@
 		reagents.add_reagent("chloralhydrate", 15)		//Intentionally low since it is so strong. Still enough to knock someone out.
 
 /obj/item/weapon/reagent_containers/glass/bottle/antitoxin
-	name = "anti-toxin bottle"
+	name = "dylovene bottle"
 	desc = "A small bottle of Anti-toxins. Counters poisons, and repairs damage, a wonder drug."
 	icon = 'icons/obj/chemical.dmi'
 	icon_state = "bottle17"
 
 	New()
 		..()
-		reagents.add_reagent("anti_toxin", 30)
+		reagents.add_reagent("anti_toxin", 60)
 
 /obj/item/weapon/reagent_containers/glass/bottle/mutagen
 	name = "unstable mutagen bottle"
