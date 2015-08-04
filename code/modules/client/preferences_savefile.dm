@@ -315,7 +315,7 @@
 	S["skill_specialization"] << skill_specialization
 	S["organ_data"]			<< organ_data
 	S["gear"]				<< gear
-	S["languages"]			>> languages
+	S["languages"]			<< languages
 	S["home_system"] 		<< home_system
 	S["citizenship"] 		<< citizenship
 	S["faction"] 			<< faction
