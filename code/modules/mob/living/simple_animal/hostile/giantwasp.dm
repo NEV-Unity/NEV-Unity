@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/giantwasp
 	name = "giant wasp"
-	desc = "A giant wasp native to many habitable planes. Beware of its deadly stinger!"
+	desc = "A giant wasp native to many habitable planets. Beware of its deadly stinger!"
 	icon = 'icons/mob/bats.dmi'
 	icon_state = "bat"
 	icon_living = "bat"
