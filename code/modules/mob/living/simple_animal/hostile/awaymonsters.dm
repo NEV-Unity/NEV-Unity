@@ -145,7 +145,8 @@
 	icon_state = "carp"
 	icon_living = "carp"
 	icon_dead = "carp_dead"
-
+	meat_type = /obj/item/weapon/reagent_containers/food/snacks/cookie/monsterous
+	
 	response_help = "strokes the"
 	response_disarm = "pushes the"
 	response_harm = "kicks the"
@@ -186,7 +187,5 @@
 	var/obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/D = new(get_turf(src))
 	var/obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/E = new(get_turf(src))
 	var/obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/F = new(get_turf(src))
-   
-  else
-    visible_message("\red <b>[src]</b> quivers and melts into a puddle")
+	visible_message("\red <b>[src]</b> breaks apart, scattering cookies everywhere!")
 	del(src)
