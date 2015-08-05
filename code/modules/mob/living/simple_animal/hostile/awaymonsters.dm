@@ -131,4 +131,62 @@
     visible_message("\red <b>[src]</b> quivers and melts into a puddle")
 	del(src)
 
+//Cookie Monster (You monster)
 
+/obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous
+
+	New()
+		..()
+		reagents.add_reagent(pick("plasticide","mutationtoxin", "amutationtoxin","stoxin2","space_drugs","serotrotium","mercury","tramadol","cryptobiolin","adminordrazine","nanites","xenomicrobes","mutagen"), 5)
+		
+/mob/living/simple_animal/hostile/cmonster
+	name = "Cookie Monster"
+	desc = "An animatronic monster with a love of cookies. Beware of it's delicious confections!"
+	icon_state = "carp"
+	icon_living = "carp"
+	icon_dead = "carp_dead"
+
+	response_help = "strokes the"
+	response_disarm = "pushes the"
+	response_harm = "kicks the"
+	speed = 3 
+	maxHealth = 80 //Not super durable. The real danger is eating the drops.
+	health = 80
+
+	harm_intent_damage = 5
+	melee_damage_lower = 8
+	melee_damage_upper = 10
+	attacktext = "claws"
+	attack_sound = 'sound/weapons/bite.ogg' //REPLACE
+
+	min_oxy = 5
+	max_oxy = 0
+	min_tox = 0
+	max_tox = 10
+	min_co2 = 0
+	max_co2 = 10
+	min_n2 = 0
+	max_n2 = 0
+	minbodytemp = 0
+	unsuitable_atoms_damage = 15
+	
+	faction = "mimic"
+	move_to_delay = 8
+
+/mob/living/simple_animal/hostile/cmonster/FindTarget()
+	. = ..()
+	if(.)
+		emote("shouts \"Cookie!\" at [.]")
+
+/mob/living/simple_animal/hostile/cmonster/death()
+	..()
+	var/obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/A = new(get_turf(src))
+	var/obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/B = new(get_turf(src))
+	var/obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/C = new(get_turf(src))
+	var/obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/D = new(get_turf(src))
+	var/obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/E = new(get_turf(src))
+	var/obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/F = new(get_turf(src))
+   
+  else
+    visible_message("\red <b>[src]</b> quivers and melts into a puddle")
+	del(src)
