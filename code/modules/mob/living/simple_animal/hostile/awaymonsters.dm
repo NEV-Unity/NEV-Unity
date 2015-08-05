@@ -54,13 +54,6 @@
 				L << "\red You feel a stabbing pain in your chest!"
 				L.visible_message("<span class='danger'>\the [src] plunges its stinger into \the [L]!</span>")
 				L.reagents.add_reagent(poison_type, 2)
-			
-
-/mob/living/simple_animal/hostile/giantwasp/death()
-	..()
-	visible_message("\red <b>[src]</b> breaks apart!")
-
-
 // Agressive Algae/Biodigestive Ooze
 
 /mob/living/simple_animal/hostile/ooze
