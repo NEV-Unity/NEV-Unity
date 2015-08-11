@@ -15,29 +15,32 @@
 "o" = (/obj/item/weapon/stock_parts/console_screen,/turf/space,/area)
 "p" = (/obj/structure/girder,/turf/simulated/floor/plating/airless,/area)
 "q" = (/obj/item/weapon/cable_coil{amount = 2},/obj/effect/decal/cleanable/blood,/turf/space,/area)
-"r" = (/turf/simulated/floor/plating/airless{broken = 1},/area)
-"s" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating/airless{broken = 1},/area)
-"t" = (/obj/structure/shuttle/engine/propulsion/burst{dir = 4},/turf/simulated/floor/plating/airless,/area)
-"u" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/airless,/area)
-"v" = (/obj/structure/girder,/turf/simulated/floor/plating/airless{broken = 1},/area)
-"w" = (/obj/item/apc_frame,/turf/simulated/floor/airless,/area)
-"x" = (/obj/structure/table,/turf/simulated/floor/airless,/area)
-"y" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
-"z" = (/obj/structure/shuttle/engine/heater{dir = 8},/turf/simulated/floor/plating/airless,/area)
-"A" = (/turf/simulated/floor/airless,/area)
-"B" = (/obj/effect/decal/cleanable/blood,/turf/simulated/floor/airless,/area)
-"C" = (/obj/effect/landmark/corpse/bridgeofficer,/obj/structure/stool/bed/chair/office/dark{dir = 4},/turf/simulated/floor/airless,/area)
-"D" = (/obj/structure/computerframe,/turf/simulated/floor/airless,/area)
-"E" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
-"F" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
-"G" = (/obj/machinery/light/small,/turf/simulated/floor/airless,/area)
-"H" = (/obj/structure/stool/bed/chair/office/dark{dir = 4},/turf/simulated/floor/airless,/area)
-"I" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating/airless,/area)
-"J" = (/turf/simulated/floor/plating/airless,/area)
-"K" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/plating/airless,/area)
-"L" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating/airless,/area)
-"M" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/plating/airless,/area)
-"N" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
+"r" = (/mob/living/simple_animal/hostile/viscerator,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"s" = (/turf/simulated/floor/plating/airless{broken = 1},/area)
+"t" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"u" = (/obj/structure/shuttle/engine/propulsion/burst{dir = 4},/turf/simulated/floor/plating/airless,/area)
+"v" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/airless,/area)
+"w" = (/obj/structure/girder,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"x" = (/obj/item/apc_frame,/turf/simulated/floor/airless,/area)
+"y" = (/obj/structure/table,/turf/simulated/floor/airless,/area)
+"z" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
+"A" = (/obj/structure/shuttle/engine/heater{dir = 8},/turf/simulated/floor/plating/airless,/area)
+"B" = (/turf/simulated/floor/airless,/area)
+"C" = (/obj/effect/decal/cleanable/blood,/turf/simulated/floor/airless,/area)
+"D" = (/obj/effect/landmark/corpse/bridgeofficer,/obj/structure/stool/bed/chair/office/dark{dir = 4},/mob/living/simple_animal/hostile/viscerator,/turf/simulated/floor/airless,/area)
+"E" = (/obj/structure/computerframe,/turf/simulated/floor/airless,/area)
+"F" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
+"G" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
+"H" = (/obj/machinery/light/small,/turf/simulated/floor/airless,/area)
+"I" = (/mob/living/simple_animal/hostile/viscerator,/turf/simulated/floor/airless,/area)
+"J" = (/obj/structure/stool/bed/chair/office/dark{dir = 4},/turf/simulated/floor/airless,/area)
+"K" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating/airless,/area)
+"L" = (/turf/simulated/floor/plating/airless,/area)
+"M" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/plating/airless,/area)
+"N" = (/mob/living/simple_animal/hostile/viscerator,/turf/simulated/floor/plating/airless,/area)
+"O" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating/airless,/area)
+"P" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/plating/airless,/area)
+"Q" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaa
@@ -52,12 +55,12 @@ adbbeddbabddbdddbaaa
 adabfdaadbbaababaaaa
 aghhffafdijfddklgaaa
 agmnofplfffplqodgaaa
-ggmmrrprfffprramgsgg
-tggpugggpfgggvuggwxy
-tzyAAAAABAAAAAAAuCDE
-tzFGBABBGAAAAGAAuHDE
-tgggIggggIggggIggAxF
-ggJKJJgJKJJgJKJJgggg
-agJJJJgJJJJgJJJJgaaa
-agLMMNgLMMNgLMMNgaaa
+ggmmrspsfffpssamgtgg
+uggpvgggpfgggwvggxyz
+uAzBBBBBCBBBBBBBvDEF
+uAGHCBCCHBIBBHBBvJEF
+ugggKggggKggggKggByG
+ggLMLLgLMLLgLMLLgggg
+agLLLLgLNLLgLLLLgaaa
+agOPPQgOPPQgOPPQgaaa
 "}

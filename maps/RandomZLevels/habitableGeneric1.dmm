@@ -2,26 +2,27 @@
 "b" = (/obj/structure/flora/ausbushes/sparsegrass,/turf/unsimulated/floor/grass,/area/awaymission/habit)
 "c" = (/turf/unsimulated/beach/water,/area/awaymission/habit)
 "d" = (/obj/structure/flora/ausbushes/fullgrass,/turf/unsimulated/floor/grass,/area/awaymission/habit)
-"e" = (/obj/structure/flora/ausbushes/reedbush,/turf/unsimulated/beach/water,/area/awaymission/habit)
+"e" = (/mob/living/simple_animal/hostile/giantwasp,/turf/unsimulated/beach/water,/area/awaymission/habit)
+"f" = (/obj/structure/flora/ausbushes/reedbush,/turf/unsimulated/beach/water,/area/awaymission/habit)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaabccbaaaaa
 aaaaaabbdccccccbaaaa
-aadccccccccccccccaaa
-adcccceecccecccccbaa
+aadccccccccccecccaaa
+adccccffcccfcccccbaa
 aacccccccccccccccbaa
-aacccccccccccccccbaa
+aacccceccccccccccbaa
 aaccccccccccccccccda
 aabcccccccccccccccba
-aabcccccccccccccccba
-aabceccccccccccccccd
+aabcccccccccccceccba
+aabcfccccccccccccccd
 abbccccccccccccccccb
-abcccccccccccccccccb
-abceccccccccccccccba
-abdcccccccccccccccba
-aadcccccccccccecccba
-aabccccecccccccccaba
+abcccecccccccccccccb
+abcfccccccccccccccba
+abdcccccccecccccccba
+aadcccccccccccfcccba
+aabccccfcccccccccaba
 aaadccccccccccccaaaa
 aaabbbdccccccdbbaaaa
 aaaaaaaadbbaaaaaaaaa

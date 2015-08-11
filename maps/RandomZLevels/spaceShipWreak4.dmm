@@ -5,78 +5,82 @@
 "ae" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
 "af" = (/obj/structure/computerframe,/turf/simulated/floor,/area)
 "ag" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
-"ah" = (/obj/structure/stool/bed/chair/office/dark{dir = 1},/turf/simulated/floor,/area)
-"ai" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/plating/airless,/area)
-"aj" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor,/area)
-"ak" = (/obj/structure/stool/bed/chair/comfy/black{dir = 8},/turf/simulated/floor,/area)
-"al" = (/turf/simulated/floor,/area)
-"am" = (/obj/structure/rack{dir = 8; layer = 2.9},/obj/item/clothing/shoes/magboots,/obj/item/clothing/suit/space/rig,/obj/item/clothing/mask/breath,/obj/item/clothing/head/helmet/space/rig,/turf/simulated/floor,/area)
-"an" = (/obj/structure/rack{dir = 8; layer = 2.9},/obj/item/clothing/shoes/magboots,/obj/item/clothing/suit/space/rig/mining,/obj/item/clothing/mask/breath,/obj/item/clothing/head/helmet/space/rig/mining,/turf/simulated/floor,/area)
-"ao" = (/obj/structure/closet/secure_closet/miner,/turf/simulated/floor,/area)
-"ap" = (/obj/structure/closet/secure_closet/engineering_personal,/turf/simulated/floor,/area)
-"aq" = (/obj/machinery/light/small{dir = 4},/obj/structure/bookcase,/turf/simulated/floor,/area)
-"ar" = (/obj/machinery/light/small{dir = 8},/turf/simulated/floor,/area)
-"as" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/airless,/area)
-"at" = (/obj/machinery/light/small{dir = 4},/turf/simulated/floor,/area)
-"au" = (/turf/simulated/floor/plating,/area)
-"av" = (/turf/simulated/floor/wood,/area)
-"aw" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating,/area)
-"ax" = (/obj/machinery/light/small{dir = 4},/turf/simulated/floor/plating,/area)
-"ay" = (/obj/structure/stool/bed/chair/office/dark{dir = 4},/obj/machinery/light/small{dir = 8},/turf/simulated/floor/wood,/area)
-"az" = (/obj/structure/table,/turf/simulated/floor/wood,/area)
-"aA" = (/obj/machinery/light/small{dir = 4},/turf/simulated/floor/wood,/area)
-"aB" = (/obj/machinery/light/small{dir = 8},/obj/machinery/portable_atmospherics/hydroponics,/turf/simulated/floor{icon_state = "cafeteria"; dir = 5},/area)
-"aC" = (/turf/simulated/floor{icon_state = "cafeteria"; dir = 5},/area)
-"aD" = (/obj/machinery/light/small{dir = 4},/obj/structure/table,/turf/simulated/floor{icon_state = "cafeteria"; dir = 5},/area)
-"aE" = (/obj/machinery/light/small{dir = 8},/turf/simulated/floor/plating,/area)
-"aF" = (/obj/structure/stool/bed/chair/office/dark{dir = 4},/turf/simulated/floor/wood,/area)
-"aG" = (/obj/structure/stool/bed,/obj/item/weapon/bedsheet/red,/turf/simulated/floor/wood,/area)
-"aH" = (/obj/structure/closet/secure_closet/freezer/kitchen,/turf/simulated/floor{icon_state = "cafeteria"; dir = 5},/area)
-"aI" = (/obj/structure/table,/obj/item/weapon/storage/box/donkpockets{pixel_x = 3; pixel_y = 3},/turf/simulated/floor{icon_state = "cafeteria"; dir = 5},/area)
-"aJ" = (/obj/structure/stool/bed/chair/office/dark{dir = 1},/turf/simulated/floor/wood,/area)
-"aK" = (/obj/structure/closet,/turf/simulated/floor/wood,/area)
-"aL" = (/obj/structure/table,/obj/machinery/light/small,/turf/simulated/floor/wood,/area)
-"aM" = (/obj/structure/closet/secure_closet/freezer/meat,/turf/simulated/floor{icon_state = "cafeteria"; dir = 5},/area)
-"aN" = (/obj/structure/table,/obj/machinery/microwave{pixel_x = -3; pixel_y = 6},/turf/simulated/floor{icon_state = "cafeteria"; dir = 5},/area)
-"aO" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/plating,/area)
-"aP" = (/obj/structure/dispenser{pixel_x = -1},/turf/simulated/floor/plating,/area)
-"aQ" = (/obj/structure/closet/crate,/obj/item/weapon/ore/clown,/obj/item/weapon/ore/clown,/obj/item/weapon/ore/clown,/obj/item/weapon/ore/clown,/obj/item/weapon/ore/clown,/obj/item/weapon/ore/clown,/turf/simulated/floor/plating,/area)
-"aR" = (/obj/structure/closet/crate,/obj/item/weapon/ore/diamond,/obj/item/weapon/ore/diamond,/obj/item/weapon/ore/diamond,/turf/simulated/floor/plating,/area)
-"aS" = (/obj/structure/closet/crate,/obj/item/weapon/ore/glass,/obj/item/weapon/ore/glass,/turf/simulated/floor/plating,/area)
-"aT" = (/obj/structure/closet/crate,/obj/item/weapon/ore/gold,/obj/item/weapon/ore/gold,/obj/item/weapon/ore/gold,/obj/item/weapon/ore/gold,/turf/simulated/floor/plating,/area)
-"aU" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating/airless,/area)
-"aV" = (/obj/structure/closet/crate,/obj/item/weapon/ore/uranium,/obj/item/weapon/ore/uranium,/obj/item/weapon/ore/uranium,/turf/simulated/floor/plating,/area)
-"aW" = (/obj/structure/closet/crate,/obj/item/weapon/ore/silver,/obj/item/weapon/ore/silver,/obj/item/weapon/ore/silver,/obj/item/weapon/ore/silver,/turf/simulated/floor/plating,/area)
-"aX" = (/obj/structure/closet/crate,/obj/item/weapon/ore/plasma,/obj/item/weapon/ore/plasma,/obj/item/weapon/ore/plasma,/obj/item/weapon/ore/plasma,/turf/simulated/floor/plating,/area)
-"aY" = (/obj/structure/closet/crate,/obj/item/weapon/ore/iron,/obj/item/weapon/ore/iron,/obj/item/weapon/ore/iron,/turf/simulated/floor/plating,/area)
-"aZ" = (/obj/machinery/light/small{dir = 1},/obj/structure/closet/crate,/obj/item/weapon/ore/strangerock,/obj/item/weapon/ore/strangerock,/obj/item/weapon/ore/strangerock,/turf/simulated/floor/plating/airless,/area)
-"ba" = (/turf/simulated/floor/plating/airless,/area)
-"bb" = (/obj/structure/shuttle/engine/heater,/turf/simulated/floor/plating/airless,/area)
-"bc" = (/obj/structure/closet/crate,/obj/item/weapon/ore/strangerock,/obj/item/weapon/ore/strangerock,/obj/item/weapon/ore/strangerock,/turf/simulated/floor/plating/airless,/area)
-"bd" = (/obj/structure/shuttle/engine/propulsion{icon_state = "propulsion_l"},/turf/simulated/floor/plating/airless,/area)
-"be" = (/obj/structure/shuttle/engine/propulsion,/turf/simulated/floor/plating/airless,/area)
-"bf" = (/obj/structure/shuttle/engine/propulsion{icon_state = "burst_r"},/turf/simulated/floor/plating/airless,/area)
-"bg" = (/obj/machinery/door/poddoor,/turf/simulated/floor/plating/airless,/area)
+"ah" = (/obj/structure/stool/bed/chair/office/dark{dir = 1},/mob/living/simple_animal/hostile/pirate,/turf/simulated/floor,/area)
+"ai" = (/obj/structure/stool/bed/chair/office/dark{dir = 1},/turf/simulated/floor,/area)
+"aj" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/plating/airless,/area)
+"ak" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor,/area)
+"al" = (/obj/structure/stool/bed/chair/comfy/black{dir = 8},/turf/simulated/floor,/area)
+"am" = (/turf/simulated/floor,/area)
+"an" = (/obj/structure/rack{dir = 8; layer = 2.9},/obj/item/clothing/shoes/magboots,/obj/item/clothing/suit/space/rig,/obj/item/clothing/mask/breath,/obj/item/clothing/head/helmet/space/rig,/turf/simulated/floor,/area)
+"ao" = (/obj/structure/rack{dir = 8; layer = 2.9},/obj/item/clothing/shoes/magboots,/obj/item/clothing/suit/space/rig/mining,/obj/item/clothing/mask/breath,/obj/item/clothing/head/helmet/space/rig/mining,/turf/simulated/floor,/area)
+"ap" = (/obj/structure/closet/secure_closet/miner,/turf/simulated/floor,/area)
+"aq" = (/obj/structure/closet/secure_closet/engineering_personal,/turf/simulated/floor,/area)
+"ar" = (/obj/machinery/light/small{dir = 4},/obj/structure/bookcase,/turf/simulated/floor,/area)
+"as" = (/mob/living/simple_animal/hostile/pirate,/turf/simulated/floor,/area)
+"at" = (/obj/machinery/light/small{dir = 8},/turf/simulated/floor,/area)
+"au" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/airless,/area)
+"av" = (/obj/machinery/light/small{dir = 4},/turf/simulated/floor,/area)
+"aw" = (/turf/simulated/floor/plating,/area)
+"ax" = (/turf/simulated/floor/wood,/area)
+"ay" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating,/area)
+"az" = (/mob/living/simple_animal/hostile/pirate/ranged,/turf/simulated/floor,/area)
+"aA" = (/obj/machinery/light/small{dir = 4},/turf/simulated/floor/plating,/area)
+"aB" = (/obj/structure/stool/bed/chair/office/dark{dir = 4},/obj/machinery/light/small{dir = 8},/turf/simulated/floor/wood,/area)
+"aC" = (/obj/structure/table,/turf/simulated/floor/wood,/area)
+"aD" = (/obj/machinery/light/small{dir = 4},/turf/simulated/floor/wood,/area)
+"aE" = (/obj/machinery/light/small{dir = 8},/obj/machinery/portable_atmospherics/hydroponics,/turf/simulated/floor{icon_state = "cafeteria"; dir = 5},/area)
+"aF" = (/turf/simulated/floor{icon_state = "cafeteria"; dir = 5},/area)
+"aG" = (/obj/machinery/light/small{dir = 4},/obj/structure/table,/turf/simulated/floor{icon_state = "cafeteria"; dir = 5},/area)
+"aH" = (/obj/machinery/light/small{dir = 8},/turf/simulated/floor/plating,/area)
+"aI" = (/obj/structure/stool/bed/chair/office/dark{dir = 4},/mob/living/simple_animal/hostile/pirate,/turf/simulated/floor/wood,/area)
+"aJ" = (/obj/structure/stool/bed,/obj/item/weapon/bedsheet/red,/turf/simulated/floor/wood,/area)
+"aK" = (/obj/structure/closet/secure_closet/freezer/kitchen,/turf/simulated/floor{icon_state = "cafeteria"; dir = 5},/area)
+"aL" = (/obj/structure/table,/obj/item/weapon/storage/box/donkpockets{pixel_x = 3; pixel_y = 3},/turf/simulated/floor{icon_state = "cafeteria"; dir = 5},/area)
+"aM" = (/obj/structure/stool/bed/chair/office/dark{dir = 1},/turf/simulated/floor/wood,/area)
+"aN" = (/obj/structure/closet,/turf/simulated/floor/wood,/area)
+"aO" = (/obj/structure/table,/obj/machinery/light/small,/turf/simulated/floor/wood,/area)
+"aP" = (/obj/structure/closet/secure_closet/freezer/meat,/turf/simulated/floor{icon_state = "cafeteria"; dir = 5},/area)
+"aQ" = (/obj/structure/table,/obj/machinery/microwave{pixel_x = -3; pixel_y = 6},/turf/simulated/floor{icon_state = "cafeteria"; dir = 5},/area)
+"aR" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/plating,/area)
+"aS" = (/obj/structure/dispenser{pixel_x = -1},/turf/simulated/floor/plating,/area)
+"aT" = (/obj/structure/closet/crate,/obj/item/weapon/ore/clown,/obj/item/weapon/ore/clown,/obj/item/weapon/ore/clown,/obj/item/weapon/ore/clown,/obj/item/weapon/ore/clown,/obj/item/weapon/ore/clown,/turf/simulated/floor/plating,/area)
+"aU" = (/obj/structure/closet/crate,/obj/item/weapon/ore/diamond,/obj/item/weapon/ore/diamond,/obj/item/weapon/ore/diamond,/turf/simulated/floor/plating,/area)
+"aV" = (/obj/structure/closet/crate,/obj/item/weapon/ore/glass,/obj/item/weapon/ore/glass,/turf/simulated/floor/plating,/area)
+"aW" = (/obj/structure/closet/crate,/obj/item/weapon/ore/gold,/obj/item/weapon/ore/gold,/obj/item/weapon/ore/gold,/obj/item/weapon/ore/gold,/turf/simulated/floor/plating,/area)
+"aX" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating/airless,/area)
+"aY" = (/obj/structure/closet/crate,/obj/item/weapon/ore/uranium,/obj/item/weapon/ore/uranium,/obj/item/weapon/ore/uranium,/turf/simulated/floor/plating,/area)
+"aZ" = (/obj/structure/closet/crate,/obj/item/weapon/ore/silver,/obj/item/weapon/ore/silver,/obj/item/weapon/ore/silver,/obj/item/weapon/ore/silver,/turf/simulated/floor/plating,/area)
+"ba" = (/obj/structure/closet/crate,/obj/item/weapon/ore/plasma,/obj/item/weapon/ore/plasma,/obj/item/weapon/ore/plasma,/obj/item/weapon/ore/plasma,/turf/simulated/floor/plating,/area)
+"bb" = (/obj/structure/closet/crate,/obj/item/weapon/ore/iron,/obj/item/weapon/ore/iron,/obj/item/weapon/ore/iron,/turf/simulated/floor/plating,/area)
+"bc" = (/obj/machinery/light/small{dir = 1},/obj/structure/closet/crate,/obj/item/weapon/ore/strangerock,/obj/item/weapon/ore/strangerock,/obj/item/weapon/ore/strangerock,/turf/simulated/floor/plating/airless,/area)
+"bd" = (/turf/simulated/floor/plating/airless,/area)
+"be" = (/mob/living/simple_animal/hostile/pirate/ranged,/turf/simulated/floor/plating/airless,/area)
+"bf" = (/obj/structure/shuttle/engine/heater,/turf/simulated/floor/plating/airless,/area)
+"bg" = (/obj/structure/closet/crate,/obj/item/weapon/ore/strangerock,/obj/item/weapon/ore/strangerock,/obj/item/weapon/ore/strangerock,/turf/simulated/floor/plating/airless,/area)
+"bh" = (/obj/structure/shuttle/engine/propulsion{icon_state = "propulsion_l"},/turf/simulated/floor/plating/airless,/area)
+"bi" = (/obj/structure/shuttle/engine/propulsion,/turf/simulated/floor/plating/airless,/area)
+"bj" = (/obj/structure/shuttle/engine/propulsion{icon_state = "burst_r"},/turf/simulated/floor/plating/airless,/area)
+"bk" = (/obj/machinery/door/poddoor,/turf/simulated/floor/plating/airless,/area)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaabacadabaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaeafafaeaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaagahahagaaaaaaaaaaaaaaaa
-aaaaaaabacaiaiadabajajabacaiaiadabaaaaaa
-aaaaaaaeakalalalabalalabamanaoapaeaaaaaa
-aaaaaaagakalalaqabalalabaralalalagaaaaaa
-abacadababasasababaratababajajababacadab
-aeauauasavavavavasalalasalalalalawauauae
-agauauasavavavavasalalasalalalalawauauag
-abauaxabayazazaAababajabaBaCaCaDabaEauab
-abauauabaFazazavabavaGabaHaCaCaIabauauab
-abauauabavaJaJavabaKaLabaMaCaCaNabauauab
-abawababababababababababababababababawab
-abauaOauauauawauauauauauauawauauauaOauab
-abaPaQaRaSaTababaUaUaUaUababaVaWaXaYaPab
-ababacaiaiadabaZbabababaaZabacaiaiadabab
-aaabbbbbbbbbabbabababababcabbbbbbbbbabaa
-aaabbdbebebfababbgbgbgbgababbdbebebfabaa
+aaaaaaaaaaaaaaaaagahaiagaaaaaaaaaaaaaaaa
+aaaaaaabacajajadabakakabacajajadabaaaaaa
+aaaaaaaealamamamabamamabanaoapaqaeaaaaaa
+aaaaaaagalamamarabamasabatamamamagaaaaaa
+abacadababauauababatavababakakababacadab
+aeawawauaxaxaxaxauamamauamamamamayawawae
+agawawauaxaxaxaxauamazauamamamamayawawag
+abawaAabaBaCaCaDababakabaEaFaFaGabaHawab
+abawawabaIaCaCaxabaxaJabaKaFaFaLabawawab
+abawawabaxaMaMaxabaNaOabaPaFaFaQabawawab
+abayababababababababababababababababayab
+abawaRawawawayawawawawawawayawawawaRawab
+abaSaTaUaVaWababaXaXaXaXababaYaZbabbaSab
+ababacajajadabbcbdbdbebdbcabacajajadabab
+aaabbfbfbfbfabbdbdbdbdbdbgabbfbfbfbfabaa
+aaabbhbibibjababbkbkbkbkababbhbibibjabaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 "}

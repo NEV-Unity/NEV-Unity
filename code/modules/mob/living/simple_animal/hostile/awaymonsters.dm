@@ -3,11 +3,9 @@
 /mob/living/simple_animal/hostile/giantwasp
 	name = "giant wasp"
 	desc = "A giant wasp native to many habitable planets. Beware of its deadly stinger!"
-	icon = 'icons/mob/bats.dmi'
-	icon_state = "bat"
-	icon_living = "bat"
-	icon_dead = "bat_dead"
-	icon_gib = "bat_dead"
+	icon_state = "critter"
+	icon_living = "critter"
+	icon_dead = "critter_dead"
 	speak_chance = 0
 	turns_per_move = 3
 	meat_type = /obj/item/weapon/reagent_containers/food/snacks/meat
@@ -59,9 +57,9 @@
 /mob/living/simple_animal/hostile/ooze
 	name = "Biodigestive Ooze"
 	desc = "An exceptionally agressive algae. Beware of it's powerful acid!"
-	icon_state = "carp"
-	icon_living = "carp"
-	icon_dead = "carp_dead"
+	icon_state = "Goldgrub"
+	icon_living = "Goldgrub"
+	icon_dead = "Goldgrub_dead"
 
 	response_help = "recoils from the"
 	response_disarm = "struggles helplessly against the"
@@ -89,39 +87,37 @@
 	faction = "mimic"
 	move_to_delay = 8
 
-/mob/living/simple_animal/hostile/slime/FindTarget()
+/mob/living/simple_animal/hostile/ooze/FindTarget()
 	. = ..()
 	if(.)
 		emote("slorps at [.]!")
 
-/mob/living/simple_animal/hostile/slime/AttackingTarget()
+/mob/living/simple_animal/hostile/ooze/AttackingTarget()
 	..()
 	if(isliving(target_mob))
 		var/mob/living/L = target_mob
 		if(L.reagents)
-			L.reagents.add_reagent("sacid", (maxhealth/10))
+			L.reagents.add_reagent("sacid", (maxHealth/10))
 
-/mob/living/simple_animal/hostile/slime/death()
-	..()
-  var/obj/effect/decal/cleanable/mucus/C = new(get_turf(src))
-  C.name = "slime"
+/mob/living/simple_animal/hostile/ooze/death()
+	var/obj/effect/decal/cleanable/mucus/C = new(get_turf(src))
+	C.name = "slime"
 	C.desc = "Disgusting slime."
-	if(maxhealth > 25)
-  	visible_message("\red <b>[src]</b> splits into two!")
-  	//spawn slime bits
-  	var/mob/living/simple_animal/hostile/slime/A = new(get_turf(src))
-  	var/mob/living/simple_animal/hostile/slime/B = new(get_turf(src))
-
-  	A.maxHealth = (src.maxHealth / 4)
-  	B.maxHealth = (src.maxHealth / 4)
-  	A.speed = 4
-  	B.speed = 4
-  	A.melee_damage_lower = (A.maxHealth/10)
-  	A.melee_damage_upper = (A.maxHealth/10)
-  	B.melee_damage_lower = (A.maxHealth/10)
-  	B.melee_damage_upper = (A.maxHealth/10)
-  else
-    visible_message("\red <b>[src]</b> quivers and melts into a puddle")
+	if(maxHealth > 25)
+		visible_message("\red <b>[src]</b> splits into two!")
+		//spawn slime bits
+		var/mob/living/simple_animal/hostile/ooze/A = new(get_turf(src))
+		var/mob/living/simple_animal/hostile/ooze/B = new(get_turf(src))
+		A.maxHealth = (src.maxHealth / 4)
+		B.maxHealth = (src.maxHealth / 4)
+		A.speed = 4
+		B.speed = 4
+		A.melee_damage_lower = (A.maxHealth/10)
+		A.melee_damage_upper = (A.maxHealth/10)
+		B.melee_damage_lower = (A.maxHealth/10)
+		B.melee_damage_upper = (A.maxHealth/10)
+	else
+		visible_message("\red <b>[src]</b> quivers and melts into a puddle")
 	del(src)
 
 //Cookie Monster (You monster)
@@ -131,19 +127,19 @@
 	New()
 		..()
 		reagents.add_reagent(pick("plasticide","mutationtoxin", "amutationtoxin","stoxin2","space_drugs","serotrotium","mercury","tramadol","cryptobiolin","adminordrazine","nanites","xenomicrobes","mutagen"), 5)
-		
+
 /mob/living/simple_animal/hostile/cmonster
 	name = "Cookie Monster"
 	desc = "An animatronic monster with a love of cookies. Beware of it's delicious confections!"
-	icon_state = "carp"
-	icon_living = "carp"
-	icon_dead = "carp_dead"
-	meat_type = /obj/item/weapon/reagent_containers/food/snacks/cookie/monsterous
-	
+	icon_state = "drone0"
+	icon_living = "drone0"
+	icon_dead = "drone_dead"
+	meat_type = /obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous
+
 	response_help = "strokes the"
 	response_disarm = "pushes the"
 	response_harm = "kicks the"
-	speed = 3 
+	speed = 3
 	maxHealth = 80 //Not super durable. The real danger is eating the drops.
 	health = 80
 
@@ -163,7 +159,7 @@
 	max_n2 = 0
 	minbodytemp = 0
 	unsuitable_atoms_damage = 15
-	
+
 	faction = "mimic"
 	move_to_delay = 8
 
@@ -174,11 +170,11 @@
 
 /mob/living/simple_animal/hostile/cmonster/death()
 	..()
-	var/obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/A = new(get_turf(src))
-	var/obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/B = new(get_turf(src))
-	var/obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/C = new(get_turf(src))
-	var/obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/D = new(get_turf(src))
-	var/obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/E = new(get_turf(src))
-	var/obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/F = new(get_turf(src))
+	new /obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/(loc)
+	new /obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/(loc)
+	new /obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/(loc)
+	new /obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/(loc)
+	new /obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/(loc)
+	new /obj/item/weapon/reagent_containers/food/snacks/cookie/monstrous/(loc)
 	visible_message("\red <b>[src]</b> breaks apart, scattering cookies everywhere!")
 	del(src)
