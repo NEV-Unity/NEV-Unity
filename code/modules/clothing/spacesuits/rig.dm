@@ -12,6 +12,7 @@
 	icon_action_button = "action_hardhat"
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	var/obj/machinery/camera/camera
 
 	//Species-specific stuff.
 	species_restricted = list("exclude","Unathi","Tesau","Skrell","Diona","Vox")
@@ -52,6 +53,16 @@
 			user.SetLuminosity(user.luminosity - brightness_on)
 //			user.UpdateLuminosity()
 			SetLuminosity(brightness_on)
+
+/obj/item/clothing/head/helmet/space/rig/attack_self(mob/user)
+	if(camera)
+		..(user)
+	else
+		camera = new /obj/machinery/camera(src)
+		camera.network = list("MINE")
+		cameranet.removeCamera(camera)
+		camera.c_tag = user.name
+		user << "\blue User scanned as [camera.c_tag]. Camera activated."
 
 /obj/item/clothing/suit/space/rig
 	name = "hardsuit"
@@ -221,6 +232,20 @@
 		usr << "You have no device currently deployed."
 		return
 */
+
+/obj/item/clothing/head/helmet/space/rig/verb/disable_camera()
+	set name = "Deactivate Camera"
+	set category = "Object"
+	set src in usr
+
+	if(!istype(src.loc,/mob/living)) return
+
+	if(!camera)
+		usr << "There is no camera installed."
+		return
+	del(camera)
+	usr << "You deactivate your mounted helmet camera"
+
 
 /obj/item/clothing/suit/space/rig/verb/toggle_helmet()
 
@@ -551,7 +576,6 @@
 	item_color = "syndi"
 	armor = list(melee = 60, bullet = 50, laser = 30,energy = 15, bomb = 35, bio = 100, rad = 60)
 	siemens_coefficient = 0.6
-	var/obj/machinery/camera/camera
 	species_restricted = list("exclude","Unathi","Tesau","Skrell","Vox")
 
 

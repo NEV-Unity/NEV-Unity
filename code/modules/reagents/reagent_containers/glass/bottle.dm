@@ -78,7 +78,7 @@
 	name = "dylovene bottle"
 	desc = "A small bottle of Anti-toxins. Counters poisons, and repairs damage, a wonder drug."
 	icon = 'icons/obj/chemical.dmi'
-	icon_state = "bottle67"
+	icon_state = "bottle16"
 
 	New()
 		..()

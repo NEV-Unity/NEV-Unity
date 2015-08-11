@@ -25,77 +25,81 @@
 "ay" = (/obj/item/weapon/ore/slag,/turf/space,/area)
 "az" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
 "aA" = (/turf/simulated/floor/wood,/area)
-"aB" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/turf/simulated/floor/airless,/area)
-"aC" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/obj/effect/decal/cleanable/blood,/turf/simulated/floor/airless,/area)
-"aD" = (/obj/effect/decal/cleanable/blood,/turf/simulated/floor/airless,/area)
-"aE" = (/turf/simulated/floor/wood{broken = 1},/area)
-"aF" = (/obj/structure/stool/bed,/obj/item/weapon/bedsheet/red,/turf/simulated/floor/wood,/area)
-"aG" = (/obj/machinery/light/small,/turf/simulated/floor/wood,/area)
-"aH" = (/obj/structure/closet,/turf/simulated/floor/wood,/area)
-"aI" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/turf/simulated/floor/airless{broken = 1},/area)
-"aJ" = (/obj/effect/landmark/corpse/engineer,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/airless{broken = 1},/area)
-"aK" = (/obj/machinery/light/small,/turf/simulated/floor/wood{broken = 1},/area)
-"aL" = (/obj/machinery/light/small{dir = 8},/turf/simulated/floor/airless{broken = 1},/area)
-"aM" = (/obj/structure/lattice,/turf/space,/area)
-"aN" = (/obj/structure/lattice,/obj/item/weapon/ore/slag,/turf/space,/area)
-"aO" = (/obj/item/robot_parts/robot_suit,/obj/item/robot_parts/robot_suit,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"aP" = (/obj/item/robot_parts/r_leg,/obj/item/robot_parts/r_leg,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"aQ" = (/obj/item/robot_parts/r_arm,/obj/item/robot_parts/r_arm,/obj/structure/closet/crate,/obj/machinery/light/small{dir = 1},/turf/simulated/floor/plating/airless,/area)
-"aR" = (/obj/item/robot_parts/l_leg,/obj/item/robot_parts/l_leg,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"aS" = (/obj/item/robot_parts/l_arm,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"aT" = (/obj/item/weapon/cable_coil{amount = 2},/turf/space,/area)
-"aU" = (/obj/machinery/power/smes,/turf/simulated/floor/plating/airless,/area)
-"aV" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/plating/airless,/area)
-"aW" = (/obj/item/weapon/circuitboard/mecha/ripley/main,/obj/item/weapon/circuitboard/mecha/ripley/peripherals,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"aX" = (/obj/item/mecha_parts/mecha_equipment/tool/cable_layer,/obj/item/mecha_parts/mecha_equipment/tool/cable_layer,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"aY" = (/obj/item/robot_parts/head,/obj/item/robot_parts/head,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"aZ" = (/obj/item/robot_parts/chest,/obj/item/robot_parts/chest,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"ba" = (/turf/simulated/floor/plating/airless,/area)
-"bb" = (/turf/simulated/floor/airless{broken = 1},/area)
-"bc" = (/obj/structure/cable{icon_state = "0-2"; pixel_y = 1; d2 = 2},/obj/machinery/power/terminal{icon_state = "term"; dir = 1},/turf/simulated/floor/plating/airless,/area)
-"bd" = (/obj/item/weapon/circuitboard/mecha/odysseus/peripherals,/obj/item/weapon/circuitboard/mecha/odysseus/main,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"be" = (/obj/item/mecha_parts/mecha_equipment/tool/drill,/obj/item/mecha_parts/mecha_equipment/tool/drill,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bf" = (/obj/item/robot_parts/robot_component/actuator,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bg" = (/obj/item/robot_parts/robot_component/armour,/obj/item/robot_parts/robot_component/armour,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bh" = (/obj/item/robot_parts/robot_component/camera,/turf/simulated/floor/plating/airless,/area)
-"bi" = (/turf/simulated/floor/plating/airless{broken = 1},/area)
-"bj" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating/airless,/area)
-"bk" = (/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/airless{broken = 1},/area)
-"bl" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/airless,/area)
-"bm" = (/obj/machinery/door/airlock/hatch,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating/airless,/area)
-"bn" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating/airless,/area)
-"bo" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/plating/airless,/area)
-"bp" = (/obj/item/weapon/circuitboard/mecha/honker,/obj/item/weapon/circuitboard/mecha/honker/peripherals,/obj/item/weapon/circuitboard/mecha/honker/targeting,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bq" = (/obj/item/mecha_parts/mecha_equipment/tool/extinguisher,/obj/item/mecha_parts/mecha_equipment/tool/extinguisher,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"br" = (/obj/item/robot_parts/robot_component/binary_communication_device,/obj/item/robot_parts/robot_component/binary_communication_device,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bs" = (/obj/item/broken_device,/obj/item/weapon/ore/slag,/turf/simulated/floor/plating/airless,/area)
-"bt" = (/obj/item/weapon/circuitboard/mechfab,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bu" = (/obj/item/mecha_parts/mecha_equipment/tool/hydraulic_clamp,/obj/item/mecha_parts/mecha_equipment/tool/hydraulic_clamp,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bv" = (/obj/structure/girder,/turf/simulated/floor/plating/airless,/area)
-"bw" = (/obj/item/mecha_parts/mecha_tracking,/obj/item/mecha_parts/mecha_tracking,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bx" = (/obj/item/mecha_parts/mecha_equipment/weapon/honker,/obj/item/mecha_parts/mecha_equipment/weapon/honker,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"by" = (/obj/item/mecha_parts/mecha_equipment/tool/sleeper,/obj/item/mecha_parts/mecha_equipment/tool/sleeper,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bz" = (/obj/item/robot_parts/robot_component/radio,/obj/item/weapon/ore/slag,/turf/space,/area)
-"bA" = (/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bB" = (/obj/item/mecha_parts/mecha_equipment/weapon/energy/ion,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bC" = (/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bD" = (/obj/item/mecha_parts/mecha_equipment/weapon/energy/taser,/obj/item/mecha_parts/mecha_equipment/weapon/energy/taser,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bE" = (/obj/item/mecha_parts/mecha_equipment/tool/syringe_gun,/obj/item/mecha_parts/mecha_equipment/tool/syringe_gun,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bF" = (/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bG" = (/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bH" = (/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/flashbang,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bI" = (/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/flashbang/clusterbang,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bJ" = (/obj/item/mecha_parts/mecha_equipment/tool/rcd,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
-"bK" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/plating/airless,/area)
-"bL" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
-"bM" = (/obj/machinery/door/poddoor,/turf/simulated/floor/plating/airless,/area)
-"bN" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating/airless,/area)
-"bO" = (/obj/item/robot_parts/robot_component/diagnosis_unit,/turf/space,/area)
-"bP" = (/obj/structure/shuttle/engine/heater,/turf/simulated/floor/plating/airless,/area)
-"bQ" = (/obj/structure/shuttle/engine/propulsion,/turf/simulated/floor/plating/airless,/area)
-"bR" = (/obj/structure/shuttle/engine/propulsion{icon_state = "burst_r"},/turf/simulated/floor/plating/airless,/area)
-"bS" = (/obj/structure/shuttle/engine/propulsion{icon_state = "propulsion_l"},/turf/simulated/floor/plating/airless,/area)
-"bT" = (/obj/item/robot_parts/robot_component/radio,/turf/space,/area)
+"aB" = (/mob/living/simple_animal/hostile/hivebot,/turf/simulated/floor/wood,/area)
+"aC" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/turf/simulated/floor/airless,/area)
+"aD" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/obj/effect/decal/cleanable/blood,/turf/simulated/floor/airless,/area)
+"aE" = (/obj/effect/decal/cleanable/blood,/turf/simulated/floor/airless,/area)
+"aF" = (/turf/simulated/floor/wood{broken = 1},/area)
+"aG" = (/obj/structure/stool/bed,/obj/item/weapon/bedsheet/red,/turf/simulated/floor/wood,/area)
+"aH" = (/obj/machinery/light/small,/turf/simulated/floor/wood,/area)
+"aI" = (/obj/structure/closet,/turf/simulated/floor/wood,/area)
+"aJ" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/turf/simulated/floor/airless{broken = 1},/area)
+"aK" = (/obj/effect/landmark/corpse/engineer,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/airless{broken = 1},/area)
+"aL" = (/obj/machinery/light/small,/turf/simulated/floor/wood{broken = 1},/area)
+"aM" = (/obj/machinery/light/small{dir = 8},/turf/simulated/floor/airless{broken = 1},/area)
+"aN" = (/obj/structure/lattice,/turf/space,/area)
+"aO" = (/obj/structure/lattice,/obj/item/weapon/ore/slag,/turf/space,/area)
+"aP" = (/obj/item/robot_parts/robot_suit,/obj/item/robot_parts/robot_suit,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"aQ" = (/obj/item/robot_parts/r_leg,/obj/item/robot_parts/r_leg,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"aR" = (/obj/item/robot_parts/r_arm,/obj/item/robot_parts/r_arm,/obj/structure/closet/crate,/obj/machinery/light/small{dir = 1},/turf/simulated/floor/plating/airless,/area)
+"aS" = (/obj/item/robot_parts/l_leg,/obj/item/robot_parts/l_leg,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"aT" = (/obj/item/robot_parts/l_arm,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"aU" = (/obj/item/weapon/cable_coil{amount = 2},/turf/space,/area)
+"aV" = (/obj/machinery/power/smes,/turf/simulated/floor/plating/airless,/area)
+"aW" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/plating/airless,/area)
+"aX" = (/obj/item/weapon/circuitboard/mecha/ripley/main,/obj/item/weapon/circuitboard/mecha/ripley/peripherals,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"aY" = (/obj/item/mecha_parts/mecha_equipment/tool/cable_layer,/obj/item/mecha_parts/mecha_equipment/tool/cable_layer,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"aZ" = (/obj/item/robot_parts/head,/obj/item/robot_parts/head,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"ba" = (/obj/item/robot_parts/chest,/obj/item/robot_parts/chest,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bb" = (/turf/simulated/floor/plating/airless,/area)
+"bc" = (/turf/simulated/floor/airless{broken = 1},/area)
+"bd" = (/obj/structure/cable{icon_state = "0-2"; pixel_y = 1; d2 = 2},/obj/machinery/power/terminal{icon_state = "term"; dir = 1},/turf/simulated/floor/plating/airless,/area)
+"be" = (/obj/structure/cable{icon_state = "0-2"; pixel_y = 1; d2 = 2},/obj/machinery/power/terminal{icon_state = "term"; dir = 1},/mob/living/simple_animal/hostile/hivebot,/turf/simulated/floor/plating/airless,/area)
+"bf" = (/obj/item/weapon/circuitboard/mecha/odysseus/peripherals,/obj/item/weapon/circuitboard/mecha/odysseus/main,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bg" = (/obj/item/mecha_parts/mecha_equipment/tool/drill,/obj/item/mecha_parts/mecha_equipment/tool/drill,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bh" = (/obj/item/robot_parts/robot_component/actuator,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bi" = (/obj/item/robot_parts/robot_component/armour,/obj/item/robot_parts/robot_component/armour,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bj" = (/obj/item/robot_parts/robot_component/camera,/turf/simulated/floor/plating/airless,/area)
+"bk" = (/turf/simulated/floor/plating/airless{broken = 1},/area)
+"bl" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating/airless,/area)
+"bm" = (/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/airless{broken = 1},/area)
+"bn" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/airless,/area)
+"bo" = (/obj/machinery/door/airlock/hatch,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating/airless,/area)
+"bp" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating/airless,/area)
+"bq" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/plating/airless,/area)
+"br" = (/obj/item/weapon/circuitboard/mecha/honker,/obj/item/weapon/circuitboard/mecha/honker/peripherals,/obj/item/weapon/circuitboard/mecha/honker/targeting,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bs" = (/obj/item/mecha_parts/mecha_equipment/tool/extinguisher,/obj/item/mecha_parts/mecha_equipment/tool/extinguisher,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bt" = (/obj/item/robot_parts/robot_component/binary_communication_device,/obj/item/robot_parts/robot_component/binary_communication_device,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bu" = (/obj/item/broken_device,/obj/item/weapon/ore/slag,/turf/simulated/floor/plating/airless,/area)
+"bv" = (/mob/living/simple_animal/hostile/hivebot,/turf/simulated/floor/plating/airless,/area)
+"bw" = (/obj/item/weapon/circuitboard/mechfab,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bx" = (/obj/item/mecha_parts/mecha_equipment/tool/hydraulic_clamp,/obj/item/mecha_parts/mecha_equipment/tool/hydraulic_clamp,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"by" = (/obj/structure/girder,/turf/simulated/floor/plating/airless,/area)
+"bz" = (/obj/item/mecha_parts/mecha_tracking,/obj/item/mecha_parts/mecha_tracking,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bA" = (/obj/item/mecha_parts/mecha_equipment/weapon/honker,/obj/item/mecha_parts/mecha_equipment/weapon/honker,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bB" = (/obj/item/mecha_parts/mecha_equipment/tool/sleeper,/obj/item/mecha_parts/mecha_equipment/tool/sleeper,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bC" = (/obj/item/robot_parts/robot_component/radio,/obj/item/weapon/ore/slag,/turf/space,/area)
+"bD" = (/mob/living/simple_animal/hostile/hivebot/strong,/turf/simulated/floor/plating/airless,/area)
+"bE" = (/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bF" = (/obj/item/mecha_parts/mecha_equipment/weapon/energy/ion,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bG" = (/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bH" = (/obj/item/mecha_parts/mecha_equipment/weapon/energy/taser,/obj/item/mecha_parts/mecha_equipment/weapon/energy/taser,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bI" = (/obj/item/mecha_parts/mecha_equipment/tool/syringe_gun,/obj/item/mecha_parts/mecha_equipment/tool/syringe_gun,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bJ" = (/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bK" = (/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bL" = (/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/flashbang,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bM" = (/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/flashbang/clusterbang,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bN" = (/obj/item/mecha_parts/mecha_equipment/tool/rcd,/obj/structure/closet/crate,/turf/simulated/floor/plating/airless,/area)
+"bO" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/plating/airless,/area)
+"bP" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
+"bQ" = (/obj/machinery/door/poddoor,/turf/simulated/floor/plating/airless,/area)
+"bR" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating/airless,/area)
+"bS" = (/obj/item/robot_parts/robot_component/diagnosis_unit,/turf/space,/area)
+"bT" = (/obj/structure/shuttle/engine/heater,/turf/simulated/floor/plating/airless,/area)
+"bU" = (/obj/structure/shuttle/engine/propulsion,/turf/simulated/floor/plating/airless,/area)
+"bV" = (/obj/structure/shuttle/engine/propulsion{icon_state = "burst_r"},/turf/simulated/floor/plating/airless,/area)
+"bW" = (/obj/structure/shuttle/engine/propulsion{icon_state = "propulsion_l"},/turf/simulated/floor/plating/airless,/area)
+"bX" = (/obj/item/robot_parts/robot_component/radio,/turf/space,/area)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaabacacadaeabaaaaaaaaaaaaaa
@@ -103,19 +107,19 @@ aaaaaaaaaaaaaaafagahaiajafakaaalaaaaaaaa
 aaaaaaaaaaaaaaamanagaoapamaaalaaakaaaaaa
 aaaaaaababababababaqaqababarakaaalaaaaaa
 aaaaaaafasasasabatauavawabaxaaayazaaaaaa
-aaaaaaazaAaAaAaqawaBaCaDaqaaaaaEazaaaaaa
-aaaaaaamaFaGaHabawaIaBaJaaaaaKaAamaaaaaa
-aaabababababababaLaIaIaMaNababababababaa
-aaabaOaPaQaRaSabawaIaTaaabaUaUaVaWaXabaa
-aaabaYaZbababaabbbaTaTbbabbcbcbabdbeabaa
-aaafbfbgbabhbibjaaaMbkblbmbnbobabpbqafaa
-aaazbrbsbibibiakakbbawawbjbabababtbuazaa
-aaambsbiaMayaMbvabbjbjababbwbxbwbwbyamaa
-aaabbiakbzaMaaabbabababaabbAbBbCbDbEabaa
-aaabaaayakaybiabbabababaabbFbGbHbIbJabaa
-aaaaakaabKbLabababbMbMabababbNbKbKbLabaa
-aabOaabibPbPabaaaaaaaaaaaaabbPbPbPbPabaa
-aaakaabQbQbRabaaaaaaaaaaaaabbSbQbQbRabaa
-akaabTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaazaAaBaAaqawaCaDaEaqaaaaaFazaaaaaa
+aaaaaaamaGaHaIabawaJaCaKaaaaaLaAamaaaaaa
+aaabababababababaMaJaJaNaOababababababaa
+aaabaPaQaRaSaTabawaJaUaaabaVaVaWaXaYabaa
+aaabaZbabbbbbbabbcaUaUbcabbdbebbbfbgabaa
+aaafbhbibbbjbkblaaaNbmbnbobpbqbbbrbsafaa
+aaazbtbubkbkbkakakbcawawblbbbbbvbwbxazaa
+aaambubkaNayaNbyabblblababbzbAbzbzbBamaa
+aaabbkakbCaNaaabbbbbbDbbabbEbFbGbHbIabaa
+aaabaaayakaybkabbbbbbbbbabbJbKbLbMbNabaa
+aaaaakaabObPabababbQbQabababbRbObObPabaa
+aabSaabkbTbTabaaaaaaaaaaaaabbTbTbTbTabaa
+aaakaabUbUbVabaaaaaaaaaaaaabbWbUbUbVabaa
+akaabXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 "}
