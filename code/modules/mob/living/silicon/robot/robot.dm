@@ -18,7 +18,7 @@
 	var/obj/screen/inv1 = null
 	var/obj/screen/inv2 = null
 	var/obj/screen/inv3 = null
-	
+
 	var/shown_robot_modules = 0	//Used to determine whether they have the module menu shown or not
 	var/obj/screen/robot_modules_background
 
@@ -79,7 +79,7 @@
 	robot_modules_background = new()
 	robot_modules_background.icon_state = "block"
 	robot_modules_background.layer = 19	//Objects that appear on screen are on layer 20, UI should be just below it.
-	
+
 	ident = rand(1, 999)
 	updatename("Default")
 	updateicon()
@@ -204,13 +204,13 @@
 
 	// languages
 	module.add_languages(src)
-	
-	// cameras 
+
+	// cameras
 	module.add_to_camera_network(src)
-	
+
 	// sensors
 	module.add_sensor_modification(src)
-	
+
 	// create sprite list
 	var/list/module_sprites = module.sprites.Copy()
 
@@ -298,6 +298,21 @@
 	set name = "Show Crew Manifest"
 	show_station_manifest()
 
+// the borg can lock and unlock its own cover. Since we're lowpop you can ask someone else to change your modules/recharge your batteries for you
+/mob/living/silicon/robot/verb/borg_toggle_cover_verb()
+	set category = "Robot Commands"
+	set name = "Toggle Cover Lock"
+	borg_toggle_cover()
+
+/mob/living/silicon/robot/verb/borg_toggle_cover()
+	if(emagged)//emagged covers are permanently unlocked.
+		src << "ERROR: Lock interface failure." //The message is a bit more vague on the borg's side. If someone tries to use their ID they get the "it's broken lol" message.
+	if(opened)
+		src << "ERROR: Lock initialization failure: cover open."
+	else
+		locked = !locked
+		src << "You [ locked ? "lock" : "unlock"] your cover."
+		updateicon()
 
 /mob/living/silicon/robot/proc/robot_alerts()
 	var/dat = "<HEAD><TITLE>Current Station Alerts</TITLE><META HTTP-EQUIV='Refresh' CONTENT='10'></HEAD><BODY>\n"
@@ -373,7 +388,7 @@
 		updatehealth()
 		return 1
 	return 0
-	
+
 /mob/living/silicon/robot/proc/sensor_mode()
 	set name = "Set Sensor Augmentation"
 	set desc = "Augment visual feed with internal sensor overlays."
