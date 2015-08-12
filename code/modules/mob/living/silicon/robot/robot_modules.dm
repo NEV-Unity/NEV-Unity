@@ -30,8 +30,8 @@
 		src.emag = new /obj/item/toy/sword(src)
 		src.emag.name = "Placeholder Emag Item"
 		return
-		
-		
+
+
 /obj/item/weapon/robot_module/proc/respawn_consumable(var/mob/living/silicon/robot/R)
 
 	if(!stacktypes || !stacktypes.len) return
@@ -58,24 +58,35 @@
 
 /obj/item/weapon/robot_module/proc/add_languages(var/mob/living/silicon/robot/R)
 	//full set of languages
-	R.add_language("Sol Common", 1)
+	R.add_language("Anglic", 1)
 	R.add_language("Tradeband", 0)
-	R.add_language("Sinta'unathi", 0)
-	R.add_language("Siik'Maas", 0)
-	R.add_language("Skrellian", 0)
 	R.add_language("Gutter", 0)
+	R.add_language("Sinta", 0)
+	R.add_language("Uwe", 0)
+	R.add_language("Weis", 0)
+	R.add_language("Rezar", 0)
+	R.add_language("Zawan", 0)
+	R.add_language("Pekhotha sign", 0)
+	R.add_language("Skrellian", 0)
+	R.add_language("Sini", 0)
+	R.add_language("Kida", 0)
 	R.add_language("Rootspeak", 0)
+	R.add_language("Sign language", 0) //yes, the borg knows sign language. If you need to know why it can use it, a space wizard did it.
+	R.add_language("Zho", 0)
+	R.add_language("Ara", 0)
+	R.add_language("Hindi", 0)
+	R.add_language("", 0)
 
 
 /obj/item/weapon/robot_module/proc/add_to_camera_network(var/mob/living/silicon/robot/R)
 	if (camera_network)
 		if(R.camera && "Robots" in R.camera.network)
 			R.camera.network.Add(camera_network)
-	
+
 
 /obj/item/weapon/robot_module/proc/add_sensor_modification(var/mob/living/silicon/robot/R)
 	R.sensor_mode=sensor_mode
-	
+
 
 /obj/item/weapon/robot_module/standard
 	name = "standard robot module"
@@ -323,8 +334,8 @@
 
 /obj/item/weapon/robot_module/butler
 	name = "service robot module"
-	sprites = list( "Waitress" = "Service", 
-					"Kent" = "toiletbot", 
+	sprites = list( "Waitress" = "Service",
+					"Kent" = "toiletbot",
 					"Bro" = "Brobot",
 					"Rich" = "maximillion",
 					"Default" = "Service2")
@@ -335,7 +346,7 @@
 		src.modules += new /obj/item/weapon/reagent_containers/food/condiment/enzyme(src)
 		src.modules += new /obj/item/weapon/pen/robopen(src)
 
-		var/obj/item/weapon/rsf/M = new /obj/item/weapon/rsf(src)
+		var/obj/item/weapon/rsf/M = new /obj/item/weapon/rsf/borg(src)
 		M.stored_matter = 30
 		src.modules += M
 
@@ -368,8 +379,8 @@
 
 /obj/item/weapon/robot_module/clerical
 	name = "clerical robot module"
-	sprites = list( "Waitress" = "Service", 
-					"Kent" = "toiletbot", 
+	sprites = list( "Waitress" = "Service",
+					"Kent" = "toiletbot",
 					"Bro" = "Brobot",
 					"Rich" = "maximillion",
 					"Default" = "Service2")
