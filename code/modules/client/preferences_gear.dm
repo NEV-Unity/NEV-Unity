@@ -26,6 +26,20 @@ proc/populate_gear_list()
 	cost = 1
 	organ = 1
 
+/datum/gear/organ/shieldeyes
+	display_name = "Shielded Prosthesis"
+	path = /obj/item/organ/eyes/shielded
+	cost = 6
+	organ = 1
+
+/datum/gear/organ/nvgeyes
+	display_name = "Infrared Prosthesis"
+	path = /obj/item/organ/eyes/night
+	cost = 8
+	organ = 1
+//KEEPING ORGANS SEPARATE UNTIL I HAVE THEM WORKING RIGHT.
+
+
 /datum/gear/armband
 	display_name = "armband (red)"
 	path = /obj/item/clothing/tie/armband
