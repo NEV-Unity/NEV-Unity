@@ -378,7 +378,18 @@ var/global/datum/controller/occupations/job_master
 						if(G.slot)
 							H.equip_to_slot_or_del(new G.path(H), G.slot)
 							H << "\blue Equipping you with [thing]!"
+						if(istype(G,/datum/gear/organ))
+							var/obj/item/organ/O = new G.path()//ISSUE HERE
+							var/datum/organ/internal/I = new O.organ_type()
+							O.update()/*
+							world << "DEBUG G.PATH = [G.path]"
+							world << "DEBUG O.ORGAN_TYPE = [O.organ_type]"
+							world << "DEBUG H = [H.name]"
+							world << "DEBUG I.parent_organ = [I.parent_organ]"*/
+							if(istype(O))
+								O.replaced(H,H.get_organ(I.parent_organ))
 
+							H << "\blue Implanting you with the [thing] in the [I.parent_organ]!"
 						else
 							spawn_in_storage += thing
 

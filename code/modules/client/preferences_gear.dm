@@ -12,13 +12,19 @@ proc/populate_gear_list()
 	var/slot               //Slot to equip to.
 	var/list/allowed_roles //Roles that can spawn with this item.
 	var/whitelisted        //Term to check the whitelist for..
-
+	var/organ = 0
 //Uncertain
 
 
 
 //Standard gear datums.
 //Small Items and simple visual accessories are 1 point
+
+/datum/gear/organ/stack
+	display_name = "cortical stack"
+	path = /obj/item/organ/stack
+	cost = 1
+	organ = 1
 
 /datum/gear/armband
 	display_name = "armband (red)"
