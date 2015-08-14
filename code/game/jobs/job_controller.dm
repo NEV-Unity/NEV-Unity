@@ -379,13 +379,19 @@ var/global/datum/controller/occupations/job_master
 							H.equip_to_slot_or_del(new G.path(H), G.slot)
 							H << "\blue Equipping you with [thing]!"
 						if(istype(G,/datum/gear/organ))
-							var/obj/item/organ/O = new G.path()//ISSUE HERE
+							var/obj/item/organ/O = new G.path()
 							var/datum/organ/internal/I = new O.organ_type()
 							O.update()/*
 							world << "DEBUG G.PATH = [G.path]"
 							world << "DEBUG O.ORGAN_TYPE = [O.organ_type]"
 							world << "DEBUG H = [H.name]"
 							world << "DEBUG I.parent_organ = [I.parent_organ]"*/
+							//Need to remove existing organ
+							for(var/datumorgan/internal/U in H.internal_organs_by_name) //Cycle through all the internal organs
+								if(istype(U,I)) //If U matches our path...
+									var/T = U.remove(H) //Use the remove proc to create the organ object...
+									T.removed(H,H)//Then call he removed proc on the object - THIS MAY NOT WORK. MARK. FUCKING ORGAN MAGIC!
+							
 							if(istype(O))
 								O.replaced(H,H.get_organ(I.parent_organ))
 
