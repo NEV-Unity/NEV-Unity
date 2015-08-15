@@ -387,13 +387,16 @@ var/global/datum/controller/occupations/job_master
 							world << "DEBUG H = [H.name]"
 							world << "DEBUG I.parent_organ = [I.parent_organ]"*/
 							//Need to remove existing organ
-							for(var/datumorgan/internal/U in H.internal_organs_by_name) //Cycle through all the internal organs
+							for(var/datum/organ/internal/U in H.internal_organs) //Cycle through all the internal organs
 								if(istype(U,I)) //If U matches our path...
-									var/T = U.remove(H) //Use the remove proc to create the organ object...
+									var/obj/item/organ/T = U.remove(H) //Use the remove proc to create the organ object...
+									T.update()
 									T.removed(H,H)//Then call he removed proc on the object - THIS MAY NOT WORK. MARK. FUCKING ORGAN MAGIC!
-							
 							if(istype(O))
 								O.replaced(H,H.get_organ(I.parent_organ))
+								for(var/datum/organ/internal/V in H.internal_organs)
+									if(V.removed_type == G.path)
+										V.status = 0
 
 							H << "\blue Implanting you with the [thing] in the [I.parent_organ]!"
 						else

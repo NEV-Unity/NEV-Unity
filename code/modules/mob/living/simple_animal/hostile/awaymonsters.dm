@@ -101,7 +101,7 @@
 				L.visible_message("<span class='danger'>\the [src] splashes \the [L] with burning acid!</span>")
 				var/datum/reagents/R = new/datum/reagents(500)
 				R.add_reagent("sacid",(maxHealth/10))
-				R.reagents.reaction(L, TOUCH)	
+				R.reaction(L, TOUCH)
 				del(R)
 				var/obj/effect/decal/cleanable/mucus/C = new(get_turf(src))
 				C.name = "slime"

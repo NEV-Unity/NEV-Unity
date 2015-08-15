@@ -37,6 +37,7 @@ proc/populate_gear_list()
 	path = /obj/item/organ/eyes/night
 	cost = 8
 	organ = 1
+
 //KEEPING ORGANS SEPARATE UNTIL I HAVE THEM WORKING RIGHT.
 
 
