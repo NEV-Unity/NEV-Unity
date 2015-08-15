@@ -1,0 +1,85 @@
+"aa" = (/turf/simulated/wall/r_wall,/area/space)
+"ab" = (/obj/structure/grille,/obj/structure/window/reinforced{tag = "icon-rwindow (NORTH)"; icon_state = "rwindow"; dir = 1},/obj/structure/window/reinforced{dir = 8; pixel_x = -3},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area/space)
+"ac" = (/obj/structure/grille,/obj/structure/window/reinforced{tag = "icon-rwindow (NORTH)"; icon_state = "rwindow"; dir = 1},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area/space)
+"ad" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{tag = "icon-rwindow (NORTH)"; icon_state = "rwindow"; dir = 1},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area/space)
+"ae" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/wood,/area/space)
+"af" = (/turf/simulated/floor/wood,/area/space)
+"ag" = (/turf/simulated/floor/carpet,/area/space)
+"ah" = (/obj/effect/decal/cleanable/greenglow,/turf/simulated/floor/wood,/area/space)
+"ai" = (/obj/machinery/vending/cigarette,/turf/simulated/floor/wood,/area/space)
+"aj" = (/obj/machinery/vending/coffee,/turf/simulated/floor/wood,/area/space)
+"ak" = (/obj/machinery/newscaster,/turf/simulated/wall/r_wall,/area/space)
+"al" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{tag = "icon-rwindow (NORTH)"; icon_state = "rwindow"; dir = 1},/obj/structure/window/reinforced{dir = 8; pixel_x = -3},/turf/simulated/floor/plating,/area/space)
+"am" = (/turf/simulated/wall,/area/space)
+"an" = (/obj/structure/stool/bed/chair{dir = 4},/turf/simulated/floor/carpet,/area/space)
+"ao" = (/obj/structure/table/woodentable,/obj/item/weapon/paper,/turf/simulated/floor/carpet,/area/space)
+"ap" = (/obj/structure/stool/bed/chair{dir = 8},/turf/simulated/floor/carpet,/area/space)
+"aq" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8; pixel_x = -3},/turf/simulated/floor/plating,/area/space)
+"ar" = (/obj/structure/closet,/obj/item/clothing/under/gentlesuit,/obj/item/clothing/shoes/laceup,/turf/simulated/floor/wood,/area/space)
+"as" = (/obj/machinery/recharger/wallcharger{pixel_y = 30},/turf/simulated/floor/wood,/area/space)
+"at" = (/obj/structure/stool/bed,/obj/item/weapon/bedsheet,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/wood,/area/space)
+"au" = (/obj/effect/decal/cleanable/greenglow,/obj/structure/filingcabinet/chestdrawer,/turf/simulated/floor/wood,/area/space)
+"av" = (/obj/effect/landmark/mobcorpse/russian/ranged,/obj/effect/decal/cleanable/blood,/obj/item/weapon/gun/projectile/silenced,/turf/simulated/floor/wood,/area/space)
+"aw" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/obj/structure/window/reinforced{tag = "icon-rwindow (NORTH)"; icon_state = "rwindow"; dir = 1},/obj/structure/window/reinforced{dir = 8; pixel_x = -3},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area/space)
+"ax" = (/obj/structure/table/woodentable,/turf/simulated/floor/carpet,/area/space)
+"ay" = (/obj/structure/bedsheetbin,/obj/structure/table/woodentable,/turf/simulated/floor/wood,/area/space)
+"az" = (/obj/effect/decal/cleanable/blood,/turf/simulated/floor/wood,/area/space)
+"aA" = (/obj/structure/table/woodentable,/turf/simulated/floor/wood,/area/space)
+"aB" = (/obj/effect/decal/cleanable/greenglow,/obj/effect/decal/cleanable/ash,/obj/structure/stool/bed/chair,/turf/simulated/floor/wood,/area/space)
+"aC" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/carpet,/area/space)
+"aD" = (/obj/structure/stool/bed,/obj/item/weapon/bedsheet,/obj/effect/landmark/mobcorpse/russian,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/carpet,/area/space)
+"aE" = (/obj/effect/decal/cleanable/greenglow,/turf/simulated/floor/carpet,/area/space)
+"aF" = (/obj/effect/plant_controller/creeper,/obj/effect/plantsegment,/turf/simulated/floor/wood,/area/space)
+"aG" = (/obj/machinery/newscaster,/turf/simulated/wall,/area/space)
+"aH" = (/obj/structure/table/woodentable,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/wood,/area/space)
+"aI" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/obj/structure/window/reinforced{dir = 8; pixel_x = -3},/obj/structure/window/reinforced{tag = "icon-rwindow (NORTH)"; icon_state = "rwindow"; dir = 1},/turf/simulated/floor/plating,/area/space)
+"aJ" = (/obj/effect/decal/cleanable/blood,/turf/simulated/floor/carpet,/area/space)
+"aK" = (/obj/effect/decal/cleanable/greenglow,/obj/item/weapon/ore/slag,/obj/structure/stool/bed/chair{dir = 1},/turf/simulated/floor/wood,/area/space)
+"aL" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/obj/structure/window/reinforced{dir = 8; pixel_x = -3},/turf/simulated/floor/plating,/area/space)
+"aM" = (/obj/item/weapon/ore/slag,/turf/simulated/floor/wood,/area/space)
+"aN" = (/obj/effect/decal/cleanable/ash,/turf/simulated/floor/wood,/area/space)
+"aO" = (/mob/living/simple_animal/hostile/ooze,/turf/simulated/floor/carpet,/area/space)
+"aP" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/obj/structure/window/reinforced{dir = 8; pixel_x = -3},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area/space)
+"aQ" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8; pixel_x = -3},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area/space)
+"aR" = (/obj/structure/table/woodentable,/obj/machinery/microwave,/turf/simulated/floor/wood,/area/space)
+"aS" = (/obj/structure/closet,/obj/item/clothing/under/gentlesuit,/obj/item/clothing/under/gentlesuit,/obj/item/clothing/under/gentlesuit,/obj/item/clothing/under/gentlesuit,/obj/item/clothing/shoes/laceup,/obj/item/clothing/shoes/laceup,/obj/item/clothing/shoes/laceup,/obj/item/clothing/shoes/laceup,/turf/simulated/floor/wood,/area/space)
+"aT" = (/obj/structure/safe/floor,/obj/item/weapon/moneybag/vault,/turf/simulated/floor/carpet,/area/space)
+"aU" = (/turf/simulated/floor/plating,/area/space)
+"aV" = (/obj/machinery/vending/cola,/turf/simulated/floor/wood,/area/space)
+"aW" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8; pixel_x = -3},/obj/structure/window/reinforced{tag = "icon-rwindow (NORTH)"; icon_state = "rwindow"; dir = 1},/turf/simulated/floor/plating,/area/space)
+"aX" = (/obj/structure/stool/bed/chair,/turf/simulated/floor/carpet,/area/space)
+"aY" = (/obj/structure/stool/bed/chair{dir = 4},/turf/simulated/floor/wood,/area/space)
+"aZ" = (/obj/structure/stool/bed/chair{dir = 8},/turf/simulated/floor/wood,/area/space)
+"ba" = (/obj/structure/stool/bed/chair{dir = 1},/turf/simulated/floor/carpet,/area/space)
+"bb" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8; pixel_x = -3},/obj/structure/window/reinforced,/obj/structure/window/reinforced{tag = "icon-rwindow (NORTH)"; icon_state = "rwindow"; dir = 1},/turf/simulated/floor/plating,/area/space)
+"bc" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{tag = "icon-rwindow (NORTH)"; icon_state = "rwindow"; dir = 1},/turf/simulated/floor/plating,/area/space)
+"bd" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{tag = "icon-rwindow (NORTH)"; icon_state = "rwindow"; dir = 1},/turf/simulated/floor/plating,/area/space)
+"be" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8; pixel_x = -3},/obj/structure/window/reinforced{tag = "icon-rwindow (NORTH)"; icon_state = "rwindow"; dir = 1},/turf/simulated/floor/plating,/area/space)
+"bf" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced,/obj/structure/window/reinforced{tag = "icon-rwindow (NORTH)"; icon_state = "rwindow"; dir = 1},/turf/simulated/floor/plating,/area/space)
+"bg" = (/obj/structure/flora/pottedplant{icon_state = "plant-21"; layer = 4; pixel_y = 8; tag = "icon-plant-21"},/turf/simulated/floor/wood,/area/space)
+"bh" = (/obj/structure/stool/bed/chair{dir = 1},/turf/simulated/floor/wood,/area/space)
+"bi" = (/obj/item/stack/flag/red,/turf/simulated/floor/grass,/area/space)
+"bj" = (/turf/simulated/floor/grass,/area/space)
+
+(1,1,1) = {"
+aaaaaaaaabacacacacacacadaaaaaaaaaaaaaaaa
+aeafaeagafafafafahafafafaaaiajaaaaakaaaa
+aeafaeagafafafafafafafafaeafafaaagagagal
+aaaaaaaeamamamamamamamamamafafaaanaoapaq
+aaaaakafamarasatamauavahamafagawanaxapaq
+alayahafamafazaAamazaBafamafagaCagaoapaq
+aqaDaEaFamamaeaGamaAaHazamafagaIanaxapaq
+aqaDaJahamafafafazafaKafamafafaLanaoapaq
+aqaDaEazamaMafafaNafafafamafafaLanaxapaq
+aqaDaJafamafaAaAaJaOagafamafafaPagagagaQ
+aQaRaSahamafaAaAagaTagafamafafaaamamamam
+aaaaakaeamafaAaAaJagaEafamafahaeafaeaUaU
+aaaaafazamafafafafafaMafamafafaaamaGamam
+aaaVazafamamaGamaeamaGamamahafaWagaXagal
+aaaiafafamafafafafafafafamafafaqaxaxagaq
+aaajafafamaYaAaZafaYaAaZamafafaQagbaagaq
+aaaaaaaeambbbcbdaebebcbfamafafaeafaFafaq
+aeafaeafafafafafafafafafafagagaWafafafaq
+aeafaeafafbgbhbhaAbhbhbgafagagaQbibjbgaQ
+amamamamabacacacacacacadamamamaaamamamam
+"}
