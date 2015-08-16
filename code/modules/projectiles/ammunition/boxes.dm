@@ -96,7 +96,25 @@
 	ammo_type = "/obj/item/ammo_casing/c45"
 	max_ammo = 32
 
+/obj/item/ammo_magazine/em
+	name = "EM ammunition box"
+	icon_state = "shotgun"
+	origin_tech = "combat=2"
+	ammo_type = "/obj/item/ammo_casing/em"
+	max_ammo = 46
 
+/obj/item/ammo_magazine/em/empty
+	max_ammo = 0
+
+/obj/item/ammo_magazine/falcon
+	name = "CR4 Cartidge"
+	icon_state = "shotgun"
+	origin_tech = "combat=3"
+	ammo_type = "/obj/item/ammo_casing/shotgun"
+	max_ammo = 24
+
+/obj/item/ammo_magazine/falcon/empty
+	max_ammo = 0
 
 /obj/item/ammo_magazine/a12mm
 	name = "magazine (12mm)"

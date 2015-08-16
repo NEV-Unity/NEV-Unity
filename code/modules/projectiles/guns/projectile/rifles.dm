@@ -45,6 +45,22 @@
 	fire_delay = 2
 	fire_cooldown = 3
 	projectiles_per_shot = 3
+	fire_sound = 'sound/weapons/rifle.ogg'
+
+	New()
+		..()
+		empty_mag = new /obj/item/ammo_magazine/falcon/empty
+		update_icon()
+		return
+
+
+	afterattack(atom/target as mob|obj|turf|area, mob/living/user as mob|obj, flag)
+		..()
+		if(!loaded.len && empty_mag)
+			empty_mag.loc = get_turf(src.loc)
+			empty_mag = null
+			playsound(user, 'sound/weapons/smg_empty_alarm.ogg', 40, 1)
+			update_icon()
 
 /obj/item/weapon/gun/projectile/rifle/zephyr
 	name = "EM2 Zephyr"
@@ -58,4 +74,20 @@
 	automatic = 0
 	fire_delay = 2
 	fire_cooldown = 3
-	projectiles_per_shot = 3
+	projectiles_per_shot = 2
+	fire_sound = 'sound/weapons/rifle.ogg'
+
+	New()
+		..()
+		empty_mag = new /obj/item/ammo_magazine/em/empty
+		update_icon()
+		return
+
+
+	afterattack(atom/target as mob|obj|turf|area, mob/living/user as mob|obj, flag)
+		..()
+		if(!loaded.len && empty_mag)
+			empty_mag.loc = get_turf(src.loc)
+			empty_mag = null
+			playsound(user, 'sound/weapons/smg_empty_alarm.ogg', 40, 1)
+			update_icon()
