@@ -67,7 +67,6 @@
 	speed = 8 // Higher is slower if I recall? These should be slow, but deadly
 	maxHealth = 200
 	health = 200
-
 	harm_intent_damage = 5
 	melee_damage_lower = 20
 	melee_damage_upper = 20
@@ -96,8 +95,17 @@
 	..()
 	if(isliving(target_mob))
 		var/mob/living/L = target_mob
-		if(L.reagents)
-			L.reagents.add_reagent("sacid", (maxHealth/10))
+		if(prob(25))
+			for(var/mob/O in viewers(world.view, src))
+				L << "\red You are covered in burning acid!"
+				L.visible_message("<span class='danger'>\the [src] splashes \the [L] with burning acid!</span>")
+				var/datum/reagents/R = new/datum/reagents(500)
+				R.add_reagent("sacid",(maxHealth/10))
+				R.reaction(L, TOUCH)
+				del(R)
+				var/obj/effect/decal/cleanable/mucus/C = new(get_turf(src))
+				C.name = "slime"
+				C.desc = "Disgusting slime."
 
 /mob/living/simple_animal/hostile/ooze/death()
 	var/obj/effect/decal/cleanable/mucus/C = new(get_turf(src))
@@ -126,6 +134,7 @@
 
 	New()
 		..()
+		bitesize = 2
 		reagents.add_reagent(pick("plasticide","mutationtoxin", "amutationtoxin","stoxin2","space_drugs","serotrotium","mercury","tramadol","cryptobiolin","adminordrazine","nanites","xenomicrobes","mutagen"), 5)
 
 /mob/living/simple_animal/hostile/cmonster

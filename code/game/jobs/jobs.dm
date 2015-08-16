@@ -49,7 +49,7 @@ var/const/LAWYER			=(1<<8)
 var/const/CHAPLAIN			=(1<<9)
 var/const/CLOWN				=(1<<10)
 var/const/MIME				=(1<<11)
-var/const/ASSISTANT			=(1<<1)
+var/const/ASSISTANT			=(1<<12)
 
 
 var/list/assistant_occupations = list(

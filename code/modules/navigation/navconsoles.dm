@@ -114,9 +114,6 @@
 			if(!(istype(x, /turf/space/transit)))
 				x.icon_state = "[((x.x + x.y) ^ ~(x.x * x.y) + x.z) % 25]"
 		sleep 3000 //This will be 3000 eventually. (5min) - set to 10s for testing
-		for(var/turf/space/x in world)
-			if(!istype(x, /turf/space/transit))
-				x.icon_state = "x[((x.x + x.y) ^ ~(x.x * x.y) + x.z) % 25]"
 //		for(var/mob/M in player_list)
 //			M << sound('sound/music/All Hands.ogg')
 		ship.curplanet = movetarget
@@ -125,6 +122,9 @@
 		createAwayMission()
 		awayZLevel++
 		onPlanet = 1
+		for(var/turf/space/x in world)
+			if(!istype(x, /turf/space/transit))
+				x.icon_state = "x[((x.x + x.y) ^ ~(x.x * x.y) + x.z) % 25]"
 		command_alert("Movement Complete. The ship has reached "+ movetarget.name+ "", "NEV Unity Autopilot")
 		locked = 0
 /obj/machinery/computer/navigation/proc/move(var/datum/system/movetarget)
