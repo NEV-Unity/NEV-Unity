@@ -141,3 +141,17 @@
 	desc = "A set of bullets for the Chameleon Gun."
 	projectile_type = "/obj/item/projectile/bullet/chameleon"
 	caliber = ".45"
+
+/obj/item/ammo_casing/em
+	name = "EM Cartridge"
+	desc = "A two-part bullet, contains a supercapacitor and a projectile."
+	projectile_type = "/obj/item/projectile/bullet/midbullet2"
+	caliber = "em"
+	icon = 'icons/obj/power.dmi'
+	icon_state = "cell"
+
+/obj/item/ammo_casing/em/explosive
+	name = "E-EM Cartridge"
+	desc = "A electromagnetic catridge split in two parts. This one has an explosive tip."
+	projectile_type = "/obj/item/projectile/bullet/gyro"
+	caliber = "em"

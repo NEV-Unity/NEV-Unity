@@ -68,6 +68,32 @@
 	max_ammo = 7
 	multiple_sprites = 1
 
+/obj/item/ammo_magazine/em
+	name = "EM magazine"
+	icon_state = "666"
+	ammo_type = "/obj/item/ammo_casing/em"
+	max_ammo = 24
+
+/obj/item/ammo_magazine/em/empty
+	max_ammo = 0
+
+/obj/item/ammo_magazine/em/explosive
+	name = "E-EM magazine"
+	ammo_type = "/obj/item/ammo_casing/em/explosive"
+	max_ammo = 24
+
+/obj/item/ammo_magazine/em/explosive/empty
+	max_ammo = 0
+
+
+/obj/item/ammo_magazine/falcon
+	name = "CR4 Cartridge"
+	icon_state = "666"
+	ammo_type = "/obj/item/ammo_casing/shotgun"
+	max_ammo = 16
+
+/obj/item/ammo_magazine/falcon/empty
+	max_ammo = 0
 
 
 /obj/item/ammo_magazine/a666
@@ -80,23 +106,14 @@
 
 /obj/item/ammo_magazine/mc9mm
 	name = "magazine (9mm)"
-	icon_state = "9x19p"
+	icon_state = "9mm"
 	origin_tech = "combat=2"
 	ammo_type = "/obj/item/ammo_casing/c9mm"
-	max_ammo = 8
+	max_ammo = 24
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/mc9mm/empty
 	max_ammo = 0
-
-/obj/item/ammo_magazine/c9mm
-	name = "Ammunition Box (9mm)"
-	icon_state = "9mm"
-	origin_tech = "combat=2"
-	ammo_type = "/obj/item/ammo_casing/c9mm"
-	max_ammo = 36
-
-
 
 /obj/item/ammo_magazine/c45
 	name = "Ammunition Box (.45)"
@@ -105,14 +122,20 @@
 	ammo_type = "/obj/item/ammo_casing/c45"
 	max_ammo = 32
 
-
-
 /obj/item/ammo_magazine/a12mm
 	name = "magazine (12mm)"
 	icon_state = "12mm"
 	origin_tech = "combat=2"
 	ammo_type = "/obj/item/ammo_casing/a12mm"
 	max_ammo = 20
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/c9mm
+	name = "magazine (9mm)"
+	icon_state = "12mm"
+	origin_tech = "combat=2"
+	ammo_type = "/obj/item/ammo_casing/c9mm"
+	max_ammo = 36
 	multiple_sprites = 1
 
 
