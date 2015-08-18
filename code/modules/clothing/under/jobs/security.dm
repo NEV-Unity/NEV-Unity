@@ -9,18 +9,18 @@
  * Security
  */
 /obj/item/clothing/under/rank/warden
-	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for more robust protection. It has the word \"Chief Petty Officer\" written on the shoulders."
-	name = "warden's jumpsuit"
-	icon_state = "warden"
+	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for basic combat protection."
+	name = "cpo's jumpsuit"
+	icon_state = "security"
 	item_state = "b_suit"
-	item_color = "warden"
+	item_color = "secred"
 	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	flags = FPRINT | TABLEPASS
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/rank/security
 	name = "espatier's jumpsuit"
-	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for robust protection."
+	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for basic combat protection."
 	icon_state = "security"
 	item_state = "b_suit"
 	item_color = "secred"
@@ -79,14 +79,14 @@
 	siemens_coefficient = 0.9
 
 /*
- * Marshal
+ * Marshal - NEEDS A SPECIAL COP UNIFORM
  */
 /obj/item/clothing/under/det
-	name = "hard-worn suit"
-	desc = "Someone who wears this means business."
-	icon_state = "detective"
-	item_state = "det"
-	item_color = "detective"
+	name = "marshal's uniform"
+	desc = "It's made of slightly sturdier material than standard jumpsuits to allow for basic combat protection. It bears the insignia of the USN Marshals."
+	icon_state = "security"
+	item_state = "b_suit"
+	item_color = "secred"
 	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	flags = FPRINT | TABLEPASS
 	siemens_coefficient = 0.9
@@ -145,7 +145,7 @@
 
 /obj/item/clothing/head/helmet/HoS
 	name = "Commander's Hat"
-	desc = "The hat of the Commander. For showing the officers who's in charge."
+	desc = "The hat of the Commander."
 	icon_state = "hoscap"
 	flags = FPRINT | TABLEPASS | HEADCOVERSEYES
 	armor = list(melee = 80, bullet = 60, laser = 50,energy = 10, bomb = 25, bio = 10, rad = 0)
