@@ -203,7 +203,6 @@
 	removed_type = /obj/item/organ/stack
 	parent_organ = "head"
 	robotic = 2
-	vital = 1
 	var/backup_time = 0
 	var/datum/mind/backup
 

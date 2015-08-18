@@ -191,7 +191,7 @@
 
 /datum/autolathe/recipe/handgun
 	name = "ammunition (.45 )"
-	path = /obj/item/ammo_casing/c45s
+	path = /obj/item/ammo_magazine/c45s
 	category = "Arms and Ammunition"
 
 /datum/autolathe/recipe/shotgun_blanks
