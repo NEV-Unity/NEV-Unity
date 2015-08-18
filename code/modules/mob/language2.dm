@@ -198,7 +198,7 @@ proc/populate_language_list()
 
 /datum/language/tesausign
 	name = "Pekhota sign"
-	desc = "A mixture of manual comunication and body language used by Pekhota tesau for ."
+	desc = "A mixture of manual comunication and body language used by Pekhota tesau for silent communication in the field."
 	speech_verb = "signs"
 	signlang_verb = list("reports")
 	key = "6"

@@ -236,7 +236,6 @@
 	affected.internal_organs |= organ_data
 	target.internal_organs_by_name[organ_tag] = organ_data
 	organ_data.status |= ORGAN_CUT_AWAY
-
 	del(src)
 
 /obj/item/organ/eyes/replaced(var/mob/living/carbon/human/target)

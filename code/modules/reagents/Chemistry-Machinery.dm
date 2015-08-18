@@ -242,7 +242,7 @@
 	var/obj/item/weapon/storage/pill_bottle/loaded_pill_bottle = null
 	var/mode = 0
 	var/condi = 0
-	var/useramount = 30 // Last used amount
+	var/useramount = 60 // Last used amount
 	var/pillamount = 10
 	var/bottlesprite = "1" //yes, strings
 	var/pillsprite = "1"
@@ -350,7 +350,7 @@
 		else if (href_list["addcustom"])
 
 			var/id = href_list["addcustom"]
-			useramount = input("Select the amount to transfer.", 30, useramount) as num
+			useramount = input("Select the amount to transfer.", 60, useramount) as num
 			useramount = isgoodnumber(useramount)
 			src.Topic(null, list("amount" = "[useramount]", "add" = "[id]"))
 
@@ -368,7 +368,7 @@
 		else if (href_list["removecustom"])
 
 			var/id = href_list["removecustom"]
-			useramount = input("Select the amount to transfer.", 30, useramount) as num
+			useramount = input("Select the amount to transfer.", 60, useramount) as num
 			useramount = isgoodnumber(useramount)
 			src.Topic(null, list("amount" = "[useramount]", "remove" = "[id]"))
 
@@ -425,7 +425,7 @@
 				P.pixel_x = rand(-7, 7) //random position
 				P.pixel_y = rand(-7, 7)
 				P.icon_state = "bottle"+bottlesprite
-				reagents.trans_to(P,30)
+				reagents.trans_to(P,60)
 			else
 				var/obj/item/weapon/reagent_containers/food/condiment/P = new/obj/item/weapon/reagent_containers/food/condiment(src.loc)
 				reagents.trans_to(P,50)
@@ -513,7 +513,7 @@
 		if(!condi)
 			dat += "<HR><BR><A href='?src=\ref[src];createpill=1'>Create pill (50 units max)</A><a href=\"?src=\ref[src]&change_pill=1\"><img src=\"pill[pillsprite].png\" /></a><BR>"
 			dat += "<A href='?src=\ref[src];createpill_multiple=1'>Create multiple pills</A><BR>"
-			dat += "<A href='?src=\ref[src];createbottle=1'>Create bottle (30 units max)<a href=\"?src=\ref[src]&change_bottle=1\"><img src=\"bottle[bottlesprite].png\" /></A>"
+			dat += "<A href='?src=\ref[src];createbottle=1'>Create bottle (60 units max)<a href=\"?src=\ref[src]&change_bottle=1\"><img src=\"bottle[bottlesprite].png\" /></A>"
 		else
 			dat += "<A href='?src=\ref[src];createbottle=1'>Create bottle (50 units max)</A>"
 	if(!condi)
@@ -935,7 +935,7 @@
 	var/processing_chamber = ""
 	var/beaker_contents = ""
 	var/dat = ""
-
+/*
 	if(istype(user, /mob/living/carbon/human))
 		var/mob/living/carbon/human/M = user
 		if(M.h_style == "Floorlength Braid" || M.h_style == "Very Long Hair")
@@ -944,7 +944,7 @@
 				M.apply_damage(45, HALLOSS)
 				M.visible_message("\red [user]'s hair catches in the [src]!", "\red Your hair gets caught in the [src]!")
 				M.say("*scream")
-
+*/
 	if(!inuse)
 		for (var/obj/item/O in holdingitems)
 			processing_chamber += "\A [O.name]<BR>"
@@ -1211,6 +1211,7 @@
 			return
 		if(target_loc != target.loc)
 			return
+/*
 		if(target != user && !user.restrained() && !user.stat && !user.weakened && !user.stunned && !user.paralysis)
 			user.visible_message("\red [user] feeds the [target]'s hair into the [src] and flicks it on!", "\red You turn the [src] on!")
 			target.apply_damage(30, BRUTE, "head")
@@ -1233,3 +1234,4 @@
 			target.say("*scream")
 			spawn(10)
 			user.visible_message("\red [user] stops the [src] and leaves [target] resting as they are.", "\red You turn the [src] off and let go of [target].")
+*/

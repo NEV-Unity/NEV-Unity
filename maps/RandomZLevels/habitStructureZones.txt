@@ -2,4 +2,4 @@ maps/RandomZLevels/cultformation.dmm
 maps/RandomZLevels/habitableStructure.dmm
 maps/RandomZLevels/habitableStructure1.dmm
 maps/RandomZLevels/habitableStructure2.dmm
-maps/RandomZLevels/habitalienruins1.dmm
+maps/RandomZLevels/habitalienruins1.dmmmaps/RandomZLevels/oozeformation.dmm
