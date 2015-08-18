@@ -187,6 +187,8 @@
 		new /obj/item/weapon/storage/belt/security(src)
 		new /obj/item/weapon/grenade/flashbang(src)
 		new /obj/item/clothing/tie/storage/black_vest(src)
+		new /obj/item/clothing/tie/holster/waist(src)
+		new /obj/item/clothing/under/rank/security(src)
 		return
 
 
