@@ -11,9 +11,9 @@
 /obj/item/clothing/under/rank/atmospheric_technician
 	desc = "It's a jumpsuit worn by atmospheric technicians."
 	name = "atmospheric technician's jumpsuit"
-	icon_state = "atmos"
-	item_state = "atmos_suit"
-	item_color = "atmos"
+	icon_state = "engine"
+	item_state = "engi_suit"
+	item_color = "engine"
 	flags = FPRINT | TABLEPASS
 
 /obj/item/clothing/under/rank/engineer
@@ -28,6 +28,6 @@
 /obj/item/clothing/under/rank/roboticist
 	desc = "It's a slimming black with reinforced seams; great for industrial work."
 	name = "roboticist's jumpsuit"
-	icon_state = "robotics"
-	item_state = "robotics"
-	item_color = "robotics"
+	icon_state = "science"
+	item_state = "w_suit"
+	item_color = "sciencewhite"
