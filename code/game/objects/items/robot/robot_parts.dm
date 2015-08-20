@@ -185,46 +185,57 @@
 			if(M.brainmob.stat == DEAD)
 				user << "\red Sticking a dead [W] into the frame would sort of defeat the purpose."
 				return
+			/*
+			*if(M.brainmob.mind in ticker.mode.head_revolutionaries)
+			*	user << "\red The frame's firmware lets out a shrill sound, and flashes 'Abnormal Memory Engram'. It refuses to accept the [W]."
+			*	return -This was likely stopping some bugs with rev. Rev is going to be revised. I see no reason why revs shouldn't be able to be borgs.
+			*/
 
-			if(M.brainmob.mind in ticker.mode.head_revolutionaries)
-				user << "\red The frame's firmware lets out a shrill sound, and flashes 'Abnormal Memory Engram'. It refuses to accept the [W]."
-				return
-
-			if(jobban_isbanned(M.brainmob, "Cyborg"))
-				user << "\red This [W] does not seem to fit."
-				return
-
-			var/mob/living/silicon/robot/O = new /mob/living/silicon/robot(get_turf(loc), unfinished = 1)
-			if(!O)	return
-
-			user.drop_item()
-
-			O.mmi = W
-			O.invisibility = 0
-			O.custom_name = created_name
-			O.updatename("Default")
-
-			M.brainmob.mind.transfer_to(O)
-
-			if(O.mind && O.mind.special_role)
-				O.mind.store_memory("In case you look at this after being borged, the objectives are only here until I find a way to make them not show up for you, as I can't simply delete them without screwing up round-end reporting. --NeoFite")
-
-			O.job = "Cyborg"
-
-			O.cell = chest.cell
-			O.cell.loc = O
-			W.loc = O//Should fix cybros run time erroring when blown up. It got deleted before, along with the frame.
-
-			// Since we "magically" installed a cell, we also have to update the correct component.
-			if(O.cell)
-				var/datum/robot_component/cell_component = O.components["power cell"]
-				cell_component.wrapped = O.cell
-				cell_component.installed = 1
-
-			feedback_inc("cyborg_birth",1)
-			O.Namepick()
-
-			del(src)
+			//Unity Edit: Moving some of this into a new proc, so we can make IPC Shells with the same proces as a borg.
+			var/choices = list("Shell", "Cyborg")
+			var/choice = input("What sort of robot is this?", "Robot Construction", null, null) in choices
+			if(choice == "Shell")
+				var/mob/living/carbon/human/machine/O = new /mob/living/carbon/human/machine(get_turf(loc))
+				user.drop_item()
+				if(!created_name)
+					created_name = M.name
+				O.name = created_name
+				M.brainmob.mind.transfer_to(O)
+			else
+				if(jobban_isbanned(M.brainmob, "Cyborg"))
+					user << "\red This [W] does not seem to fit."
+					return			
+				var/mob/living/silicon/robot/O = new /mob/living/silicon/robot(get_turf(loc), unfinished = 1)
+				if(!O)	return
+	
+				user.drop_item()
+	
+				O.mmi = W
+				O.invisibility = 0
+				O.custom_name = created_name
+				O.updatename("Default")
+	
+				M.brainmob.mind.transfer_to(O)
+	
+				if(O.mind && O.mind.special_role)
+					O.mind.store_memory("In case you look at this after being borged, the objectives are only here until I find a way to make them not show up for you, as I can't simply delete them without screwing up round-end reporting. --NeoFite")
+	
+				O.job = "Cyborg"
+	
+				O.cell = chest.cell
+				O.cell.loc = O
+				W.loc = O//Should fix cybros run time erroring when blown up. It got deleted before, along with the frame.
+	
+				// Since we "magically" installed a cell, we also have to update the correct component.
+				if(O.cell)
+					var/datum/robot_component/cell_component = O.components["power cell"]
+					cell_component.wrapped = O.cell
+					cell_component.installed = 1
+	
+				feedback_inc("cyborg_birth",1)
+				O.Namepick()
+	
+				del(src)
 		else
 			user << "\blue The MMI must go in after everything else!"
 
