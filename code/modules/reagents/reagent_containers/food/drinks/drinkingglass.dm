@@ -214,7 +214,7 @@
 				if("manhattan")
 					icon_state = "manhattanglass"
 					name = "Manhattan"
-					desc = "The Detective's undercover drink of choice. He never could stomach gin..."
+					desc = "The Marshal's undercover drink of choice. He never could stomach gin..."
 				if("manhattan_proj")
 					icon_state = "proj_manhattanglass"
 					name = "Manhattan Project"

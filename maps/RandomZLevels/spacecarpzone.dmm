@@ -1,0 +1,27 @@
+"a" = (/turf/space,/area)
+"b" = (/mob/living/simple_animal/hostile/carp,/turf/space,/area)
+"c" = (/turf/simulated/mineral/random,/area)
+"d" = (/obj/machinery/auto_cloner,/turf/space,/area)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaa
+aabaaaaabaaaaaaaaaaa
+aaaacaaaaaaaabaaaaaa
+aaacccaaaaaaaaaaaaab
+aaaacdaaaaaaaaaaaaaa
+aaaaaaaaaaabaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaabaabaaabaccaaaaa
+aaaaaaaaaaaaaccaaaaa
+aacaacaaaaaaacccaaaa
+accccccaaaaacccccaaa
+aacdacaaaaaadccaaaaa
+aaaabaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabaa
+aaaaaaaaabaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+"}

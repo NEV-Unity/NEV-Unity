@@ -69,7 +69,7 @@
 
 	var/power_draw = -1
 	if (transfer_moles > MINUMUM_MOLES_TO_FILTER)
-		power_draw = filter_gas_multi(src, filtering_outputs, input_air, output_air, transfer_moles, power_rating)
+		power_draw = filter_gas_multi(src, filtering_outputs, input_air, output_air, transfer_moles, power_rating)/2
 
 	if (power_draw >= 0)
 		last_power_draw = power_draw

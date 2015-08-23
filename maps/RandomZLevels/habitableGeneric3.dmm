@@ -1,0 +1,29 @@
+"a" = (/turf/unsimulated/floor/grass,/area/awaymission/habit)
+"b" = (/turf/unsimulated/beach/water,/area/awaymission/habit)
+"c" = (/obj/structure/flora/ausbushes/reedbush,/turf/unsimulated/floor/grass,/area/awaymission/habit)
+"d" = (/obj/structure/flora/ausbushes/stalkybush,/turf/unsimulated/floor/grass,/area/awaymission/habit)
+"e" = (/mob/living/simple_animal/hostile/scarybat,/turf/unsimulated/beach/water,/area/awaymission/habit)
+"f" = (/obj/structure/flora/ausbushes/sparsegrass,/turf/unsimulated/floor/grass,/area/awaymission/habit)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaa
+aaabccaaaaaaaaaaaaaa
+adebbbcaaaaafaaaaaaa
+adbbbbcafafffaaaaaaa
+abbbbbaafffaaaaeaaaa
+abbbbbcaafffaaabdaaa
+abbbbbbcaaffaaabdaaa
+abbbbbbcaaafaaabaaaa
+abbbbbbaaafaaadbaaaa
+abbbbbbaafaaadbbaaaa
+abbbbbbaafaaaabbaaaa
+abbbbbbaffaaabbbaaaa
+adbbbbcafaaadbbbaaaa
+adbbcbaafaaadbbdaaaa
+adbbcbafffaadbedaaaa
+aaabbbafafaaabbdaaaa
+aaabbbaaaaaaabbaaaaa
+aaaacaaaaafaabdaaaaa
+aaaaaaaaafffaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+"}

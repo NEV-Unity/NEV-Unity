@@ -1,4 +1,4 @@
-//CONTAINS: Suit fibers and Detective's Scanning Computer
+//CONTAINS: Suit fibers and Marshal's Scanning Computer
 
 atom/var/list/suit_fibers
 

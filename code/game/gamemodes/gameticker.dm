@@ -48,7 +48,8 @@ var/global/datum/controller/gameticker/ticker
 	'sound/music/traitor.ogg',\
 	'sound/music/title2.ogg',\
 	'sound/music/clouds.s3m',\
-	'sound/music/space_oddity.ogg') //Ground Control to Major Tom, this song is cool, what's going on?
+	'sound/music/space_oddity.ogg',\
+	'sound/music/nightcall.ogg')
 	do
 		pregame_timeleft = 180
 		world << "<B><FONT color='blue'>Welcome to the pre-game lobby!</FONT></B>"
@@ -302,6 +303,8 @@ var/global/datum/controller/gameticker/ticker
 					captainless=0
 				if(player.mind.assigned_role != "MODE")
 					job_master.EquipRank(player, player.mind.assigned_role, 0)
+					if(player.mind.assigned_role == "Cyborg")
+						player.Robotize()
 					UpdateFactionList(player)
 					EquipCustomItems(player)
 		if(captainless)

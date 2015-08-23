@@ -289,7 +289,7 @@
 	volume = 60
 
 /obj/item/weapon/reagent_containers/food/drinks/flask/detflask
-	name = "Detective's Flask"
+	name = "Marshal's Flask"
 	desc = "A metal flask with a leather band and golden badge belonging to the detective."
 	icon_state = "detflask"
 	volume = 60

@@ -9,11 +9,11 @@
 	selection_color = "#ffddff"
 	idtype = /obj/item/weapon/card/id/silver
 	req_admin_notify = 1
-	access = list(access_rd, access_heads, access_tox, access_genetics, access_morgue,
+	access = list(access_rd, access_heads, access_tox, access_genetics, access_morgue, access_forensics,
 			            access_tox_storage, access_teleporter, access_sec_doors,
 			            access_research, access_robotics, access_xenobiology, access_ai_upload,
 			            access_RC_announce, access_keycard_auth, access_tcomsat, access_gateway, access_xenoarch, access_tech_storage)
-	minimal_access = list(access_rd, access_heads, access_tox, access_genetics, access_morgue,
+	minimal_access = list(access_rd, access_heads, access_tox, access_genetics, access_morgue, access_forensics,
 			            access_tox_storage, access_teleporter, access_sec_doors,
 			            access_research, access_robotics, access_xenobiology, access_ai_upload,
 			            access_RC_announce, access_keycard_auth, access_tcomsat, access_gateway, access_xenoarch, access_tech_storage)
@@ -123,4 +123,53 @@
 			H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/survival(H), slot_r_hand)
 		else
 			H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/survival(H.back), slot_in_backpack)
+		return 1
+
+//welcome to your new home. My little friend. You can stay here
+
+/datum/job/forensics
+	title = "Forensic Technician"
+	flag = FORENSICS
+	department_flag = MEDSCI
+	faction = "Station"
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "research director"
+	selection_color = "#ffeeff"
+
+	access = list(access_forensics, access_tox, access_tox_storage, access_tech_storage, access_morgue, access_research) //As a job that handles so many corpses, it makes sense for them to have morgue access.
+	minimal_access = list(access_forensics, access_tech_storage, access_morgue, access_research)
+	alt_titles = list("Crime Scene Investigator")
+	minimal_player_age = 10
+	equip(var/mob/living/carbon/human/H)
+		if(!H)	return 0
+		H.equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci(H), slot_l_ear)
+		switch(H.backbag)
+			if(2) H.equip_to_slot_or_del(new /obj/item/weapon/storage/backpack(H), slot_back)
+			if(3) H.equip_to_slot_or_del(new /obj/item/weapon/storage/backpack/satchel_norm(H), slot_back)
+			if(4) H.equip_to_slot_or_del(new /obj/item/weapon/storage/backpack/satchel(H), slot_back)
+		H.equip_to_slot_or_del(new /obj/item/clothing/under/det/slob(H), slot_w_uniform)
+		H.equip_to_slot_or_del(new /obj/item/clothing/shoes/laceup(H), slot_shoes)
+		H.equip_to_slot_or_del(new /obj/item/device/pda/detective(H), slot_belt)
+/*		var/obj/item/clothing/mask/cigarette/CIG = new /obj/item/clothing/mask/cigarette(H)
+		CIG.light("")
+		H.equip_to_slot_or_del(CIG, slot_wear_mask)	*/
+		if(H.species.name == "Tesau")
+			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/tajara(H), slot_gloves)
+		if(H.species.name == "Unathi")
+			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/unathi(H), slot_gloves)
+		else
+			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black(H), slot_gloves)
+		if(H.mind.role_alt_title && H.mind.role_alt_title == "Crime Scene Investigator")
+			H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/det_suit(H), slot_wear_suit)
+		else
+			H.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/labcoat(H), slot_wear_suit)
+
+		if(H.backbag == 1)//Why cant some of these things spawn in his office?
+			H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/survival(H), slot_r_hand)
+			H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/evidence(H), slot_l_hand)
+		else
+			H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/survival(H.back), slot_in_backpack)
+			H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/evidence(H), slot_in_backpack)
+
 		return 1

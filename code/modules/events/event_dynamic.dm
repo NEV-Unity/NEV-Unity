@@ -54,15 +54,15 @@ var/list/event_last_fired = list()
 		possibleEvents[/datum/event/money_hacker] = max(min(25, player_list.len) * 4, 200)
 
 	possibleEvents[/datum/event/carp_migration] = 20 + 10 * active_with_role["Engineer"]
-	possibleEvents[/datum/event/brand_intelligence] = 20 + 25 * active_with_role["Janitor"]
+	possibleEvents[/datum/event/brand_intelligence] = 20 + 25 * active_with_role["Sanitation Engineer"]
 
 	possibleEvents[/datum/event/rogue_drone] = 5 + 25 * active_with_role["Engineer"] + 25 * active_with_role["Security"]
-	possibleEvents[/datum/event/infestation] = 100 + 100 * active_with_role["Janitor"]
+	possibleEvents[/datum/event/infestation] = 100 + 100 * active_with_role["Sanitation Engineer"]
 
 	possibleEvents[/datum/event/communications_blackout] = 50 + 25 * active_with_role["AI"] + active_with_role["Scientist"] * 25
 	possibleEvents[/datum/event/ionstorm] = active_with_role["AI"] * 25 + active_with_role["Cyborg"] * 25 + active_with_role["Engineer"] * 10 + active_with_role["Scientist"] * 5
 	possibleEvents[/datum/event/grid_check] = 25 + 10 * active_with_role["Engineer"]
-	possibleEvents[/datum/event/electrical_storm] = 15 * active_with_role["Janitor"] + 5 * active_with_role["Engineer"]
+	possibleEvents[/datum/event/electrical_storm] = 15 * active_with_role["Sanitation Engineer"] + 5 * active_with_role["Engineer"]
 	possibleEvents[/datum/event/wallrot] = 30 * active_with_role["Engineer"] + 50 * active_with_role["Botanist"]
 
 	if(!spacevines_spawned)
@@ -189,7 +189,7 @@ var/list/event_last_fired = list()
 	active_with_role["Scientist"] = 0
 	active_with_role["AI"] = 0
 	active_with_role["Cyborg"] = 0
-	active_with_role["Janitor"] = 0
+	active_with_role["Sanitation Engineer"] = 0
 	active_with_role["Botanist"] = 0
 
 	for(var/mob/M in player_list)
@@ -220,8 +220,8 @@ var/list/event_last_fired = list()
 		if(M.mind.assigned_role == "Cyborg")
 			active_with_role["Cyborg"]++
 
-		if(M.mind.assigned_role == "Janitor")
-			active_with_role["Janitor"]++
+		if(M.mind.assigned_role == "Sanitation Engineer")
+			active_with_role["Sanitation Engineer"]++
 
 		if(M.mind.assigned_role == "Botanist")
 			active_with_role["Botanist"]++

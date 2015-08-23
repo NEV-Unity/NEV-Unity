@@ -41,7 +41,6 @@
 		//Station Directives
 		if(config.invasive_directives)
 			output += "<p><a href='byond://?src=\ref[src];showdirectives=1'>Station Directives</a></p>"
-
 		if(!IsGuestKey(src.key))
 			establish_db_connection()
 
@@ -339,16 +338,21 @@
 
 		//ticker.mode.latespawn(character)
 
-		if(character.mind.assigned_role != "Cyborg")
+		if(character.mind.assigned_role != "Cyborg" && character.mind.assigned_role != "AI")
 			data_core.manifest_inject(character)
 			ticker.minds += character.mind//Cyborgs and AIs handle this in the transform proc.	//TODO!!!!! ~Carn
-
-			//Grab some data from the character prefs for use in random news procs.
-
 			AnnounceArrival(character, rank, join_message)
 
 		else
-			character.Robotize()
+			if(character.mind.assigned_role == "Cyborg")
+				data_core.manifest_inject(character)
+				character.Robotize()
+			else
+				data_core.manifest_inject(character)
+				character.AIize()
+				for(var/mob/M in player_list)
+					if(!istype(M,/mob/new_player))
+						M << sound('sound/AI/newAI.ogg')
 		del(src)
 
 	proc/AnnounceArrival(var/mob/living/carbon/human/character, var/rank, var/join_message)
@@ -415,7 +419,8 @@
 		if(chosen_language)
 			if(is_alien_whitelisted(src, client.prefs.language) || !config.usealienwhitelist || !(chosen_language.flags & WHITELISTED) || (new_character.species && (chosen_language.name in new_character.species.secondary_langs)))
 				new_character.add_language("[client.prefs.language]")
-
+		for(var/L in client.prefs.languages)
+			new_character.add_language("[L]")//LANGUAGE CODE, UNCOMMENT LATER
 		if(ticker.random_players)
 			new_character.gender = pick(MALE, FEMALE)
 			client.prefs.real_name = random_name(new_character.gender)

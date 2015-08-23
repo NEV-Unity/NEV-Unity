@@ -91,17 +91,24 @@
 
 	//Add the rest of the languages
 	//Because universal speak doesn't work right.
-	bst.add_language("Sinta'unathi")
-	bst.add_language("Siik'Maas")
+	bst.add_language("Rezar")
+	bst.add_language("Zawan")
+	bst.add_language("Pekhota sign")
+	bst.add_language("Sinta")
+	bst.add_language("Uwe")
+	bst.add_language("Weis")
 	bst.add_language("Skrellian")
-	bst.add_language("Vox-pidgin")
-	bst.add_language("Rootspeak")
-	bst.add_language("Ceti Basic")
-	bst.add_language("Sol Common")
+	bst.add_language("Sini")
+	bst.add_language("Kida")
 	bst.add_language("Tradeband")
 	bst.add_language("Gutter")
-	bst.add_language("Sini")
 	bst.add_language("Sign language")
+	bst.add_language("Anglic")
+	bst.add_language("Ara")
+	bst.add_language("Hindi")
+	bst.add_language("Zho")
+	bst.add_language("Vox-pidgin")
+	bst.add_language("Rootspeak")
 	bst.add_language("Xenomorph")
 	bst.add_language("Hivemind")
 	bst.add_language("Changeling")
@@ -138,7 +145,7 @@
 	suicide()
 		if(key && species.name != "Human")
 			switch(species.name)
-				if("Tajaran")
+				if("Tesau")
 					bsc()
 				if("Machine")
 					bsb()
@@ -171,8 +178,8 @@
 		return
 
 	proc/bsc() //because we all have our unrealistic snowflakes right?
-		if(set_species("Tajaran"))
-			h_style = "Tajaran Ears"
+		if(set_species("Tesau"))
+			h_style = "Tesau Ears"
 			name = "Bluespace Cat"
 			voice_name = "Bluespace Cat"
 			real_name = "Bluespace Cat"

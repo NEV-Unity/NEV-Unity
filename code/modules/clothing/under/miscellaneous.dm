@@ -153,7 +153,7 @@
 	item_color = "green_suit"
 
 /obj/item/clothing/under/gimmick/rank/head_of_personnel/suit
-	name = "head of personnel's suit"
+	name = "executive officer's suit"
 	desc = "A teal suit and yellow necktie. An authoritative yet tacky ensemble."
 	icon_state = "teal_suit"
 	item_state = "g_suit"
@@ -300,7 +300,7 @@
 	item_color = "dress_cap"
 
 /obj/item/clothing/under/dress/dress_hop
-	name = "head of personal dress uniform"
+	name = "executive officer dress uniform"
 	desc = "Feminine fashion for the style concious HoP."
 	icon_state = "dress_hop"
 	item_color = "dress_hop"

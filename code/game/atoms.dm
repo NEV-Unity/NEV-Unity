@@ -20,7 +20,7 @@
 	// replaced by OPENCONTAINER flags and atom/proc/is_open_container()
 	///Chemistry.
 
-	//Detective Work, used for the duplicate data points kept in the scanners
+	//Marshal Work, used for the duplicate data points kept in the scanners
 	var/list/original_atom
 
 /atom/proc/assume_air(datum/gas_mixture/giver)

@@ -203,7 +203,6 @@
 	removed_type = /obj/item/organ/stack
 	parent_organ = "head"
 	robotic = 2
-	vital = 1
 	var/backup_time = 0
 	var/datum/mind/backup
 
@@ -222,6 +221,7 @@
 	icon_state = "brain-prosthetic"
 	organ_tag = "stack"
 	robotic = 2
+	organ_type = /datum/organ/internal/stack
 
 /obj/item/organ/stack/vox
 	name = "vox cortical stack"

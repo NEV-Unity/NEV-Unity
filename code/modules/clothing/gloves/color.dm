@@ -115,14 +115,14 @@
 		item_color = "cargo"				//Exists for washing machines. Is not different from brown gloves in any way.
 
 /obj/item/clothing/gloves/yellow/specialt
-	desc = "These gloves will protect the wearer from electric shock. Made special for Tajaran use"
-	name = "Tajaran electrical gloves"
+	desc = "These gloves will protect the wearer from electric shock. Made special for Tesau use"
+	name = "Tesau electrical gloves"
 	icon_state = "yellow"
 	item_state = "ygloves"
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
 	item_color="yellow"
-	species_restricted = list("Tajaran")
+	species_restricted = list("Tesau")
 
 /obj/item/clothing/gloves/yellow/specialu
 	desc = "These gloves will protect the wearer from electric shock. Made special for Unathi use"
@@ -141,5 +141,5 @@
 
 /obj/item/clothing/gloves/black/tajara
 	name = "black gloves"
-	desc = "black gloves made for Tajara use."
-	species_restricted = list("Tajaran")
+	desc = "black gloves made for Tesau use."
+	species_restricted = list("Tesau")

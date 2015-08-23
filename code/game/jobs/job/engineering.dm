@@ -52,7 +52,7 @@
 	selection_color = "#fff5cc"
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics)
 	minimal_access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction)
-	alt_titles = list("Maintenance Technician","Engine Technician","Electrician")
+	alt_titles = list("Electrician")
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -87,7 +87,7 @@
 	selection_color = "#fff5cc"
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_external_airlocks)
 	minimal_access = list(access_atmospherics, access_maint_tunnels, access_emergency_storage, access_construction, access_external_airlocks)
-
+	alt_titles = list("Environmental Engineer")
 
 	equip(var/mob/living/carbon/human/H)
 		if(!H)	return 0
@@ -105,3 +105,30 @@
 		else
 			H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/engineer(H.back), slot_in_backpack)
 		return 1
+
+/datum/job/janitor
+	title = "Sanitation Engineer"
+	flag = JANITOR
+	department_flag = ENGSEC
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the chief engineer"
+	selection_color = "#fff5cc"
+	access = list(access_engine,access_janitor, access_maint_tunnels)
+	minimal_access = list(access_engine,access_janitor, access_maint_tunnels)
+	alt_titles = list("Maintenance Technician")
+
+	equip(var/mob/living/carbon/human/H)
+		if(!H)	return 0
+		H.equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_eng(H), slot_l_ear)
+		H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/janitor(H), slot_w_uniform)
+		H.equip_to_slot_or_del(new /obj/item/clothing/shoes/black(H), slot_shoes)
+		H.equip_to_slot_or_del(new /obj/item/device/pda/janitor(H), slot_belt)
+		if(H.backbag == 1)
+			H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/survival(H), slot_r_hand)
+		else
+			H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/survival(H.back), slot_in_backpack)
+		return 1
+
+

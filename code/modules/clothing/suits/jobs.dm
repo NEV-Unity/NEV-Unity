@@ -66,7 +66,7 @@
 	blood_overlay_type = "armor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
-//Detective
+//Marshal
 /obj/item/clothing/suit/storage/det_suit
 	name = "coat"
 	desc = "An 18th-century multi-purpose trenchcoat. Someone who wears this means serious business."

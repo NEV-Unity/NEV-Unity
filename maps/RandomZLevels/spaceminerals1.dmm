@@ -1,0 +1,26 @@
+"a" = (/turf/space,/area)
+"b" = (/turf/simulated/mineral/random/high_chance,/area)
+"c" = (/obj/machinery/artifact,/turf/simulated/floor/engine,/area)
+
+(1,1,1) = {"
+aaaaabbbbbbbbbbaaaaa
+aaaabbbbbbbbbbbbaaaa
+aabbbbbbbbbbbbbbbaaa
+abbbbbbbbbbbbbbbbbaa
+abbbbbbbbbbbbbbbbbba
+bbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbcbbbbbbbbba
+abbbbbbbbbbbbbbbbbba
+abbbbbbbbbbbbbbbbbba
+abbbbbbbbbbbbbbbbbba
+abbbbbbbbbbbbbbbbbaa
+abbbbbbbbbbbbbbbbbaa
+aabbbbbbbbbbbbbbaaaa
+aaabbbbbbbbbbbbbaaaa
+aaaabbbbbbbbbbaaaaaa
+aaaaaaaabbbbbbaaaaaa
+"}

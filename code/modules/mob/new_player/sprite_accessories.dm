@@ -514,7 +514,7 @@
 		name = "Shaved"
 		icon_state = "bald"
 		gender = NEUTER
-		species_allowed = list("Human","Unathi","Tajaran","Skrell","Vox","Machine","Kocasslani")
+		species_allowed = list("Human","Unathi","Tesau","Skrell","Vox","Machine","Kocasslani")
 
 	watson
 		name = "Watson Mustache"
@@ -652,87 +652,87 @@
 		gender = FEMALE
 
 	taj_ears
-		name = "Tajaran Ears"
+		name = "Tesau Ears"
 		icon_state = "ears_plain"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_ears_clean
-		name = "Tajara Clean"
+		name = "Tesau Clean"
 		icon_state = "hair_clean"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_ears_bangs
-		name = "Tajara Bangs"
+		name = "Tesau Bangs"
 		icon_state = "hair_bangs"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_ears_braid
-		name = "Tajara Braid"
+		name = "Tesau Braid"
 		icon_state = "hair_tbraid"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_ears_shaggy
-		name = "Tajara Shaggy"
+		name = "Tesau Shaggy"
 		icon_state = "hair_shaggy"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_ears_mohawk
-		name = "Tajaran Mohawk"
+		name = "Tesau Mohawk"
 		icon_state = "hair_mohawk"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_ears_plait
-		name = "Tajara Plait"
+		name = "Tesau Plait"
 		icon_state = "hair_plait"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_ears_straight
-		name = "Tajara Straight"
+		name = "Tesau Straight"
 		icon_state = "hair_straight"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_ears_long
-		name = "Tajara Long"
+		name = "Tesau Long"
 		icon_state = "hair_long"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_ears_rattail
-		name = "Tajara Rat Tail"
+		name = "Tesau Rat Tail"
 		icon_state = "hair_rattail"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_ears_spiky
-		name = "Tajara Spiky"
+		name = "Tesau Spiky"
 		icon_state = "hair_tajspiky"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_ears_messy
-		name = "Tajara Messy"
+		name = "Tesau Messy"
 		icon_state = "hair_messy"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_ears_wife
-		name = "Tajara Housewife"
+		name = "Tesau Housewife"
 		icon_state = "hair_wife"
 		gender = FEMALE
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_ears_victory
-		name = "Tajara Victory Curls"
+		name = "Tesau Victory Curls"
 		icon_state = "hair_victory"
 		gender = FEMALE
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_ears_bob
-		name = "Tajara Bob"
+		name = "Tesau Bob"
 		icon_state = "hair_tbob"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_ears_fingercurl
-		name = "Tajara Finger Curls"
+		name = "Tesau Finger Curls"
 		icon_state = "hair_fingerwave"
 		gender = FEMALE
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	vox_quills_short
 		name = "Short Vox Quills"
@@ -767,34 +767,34 @@
 /datum/sprite_accessory/facial_hair
 
 	taj_sideburns
-		name = "Tajara Sideburns"
+		name = "Tesau Sideburns"
 		icon_state = "facial_mutton"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_mutton
-		name = "Tajara Mutton"
+		name = "Tesau Mutton"
 		icon_state = "facial_mutton"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_pencilstache
-		name = "Tajara Pencilstache"
+		name = "Tesau Pencilstache"
 		icon_state = "facial_pencilstache"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_moustache
-		name = "Tajara Moustache"
+		name = "Tesau Moustache"
 		icon_state = "facial_moustache"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_goatee
-		name = "Tajara Goatee"
+		name = "Tesau Goatee"
 		icon_state = "facial_goatee"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	taj_smallstache
-		name = "Tajara Smallsatche"
+		name = "Tesau Smallsatche"
 		icon_state = "facial_smallstache"
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 //skin styles - WIP
 //going to have to re-integrate this with surgery
@@ -816,7 +816,7 @@
 		name = "Default tajaran skin"
 		icon_state = "default"
 		icon = 'icons/mob/human_races/r_tajaran.dmi'
-		species_allowed = list("Tajaran")
+		species_allowed = list("Tesau")
 
 	unathi
 		name = "Default Unathi skin"

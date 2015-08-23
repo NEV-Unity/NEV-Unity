@@ -1,0 +1,66 @@
+"a" = (/turf/space,/area)
+"b" = (/obj/item/stack/rods,/turf/space,/area)
+"c" = (/obj/effect/decal/cleanable/blood,/turf/space,/area)
+"d" = (/obj/item/weapon/shard,/turf/space,/area)
+"e" = (/obj/item/weapon/shard,/obj/effect/decal/cleanable/blood,/turf/space,/area)
+"f" = (/obj/structure/lattice,/turf/space,/area)
+"g" = (/turf/simulated/wall,/area)
+"h" = (/obj/item/weapon/shard,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"i" = (/obj/item/stack/sheet/metal,/turf/space,/area)
+"j" = (/obj/item/weapon/shard,/obj/item/stack/rods,/turf/space,/area)
+"k" = (/obj/item/stack/sheet/metal,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"l" = (/obj/item/weapon/shard,/obj/item/stack/rods,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"m" = (/obj/effect/decal/cleanable/blood,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"n" = (/obj/item/weapon/cable_coil{amount = 2},/obj/effect/decal/cleanable/blood,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"o" = (/obj/item/weapon/stock_parts/console_screen,/turf/space,/area)
+"p" = (/obj/structure/girder,/turf/simulated/floor/plating/airless,/area)
+"q" = (/obj/item/weapon/cable_coil{amount = 2},/obj/effect/decal/cleanable/blood,/turf/space,/area)
+"r" = (/mob/living/simple_animal/hostile/viscerator,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"s" = (/turf/simulated/floor/plating/airless{broken = 1},/area)
+"t" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"u" = (/obj/structure/shuttle/engine/propulsion/burst{dir = 4},/turf/simulated/floor/plating/airless,/area)
+"v" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/airless,/area)
+"w" = (/obj/structure/girder,/turf/simulated/floor/plating/airless{broken = 1},/area)
+"x" = (/obj/item/apc_frame,/turf/simulated/floor/airless,/area)
+"y" = (/obj/structure/table,/turf/simulated/floor/airless,/area)
+"z" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
+"A" = (/obj/structure/shuttle/engine/heater{dir = 8},/turf/simulated/floor/plating/airless,/area)
+"B" = (/turf/simulated/floor/airless,/area)
+"C" = (/obj/effect/decal/cleanable/blood,/turf/simulated/floor/airless,/area)
+"D" = (/obj/effect/landmark/corpse/bridgeofficer,/obj/structure/stool/bed/chair/office/dark{dir = 4},/mob/living/simple_animal/hostile/viscerator,/turf/simulated/floor/airless,/area)
+"E" = (/obj/structure/computerframe,/turf/simulated/floor/airless,/area)
+"F" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
+"G" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
+"H" = (/obj/machinery/light/small,/turf/simulated/floor/airless,/area)
+"I" = (/mob/living/simple_animal/hostile/viscerator,/turf/simulated/floor/airless,/area)
+"J" = (/obj/structure/stool/bed/chair/office/dark{dir = 4},/turf/simulated/floor/airless,/area)
+"K" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating/airless,/area)
+"L" = (/turf/simulated/floor/plating/airless,/area)
+"M" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/plating/airless,/area)
+"N" = (/mob/living/simple_animal/hostile/viscerator,/turf/simulated/floor/plating/airless,/area)
+"O" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating/airless,/area)
+"P" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/plating/airless,/area)
+"Q" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/airless,/area)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaabbaaaaaaaaaa
+aabaaaaaaaaaacaabaaa
+aaaaaaaaaaaaacaaaaba
+adaaaadaaaadcaaaaaaa
+daaaaaddadabdaaaadaa
+aadadcbaaaaaddaaddaa
+aaaacabbbbaaaadabaaa
+adbbeddbabddbdddbaaa
+adabfdaadbbaababaaaa
+aghhffafdijfddklgaaa
+agmnofplfffplqodgaaa
+ggmmrspsfffpssamgtgg
+uggpvgggpfgggwvggxyz
+uAzBBBBBCBBBBBBBvDEF
+uAGHCBCCHBIBBHBBvJEF
+ugggKggggKggggKggByG
+ggLMLLgLMLLgLMLLgggg
+agLLLLgLNLLgLLLLgaaa
+agOPPQgOPPQgOPPQgaaa
+"}

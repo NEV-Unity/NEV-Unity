@@ -755,7 +755,7 @@ var/list/ghostteleportlocs = list()
 	icon_state = "captain"
 
 /area/crew_quarters/heads/hop
-	name = "\improper Head of Personnel's Quarters"
+	name = "\improper Executive Officer's Quarters"
 	icon_state = "head_quarters"
 
 /area/crew_quarters/heads/hor
@@ -767,7 +767,7 @@ var/list/ghostteleportlocs = list()
 	icon_state = "head_quarters"
 
 /area/crew_quarters/heads/hos
-	name = "\improper Head of Security's Quarters"
+	name = "\improper Commander's Quarters"
 	icon_state = "head_quarters"
 
 /area/crew_quarters/heads/cmo
@@ -779,7 +779,7 @@ var/list/ghostteleportlocs = list()
 	icon_state = "courtroom"
 
 /area/crew_quarters/heads
-	name = "\improper Head of Personnel's Office"
+	name = "\improper Executive Officer's Office"
 	icon_state = "head_quarters"
 
 /area/crew_quarters/hor
@@ -787,7 +787,7 @@ var/list/ghostteleportlocs = list()
 	icon_state = "head_quarters"
 
 /area/crew_quarters/hos
-	name = "\improper Head of Security's Office"
+	name = "\improper Commander's Office"
 	icon_state = "head_quarters"
 
 /area/crew_quarters/chief
@@ -1316,11 +1316,11 @@ var/list/ghostteleportlocs = list()
 	icon_state = "Warden"
 
 /area/security/hos
-	name = "\improper Head of Security's Office"
+	name = "\improper Commander's Office"
 	icon_state = "sec_hos"
 
 /area/security/detectives_office
-	name = "\improper Detective's Office"
+	name = "\improper Marshal's Office"
 	icon_state = "detective"
 
 /area/security/range
@@ -1802,6 +1802,26 @@ var/list/ghostteleportlocs = list()
 
 
 // Away Missions
+// Away Missions
+
+//All random zones need to be equal in size
+/area/randomzones/homemap //This is placed on your randomly selectable locations on the HOME map.Each one needs to be labeled with a seperate zonenum on map generation
+	name = "\improper Strange Location"
+
+/area/randomzones/homemap/shipwreak1
+/area/randomzones/homemap/shipwreak2
+/area/randomzones/homemap/shipwreak3
+/area/randomzones/homemap/shipwreak4
+/area/randomzones/homemap/shipwreak5
+
+/area/randomzones/awaymap //This zone goes on your away map. Each zone will randomly select a valid zonenumber from the availible home maps.
+	name = "\improper Strange Location"
+	icon_state = "away"
+/area/randomzones/awaymap/away1
+/area/randomzones/awaymap/away2
+/area/randomzones/awaymap/away3
+/area/randomzones/awaymap/away4
+/area/randomzones/awaymap/away5
 /area/awaymission
 	name = "\improper Strange Location"
 	icon_state = "away"
@@ -1890,6 +1910,19 @@ var/list/ghostteleportlocs = list()
 /area/awaymission/listeningpost
 	name = "\improper Listening Post"
 	icon_state = "away"
+	requires_power = 0
+
+/area/awaymission/landing
+	name = "\improper Landing Zone"
+	icon_state = "null"
+	luminosity = 1
+	lighting_use_dynamic = 0
+	requires_power = 0
+/area/awaymission/habit
+	name = "Planet"
+	icon_state = "null"
+	luminosity = 1
+	lighting_use_dynamic = 0
 	requires_power = 0
 
 /area/awaymission/beach

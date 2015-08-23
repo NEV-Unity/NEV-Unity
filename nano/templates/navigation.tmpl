@@ -1,0 +1,57 @@
+<!-- 
+Title: Navigation UI 
+Used In File(s): \code\modules\navigation\navconsoles.dm
+ -->
+
+<h3>Current System:</h3>
+<div class="item">
+  <div class="itemContent">
+    {{if data.systemname}}
+      System name: {{:data.systemname}} <br>
+      Star Type:   
+      {{if data.systembinary}}
+        Binary 
+      {{else}}
+    
+      {{/if}}
+      {{:data.systemtype}} <br>
+      Star luminosity : {{:data.systemlum}} <br>
+      {{if data.systembinary}}
+      Binary star luminosity : {{:data.systembinary}}
+      {{else}}
+      {{/if}}
+    {{else}}
+        We are in deep space!
+    {{/if}}
+  </div>
+  <div class="item">
+	<div class="itemContentWide" style="width: 100%;">
+    {{for data.planets}}
+      {{:helper.link(value.planet_name,'gear',{'moveplanet': value.planet_name})}}
+    {{/for}}
+	</div>
+</div>
+<h3>Current Planet:</h3>
+<div class="item">
+  <div class="itemContent">
+    {{if data.aplanet}}
+      Site name: {{:data.aplanet}} <br>
+      Orbit: {{:data.p_orb}}<br>
+      Feature Temp: {{:data.p_temp}}°K<br>
+      Size: {{:data.p_size}} <br>
+      Radiation Level: {{:data.p_rads}} <br><br>
+      Detected Features: <br>
+      {{for data.zones}}
+        {{:value.feature}} <br>
+      {{/for}}
+
+    {{else}}
+      We are not orbiting a planet!
+    {{/if}}
+<h3>Select a Destination:</h3>  
+  
+  <div class=itemContent">
+		{{:helper.link(data.systemname1, 'gear', {'move1': 1})}}
+		{{:helper.link(data.systemname2, 'gear', {'move2': 1})}}
+  </div>
+</div>

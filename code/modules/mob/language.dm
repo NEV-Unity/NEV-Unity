@@ -159,7 +159,7 @@
 
 /datum/language/tajaran
 	name = "Siik'Maas"
-	desc = "The traditionally employed tongue of Ahdomai, composed of expressive yowls and chirps. Native to the Tajaran."
+	desc = "The traditionally employed tongue of Ahdomai, composed of expressive yowls and chirps. Native to the Tesau."
 	speech_verb = "mrowls"
 	ask_verb = "mrowls"
 	exclaim_verb = "yowls"

@@ -378,7 +378,27 @@ var/global/datum/controller/occupations/job_master
 						if(G.slot)
 							H.equip_to_slot_or_del(new G.path(H), G.slot)
 							H << "\blue Equipping you with [thing]!"
+						if(istype(G,/datum/gear/organ))
+							var/obj/item/organ/O = new G.path()
+							var/datum/organ/internal/I = new O.organ_type()
+							O.update()/*
+							world << "DEBUG G.PATH = [G.path]"
+							world << "DEBUG O.ORGAN_TYPE = [O.organ_type]"
+							world << "DEBUG H = [H.name]"
+							world << "DEBUG I.parent_organ = [I.parent_organ]"*/
+							//Need to remove existing organ
+							for(var/datum/organ/internal/U in H.internal_organs) //Cycle through all the internal organs
+								if(istype(U,I)) //If U matches our path...
+									var/obj/item/organ/T = U.remove(H) //Use the remove proc to create the organ object...
+									T.update()
+									T.removed(H,H)//Then call he removed proc on the object - THIS MAY NOT WORK. MARK. FUCKING ORGAN MAGIC!
+							if(istype(O))
+								O.replaced(H,H.get_organ(I.parent_organ))
+								for(var/datum/organ/internal/V in H.internal_organs)
+									if(V.removed_type == G.path)
+										V.status = 0
 
+							H << "\blue Implanting you with the [thing] in the [I.parent_organ]!"
 						else
 							spawn_in_storage += thing
 
@@ -443,7 +463,7 @@ var/global/datum/controller/occupations/job_master
 
 			switch(rank)
 				if("Cyborg")
-					H.Robotize()
+//					H.Robotize()
 					return 1
 				if("AI","Clown")	//don't need bag preference stuff!
 				else
@@ -480,7 +500,7 @@ var/global/datum/controller/occupations/job_master
 
 		//TODO: Generalize this by-species
 		if(H.species)
-			if(H.species.name == "Tajaran" || H.species.name == "Unathi")
+			if(H.species.name == "Tesau" || H.species.name == "Unathi")
 				H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sandal(H),slot_shoes,1)
 			else if(H.species.name == "Vox")
 				H.equip_to_slot_or_del(new /obj/item/clothing/mask/breath(H), slot_wear_mask)

@@ -1,7 +1,7 @@
 /* Closets for specific jobs
  * Contains:
  *		Bartender
- *		Janitor
+ *		Sanitation Engineer
  *		Lawyer
  *		ERT
  */
@@ -32,7 +32,7 @@
 	new /obj/item/clothing/shoes/black(src)
 
 /*
- * Janitor
+ * Sanitation Engineer
  */
 /obj/structure/closet/jcloset
 	name = "custodial closet"

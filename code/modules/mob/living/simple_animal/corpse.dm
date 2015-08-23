@@ -155,3 +155,11 @@
 
 /obj/effect/landmark/mobcorpse/russian/ranged
 	corpsehelmet = /obj/item/clothing/head/ushanka
+
+/obj/effect/landmark/mobcorpse/cultist
+	name = "Cultist"
+	corpseuniform = /obj/item/clothing/under/color/black 
+	corpsesuit = /obj/item/clothing/suit/cultrobes
+	corpseshoes = /obj/item/clothing/shoes/cult
+	corpsehelmet = /obj/item/clothing/head/culthood
+	corpseback = /obj/item/weapon/storage/backpack/cultpack

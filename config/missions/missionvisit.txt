@@ -1,0 +1,6 @@
+Attention [station_name] staff,
+
+An important dignitary from one of our close allies will be visiting facilities in your region. Please prepare your facility for a potential suprise visit.
+
+Best of luck [station_name],
+Archbald Nox

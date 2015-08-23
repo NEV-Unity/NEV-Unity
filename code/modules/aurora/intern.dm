@@ -5,7 +5,7 @@
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Head of Security"
+	supervisors = "the Commander"
 	selection_color = "#ffeeee"
 	access = list(access_security, access_sec_doors, access_maint_tunnels)
 	minimal_access = list(access_security, access_sec_doors, access_maint_tunnels)

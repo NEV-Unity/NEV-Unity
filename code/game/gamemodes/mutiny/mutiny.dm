@@ -62,7 +62,7 @@ datum/game_mode/mutiny
 						"killer bugs that lay eggs in the husks of the living",
 						"a deserted transport carrying xenomorph specimens",
 						"an emissary for the gestalt requesting a security detail",
-						"a Tajaran slave rebellion",
+						"a Tesau slave rebellion",
 						"radical Skrellian transevolutionaries",
 						"classified security operations",
 						"science-defying raw elemental chaos"

@@ -136,7 +136,7 @@
 	keyslot2 = new /obj/item/device/encryptionkey/heads/rd
 
 /obj/item/device/radio/headset/heads/hos
-	name = "head of security's headset"
+	name = "commander's headset"
 	desc = "The headset of the man who protects your worthless lifes. To access the security channel, use :s. For command, use :c."
 	icon_state = "com_headset"
 	item_state = "headset"
@@ -157,7 +157,7 @@
 	keyslot2 = new /obj/item/device/encryptionkey/heads/cmo
 
 /obj/item/device/radio/headset/heads/hop
-	name = "head of personnel's headset"
+	name = "executive officer's headset"
 	desc = "The headset of the guy who will one day be captain. Channels are as follows: :u - supply, :c - command, :s - security"
 	icon_state = "com_headset"
 	item_state = "headset"

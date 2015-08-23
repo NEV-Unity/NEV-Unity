@@ -60,8 +60,8 @@
 
 /obj/item/clothing/gloves/latex/tajara
 	name = "tajara latex gloves"
-	desc = "Sterile latex gloves. Designed for Tajara use."
-	species_restricted = list("Tajaran")
+	desc = "Sterile latex gloves. Designed for Tesau use."
+	species_restricted = list("Tesau")
 
 /obj/item/clothing/gloves/botanic_leather
 	desc = "These leather gloves protect against thorns, barbs, prickles, spikes and other harmful objects of floral origin."

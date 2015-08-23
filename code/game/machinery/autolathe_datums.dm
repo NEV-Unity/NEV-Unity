@@ -189,6 +189,11 @@
 	path = /obj/item/weapon/reagent_containers/syringe
 	category = "Medical"
 
+/datum/autolathe/recipe/handgun
+	name = "ammunition (.45 )"
+	path = /obj/item/ammo_magazine/c45s
+	category = "Arms and Ammunition"
+
 /datum/autolathe/recipe/shotgun_blanks
 	name = "ammunition (shotgun, blanks)"
 	path = /obj/item/ammo_casing/shotgun/blank

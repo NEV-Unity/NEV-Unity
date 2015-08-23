@@ -1,0 +1,9 @@
+maps/RandomZLevels/asteroid.dmm
+maps/RandomZLevels/asteroid.dmm
+maps/RandomZLevels/asteroid.dmm
+maps/RandomZLevels/asteroid2.dmm
+maps/RandomZLevels/asteroid2.dmm
+maps/RandomZLevels/asteroid2.dmm
+maps/RandomZLevels/asteroid3.dmm
+maps/RandomZLevels/asteroid3.dmm
+maps/RandomZLevels/asteroid3.dmm

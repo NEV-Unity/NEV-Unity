@@ -27,13 +27,13 @@
 	item_state = "armor"
 
 /obj/item/clothing/suit/armor/vest/warden
-	name = "Warden's jacket"
+	name = "Chief Petty Officer's jacket"
 	desc = "An armoured jacket with silver rank pips and livery."
 	icon_state = "warden_jacket"
 	item_state = "armor"
 
 /obj/item/clothing/suit/armor/vest/warden/jacket
-	name = "Warden's jacket"
+	name = "Chief Petty Officer's jacket"
 	desc = "An armoured jacket with silver rank pips and livery."
 	icon_state = "formal_warden"
 	item_state = "formal_warden"

@@ -406,7 +406,7 @@ datum
 			id = "inaprovaline"
 			description = "Inaprovaline is a synaptic stimulant and cardiostimulant. Commonly used to stabilize patients."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#C8D8E3" // rgb: 200, 165, 220
 			overdose = REAGENTS_OVERDOSE*2
 			scannable = 1
 
@@ -854,7 +854,7 @@ datum
 			id = "sterilizine"
 			description = "Sterilizes wounds in preparation for surgery."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#FFFFFF" 
 
 			//makes you squeaky clean
 			reaction_mob(var/mob/living/M, var/method=TOUCH, var/volume)
@@ -1095,7 +1095,7 @@ datum
 			id = "leporazine"
 			description = "Leporazine can be use to stabilize an individuals body temperature."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#e2e341" // rgb: 200, 165, 220
 			overdose = REAGENTS_OVERDOSE
 
 			on_mob_life(var/mob/living/M as mob)
@@ -1130,7 +1130,7 @@ datum
 			id = "kelotane"
 			description = "Kelotane is a drug used to treat burns."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#CF3600" // rgb: 207, 54, 0
 			overdose = REAGENTS_OVERDOSE
 
 			on_mob_life(var/mob/living/M as mob)
@@ -1147,7 +1147,7 @@ datum
 			id = "dermaline"
 			description = "Dermaline is the next step in burn medication. Works twice as good as kelotane and enables the body to restore even the direst heat-damaged tissue."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#CF3600" // rgb: 207, 54, 0
 			overdose = REAGENTS_OVERDOSE/2
 
 			on_mob_life(var/mob/living/M as mob, var/alien)
@@ -1164,7 +1164,7 @@ datum
 			id = "dexalin"
 			description = "Dexalin is used in the treatment of oxygen deprivation."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#c8d8e3" // rgb: 200, 216, 227 (pale blue)
 			overdose = REAGENTS_OVERDOSE
 
 			on_mob_life(var/mob/living/M as mob, var/alien)
@@ -1187,7 +1187,7 @@ datum
 			id = "dexalinp"
 			description = "Dexalin Plus is used in the treatment of oxygen deprivation. It is highly effective."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#c8d8e3" // rgb: 200, 216, 227 (pale blue)
 			overdose = REAGENTS_OVERDOSE/2
 
 			on_mob_life(var/mob/living/M as mob, var/alien)
@@ -1209,7 +1209,7 @@ datum
 			id = "tricordrazine"
 			description = "Tricordrazine is a highly potent stimulant, originally derived from cordrazine. Can be used to treat a wide range of injuries."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#00ffab"
 
 			on_mob_life(var/mob/living/M as mob, var/alien)
 				if(M.stat == 2.0)
@@ -1228,7 +1228,7 @@ datum
 			id = "anti_toxin"
 			description = "Dylovene is a broad-spectrum antitoxin."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#13BC5E" // rgb: 19, 188, 94
 
 			on_mob_life(var/mob/living/M as mob, var/alien)
 				if(!M) M = holder.my_atom
@@ -1245,7 +1245,7 @@ datum
 			id = "adminordrazine"
 			description = "It's magic. We don't have to explain it."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#000000" // rgb: 0,0,0
 
 			on_mob_life(var/mob/living/carbon/M as mob)
 				if(!M) M = holder.my_atom ///This can even heal dead people.
@@ -1284,7 +1284,7 @@ datum
 			id = "synaptizine"
 			description = "Synaptizine is used to treat various diseases."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#A0A0A0" 
 			custom_metabolism = 0.01
 			overdose = REAGENTS_OVERDOSE
 
@@ -1305,7 +1305,7 @@ datum
 			id = "impedrezene"
 			description = "Impedrezene is a narcotic that impedes one's ability by slowing down the higher brain cell functions."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#A0A0A0" 
 			overdose = REAGENTS_OVERDOSE
 
 			on_mob_life(var/mob/living/M as mob)
@@ -1322,7 +1322,7 @@ datum
 			id = "hyronalin"
 			description = "Hyronalin is a medicinal drug used to counter the effect of radiation poisoning."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#fff400" // bright yellow
 			custom_metabolism = 0.05
 			overdose = REAGENTS_OVERDOSE
 
@@ -1337,7 +1337,7 @@ datum
 			id = "arithrazine"
 			description = "Arithrazine is an unstable medication used for the most extreme cases of radiation poisoning."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#fff400" // bright yellow
 			custom_metabolism = 0.05
 			overdose = REAGENTS_OVERDOSE
 
@@ -1357,7 +1357,7 @@ datum
 			id = "alkysine"
 			description = "Alkysine is a drug used to lessen the damage to neurological tissue after a catastrophic injury. Can heal brain tissue."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#fff400" // bright yellow
 			custom_metabolism = 0.05
 			overdose = REAGENTS_OVERDOSE
 
@@ -1372,7 +1372,7 @@ datum
 			id = "imidazoline"
 			description = "Heals eye damage"
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#BF8C00" // rgb: 191, 140, 0
 			overdose = REAGENTS_OVERDOSE
 
 			on_mob_life(var/mob/living/M as mob)
@@ -1413,7 +1413,7 @@ datum
 			id = "bicaridine"
 			description = "Bicaridine is an analgesic medication and can be used to treat blunt trauma."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#C82A00" // rgb: 200, 42, 0
 			overdose = REAGENTS_OVERDOSE
 
 			on_mob_life(var/mob/living/M as mob, var/alien)
@@ -1430,7 +1430,7 @@ datum
 			id = "hyperzine"
 			description = "Hyperzine is a highly effective, long lasting, muscle stimulant."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#C82A00" // rgb: 200, 42, 0
 			custom_metabolism = 0.03
 			overdose = REAGENTS_OVERDOSE/2
 
@@ -1462,7 +1462,7 @@ datum
 			id = "clonexadone"
 			description = "A liquid compound similar to that used in the cloning process. Can be used to 'finish' the cloning process when used in conjunction with a cryo tube."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#a241d8" // rgb: 162,65,216
 
 			on_mob_life(var/mob/living/M as mob)
 				if(!M) M = holder.my_atom
@@ -1507,7 +1507,7 @@ datum
 			id = "spaceacillin"
 			description = "An all-purpose antiviral agent."
 			reagent_state = LIQUID
-			color = "#C8A5DC" // rgb: 200, 165, 220
+			color = "#FFFFFF" // rgb: 200, 165, 220
 			custom_metabolism = 0.01
 			overdose = REAGENTS_OVERDOSE
 
@@ -2523,7 +2523,7 @@ datum
 
 			on_mob_life(var/mob/living/M as mob)
 				M.nutrition += nutriment_factor
-				/*if(istype(M, /mob/living/carbon/human) && M.job in list("Security Officer", "Head of Security", "Detective", "Warden"))
+				/*if(istype(M, /mob/living/carbon/human) && M.job in list("Security Officer", "Commander", "Marshal", "Warden"))
 					if(!M) M = holder.my_atom
 					M.heal_organ_damage(1,1)
 					M.nutrition += nutriment_factor
@@ -3225,16 +3225,17 @@ datum
 			reagent_state = LIQUID
 			nutriment_factor = 0 //So alcohol can fill you up! If they want to.
 			color = "#404030" // rgb: 64, 64, 48
+			overdose = 60
 			var/boozepwr = 5 //higher numbers mean the booze will have an effect faster.
 			var/dizzy_adj = 3
 			var/adj_drowsy = 0
 			var/adj_sleepy = 0
 			var/slurr_adj = 3
 			var/confused_adj = 2
-			var/slur_start = 90			//amount absorbed after which mob starts slurring
-			var/confused_start = 150	//amount absorbed after which mob starts confusing directions
-			var/blur_start = 300	//amount absorbed after which mob starts getting blurred vision
-			var/pass_out = 400	//amount absorbed after which mob starts passing out
+			var/slur_start = 180			//amount absorbed after which mob starts slurring
+			var/confused_start = 300	//amount absorbed after which mob starts confusing directions
+			var/blur_start = 600	//amount absorbed after which mob starts getting blurred vision
+			var/pass_out = 800	//amount absorbed after which mob starts passing out
 
 			reaction_mob(var/mob/living/M, var/method=TOUCH, var/volume, var/alien)//Splashing people with welding fuel to make them easy to ignite!
 				if(!istype(M, /mob/living))
@@ -3266,15 +3267,19 @@ datum
 				if(d >= slur_start && d < pass_out)
 					if (!M:slurring) M:slurring = 1
 					M:slurring += slurr_adj
+					if(prob(1)) M << "\blue You feel warm"
 				if(d >= confused_start && prob(33))
 					if (!M:confused) M:confused = 1
 					M.confused = max(M:confused+confused_adj,0)
+					if(prob(1)) M << "\blue You feel tipsy!"
 				if(d >= blur_start)
 					M.eye_blurry = max(M.eye_blurry, 10)
 					M:drowsyness  = max(M:drowsyness, 0)
+					if(prob(1)) M << "\blue You feel sleepy..."
 				if(d >= pass_out)
 					M:paralysis = max(M:paralysis, 20)
 					M:drowsyness  = max(M:drowsyness, 30)
+					if(prob(1)) M << "\red You feel nauseous!"
 					if(ishuman(M))
 						var/mob/living/carbon/human/H = M
 						var/datum/organ/internal/liver/L = H.internal_organs_by_name["liver"]
@@ -3730,7 +3735,7 @@ datum
 		ethanol/manhattan
 			name = "Manhattan"
 			id = "manhattan"
-			description = "The Detective's undercover drink of choice. He never could stomach gin..."
+			description = "The Marshal's undercover drink of choice. He never could stomach gin..."
 			color = "#664300" // rgb: 102, 67, 0
 			boozepwr = 3
 

@@ -12,17 +12,18 @@
 	icon_action_button = "action_hardhat"
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	var/obj/machinery/camera/camera
 
 	//Species-specific stuff.
-	species_restricted = list("exclude","Unathi","Tajaran","Skrell","Diona","Vox")
+	species_restricted = list("exclude","Unathi","Tesau","Skrell","Diona","Vox")
 	sprite_sheets_refit = list(
 		"Unathi" = 'icons/mob/species/unathi/helmet.dmi',
-		"Tajaran" = 'icons/mob/species/tajaran/helmet.dmi',
+		"Tesau" = 'icons/mob/species/tajaran/helmet.dmi',
 		"Skrell" = 'icons/mob/species/skrell/helmet.dmi',
 		)
 	sprite_sheets_obj = list(
 		"Unathi" = 'icons/obj/clothing/species/unathi/hats.dmi',
-		"Tajaran" = 'icons/obj/clothing/species/tajaran/hats.dmi',
+		"Tesau" = 'icons/obj/clothing/species/tajaran/hats.dmi',
 		"Skrell" = 'icons/obj/clothing/species/skrell/hats.dmi',
 		)
 
@@ -53,6 +54,16 @@
 //			user.UpdateLuminosity()
 			SetLuminosity(brightness_on)
 
+/obj/item/clothing/head/helmet/space/rig/attack_self(mob/user)
+	if(camera)
+		..(user)
+	else
+		camera = new /obj/machinery/camera(src)
+		camera.network = list("MINE")
+		cameranet.removeCamera(camera)
+		camera.c_tag = user.name
+		user << "\blue User scanned as [camera.c_tag]. Camera activated."
+
 /obj/item/clothing/suit/space/rig
 	name = "hardsuit"
 	desc = "A special space suit for environments that might pose hazards beyond just the vacuum of space. Provides more protection than a standard space suit."
@@ -64,15 +75,15 @@
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
-	species_restricted = list("exclude","Unathi","Tajaran","Diona","Vox")
+	species_restricted = list("exclude","Unathi","Tesau","Diona","Vox")
 	sprite_sheets_refit = list(
 		"Unathi" = 'icons/mob/species/unathi/suit.dmi',
-		"Tajaran" = 'icons/mob/species/tajaran/suit.dmi',
+		"Tesau" = 'icons/mob/species/tajaran/suit.dmi',
 		"Skrell" = 'icons/mob/species/skrell/suit.dmi',
 		)
 	sprite_sheets_obj = list(
 		"Unathi" = 'icons/obj/clothing/species/unathi/suits.dmi',
-		"Tajaran" = 'icons/obj/clothing/species/tajaran/suits.dmi',
+		"Tesau" = 'icons/obj/clothing/species/tajaran/suits.dmi',
 		"Skrell" = 'icons/obj/clothing/species/skrell/suits.dmi',
 		)
 
@@ -221,6 +232,20 @@
 		usr << "You have no device currently deployed."
 		return
 */
+
+/obj/item/clothing/head/helmet/space/rig/verb/disable_camera()
+	set name = "Deactivate Camera"
+	set category = "Object"
+	set src in usr
+
+	if(!istype(src.loc,/mob/living)) return
+
+	if(!camera)
+		usr << "There is no camera installed."
+		return
+	del(camera)
+	usr << "You deactivate your mounted helmet camera"
+
 
 /obj/item/clothing/suit/space/rig/verb/toggle_helmet()
 
@@ -551,8 +576,7 @@
 	item_color = "syndi"
 	armor = list(melee = 60, bullet = 50, laser = 30,energy = 15, bomb = 35, bio = 100, rad = 60)
 	siemens_coefficient = 0.6
-	var/obj/machinery/camera/camera
-	species_restricted = list("exclude","Unathi","Tajaran","Skrell","Vox")
+	species_restricted = list("exclude","Unathi","Tesau","Skrell","Vox")
 
 
 /obj/item/clothing/head/helmet/space/rig/syndi/attack_self(mob/user)
@@ -580,7 +604,7 @@
 	armor = list(melee = 60, bullet = 50, laser = 30, energy = 15, bomb = 35, bio = 100, rad = 60)
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/melee/energy/sword,/obj/item/weapon/handcuffs)
 	siemens_coefficient = 0.6
-	species_restricted = list("exclude","Unathi","Tajaran","Skrell","Vox")
+	species_restricted = list("exclude","Unathi","Tesau","Skrell","Vox")
 
 
 //Wizard Rig

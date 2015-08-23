@@ -47,7 +47,7 @@
 
 
 /datum/job/hop
-	title = "Head of Personnel"
+	title = "Executive Officer"
 	flag = HOP
 	department_flag = CIVILIAN
 	faction = "Station"

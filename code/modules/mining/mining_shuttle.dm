@@ -65,7 +65,7 @@ proc/move_mining_shuttle()
 			if(istype(M, /mob/living/carbon))
 				if(!M.buckled)
 					M.Weaken(3)
-
+		shuttleAway = !shuttleAway
 		mining_shuttle_moving = 0
 	return
 
@@ -106,7 +106,8 @@ proc/move_mining_shuttle()
 		//	if(ticker.mode:declared)
 		//		usr << "Under directive 7-10, [station_name()] is quarantined until further notice."
 		//		return
-
+		if(!onPlanet)
+			usr << "\red We are not currently orbiting a planet!"
 		if (!mining_shuttle_moving)
 			usr << "\blue Shuttle recieved message and will be sent shortly."
 			move_mining_shuttle()

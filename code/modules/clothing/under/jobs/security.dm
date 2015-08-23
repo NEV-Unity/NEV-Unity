@@ -1,15 +1,15 @@
 /*
  * Contains:
  *		Security
- *		Detective
- *		Head of Security
+ *		Marshal
+ *		Commander
  */
 
 /*
  * Security
  */
 /obj/item/clothing/under/rank/warden
-	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for more robust protection. It has the word \"Warden\" written on the shoulders."
+	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for more robust protection. It has the word \"Chief Petty Officer\" written on the shoulders."
 	name = "warden's jumpsuit"
 	icon_state = "warden"
 	item_state = "b_suit"
@@ -19,7 +19,7 @@
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/rank/security
-	name = "security officer's jumpsuit"
+	name = "espatier's jumpsuit"
 	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for robust protection."
 	icon_state = "security"
 	item_state = "b_suit"
@@ -39,7 +39,7 @@
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/rank/security2
-	name = "security officer's uniform"
+	name = "espatier's uniform"
 	desc = "It's made of a slightly sturdier material, to allow for robust protection."
 	icon_state = "redshirt2"
 	item_state = "b_suit"
@@ -79,7 +79,7 @@
 	siemens_coefficient = 0.9
 
 /*
- * Detective
+ * Marshal
  */
 /obj/item/clothing/under/det
 	name = "hard-worn suit"
@@ -121,11 +121,11 @@
 
 
 /*
- * Head of Security
+ * Commander
  */
 /obj/item/clothing/under/rank/head_of_security
-	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Head of Security\". It has additional armor to protect the wearer."
-	name = "head of security's jumpsuit"
+	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Commander\". It has additional armor to protect the wearer."
+	name = "commander's jumpsuit"
 	icon_state = "hos"
 	item_state = "b_suit"
 	item_color = "hosred"
@@ -144,8 +144,8 @@
 	item_color = "hos_f"
 
 /obj/item/clothing/head/helmet/HoS
-	name = "Head of Security Hat"
-	desc = "The hat of the Head of Security. For showing the officers who's in charge."
+	name = "Commander's Hat"
+	desc = "The hat of the Commander. For showing the officers who's in charge."
 	icon_state = "hoscap"
 	flags = FPRINT | TABLEPASS | HEADCOVERSEYES
 	armor = list(melee = 80, bullet = 60, laser = 50,energy = 10, bomb = 25, bio = 10, rad = 0)
@@ -154,7 +154,7 @@
 	siemens_coefficient = 0.8
 
 /obj/item/clothing/suit/armor/hos
-	name = "Head of Security's jacket"
+	name = "Commander's jacket"
 	desc = "An armoured jacket with golden rank pips and livery."
 	icon_state = "hos"
 	item_state = "hos"
@@ -165,14 +165,14 @@
 
 /obj/item/clothing/suit/armor/hos/vest
 	name = "armored vest"
-	desc = "A platecarrier worns by the head of security."
+	desc = "A platecarrier worns by the commander."
 	icon_state = "hos-armor"
 	item_state = "armor"
 	flags_inv = 0
 	siemens_coefficient = 0.6
 
 /obj/item/clothing/suit/armor/hos/formal
-	name = "Head of Security's jacket"
+	name = "Commander's jacket"
 	desc = "An armoured jacket with golden rank pips and livery."
 	icon_state = "formal_hos"
 	item_state = "formal_hos"
@@ -187,7 +187,7 @@
 //Jensen cosplay gear
 /obj/item/clothing/under/rank/head_of_security/jensen
 	desc = "You never asked for anything that stylish."
-	name = "head of security's jumpsuit"
+	name = "commander's jumpsuit"
 	icon_state = "jensen"
 	item_state = "jensen"
 	item_color = "jensen"
@@ -206,8 +206,8 @@
  */
 
 /obj/item/clothing/under/rank/navy/hos
-	name = "Naval Head of Security Uniform"
-	desc = "A service uniform worn by a Head of Security of the NanoTrasen Naval branch."
+	name = "Naval Commander Uniform"
+	desc = "A service uniform worn by a Commander of the NanoTrasen Naval branch."
 	icon_state = "hosdnavyclothes"
 	item_state = "hosdnavyclothes"
 	item_color = "hosdnavyclothes"
@@ -216,22 +216,22 @@
 	siemens_coefficient = 0.8
 
 /obj/item/clothing/under/rank/navy/hos/blue
-	name = "Blue Head of Security Uniform"
-	desc = "A blue service uniform worn by the Head of Security."
+	name = "Blue Commander Uniform"
+	desc = "A blue service uniform worn by the Commander."
 	icon_state = "hosblueclothes"
 	item_state = "hosblueclothes"
 	item_color = "hosblueclothes"
 
 /obj/item/clothing/under/rank/navy/hos/tan
-	name = "Tan Head of Security Uniform"
-	desc = "A tan service uniform worn by the Head of Security."
+	name = "Tan Commander Uniform"
+	desc = "A tan service uniform worn by the Commander."
 	icon_state = "hostanclothes"
 	item_state = "hostanclothes"
 	item_color = "hostanclothes"
 
 /obj/item/clothing/under/rank/navy/warden
-	name = "Naval Warden Uniform"
-	desc = "A service uniform worn by a Warden of the NanoTrasen Naval branch."
+	name = "Naval Chief Petty Officer Uniform"
+	desc = "A service uniform worn by a Chief Petty Officer of the NanoTrasen Naval branch."
 	icon_state = "wardendnavyclothes"
 	item_state = "wardendnavyclothes"
 	item_color = "wardendnavyclothes"
@@ -240,15 +240,15 @@
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/rank/navy/warden/blue
-	name = "Blue Warden Uniform"
-	desc = "A blue service uniform worn by the Warden."
+	name = "Blue Chief Petty Officer Uniform"
+	desc = "A blue service uniform worn by the Chief Petty Officer."
 	icon_state = "wardenblueclothes"
 	item_state = "wardenblueclothes"
 	item_color = "wardenblueclothes"
 
 /obj/item/clothing/under/rank/navy/warden/tan
-	name = "Tan Warden Uniform"
-	desc = "A tan service uniform worn by the Warden."
+	name = "Tan Chief Petty Officer Uniform"
+	desc = "A tan service uniform worn by the Chief Petty Officer."
 	icon_state = "wardentanclothes"
 	item_state = "wardentanclothes"
 	item_color = "wardentanclothes"
@@ -272,14 +272,14 @@
 
 /obj/item/clothing/under/rank/navy/officer/blue
 	name = "Blue Officer Uniform"
-	desc = "A blue service uniform worn by a security officer."
+	desc = "A blue service uniform worn by a espatier."
 	icon_state = "officerblueclothes"
 	item_state = "officerblueclothes"
 	item_color = "officerblueclothes"
 
 /obj/item/clothing/under/rank/navy/officer/tan
 	name = "Tan Officer Uniform"
-	desc = "A tan service uniform worn by a security officer."
+	desc = "A tan service uniform worn by a espatier."
 	icon_state = "officertanclothes"
 	item_state = "officertanclothes"
 	item_color = "officertanclothes"

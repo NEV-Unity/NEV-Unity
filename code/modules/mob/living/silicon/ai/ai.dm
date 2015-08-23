@@ -134,15 +134,24 @@ var/list/ai_verbs_default = list(
 
 
 	add_language("Robot Talk", 1)
-	add_language("Sinta'unathi", 0)
-	add_language("Siik'Maas", 0)
+	add_language("Rezar", 0)
+	add_language("Zawan", 0)
+	add_language("Pekhota sign", 0)
+	add_language("Sinta", 0)
+	add_language("Uwe", 0)
+	add_language("Weis", 0)
 	add_language("Skrellian", 0)
-	add_language("Vox-pidgin", 0)
-	add_language("Rootspeak", 0)
-	add_language("Ceti Basic", 0)
-	add_language("Sol Common", 0)
+	add_language("Sini", 0)
+	add_language("Kida", 0)
 	add_language("Tradeband", 0)
 	add_language("Gutter", 0)
+	add_language("Sign language", 0)
+	add_language("Anglic", 0)
+	add_language("Ara", 0)
+	add_language("Hindi", 0)
+	add_language("Zho", 0)
+	add_language("Vox-pidgin", 0)
+	add_language("Rootspeak", 0)
 
 	if(!safety)//Only used by AIize() to successfully spawn an AI.
 		if (!B)//If there is no player/brain inside.

@@ -1,0 +1,8 @@
+Attention [station_name],
+
+A minor natural disaster on a nearby Nanotrasen facility has left the local staff desperate for aid. All departments on [station_name] are requested to provide as much medicine, food, minerals, equipment, and other supplies that they can spare for our allied facility.
+
+All departments are strongly urged to participate in assisting with this endeavor. Supplies can be provided through your cargo shuttle.
+
+Thank you,
+Miranda Trasen
