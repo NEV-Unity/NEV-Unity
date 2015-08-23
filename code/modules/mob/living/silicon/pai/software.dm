@@ -693,15 +693,21 @@
 	if(translator_on)
 		translator_on = 0
 
-		remove_language("Sinta'unathi")
-		remove_language("Siik'Maas")
+		remove_language("Rezar")
+		remove_language("Zawan")
+		remove_language("Pekhota sign")
+		remove_language("Sinta")
+		remove_language("Uwe")
+		remove_language("Weis")
 		remove_language("Skrellian")
+		remove_language("Sini")
+		remove_language("Kida")
+		remove_language("Sign language")
+		remove_language("Ara")
+		remove_language("Hindi")
+		remove_language("Zho")
 		remove_language("Vox-pidgin")
 		remove_language("Rootspeak")
-		remove_language("Ceti Basic")
-		remove_language("Sol Common")
-		remove_language("Tradeband")
-		remove_language("Gutter")
 
 		if(canmove)	//Easiest way to check whether or not the thing is actually deployed or not, for managing Sign Language.
 			remove_language("Sign language")

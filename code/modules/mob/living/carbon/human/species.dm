@@ -26,7 +26,7 @@
 
 	var/language                  // Default racial language, if any.
 	// Default language is used when 'say' is used without modifiers.
-	var/default_language = "Ceti Basic"
+	var/default_language = "Anglic"
 	var/secondary_langs = list()  // The names of secondary languages that are available to this species.
 	var/mutantrace                // Safeguard due to old code.
 	var/list/speech_sounds        // A list of sounds to potentially play when speaking.
@@ -209,7 +209,6 @@
 /datum/species/human
 	name = "Human"
 	name_plural = "Humans"
-	language = "Sol Common"
 	primitive = /mob/living/carbon/monkey
 	unarmed_type = /datum/unarmed_attack/punch
 
@@ -223,7 +222,6 @@
 	name_plural = "Unathi"
 	icobase = 'icons/mob/human_races/r_lizard.dmi'
 	deform = 'icons/mob/human_races/r_def_lizard.dmi'
-	language = "Sinta'unathi"
 	tail = "sogtail"
 	unarmed_type = /datum/unarmed_attack/claws
 	secondary_unarmed_type = /datum/unarmed_attack/bite/strong
@@ -251,7 +249,6 @@
 	name_plural = "Tesau"
 	icobase = 'icons/mob/human_races/r_tajaran.dmi'
 	deform = 'icons/mob/human_races/r_def_tajaran.dmi'
-	language = "Siik'Maas"
 	tail = "tajtail"
 	unarmed_type = /datum/unarmed_attack/claws
 	darksight = 8
@@ -276,7 +273,6 @@
 	name_plural = "Skrell"
 	icobase = 'icons/mob/human_races/r_skrell.dmi'
 	deform = 'icons/mob/human_races/r_def_skrell.dmi'
-	language = "Skrellian"
 	primitive = /mob/living/carbon/monkey/skrell
 	unarmed_type = /datum/unarmed_attack/punch
 
@@ -292,7 +288,7 @@
 	icobase = 'icons/mob/human_races/r_vox.dmi'
 	deform = 'icons/mob/human_races/r_def_vox.dmi'
 	default_language = "Vox-pidgin"
-	language = "Ceti Basic"
+	language = "Anglic"
 	unarmed_type = /datum/unarmed_attack/claws/strong
 	secondary_unarmed_type = /datum/unarmed_attack/bite/strong
 	rarity_value = 2
@@ -313,7 +309,7 @@
 	poison_type = "oxygen"
 	insulated = 1
 
-	flags = NO_SCAN
+	flags = IS_WHITELISTED
 
 	blood_color = "#2299FC"
 	flesh_color = "#808D11"
@@ -446,7 +442,6 @@
 
 	icobase = 'icons/mob/human_races/r_machine.dmi'
 	deform = 'icons/mob/human_races/r_machine.dmi'
-	language = "Tradeband"
 	unarmed_type = /datum/unarmed_attack/punch
 	rarity_value = 2
 
@@ -478,12 +473,11 @@
 		)
 
 /datum/species/bug
-	name = "Vaurca"
+	name = "Kida"
 	name_plural = "varucae"
 
 	icobase = 'icons/mob/human_races/r_machine.dmi' //placeholders
 	deform = 'icons/mob/human_races/r_machine.dmi' //bloop blop butts
-	language = "Vaurcese"
 	unarmed_type = /datum/unarmed_attack/claws //literally butts
 	secondary_unarmed_type = /datum/unarmed_attack/bite/strong
 	rarity_value = 2 //according to the code this does nothing but upset me so i guess it can stay
@@ -505,7 +499,7 @@
 	heat_level_2 = 380 //Default 400
 	heat_level_3 = 600 //Default 1000 //bugs do not like fire because exoskeletons are poor ventilation
 
-	flags = IS_WHITELISTED | NO_SLIP | IS_BUG //IS_BUG doesn't do much at the moment.  proc up top + radiation resistance.
+	flags = NO_SLIP | IS_BUG //IS_BUG doesn't do much at the moment.  proc up top + radiation resistance.
 	//use IS_BUG when you do the make their eyes die from being flashed thing, sounds/skull.  okay thanks.
 	blood_color = "#1F181F" // note: discover hex for yellow
 	flesh_color = "#575757" //this is a placeholder also.

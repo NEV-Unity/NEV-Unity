@@ -174,6 +174,9 @@ h1.alert, h2.alert {
 .tajaran {
   color: #803B56;
 }
+.tajaran2 {
+  color: #800000;
+}
 .tajaran_signlang {
   color: #941C1C;
 }
@@ -188,6 +191,9 @@ h1.alert, h2.alert {
 }
 .solcom {
   color: #22228B;
+}
+.solcom2 {
+  color: #0099FF;
 }
 .changeling {
   color: #800080;

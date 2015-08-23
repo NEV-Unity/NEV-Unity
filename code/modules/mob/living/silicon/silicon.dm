@@ -20,7 +20,7 @@
 	var/local_transmit //If set, can only speak to others of the same type within a short range.
 /mob/living/silicon/New()
 	..()
-	add_language("Ceti Basic")
+	add_language("Anglic")
 
 /mob/living/silicon/proc/show_laws()
 	return
@@ -209,7 +209,7 @@
 
 /mob/living/silicon/binarycheck()
 	return 1
-	
+
 /mob/living/silicon/proc/toggle_sensor_mode()
 	var/sensor_type = input("Please select sensor type.", "Sensor Integration", null) in list("Security", "Medical","Disable")
 	switch(sensor_type)
