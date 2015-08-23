@@ -528,7 +528,7 @@
 "akh" = (/turf/simulated/floor{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/crew_quarters/toilet)
 "aki" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/crew_quarters/toilet)
 "akj" = (/obj/machinery/computer/security,/obj/machinery/power/apc{dir = 8; name = "east bump"; pixel_x = -24},/obj/structure/cable{icon_state = "0-4"; d2 = 4},/turf/simulated/floor/wood,/area/security/detectives_office)
-"akk" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_y = 0},/turf/simulated/floor/carpet,/area/security/detectives_office)
+"akk" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_y = 0},/obj/effect/landmark/start{name = "Marshal"},/turf/simulated/floor/carpet,/area/security/detectives_office)
 "akl" = (/obj/structure/table/woodentable,/obj/item/device/flash,/obj/item/weapon/handcuffs,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_y = 0},/turf/simulated/floor/carpet,/area/security/detectives_office)
 "akm" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/carpet,/area/security/detectives_office)
 "akn" = (/obj/machinery/alarm{dir = 8; icon_state = "alarm0"; pixel_x = 24},/obj/structure/table/woodentable,/obj/item/weapon/folder/blue,/obj/item/device/taperecorder,/obj/item/clothing/glasses/sunglasses/sechud,/turf/simulated/floor/wood,/area/security/detectives_office)
