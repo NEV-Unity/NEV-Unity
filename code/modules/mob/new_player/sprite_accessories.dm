@@ -813,7 +813,7 @@
 		species_allowed = list("Human")
 
 	tajaran
-		name = "Default tajaran skin"
+		name = "Default tesau skin"
 		icon_state = "default"
 		icon = 'icons/mob/human_races/r_tajaran.dmi'
 		species_allowed = list("Tesau")

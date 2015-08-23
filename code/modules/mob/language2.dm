@@ -188,7 +188,7 @@ proc/populate_language_list()
 	speech_verb = "mrowls"
 	ask_verb = "mrowls"
 	exclaim_verb = "yowls"
-	colour = "tajaran"
+	colour = "tajaran2"
 	key = "z"
 	cost = 4
 	syllables = list("rr","rr","kir","ruj","kii","mir","kru","uhk","nul","vuh","khuz","jri","run","durr", \
@@ -337,7 +337,7 @@ proc/populate_language_list()
 	desc = "A melodic language based on Mandarin Chinese; Native to humanity."
 	speech_verb = "says"
 	whisper_verb = "whispers"
-	colour = "solcom"
+	colour = "solcom2"
 	key = "1"
 	cost = 4
 	syllables = list("tao","shi","tzu","yi","com","be","is","i","op","vi","ed","lec","mo","cle","te","dis","e")
