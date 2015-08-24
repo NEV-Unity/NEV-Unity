@@ -3267,19 +3267,19 @@ datum
 				if(d >= slur_start && d < pass_out)
 					if (!M:slurring) M:slurring = 1
 					M:slurring += slurr_adj
-					if(prob(1)) M << "\blue You feel warm"
+					if(prob(5)) M << "\blue You feel warm"
 				if(d >= confused_start && prob(33))
 					if (!M:confused) M:confused = 1
 					M.confused = max(M:confused+confused_adj,0)
-					if(prob(1)) M << "\blue You feel tipsy!"
+					if(prob(5)) M << "\blue You feel tipsy!"
 				if(d >= blur_start)
 					M.eye_blurry = max(M.eye_blurry, 10)
 					M:drowsyness  = max(M:drowsyness, 0)
-					if(prob(1)) M << "\blue You feel sleepy..."
+					if(prob(5)) M << "\blue You feel sleepy..."
 				if(d >= pass_out)
 					M:paralysis = max(M:paralysis, 20)
 					M:drowsyness  = max(M:drowsyness, 30)
-					if(prob(1)) M << "\red You feel nauseous!"
+					if(prob(5)) M << "\red You feel nauseous!"
 					if(ishuman(M))
 						var/mob/living/carbon/human/H = M
 						var/datum/organ/internal/liver/L = H.internal_organs_by_name["liver"]
