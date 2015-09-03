@@ -654,85 +654,85 @@
 	taj_ears
 		name = "Tesau Ears"
 		icon_state = "ears_plain"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_ears_clean
 		name = "Tesau Clean"
 		icon_state = "hair_clean"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_ears_bangs
 		name = "Tesau Bangs"
 		icon_state = "hair_bangs"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_ears_braid
 		name = "Tesau Braid"
 		icon_state = "hair_tbraid"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_ears_shaggy
 		name = "Tesau Shaggy"
 		icon_state = "hair_shaggy"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_ears_mohawk
 		name = "Tesau Mohawk"
 		icon_state = "hair_mohawk"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_ears_plait
 		name = "Tesau Plait"
 		icon_state = "hair_plait"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_ears_straight
 		name = "Tesau Straight"
 		icon_state = "hair_straight"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_ears_long
 		name = "Tesau Long"
 		icon_state = "hair_long"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_ears_rattail
 		name = "Tesau Rat Tail"
 		icon_state = "hair_rattail"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_ears_spiky
 		name = "Tesau Spiky"
 		icon_state = "hair_tajspiky"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_ears_messy
 		name = "Tesau Messy"
 		icon_state = "hair_messy"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_ears_wife
 		name = "Tesau Housewife"
 		icon_state = "hair_wife"
 		gender = FEMALE
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_ears_victory
 		name = "Tesau Victory Curls"
 		icon_state = "hair_victory"
 		gender = FEMALE
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_ears_bob
 		name = "Tesau Bob"
 		icon_state = "hair_tbob"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_ears_fingercurl
 		name = "Tesau Finger Curls"
 		icon_state = "hair_fingerwave"
 		gender = FEMALE
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	vox_quills_short
 		name = "Short Vox Quills"
@@ -769,32 +769,32 @@
 	taj_sideburns
 		name = "Tesau Sideburns"
 		icon_state = "facial_mutton"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_mutton
 		name = "Tesau Mutton"
 		icon_state = "facial_mutton"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_pencilstache
 		name = "Tesau Pencilstache"
 		icon_state = "facial_pencilstache"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_moustache
 		name = "Tesau Moustache"
 		icon_state = "facial_moustache"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_goatee
 		name = "Tesau Goatee"
 		icon_state = "facial_goatee"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	taj_smallstache
 		name = "Tesau Smallsatche"
 		icon_state = "facial_smallstache"
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 //skin styles - WIP
 //going to have to re-integrate this with surgery
@@ -816,7 +816,7 @@
 		name = "Default tesau skin"
 		icon_state = "default"
 		icon = 'icons/mob/human_races/r_tajaran.dmi'
-		species_allowed = list("Tesau")
+		species_allowed = list("Tesau","Tesau2")
 
 	unathi
 		name = "Default Unathi skin"

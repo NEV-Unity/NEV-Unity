@@ -32,7 +32,7 @@
 	desc = "It's made of a special fiber that provides minor protection against biohazards. It has markings that denote the wearer as a scientist."
 	name = "scientist's jumpsuit"
 	icon_state = "science"
-	item_state = "w_suit"
+	item_state = "gy_suit"
 	item_color = "sciencewhite"
 	permeability_coefficient = 0.50
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 10, bio = 0, rad = 0)
@@ -42,9 +42,9 @@
 /obj/item/clothing/under/rank/chemist
 	desc = "It's made of a special fiber that gives special protection against biohazards. It has a chemist rank stripe on it."
 	name = "chemist's jumpsuit"
-	icon_state = "chemistry"
-	item_state = "w_suit"
-	item_color = "chemistrywhite"
+	icon_state = "medical"
+	item_state = "gy_suit"
+	item_color = "medical"
 	permeability_coefficient = 0.50
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 10, rad = 0)
 
@@ -63,9 +63,9 @@
 /obj/item/clothing/under/rank/geneticist
 	desc = "It's made of a special fiber that gives special protection against biohazards. It has a genetics rank stripe on it."
 	name = "geneticist's jumpsuit"
-	icon_state = "genetics"
-	item_state = "w_suit"
-	item_color = "geneticswhite"
+	icon_state = "science"
+	item_state = "gy_suit"
+	item_color = "sciencewhite"
 	permeability_coefficient = 0.50
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 10, rad = 0)
 	flags = FPRINT | TABLEPASS
@@ -73,9 +73,9 @@
 /obj/item/clothing/under/rank/virologist
 	desc = "It's made of a special fiber that gives special protection against biohazards. It has a virologist rank stripe on it."
 	name = "virologist's jumpsuit"
-	icon_state = "virology"
-	item_state = "w_suit"
-	item_color = "virologywhite"
+	icon_state = "medical"
+	item_state = "gy_suit"
+	item_color = "medical"
 	permeability_coefficient = 0.50
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 10, rad = 0)
 
@@ -108,15 +108,18 @@
 
 /obj/item/clothing/under/rank/medical/emt
 	name = "emergency medical technician's jumpsuit"
-	icon_state = "emt"
-	item_state = "emt"
-	item_color = "emt"
+	desc = "A tough jumpsuit worn by emergency medical technicians."
+	icon_state = "medical"
+	item_state = "gy_suit"
+	item_color = "medical"
+	permeability_coefficient = 0.50
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 10, rad = 0)
 
 /obj/item/clothing/under/rank/medical
 	desc = "It's made of a special fiber that provides minor protection against biohazards. It has a cross on the chest denoting that the wearer is trained medical personnel."
 	name = "medical doctor's jumpsuit"
 	icon_state = "medical"
-	item_state = "w_suit"
+	item_state = "gy_suit"
 	item_color = "medical"
 	permeability_coefficient = 0.50
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 10, rad = 0)

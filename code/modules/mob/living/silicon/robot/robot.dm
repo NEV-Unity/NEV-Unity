@@ -18,7 +18,7 @@
 	var/obj/screen/inv1 = null
 	var/obj/screen/inv2 = null
 	var/obj/screen/inv3 = null
-	
+
 	var/shown_robot_modules = 0	//Used to determine whether they have the module menu shown or not
 	var/obj/screen/robot_modules_background
 
@@ -79,7 +79,7 @@
 	robot_modules_background = new()
 	robot_modules_background.icon_state = "block"
 	robot_modules_background.layer = 19	//Objects that appear on screen are on layer 20, UI should be just below it.
-	
+
 	ident = rand(1, 999)
 	updatename("Default")
 	updateicon()
@@ -204,19 +204,19 @@
 
 	// languages
 	module.add_languages(src)
-	
-	// cameras 
+
+	// cameras
 	module.add_to_camera_network(src)
-	
+
 	// sensors
 	module.add_sensor_modification(src)
-	
+
 	// create sprite list
 	var/list/module_sprites = module.sprites.Copy()
 
 	//Custom_sprite check and entry
-	if (custom_sprite == 1)
-		module_sprites["Custom"] = "[src.ckey]-[modtype]"
+	//if (custom_sprite == 1)
+	//	module_sprites["Custom"] = "[src.ckey]-[modtype]"
 
 	hands.icon_state = lowertext(modtype)
 	feedback_inc("cyborg_[lowertext(modtype)]",1)
@@ -268,11 +268,11 @@
 				continue;
 
 			if(Entry[1] == src.ckey && Entry[2] == src.real_name) //They're in the list? Custom sprite time, var and icon change required
-				custom_sprite = 1
-				icon = 'icons/mob/custom-synthetic.dmi'
-				if(icon_state == "robot")
-					icon_state = "[src.ckey]-Standard"
-
+				//custom_sprite = 1
+				//icon = 'icons/mob/custom-synthetic.dmi'
+				//if(icon_state == "robot")
+				//	icon_state = "[src.ckey]-Standard" No more speshul sprites
+				continue;
 /mob/living/silicon/robot/verb/Namepick()
 	set category = "Robot Commands"
 	if(custom_name)
@@ -373,7 +373,7 @@
 		updatehealth()
 		return 1
 	return 0
-	
+
 /mob/living/silicon/robot/proc/sensor_mode()
 	set name = "Set Sensor Augmentation"
 	set desc = "Augment visual feed with internal sensor overlays."

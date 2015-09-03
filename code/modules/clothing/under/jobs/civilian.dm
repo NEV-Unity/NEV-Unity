@@ -1,11 +1,18 @@
 //Alphabetical order of civilian jobs.
+/obj/item/clothing/under/rank/assistant
+	desc = "The standard uniform on the USSN-Unity"
+	name = "civilian uniform"
+	icon_state = "civilian"
+	item_state = "gy_suit"
+	item_color = "civilian"
+	flags = FPRINT | TABLEPASS
 
 /obj/item/clothing/under/rank/bartender
 	desc = "It looks like it could use some more flair."
 	name = "bartender's uniform"
-	icon_state = "ba_suit"
-	item_state = "ba_suit"
-	item_color = "ba_suit"
+	icon_state = "civilian"
+	item_state = "gy_suit"
+	item_color = "civilian"
 	flags = FPRINT | TABLEPASS
 
 
@@ -21,17 +28,17 @@
 /obj/item/clothing/under/rank/cargo
 	name = "quartermaster's jumpsuit"
 	desc = "It's a jumpsuit worn by the quartermaster. It's specially designed to prevent back injuries caused by pushing paper."
-	icon_state = "qm"
-	item_state = "lb_suit"
-	item_color = "qm"
+	icon_state = "civilian"
+	item_state = "gy_suit"
+	item_color = "civilian"
 
 
 /obj/item/clothing/under/rank/cargotech
 	name = "cargo technician's jumpsuit"
-	desc = "Shooooorts! They're comfy and easy to wear!"
-	icon_state = "cargotech"
-	item_state = "lb_suit"
-	item_color = "cargo"
+	desc = "The standard uniform of a cargo technician."
+	icon_state = "civilian"
+	item_state = "gy_suit"
+	item_color = "civilian"
 	flags = FPRINT | TABLEPASS
 
 
@@ -45,10 +52,11 @@
 
 
 /obj/item/clothing/under/rank/chef
-	desc = "It's an apron which is given only to the most <b>hardcore</b> chefs in space."
-	name = "chef's uniform"
-	icon_state = "chef"
-	item_color = "chef"
+	desc = "The standard uniform of a chef."
+	name = "civilian"
+	icon_state = "civilian"
+	item_state = "gy_suit"
+	item_color = "civilian"
 	flags = FPRINT | TABLEPASS
 
 
@@ -79,11 +87,11 @@
 
 
 /obj/item/clothing/under/rank/hydroponics
-	desc = "It's a jumpsuit designed to protect against minor plant-related hazards."
+	desc = "The standard uniform of a botanist."
 	name = "botanist's jumpsuit"
-	icon_state = "hydroponics"
-	item_state = "g_suit"
-	item_color = "hydroponics"
+	icon_state = "civilian"
+	item_state = "gy_suit"
+	item_color = "civilian"
 	permeability_coefficient = 0.50
 	flags = FPRINT | TABLEPASS
 
@@ -100,8 +108,9 @@
 /obj/item/clothing/under/rank/janitor
 	desc = "It's the official uniform of the station's janitor. It has minor protection from biohazards."
 	name = "sanitation engineer's jumpsuit"
-	icon_state = "janitor"
-	item_color = "janitor"
+	icon_state = "engine"
+	item_state = "gy_suit"
+	item_color = "engine"
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 10, rad = 0)
 	flags = FPRINT | TABLEPASS
 
@@ -161,9 +170,9 @@
 /obj/item/clothing/under/librarian
 	name = "sensible suit"
 	desc = "It's very... sensible."
-	icon_state = "red_suit"
-	item_state = "red_suit"
-	item_color = "red_suit"
+	icon_state = "civilian"
+	item_state = "gy_suit"
+	item_color = "civilian"
 
 /obj/item/clothing/under/mime
 	name = "mime's outfit"
@@ -174,8 +183,8 @@
 	flags = FPRINT | TABLEPASS
 
 /obj/item/clothing/under/rank/miner
-	desc = "It's a snappy jumpsuit with a sturdy set of overalls. It is very dirty."
+	desc = "The standard uniform of a miner."
 	name = "shaft miner's jumpsuit"
-	icon_state = "miner"
-	item_state = "miner"
-	item_color = "miner"
+	icon_state = "civilian"
+	item_state = "gy_suit"
+	item_color = "civilian"

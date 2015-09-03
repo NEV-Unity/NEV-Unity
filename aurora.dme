@@ -29,6 +29,7 @@
 #define FILE_DIR "icons/mob/species/skrell"
 #define FILE_DIR "icons/mob/species/tajaran"
 #define FILE_DIR "icons/mob/species/unathi"
+#define FILE_DIR "icons/mob/species/varuca"
 #define FILE_DIR "icons/mob/species/vox"
 #define FILE_DIR "icons/obj"
 #define FILE_DIR "icons/obj/assemblies"
