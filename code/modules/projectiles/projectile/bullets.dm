@@ -25,7 +25,7 @@
 	name = "beanbag"
 
 /obj/item/projectile/bullet/weakbullet/rubber
-	name = "rubber bullet"
+	name = "bullet"
 
 /obj/item/projectile/bullet/midbullet
 	damage = 20
