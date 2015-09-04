@@ -32,3 +32,7 @@
 /mob/living/carbon/human/machine/New(var/new_loc)
 	h_style = "blue IPC screen"
 	..(new_loc, "Machine")
+
+/mob/living/carbon/human/bug/New(var/new_loc)
+	h_style = "Tesau Ears"
+	..(new_loc, "Tesau2")

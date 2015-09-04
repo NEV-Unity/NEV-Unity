@@ -256,7 +256,7 @@ BLIND     // can't see anything
 	body_parts_covered = HEAD
 	slot_flags = SLOT_MASK
 //	body_parts_covered = FACE|EYES
-	sprite_sheets = list("Vox" = 'icons/mob/species/vox/masks.dmi')
+	sprite_sheets = list("Vox" = 'icons/mob/species/vox/masks.dmi', "Tesau" = 'icons/mob/species/vox/masks.dmi')
 
 /obj/item/clothing/mask/update_clothing_icon()
 	if (ismob(src.loc))
@@ -401,7 +401,7 @@ BLIND     // can't see anything
 	var/rolled_down = 0
 	var/rolled_sleeves = 0
 	var/basecolor
-	sprite_sheets = list("Vox" = 'icons/mob/species/vox/uniform.dmi')
+	sprite_sheets = list("Vox" = 'icons/mob/species/vox/uniform.dmi',"Tesau" = 'icons/mob/species/vox/uniform.dmi')
 
 /obj/item/clothing/under/update_clothing_icon()
 	if (ismob(src.loc))

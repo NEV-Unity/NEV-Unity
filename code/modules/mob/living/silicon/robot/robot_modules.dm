@@ -90,7 +90,7 @@
 
 /obj/item/weapon/robot_module/standard
 	name = "standard robot module"
-	sprites=list("Basic" = "robot_old","Android" = "droid", "Default" = "robot")
+	sprites=list("Basic" = "robot_old","Android" = "droid", "Default" = "robot", "Giant" = "collusus_standard", "Hover" = "hover_standard")
 	New()
 		src.modules += new /obj/item/device/flashlight(src)
 		src.modules += new /obj/item/device/flash(src)
@@ -110,7 +110,9 @@
 	sprites=list(   "Basic" = "Medbot",
 					"Standard "= "surgeon",
 					"Advanced Droid" = "droid-medical",
-					"Needles" = "medicalrobot")
+					"Needles" = "medicalrobot",
+					"Hover" = "hover_medical",
+					"Giant" = "collusus-medical")
 	stacktypes = list(
 		/obj/item/stack/medical/advanced/bruise_pack = 5,
 		/obj/item/stack/nanopaste = 5
@@ -154,7 +156,9 @@
 	sprites=list(   "Basic" = "Medbot",
 					"Standard "= "surgeon",
 					"Advanced Droid" = "droid-medical",
-					"Needles" = "medicalrobot")
+					"Needles" = "medicalrobot",
+					"Hover" = "hover_medical",
+					"Giant" = "collusus-medical")
 	stacktypes = list(
 		/obj/item/stack/medical/ointment = 5,
 		/obj/item/stack/medical/bruise_pack = 5,
@@ -203,7 +207,10 @@
 	camera_network="Engineering"
 	sprites=list(	"Basic" = "Engineering",
 					"Antique" = "engineerrobot",
-					"Landmate" = "landmate")
+					"Landmate" = "landmate",
+					"Roller" = "dumpy_engineering",
+					"Hover" = "hover_engineering",
+					"Giant" = "collusus_engineering")
 	stacktypes = list(
 		/obj/item/stack/sheet/metal = 50,
 		/obj/item/stack/sheet/plasteel = 10,
@@ -228,7 +235,10 @@
 	camera_network="Engineering"
 	sprites=list(	"Basic" = "Engineering",
 					"Antique" = "engineerrobot",
-					"Landmate" = "landmate")
+					"Landmate" = "landmate",
+					"Roller" = "dumpy_engineering",
+					"Hover" = "hover_engineering",
+					"Giant" = "collusus_engineering")
 	stacktypes = list(
 		/obj/item/stack/sheet/metal = 50,
 		/obj/item/stack/sheet/glass = 50,
@@ -281,7 +291,10 @@
 	sprites = list(	"Basic" = "secborg",
 					"Red Knight" = "Security",
 					"Black Knight" = "securityrobot",
-					"Bloodhound" = "bloodhound")
+					"Bloodhound" = "bloodhound",
+					"Roller" = "dumpy_sec",
+					"Hover" = "hover_sec",
+					"Giant" = "collusus_sec")
 	New()
 		src.modules += new /obj/item/device/flashlight(src)
 		src.modules += new /obj/item/device/flash(src)
@@ -311,7 +324,9 @@
 	name = "janitorial robot module"
 	sprites=list(	"Basic" = "JanBot2",
 					"Mopbot" = "janitorrobot",
-					"Mop Gear Rex" = "mopgearrex"	)
+					"Mop Gear Rex" = "mopgearrex",
+					"Dumpy" = "dumpy_jan",
+					"Giant" = "collusus_jan")
 	New()
 		src.modules += new /obj/item/device/flashlight(src)
 		src.modules += new /obj/item/device/flash(src)
@@ -338,7 +353,8 @@
 					"Kent" = "toiletbot",
 					"Bro" = "Brobot",
 					"Rich" = "maximillion",
-					"Default" = "Service2")
+					"Default" = "Service2",
+					"Hover" = "hover_serve")
 	New()
 		src.modules += new /obj/item/device/flashlight(src)
 		src.modules += new /obj/item/device/flash(src)
@@ -395,7 +411,8 @@
 					"Kent" = "toiletbot",
 					"Bro" = "Brobot",
 					"Rich" = "maximillion",
-					"Default" = "Service2")
+					"Default" = "Service2",
+					"Hover" = "hover_serve")
 	New()
 		src.modules += new /obj/item/device/flashlight(src)
 		src.modules += new /obj/item/device/flash(src)
@@ -437,7 +454,9 @@
 	channels=list("Supply" = 1)
 	sprites = list( "Basic" = "Miner_old",
 					"Advanced Droid" = "droid-miner",
-					"Treadhead" = "Miner")
+					"Treadhead" = "Miner",
+					"Hover" = "hover_miner",
+					"Giant" = "collusus_miner")
 	New()
 		src.modules += new /obj/item/device/flashlight(src)
 		src.modules += new /obj/item/device/flash(src)

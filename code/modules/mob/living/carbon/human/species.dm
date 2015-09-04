@@ -245,8 +245,8 @@
 	base_color = "#066000"
 
 /datum/species/tajaran
-	name = "Tesau"
-	name_plural = "Tesau"
+	name = "TesauOLD"
+	name_plural = "TesauOLD"
 	icobase = 'icons/mob/human_races/r_tajaran.dmi'
 	deform = 'icons/mob/human_races/r_def_tajaran.dmi'
 	tail = "tajtail"
@@ -265,6 +265,32 @@
 
 	flags = IS_WHITELISTED | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR
 
+	flesh_color = "#AFA59E"
+	base_color = "#333333"
+
+/datum/species/tesau
+	name = "Tesau"
+	name_plural = "Tesau"
+	icobase = 'icons/mob/human_races/r_tajaran.dmi'
+	deform = 'icons/mob/human_races/r_def_tajaran.dmi'
+	tail = "testail"
+	unarmed_type = /datum/unarmed_attack/claws
+	darksight = 8
+
+	icobase = 'icons/mob/human_races/r_tesau.dmi'
+	deform = 'icons/mob/human_races/r_tesau.dmi'
+
+	cold_level_1 = 200 //Default 260
+	cold_level_2 = 140 //Default 200
+	cold_level_3 = 80 //Default 120
+
+	heat_level_1 = 330 //Default 360
+	heat_level_2 = 380 //Default 400
+	heat_level_3 = 800 //Default 1000
+
+	primitive = /mob/living/carbon/monkey/tajara
+
+	flags = IS_WHITELISTED | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR
 	flesh_color = "#AFA59E"
 	base_color = "#333333"
 
@@ -474,11 +500,12 @@
 
 /datum/species/bug
 	name = "Kida"
-	name_plural = "varucae"
+	name_plural = "kida"
 
-	icobase = 'icons/mob/human_races/r_machine.dmi' //placeholders
-	deform = 'icons/mob/human_races/r_machine.dmi' //bloop blop butts
-	unarmed_type = /datum/unarmed_attack/claws //literally butts
+	icobase = 'icons/mob/human_races/r_tesau.dmi' //placeholders - Abusing this to test shit
+	deform = 'icons/mob/human_races/r_tesau.dmi'
+	tail = "testail"
+	unarmed_type = /datum/unarmed_attack/claws
 	secondary_unarmed_type = /datum/unarmed_attack/bite/strong
 	rarity_value = 2 //according to the code this does nothing but upset me so i guess it can stay
 	slowdown = 1 //slow

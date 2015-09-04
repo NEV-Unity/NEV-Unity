@@ -246,16 +246,18 @@ var/list/ai_verbs_default = list(
 				continue;
 
 			if(Entry[1] == src.ckey && Entry[2] == src.real_name)
-				custom_sprite = 1 //They're in the list? Custom sprite time
-				icon = 'icons/mob/custom-synthetic.dmi'
-
+				//custom_sprite = 1 //They're in the list? Custom sprite time
+				//icon = 'icons/mob/custom-synthetic.dmi' - We do not need speshuul sprites.
+				continue;
 		//if(icon_state == initial(icon_state))
 	var/icontype = ""
-	if (custom_sprite == 1) icontype = ("Custom")//automagically selects custom sprite if one is available
-	else icontype = input("Select an icon!", "AI", null, null) in list("Monochrome", "Blue", "Inverted", "Text", "Smiley", "Angry", "Dorf", "Matrix", "Bliss", "Firewall", "Green", "Red", "Static", "Triumvirate", "Triumvirate Static")
+	//if (custom_sprite == 1) icontype = ("Custom")//automagically selects custom sprite if one is available
+	icontype = input("Select an icon!", "AI", null, null) in list("Rainwbow", "Paw", "Monochrome", "Blue", "Inverted", "Text", "Smiley", "Angry", "Dorf", "Matrix", "Bliss", "Firewall", "Green", "Red", "Static", "Triumvirate", "Triumvirate Static","Egyptian")
 	switch(icontype)
-		if("Custom") icon_state = "[src.ckey]-ai"
-		if("Clown") icon_state = "ai-clown2"
+		//if("Custom") icon_state = "[src.ckey]-ai"
+		if("Rainbow") icon_state = "ai-clown"
+		if("Paw") icon_state = "ai-dog"
+		if("Egyptian") icon_state = "ai-sphinx"
 		if("Monochrome") icon_state = "ai-mono"
 		if("Inverted") icon_state = "ai-u"
 		if("Firewall") icon_state = "ai-magma"

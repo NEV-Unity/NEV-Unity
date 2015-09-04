@@ -11,9 +11,9 @@
 /obj/item/clothing/under/rank/warden
 	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for more robust protection. It has the word \"Chief Petty Officer\" written on the shoulders."
 	name = "warden's jumpsuit"
-	icon_state = "warden"
+	icon_state = "security"
 	item_state = "b_suit"
-	item_color = "warden"
+	item_color = "secred"
 	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	flags = FPRINT | TABLEPASS
 	siemens_coefficient = 0.9
@@ -82,11 +82,11 @@
  * Marshal
  */
 /obj/item/clothing/under/det
-	name = "hard-worn suit"
+	name = "Marshal/'s uniform"
 	desc = "Someone who wears this means business."
-	icon_state = "detective"
-	item_state = "det"
-	item_color = "detective"
+	icon_state = "security"
+	item_state = "b_suit"
+	item_color = "secred"
 	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	flags = FPRINT | TABLEPASS
 	siemens_coefficient = 0.9

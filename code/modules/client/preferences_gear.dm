@@ -361,6 +361,11 @@ proc/populate_gear_list()
 	path = /obj/item/clothing/glasses/fluff/uzenwa_sissra_1
 	cost = 2
 
+/datum/gear/ushanka
+	display_name = "ushanka"
+	path = /obj/item/clothing/head/ushanka/fluff/ushanka
+	cost = 2
+
 //Edge case department gear
 
 /datum/gear/cigar_case

@@ -549,19 +549,7 @@
 	name = "orange bandana"
 	desc = "Hey, I think we're missing a hazard vest..."
 	icon = 'icons/obj/custom_items.dmi'
-	icon_state = "taryn_kifer_1"
-
-/obj/item/clothing/head/fluff/edvin_telephosphor_1 //foolamancer: Edvin Telephosphor
-	name = "Edvin's Hat"
-	desc = "A hat specially tailored for Skrellian anatomy. It has a yellow badge on the front, with a large red 'T' inscribed on it."
-	icon = 'icons/obj/custom_items.dmi'
-	icon_state = "edvin_telephosphor_1"
-
-/obj/item/clothing/head/fluff/krinnhat //Shirotyrant: Krinn Seeskale
-	name = "saucepan hat"
-	desc = "This hat is the shiniest shiny Krinn has ever owned."
-	icon = 'icons/obj/custom_items.dmi'
-	icon_state = "krinn_hat"
+	icon_state = "o_bandanna"
 
 /obj/item/clothing/head/fluff/bruce_hachert //Stup1dg33kz: Bruce Hachert
 	name = "worn hat"

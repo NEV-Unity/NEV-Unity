@@ -742,20 +742,20 @@ THIS SHIT IS MISSING ANY AND ALL SPRITE FILES
 	item_color = "vivian_heart"
 
 
-/obj/item/clothing/head/ushanka/fluff/ava_ushanka	// Worn Ushanka - Ava Kalashnikova - demonofthefall - DONE
+/obj/item/clothing/head/ushanka/fluff/ushanka	// Ushanka - Generalized
 	name = "worn ushanka"
 	desc = "An old ushanka, it looks well worn."
-	item_state = "ushanka_avadown"
+	item_state = "ushanka_down"
 	icon_state = "ushankadown"
 
 	attack_self(mob/user as mob)
 		if(src.icon_state == "ushankadown")
 			src.icon_state = "ushankaup"
-			src.item_state = "ushanka_avaup"
+			src.item_state = "ushanka_up"
 			user << "You raise the ear flaps on the ushanka."
 		else
 			src.icon_state = "ushankadown"
-			src.item_state = "ushanka_avadown"
+			src.item_state = "ushanka_down"
 			user << "You lower the ear flaps on the ushanka."
 
 /obj/item/clothing/tie/holobadge/fluff/hamil_badge // Internal Investigations Badge - Muhammad Hamil - Jackboot - DONE
