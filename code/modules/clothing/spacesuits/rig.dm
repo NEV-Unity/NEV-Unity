@@ -20,11 +20,13 @@
 		"Unathi" = 'icons/mob/species/unathi/helmet.dmi',
 		"Tesau" = 'icons/mob/species/tajaran/helmet.dmi',
 		"Skrell" = 'icons/mob/species/skrell/helmet.dmi',
+		"Vox" = 'icons/mob/species/vox/helmet.dmi'
 		)
 	sprite_sheets_obj = list(
 		"Unathi" = 'icons/obj/clothing/species/unathi/hats.dmi',
 		"Tesau" = 'icons/obj/clothing/species/tajaran/hats.dmi',
 		"Skrell" = 'icons/obj/clothing/species/skrell/hats.dmi',
+		"Vox" = 'icons/obj/clothing/species/tajaran/hats.dmi'
 		)
 
 	attack_self(mob/user)
@@ -80,11 +82,13 @@
 		"Unathi" = 'icons/mob/species/unathi/suit.dmi',
 		"Tesau" = 'icons/mob/species/tajaran/suit.dmi',
 		"Skrell" = 'icons/mob/species/skrell/suit.dmi',
+		"Vox" = 'icons/mob/species/vox/suit.dmi'
 		)
 	sprite_sheets_obj = list(
 		"Unathi" = 'icons/obj/clothing/species/unathi/suits.dmi',
 		"Tesau" = 'icons/obj/clothing/species/tajaran/suits.dmi',
 		"Skrell" = 'icons/obj/clothing/species/skrell/suits.dmi',
+		"Vox" = 'icons/obj/clothing/species/tajaran/suits.dmi'
 		)
 
 	//Breach thresholds, should ideally be inherited by most (if not all) hardsuits.
@@ -534,7 +538,7 @@
 
 //Chief Engineer's rig
 /obj/item/clothing/head/helmet/space/rig/engineering/chief
-	name = "advanced hardsuit helmet"
+	name = "command hardsuit helmet"
 	desc = "An advanced helmet designed for work in a hazardous, low pressure environment. Shines with a high polish."
 	icon_state = "rig0-white"
 	item_state = "ce_helm"
@@ -544,7 +548,7 @@
 
 /obj/item/clothing/suit/space/rig/engineering/chief
 	icon_state = "rig-white"
-	name = "advanced hardsuit"
+	name = "command hardsuit"
 	desc = "An advanced suit that protects against hazardous, low pressure environments. Shines with a high polish."
 	item_state = "ce_hardsuit"
 	sprite_sheets_refit = null
