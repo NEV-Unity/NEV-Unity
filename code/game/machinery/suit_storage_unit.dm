@@ -591,6 +591,7 @@
 	var/locked = 0          // If locked, nothing can be taken from or added to the cycler.
 	var/panel_open = 0      // Hacking!
 	var/can_repair          // If set, the cycler can repair hardsuits.
+	var/commandlock = 0		// If set, the cycler can paint a hardsuit white
 
 	// Wiring bollocks.
 	var/wires = 15
@@ -622,35 +623,35 @@
 	model_text = "Engineering"
 	req_access = list(access_construction)
 	departments = list("Engineering","Atmos")
-	species = list("Human","Tesau","Skrell","Unathi") //Add Unathi when sprites exist for their suits.
+	species = list("Human","Tesau","Skrell","Unathi","Vox") //Add Unathi when sprites exist for their suits.
 
 /obj/machinery/suit_cycler/mining
 	name = "Mining suit cycler"
 	model_text = "Mining"
 	req_access = list(access_mining)
 	departments = list("Mining")
-	species = list("Human","Tesau","Skrell","Unathi")
+	species = list("Human","Tesau","Skrell","Unathi","Vox")
 
 /obj/machinery/suit_cycler/security
 	name = "Security suit cycler"
 	model_text = "Security"
 	req_access = list(access_security)
 	departments = list("Security")
-	species = list("Human","Tesau","Skrell","Unathi")
+	species = list("Human","Tesau","Skrell","Unathi","Vox")
 
 /obj/machinery/suit_cycler/medical
 	name = "Medical suit cycler"
 	model_text = "Medical"
 	req_access = list(access_medical)
 	departments = list("Medical")
-	species = list("Human","Tesau","Skrell","Unathi")
+	species = list("Human","Tesau","Skrell","Unathi","Vox")
 
 /obj/machinery/suit_cycler/syndicate
 	name = "Nonstandard suit cycler"
 	model_text = "Nonstandard"
 	req_access = list(access_syndicate)
 	departments = list("Mercenary")
-	species = list("Human","Tesau","Skrell","Unathi")
+	species = list("Human","Tesau","Skrell","Unathi","Vox")
 	can_repair = 1
 
 /obj/machinery/suit_cycler/attack_ai(mob/user as mob)
@@ -665,6 +666,17 @@
 	if(electrified != 0)
 		if(src.shock(user, 100))
 			return
+	//unlocking CE suits
+	if(istype(I, /obj/item/weapon/card/id/silver)|| istype(I, /obj/item/weapon/card/id/gold))
+		if(commandlock)
+			departments -= ("Command")
+			user << "\blue You toggle off the command options."
+
+		else
+			departments += ("Command")
+			user << "\blue You toggle on the command options."
+		commandlock = !commandlock
+		return
 
 	//Hacking init.
 	if(istype(I, /obj/item/device/multitool) || istype(I, /obj/item/weapon/wirecutters))
@@ -722,7 +734,7 @@
 
 		//Clear the access reqs, disable the safeties, and open up all paintjobs.
 		user << "\red You run the sequencer across the interface, corrupting the operating protocols."
-		departments = list("Engineering","Mining","Medical","Security","Atmos","^%###^%$")
+		departments = list("Engineering","Mining","Medical","Security","Atmos","Command","^%###^%$")
 		emagged = 1
 		safeties = 0
 		req_access = list()
@@ -1118,6 +1130,16 @@
 				suit.name = "atmospherics hardsuit"
 				suit.icon_state = "rig-atmos"
 				suit.item_state = "atmos_hardsuit"
+		if("Command")
+			if(helmet)
+				helmet.name = "command hardsuit helmet"
+				helmet.icon_state = "rig0-white"
+				helmet.item_state = "ce_helm"
+				helmet.item_color = "white"
+			if(suit)
+				suit.name = "command hardsuit"
+				suit.icon_state = "rig-white"
+				suit.item_state = "ce_hardsuit"
 		if("^%###^%$" || "Mercenary")
 			if(helmet)
 				helmet.name = "blood-red hardsuit helmet"
