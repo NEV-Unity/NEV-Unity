@@ -8,7 +8,7 @@ datum/directive
 	proc/get_description()
 		return {"
 			<p>
-				NanoTrasen's reasons for the following directives are classified.
+				United Stellar Nations' reasons for the following directives are classified.
 			</p>
 		"}
 
