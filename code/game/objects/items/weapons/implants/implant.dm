@@ -321,7 +321,7 @@ the implant may become unstable and either pre-maturely inject the subject or si
 	get_data()
 		var/dat = {"
 <b>Implant Specifications:</b><BR>
-<b>Name:</b> Nanotrasen Employee Management Implant<BR>
+<b>Name:</b> United Stellar Nations Employee Management Implant<BR>
 <b>Life:</b> Ten years.<BR>
 <b>Important Notes:</b> Personnel injected with this device tend to be much more loyal to the company.<BR>
 <HR>
@@ -336,11 +336,11 @@ the implant may become unstable and either pre-maturely inject the subject or si
 		if(!istype(M, /mob/living/carbon/human))	return 0
 		var/mob/living/carbon/human/H = M
 		if(H.mind in ticker.mode.head_revolutionaries)
-			H.visible_message("[H] seems to resist the implant!", "You feel the corporate tendrils of Nanotrasen try to invade your mind!")
+			H.visible_message("[H] seems to resist the implant!", "You feel the government tendrils of the USN try to invade your mind!")
 			return 0
 		else if(H.mind in ticker.mode:revolutionaries)
 			ticker.mode:remove_revolutionary(H.mind)
-		H << "\blue You feel a surge of loyalty towards Nanotrasen."
+		H << "\blue You feel a surge of loyalty towards the USN."
 		return 1
 
 	implanted(mob/M)
@@ -348,7 +348,7 @@ the implant may become unstable and either pre-maturely inject the subject or si
 		var/mob/living/carbon/human/H = M
 		if(H.mind in ticker.mode:cult)
 			ticker.mode:remove_cultist(M.mind)
-		H << "\blue The implant robs you of your faith in Nar-Sie, leaving only obedience to NanoTrasen."
+		H << "\blue The implant robs you of your faith in Nar-Sie, leaving only obedience to the USN."
 		return 1
 
 //Alternatively!  This is the null-rod deconversion, if the above doesn't work.  There's two things down there and I don't know if that's okay.
@@ -412,7 +412,7 @@ the implant may become unstable and either pre-maturely inject the subject or si
 	get_data()
 		var/dat = {"
 <b>Implant Specifications:</b><BR>
-<b>Name:</b> NanoTrasen \"Profit Margin\" Class Employee Lifesign Sensor<BR>
+<b>Name:</b> USN Lifesign Sensor<BR>
 <b>Life:</b> Activates upon death.<BR>
 <b>Important Notes:</b> Alerts crew to crewmember death.<BR>
 <HR>
@@ -486,7 +486,7 @@ the implant may become unstable and either pre-maturely inject the subject or si
 	get_data()
 		var/dat = {"
 <b>Implant Specifications:</b><BR>
-<b>Name:</b> NanoTrasen \"Profit Margin\" Class Employee Lifesign Sensor<BR>
+<b>Name:</b> USN Lifesign Sensor<BR>
 <b>Life:</b> Activates upon death.<BR>
 <b>Important Notes:</b> Alerts crew to crewmember death.<BR>
 <HR>
