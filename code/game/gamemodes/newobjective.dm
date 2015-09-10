@@ -679,24 +679,6 @@ datum
 						return 20
 
 
-			/*burger
-				steal_target = /obj/item/weapon/reagent_containers/food/snacks/human/burger
-				explanation_text = "Steal a burger made out of human organs, this will be presented as proof of NanoTrasen's chronic lack of standards."
-				weight = 60
-
-				get_points(var/job)
-					switch(GetRank(job))
-						if(0)
-							return 80
-						if(1)
-							return 65
-						if(2)
-							return 55
-						if(3)
-							return 40
-						if(4)
-							return 25*/
-
 
 			jetpack
 				steal_target = /obj/item/weapon/tank/jetpack/oxygen
@@ -722,30 +704,6 @@ datum
 					else
 						return 20
 
-
-			/*magboots
-				steal_target = /obj/item/clothing/shoes/magboots
-				explanation_text = "Steal a pair of \"NanoTrasen\" brand magboots."
-				weight = 20
-
-				get_points(var/job)
-					switch(GetRank(job))
-						if(0)
-							return 75
-						if(1)
-							return 60
-						if(2)
-							return 50
-						if(3)
-							return 30
-						if(4)
-							return 20
-
-				get_weight(var/job)
-					if(GetRank(job) == 4)
-						return 10
-					else
-						return 20*/
 
 
 			blueprints
