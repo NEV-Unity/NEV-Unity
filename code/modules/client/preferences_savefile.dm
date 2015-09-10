@@ -175,7 +175,7 @@
 	S["faction"] 			>> faction
 	S["religion"] 			>> religion
 
-	S["nanotrasen_relation"] >> nanotrasen_relation
+	S["government_relation"] >> government_relation
 	//S["skin_style"]			>> skin_style
 
 	S["uplinklocation"] >> uplinklocation
@@ -192,7 +192,7 @@
 	if(isnull(species)) species = "Human"
 	if(isnull(language)) language = "None"
 	if(isnull(spawnpoint)) spawnpoint = "Arrivals Shuttle"
-	if(isnull(nanotrasen_relation)) nanotrasen_relation = initial(nanotrasen_relation)
+	if(isnull(government_relation)) government_relation = initial(government_relation)
 	if(!real_name) real_name = random_name(gender)
 	if(!signature) signature = "<i>[real_name]</i>"
 	if(!signature_font) signature_font = "Times New Roman"
@@ -321,7 +321,7 @@
 	S["faction"] 			<< faction
 	S["religion"] 			<< religion
 
-	S["nanotrasen_relation"] << nanotrasen_relation
+	S["government_relation"] << government_relation
 	//S["skin_style"]			<< skin_style
 
 	S["uplinklocation"] << uplinklocation
