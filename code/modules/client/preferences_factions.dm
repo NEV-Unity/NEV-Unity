@@ -13,9 +13,13 @@ var/global/list/seen_religions = list()
 	return
 
 var/global/list/citizenship_choices = list(
-	"Sol Alliance",
-	"Republic of Elyra",
-	"People’s Republic of Adhomai",
+	"United Terran States",
+	"Eastern People's Republic",
+	"Venusian Combine",
+	"Europan Combine",
+	"Eurasian Union",
+	"Combined Pekhota Forces",
+	"Paharan League",
 	"Moghes Hegemony",
 	"Skrellian Confederacy",
 	"None",
@@ -25,20 +29,13 @@ var/global/list/citizenship_choices = list(
 var/global/list/home_system_choices = list(
 	"Sol",
 	"Tau Ceti",
-	"Epsilon Ursae Majoris",
-	"Epsilon Eridani",
-	"Altair",
-	"Trimurti",
-	"Nralakk",
-	"Uueoa-Esa",
-	"S’rand’marr",
-	"Sedantis",
-	"Jedeed Isfahan",
+	"Pahra",
+	"Moghes",
 	"Other"
 	)
 
 var/global/list/faction_choices = list(
-	"Sol Central",
+	"United Stellar Nations",
 	"Vey Med",
 	"Einstein Engines",
 	"Free Trade Union",
@@ -58,6 +55,7 @@ var/global/list/religion_choices = list(
 	"Christian",
 	"Agnostic",
 	"Deist",
+	"Spiritualist",
 	"None",
 	"Other"
 	)
