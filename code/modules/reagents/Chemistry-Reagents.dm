@@ -3898,7 +3898,7 @@ datum
 		ethanol/grog
 			name = "Grog"
 			id = "grog"
-			description = "Watered down rum, NanoTrasen approves!"
+			description = "Watered down rum!"
 			reagent_state = LIQUID
 			color = "#664300" // rgb: 102, 67, 0
 			boozepwr = 0.5
@@ -3935,7 +3935,7 @@ datum
 		ethanol/amasec
 			name = "Amasec"
 			id = "amasec"
-			description = "Official drink of the NanoTrasen Gun-Club!"
+			description = "Official drink of the Gun-Club!"
 			reagent_state = LIQUID
 			color = "#664300" // rgb: 102, 67, 0
 			boozepwr = 2
