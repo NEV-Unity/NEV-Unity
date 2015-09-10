@@ -128,7 +128,7 @@
 
 			var/obj/item/weapon/storage/backpack/satchel/bag = new(M)
 			bag.name = "officer's leather satchel"
-			bag.desc = "A well cared for leather satchel for Nanotrasen officers."
+			bag.desc = "A well cared for leather satchel for officers."
 			M.equip_if_possible(bag, slot_back)
 
 			var /obj/item/weapon/storage/lockbox/lockbox = new(M)
