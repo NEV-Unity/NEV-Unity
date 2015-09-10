@@ -209,7 +209,7 @@
 		playsound(src.loc, 'sound/effects/sparks4.ogg', 75, 1)
 		emagged = 1
 		user << "\blue You vastly increase projector power and override the safety and security protocols."
-		user << "Warning.  Automatic shutoff and derezing protocols have been corrupted.  Please call Nanotrasen maintenance and do not use the simulator."
+		user << "Warning.  Automatic shutoff and derezing protocols have been corrupted.  Please call maintenance and do not use the simulator."
 		message_admins("[key_name_admin(usr)] emagged the holodeck's safeties (<A HREF='?_src_=holder;adminmoreinfo=\ref[usr]'>?</A>) in ([x],[y],[z] - <A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[x];Y=[y];Z=[z]'>JMP</a>)")
 		message_mods("[key_name_admin(usr)] emagged the holodeck's safeties (<A HREF='?_src_=holder;adminmoreinfo=\ref[usr]'>?</A>) in ([x],[y],[z] - <A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[x];Y=[y];Z=[z]'>JMP</a>)")
 		//Future ref: (<A HREF='?_src_=holder;toggle_holodeck_safety=1'>TGL</a>)
