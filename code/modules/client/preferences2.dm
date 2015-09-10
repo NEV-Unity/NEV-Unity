@@ -123,7 +123,7 @@ datum/preferences
 	var/gen_record = ""
 	var/disabilities = 0
 
-	var/nanotrasen_relation = "Neutral"
+	var/government_relation = "Neutral"
 
 	var/uplinklocation = "PDA"
 
@@ -404,7 +404,7 @@ datum/preferences
 
 	dat += "Backpack Type:<br><a href ='?_src_=prefs;preference=bag;task=input'><b>[backbaglist[backbag]]</b></a><br>"
 
-	dat += "Nanotrasen Relation:<br><a href ='?_src_=prefs;preference=nt_relation;task=input'><b>[nanotrasen_relation]</b></a><br>"
+	dat += "Nanotrasen Relation:<br><a href ='?_src_=prefs;preference=nt_relation;task=input'><b>[government_relation]</b></a><br>"
 
 	dat += "</td><td><b>Preview</b><br><img src=previewicon.png height=64 width=64><img src=previewicon2.png height=64 width=64></td></tr></table>"
 
@@ -1373,7 +1373,7 @@ datum/preferences
 				if("nt_relation")
 					var/new_relation = input(user, "Choose your relation to NT. Note that this represents what others can find out about your character by researching your background, not what your character actually thinks.", "Character Preference")  as null|anything in list("Loyal", "Supportive", "Neutral", "Skeptical", "Opposed")
 					if(new_relation)
-						nanotrasen_relation = new_relation
+						government_relation = new_relation
 
 				if("disabilities")
 					if(text2num(href_list["disabilities"]) >= -1)
