@@ -68,7 +68,7 @@
 
 /obj/item/weapon/gun/energy/pulse_rifle/USP38
 	name = "USP-38"
-	desc = "The standard issue sidearm for NanoTrasen Naval Security, adorned with a metallic NT stamp."
+	desc = "The standard issue sidearm for Naval Security, adorned with a metallic NT stamp."
 	icon_state = "usp"
 	mode = 0
 
