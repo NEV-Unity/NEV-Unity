@@ -193,7 +193,7 @@
 
 obj/item/clothing/suit/storage/ert
 	name = "Emergency Response Team duty jacket"
-	desc = "A militaristic duty jacket worn by members of the NanoTrasen Emergency Response Teams."
+	desc = "A militaristic duty jacket worn by members of Emergency Response Teams."
 	icon_state = "dwu_open"
 	item_state = "dwu_open"
 	allowed = list(/obj/item/weapon/tank/emergency_oxygen, /obj/item/device/flashlight,/obj/item/weapon/gun/energy,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/device/detective_scanner,/obj/item/device/taperecorder)
