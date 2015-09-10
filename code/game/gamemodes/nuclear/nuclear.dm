@@ -26,7 +26,7 @@
 	if(!config.objectives_disabled)
 		world << "<B>The current game mode is - Nuclear Emergency!</B>"
 		world << "<B>A [syndicate_name()] Strike Force is approaching [station_name()]!</B>"
-		world << "A nuclear explosive was being transported by Nanotrasen to a military base. The transport ship mysteriously lost contact with Space Traffic Control (STC). About that time a strange disk was discovered around [station_name()]. It was identified by Nanotrasen as a nuclear auth. disk and now Syndicate Operatives have arrived to retake the disk and detonate SS13! Also, most likely Syndicate star ships are in the vicinity so take care not to lose the disk!\n<B>Syndicate</B>: Reclaim the disk and detonate the nuclear bomb anywhere on SS13.\n<B>Personnel</B>: Hold the disk and <B>escape with the disk</B> on the shuttle!"
+		world << "A nuclear explosive was being transported by REDACTED to a military base. The transport ship mysteriously lost contact with Space Traffic Control (STC). About that time a strange disk was discovered around [station_name()]. It was identified by REDACTED as a nuclear auth. disk and now Syndicate Operatives have arrived to retake the disk and detonate SS13! Also, most likely Syndicate star ships are in the vicinity so take care not to lose the disk!\n<B>Syndicate</B>: Reclaim the disk and detonate the nuclear bomb anywhere on SS13.\n<B>Personnel</B>: Hold the disk and <B>escape with the disk</B> on the shuttle!"
 	else
 		world << "<B>The current game mode is - Nuclear Emergency!</B>"
 		world << "<B>A [syndicate_name()] is approaching [station_name()]</B>"
