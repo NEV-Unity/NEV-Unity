@@ -217,16 +217,16 @@
 
 		if(istype(B, /obj/item/device/multitool))
 			if(hackedcheck == 0)
-				user << "You disable the 'nanotrasen-are-cheap-bastards' lock, enabling hidden and very expensive boozes."
+				user << "You disable the lock, enabling hidden and very expensive boozes."
 				dispensable_reagents += list("goldschlager","patron","watermelonjuice","berryjuice")
 				hackedcheck = 1
 				return
 
 			else
-				user << "You re-enable the 'nanotrasen-are-cheap-bastards' lock, disabling hidden and very expensive boozes."
+				user << "You re-enable the lock, disabling hidden and very expensive boozes."
 				dispensable_reagents -= list("goldschlager","patron","watermelonjuice","berryjuice")
 				hackedcheck = 0
-				return
+				return //Whoa, this is a thing?
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
