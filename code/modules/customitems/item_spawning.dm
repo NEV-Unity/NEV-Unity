@@ -38,7 +38,7 @@
 			if(istype(Item,/obj/item/clothing/suit/storage/ert))
 				var/obj/item/clothing/suit/storage/ert/I = Item
 				var/datas = text2list(jobs, ",")
-				I.desc = "A militaristic duty jacket worn by members of the NanoTrasen Emergency Response Teams. The nameplate reads: [datas[1]] [datas[2]]."
+				I.desc = "A militaristic duty jacket worn by members of the Emergency Response Teams. The nameplate reads: [datas[1]] [datas[2]]."
 				jobs = null
 
 			//Job restriction check.
