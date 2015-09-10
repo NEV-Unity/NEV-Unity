@@ -22,7 +22,7 @@
 
 /obj/item/clothing/suit/armor/vest/security
 	name = "security armor"
-	desc = "An armored vest that protects against some damage. This one has NanoTrasen corporate badge."
+	desc = "An armored vest that protects against some damage. This one has a badge."
 	icon_state = "armorsec"
 	item_state = "armor"
 
@@ -242,7 +242,7 @@
 
 /obj/item/clothing/suit/armor/vest/ert_soldier
 	name = "ERT trooper vest"
-	desc = "A platecarrier worns by the troopers of NanoTrasen's Emergency Response Teams."
+	desc = "A platecarrier worns by the troopers of Emergency Response Teams."
 	icon_state = "ert_soldier"
 	item_state = "ert_soldier"
 	blood_overlay_type = "armor"
@@ -251,7 +251,7 @@
 
 /obj/item/clothing/suit/armor/vest/ert_nco
 	name = "ERT leading trooper vest"
-	desc = "A platecarrier worns by the leading troopers of NanoTrasen's Emergency Response Teams."
+	desc = "A platecarrier worns by the leading troopers of Emergency Response Teams."
 	icon_state = "ert_nco"
 	item_state = "ert_nco"
 	blood_overlay_type = "armor"
@@ -260,16 +260,16 @@
 
 /obj/item/clothing/suit/armor/vest/ert_officer
 	name = "ERT sub-officer vest"
-	desc = "A platecarrier worns by the sub-officers of NanoTrasen's Emergency Response Teams."
+	desc = "A platecarrier worns by the sub-officers of Emergency Response Teams."
 	icon_state = "ert_officer"
-	item_state = "ert_ófficer"
+	item_state = "ert_Ã³fficer"
 	blood_overlay_type = "armor"
 	flags = FPRINT | TABLEPASS | ONESIZEFITSALL
 	armor = list(melee = 65, bullet = 25, laser = 65, energy = 25, bomb = 35, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/armor/vest/ert_commander
 	name = "ERT commander vest"
-	desc = "A platecarrier worns by the commanders of NanoTrasen's Emergency Response Teams."
+	desc = "A platecarrier worns by the commanders of Emergency Response Teams."
 	icon_state = "ert_cdr"
 	item_state = "ert_cdr"
 	blood_overlay_type = "armor"
