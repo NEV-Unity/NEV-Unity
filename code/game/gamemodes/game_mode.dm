@@ -227,8 +227,8 @@ Implants;
 		var/special_role = man.mind.special_role
 		if (special_role == "Wizard" || special_role == "Ninja" || special_role == "Syndicate" || special_role == "Vox Raider")
 			continue	//NT intelligence ruled out possiblity that those are too classy to pretend to be a crew.
-		if(man.client.prefs.nanotrasen_relation == "Opposed" && prob(50) || \
-		   man.client.prefs.nanotrasen_relation == "Skeptical" && prob(20))
+		if(man.client.prefs.government_relation == "Opposed" && prob(50) || \
+		   man.client.prefs.government_relation == "Skeptical" && prob(20))
 			suspects += man
 		// Antags
 		else if(special_role == "traitor" && prob(40) || \
@@ -493,9 +493,9 @@ proc/get_nt_opposed()
 	var/list/dudes = list()
 	for(var/mob/living/carbon/human/man in player_list)
 		if(man.client)
-			if(man.client.prefs.nanotrasen_relation == "Opposed")
+			if(man.client.prefs.government_relation == "Opposed")
 				dudes += man
-			else if(man.client.prefs.nanotrasen_relation == "Skeptical" && prob(50))
+			else if(man.client.prefs.government_relation == "Skeptical" && prob(50))
 				dudes += man
 	if(dudes.len == 0) return null
 	return pick(dudes)
