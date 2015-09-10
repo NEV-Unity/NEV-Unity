@@ -14,21 +14,6 @@
 	name = "cyborgification waiver"
 	desc = "It's some kind of official-looking contract."
 
-/obj/item/weapon/paper/fluff/sue_donem/New()
-	..()
-
-	info = "<B>Organic Carrier AIA and Standard Cyborgification Agreement</B><BR>\n<BR>\nUnder the authority of Nanotrasen Synthetic Intelligence Division, this document hereby authorizes an accredited Roboticist of the NSS Aurora or a deputized authority to perform a regulation lobotomisation upon the person of one '<I>Sue Donem</I>' (hereafter referred to as the Subject) with intent to enact a live Artificial Intelligence Assimilation (AIA) or live Cyborgification proceedure.<BR>\n<BR>\nNo further station authorization is required, and the Subject waives all rights as a human under Nanotrasen internal and external legal protocol. This document is subject to amendment under Nanotrasen internal protocol \[REDACTED\].<BR>\n<BR>\nSigned: <I>Sue Donem</I><BR>\n"
-
-	stamps = (stamps=="" ? "<HR>" : "<BR>") + "<i>This paper has been stamped with the NanoTrasen Synthetic Intelligence Division rubber stamp.</i>"
-
-	var/image/stampoverlay = image('icons/obj/bureaucracy.dmi')
-	stampoverlay.pixel_x = rand(-2, 2)
-	stampoverlay.pixel_y = rand(-3, 2)
-	stampoverlay.icon_state = "paper_stamp-rd"
-	overlays += stampoverlay
-
-	update_icon()
-
 /obj/item/fluff/wes_solari_1 //tzefa: Wes Solari
 	name = "family photograph"
 	desc = "A family photograph of a couple and a young child, Written on the back it says \"See you soon Dad -Roy\"."
@@ -37,7 +22,7 @@
 /obj/item/fluff/sarah_calvera_1 //fniff: Sarah Calvera
 	name = "old photo"
 	desc = "Looks like it was made on a really old, cheap camera. Low quality. The camera shows a young hispanic looking girl with red hair wearing a white dress is standing in front of\
- an old looking wall. On the back there is a note in black marker that reads \"Sara, Siempre pensé que eras tan linda con ese vestido. Tu hermano, Carlos.\""
+ an old looking wall. On the back there is a note in black marker that reads \"Sara, Siempre pensÃ© que eras tan linda con ese vestido. Tu hermano, Carlos.\""
 	icon_state = "sarah_calvera_1"
 
 /obj/item/fluff/angelo_wilkerson_1 //fniff: Angleo Wilkerson
@@ -116,7 +101,7 @@
 
 /obj/item/weapon/pen/fluff/eugene_bissegger_1 //metamorp: eugene bisseger
 	name = "Gilded Pen"
-	desc = "A golden pen that is gilded with a meager amount of gold material. The word 'NanoTrasen' is etched on the clip of the pen."
+	desc = "A golden pen that is gilded with a meager amount of gold material."
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "eugene_pen"
 
@@ -128,7 +113,7 @@
 
 /obj/item/fluff/victor_kaminsky_1 //chinsky: Victor Kaminski
 	name = "golden detective's badge"
-	desc = "NanoTrasen Security Department detective's badge, made from gold. Badge number is 564."
+	desc = "Security Department detective's badge, made from gold. Badge number is 564."
 	icon_state = "victor_kaminsky_1"
 
 /obj/item/fluff/victor_kaminsky_1/attack_self(mob/user as mob)
@@ -283,7 +268,7 @@
 
 /obj/item/weapon/card/id/fluff/lifetime	//fastler: Fastler Greay; it seemed like something multiple people would have
 	name = "Lifetime ID Card"
-	desc = "A modified ID card given only to those people who have devoted their lives to the better interests of NanoTrasen. It sparkles blue."
+	desc = "A modified ID card. It sparkles blue."
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "lifetimeid"
 
@@ -598,7 +583,7 @@
 
 /obj/item/clothing/under/fluff/milo_hachert //Field Dress Uniform - Milo Hachert - Commissar_Drew
 	name = "field dress uniform"
-	desc = "A uniform jacket, its buttons polished to a shine, coupled with a dark pair of trousers. 'Hachert' is embroidered upon the jacket�s shoulder bar."
+	desc = "A uniform jacket, its buttons polished to a shine, coupled with a dark pair of trousers. 'Hachert' is embroidered upon the jackets shoulder bar."
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "milohachert"
 	item_state = "milohachert"
@@ -679,7 +664,7 @@
 
 /obj/item/clothing/under/fluff/jane_sidsuit
 	name = "NT-SID jumpsuit"
-	desc = "A NanoTrasen Synthetic Intelligence Division jumpsuit, issued to 'volunteers'. On other people it looks fine, but right here a scientist has noted: on you it looks stupid."
+	desc = "A Synthetic Intelligence Division jumpsuit, issued to 'volunteers'. On other people it looks fine, but right here a scientist has noted: on you it looks stupid."
 
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "jane_sid_suit"
