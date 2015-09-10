@@ -12,7 +12,7 @@ def YTCV2(youtube_url,cache=1,debug=0):
             if no_absolute_paths:
                 tiedosto = open("YTCache/"+cryp,"r")
             else:
-                tiedosto = open(directory+"\NanoTrasen\YTCache\\"+cryp,"r")
+                tiedosto = open(directory+"\USN\YTCache\\"+cryp,"r")
             aha = pickle.load(tiedosto)
             tiedosto.close()
             return aha[0]
@@ -20,7 +20,7 @@ def YTCV2(youtube_url,cache=1,debug=0):
             if no_absolute_paths:
                 tiedosto = open("YTCache/"+crypt.hexdigest(),"w")
             else:
-                tiedosto = open(directory+"\NanoTrasen\YTCache\\"+crypt.hexdigest(),"w")
+                tiedosto = open(directory+"\USN\YTCache\\"+crypt.hexdigest(),"w")
     else:
         pass
     youtube_url = youtube_url.replace("http//","http://")
