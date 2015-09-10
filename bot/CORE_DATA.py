@@ -1,7 +1,7 @@
-Name = "CC_NanoTrasen" #The name he uses to connect
+Name = "CC_USN" #The name he uses to connect
 no_absolute_paths = True
 debug_on = False
-SName = ["cc","nt","trasen","nano","nanotrasen"] #Other names he will respond to, in lowercase
+SName = ["cc","usn","united","un","ussn"] #Other names he will respond to, in lowercase
 DISABLE_ALL_NON_MANDATORY_SOCKET_CONNECTIONS = False
 directory = "bot/directory/here/" # Directory the bot is located in, make sure to keep the "/" at the end
 version = "TG CC-BY-SA 6"
