@@ -391,7 +391,7 @@ Making this random or semi-random will probably not work without it also being i
 As such, it's hard-coded for now. No reason for it not to be, really.
 */
 /proc/generate_ninja_directive(side)
-	var/directive = "[side=="face"?"Nanotrasen":"The Syndicate"] is your employer. "//Let them know which side they're on.
+	var/directive = "[side=="face"?"The United Stellar Nations":"The Exsolar Pact"] are your employer. "//Let them know which side they're on.
 	switch(rand(1,19))
 		if(1)
 			directive += "The Spider Clan must not be linked to this operation. Remain hidden and covert when possible."
@@ -402,7 +402,7 @@ As such, it's hard-coded for now. No reason for it not to be, really.
 		if(4)
 			directive += "The Spider Clan absolutely cannot be linked to this operation. Eliminate witnesses at your discretion."
 		if(5)
-			directive += "We are currently negotiating with NanoTrasen Central Command. Prioritize saving human lives over ending them."
+			directive += "We are currently negotiating with The United Stellar Nations. Prioritize saving human lives over ending them."
 		if(6)
 			directive += "We are engaged in a legal dispute over [station_name]. If a laywer is present on board, force their cooperation in the matter."
 		if(7)
@@ -410,7 +410,7 @@ As such, it's hard-coded for now. No reason for it not to be, really.
 		if(8)
 			directive += "Let no one question the mercy of the Spider Clan. Ensure the safety of all non-essential personnel you encounter."
 		if(9)
-			directive += "A free agent has proposed a lucrative business deal. Implicate Nanotrasen involvement in the operation."
+			directive += "A free agent has proposed a lucrative business deal. Implicate United Stellar Nations involvement in the operation."
 		if(10)
 			directive += "Our reputation is on the line. Harm as few civilians and innocents as possible."
 		if(11)
@@ -418,14 +418,14 @@ As such, it's hard-coded for now. No reason for it not to be, really.
 		if(12)
 			directive += "We are currently negotiating with a Syndicate leader. Disguise assassinations as suicide or other natural causes."
 		if(13)
-			directive += "Some disgruntled NanoTrasen employees have been supportive of our operations. Be wary of any mistreatment by command staff."
+			directive += "Some disgruntled United Stellar Nation Personnal have been supportive of our operations. Be wary of any mistreatment by command staff."
 		if(14)
 			var/xenorace = pick("Unathi","Tesau", "Skrellian")
 			directive += "A group of [xenorace] radicals have been loyal supporters of the Spider Clan. Favor [xenorace] crew whenever possible."
 		if(15)
 			directive += "The Spider Clan has recently been accused of religious insensitivity. Attempt to speak with the Chaplain and prove these accusations false."
 		if(16)
-			directive += "The Spider Clan has been bargaining with a competing prosthetics manufacturer. Try to shine NanoTrasen prosthetics in a bad light."
+			directive += "The Spider Clan has been bargaining with a competing prosthetics manufacturer. Try to shine United Stellar Nation prosthetics in a bad light."
 		if(17)
 			directive += "The Spider Clan has recently begun recruiting outsiders. Consider suitable candidates and assess their behavior amongst the crew."
 		if(18)
@@ -570,7 +570,7 @@ As such, it's hard-coded for now. No reason for it not to be, really.
 		U:gloves.item_state = "s-ninjan"
 	else
 		if(U.mind.special_role!="Ninja")
-			U << "\red <B>fÄTaL ÈÈRRoR</B>: 382200-*#00CÖDE <B>RED</B>\nUNAU†HORIZED USÈ DETÈC†††eD\nCoMMÈNCING SUB-R0U†IN3 13...\nTÈRMInATING U-U-USÈR..."
+			U << "\red <B>fÃ„TaL ÃˆÃˆRRoR</B>: 382200-*#00CÃ–DE <B>RED</B>\nUNAUÂ†HORIZED USÃˆ DETÃˆCÂ†Â†Â†eD\nCoMMÃˆNCING SUB-R0UÂ†IN3 13...\nTÃˆRMInATING U-U-USÃˆR..."
 			U.gib()
 			return 0
 		if(!istype(U:head, /obj/item/clothing/head/helmet/space/space_ninja))
