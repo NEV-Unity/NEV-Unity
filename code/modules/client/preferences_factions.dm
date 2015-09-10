@@ -39,7 +39,6 @@ var/global/list/faction_choices = list(
 	"Vey Med",
 	"Einstein Engines",
 	"Free Trade Union",
-	"NanoTrasen",
 	"Ward-Takahashi GMB",
 	"Gilthari Exports",
 	"Grayson Manufactories Ltd.",
