@@ -243,22 +243,6 @@
 	icon_opened = "trashcartopen"
 	icon_closed = "trashcart"
 
-/*these aren't needed anymore
-/obj/structure/closet/crate/hat
-	desc = "A crate filled with Valuable Collector's Hats!."
-	name = "Hat Crate"
-	icon_state = "crate"
-	icon_opened = "crateopen"
-	icon_closed = "crate"
-
-/obj/structure/closet/crate/contraband
-	name = "Poster crate"
-	desc = "A random assortment of posters manufactured by providers NOT listed under Nanotrasen's whitelist."
-	icon_state = "crate"
-	icon_opened = "crateopen"
-	icon_closed = "crate"
-*/
-
 /obj/structure/closet/crate/medical
 	desc = "A medical crate."
 	name = "Medical crate"
