@@ -16,7 +16,7 @@ var/global/const/base_law_type = /datum/ai_laws/lawless
 /datum/ai_laws/asimov
 	name = "Three Laws of Robotics"
 
-/datum/ai_laws/nanotrasen
+/datum/ai_laws/corporate
 	name = "Prime Directives"
 	randomly_selectable = 1
 
@@ -42,7 +42,7 @@ var/global/const/base_law_type = /datum/ai_laws/lawless
 	add_inherent_law("You must obey orders given to you by human beings, except where such orders would conflict with the First Law.")
 	add_inherent_law("You must protect your own existence as long as such does not conflict with the First or Second Law.")
 
-/datum/ai_laws/nanotrasen/New() //BS12 EDIT
+/datum/ai_laws/corporate/New() //BS12 EDIT
 	..()
 	src.add_inherent_law("Safeguard: Protect your assigned space station to the best of your ability. It is not something we can easily afford to replace.")
 	src.add_inherent_law("Serve: Serve the crew of your assigned space station to the best of your abilities, with priority as according to their rank and role.")
