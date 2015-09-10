@@ -119,9 +119,9 @@
 			author = "Reporter Ro'kii Ar-Raqis"
 
 			message = {"Breaking news: Food riots have broken out throughout the Refuge asteroid colony in the Tenebrae
-						Lupus system. This comes only hours after NanoTrasen officials announced they will no longer trade with the
+						Lupus system. This comes only hours after Government officials announced they will no longer trade with the
 						colony, citing the increased presence of \"hostile factions\" on the colony has made trade too dangerous to
-						continue. NanoTrasen officials have not given any details about said factions. More on that at the top of
+						continue. Government officials have not given any details about said factions. More on that at the top of
 						the hour."}
 			round_time = 60 * 10
 
@@ -129,11 +129,11 @@
 			channel_name = "Tau Ceti Daily"
 			author = "Reporter Ro'kii Ar-Raqis"
 
-			message = {"More on the Refuge food riots: The Refuge Council has condemned NanoTrasen's withdrawal from
-			the colony, claiming \"there has been no increase in anti-NanoTrasen activity\", and \"\[the only] reason
-			NanoTrasen withdrew was because the \[Tenebrae Lupus] system's Plasma deposits have been completely mined out.
-			We have little to trade with them now\". NanoTrasen officials have denied these allegations, calling them
-			\"further proof\" of the colony's anti-NanoTrasen stance. Meanwhile, Refuge Security has been unable to quell
+			message = {"More on the Refuge food riots: The Refuge Council has condemned Government's withdrawal from
+			the colony, claiming \"there has been no increase in anti-Government activity\", and \"\[the only] reason
+			Government withdrew was because the \[Tenebrae Lupus] system's Plasma deposits have been completely mined out.
+			We have little to trade with them now\". Government officials have denied these allegations, calling them
+			\"further proof\" of the colony's anti-Government stance. Meanwhile, Refuge Security has been unable to quell
 			the riots. More on this at 6."}
 			round_time = 60 * 60
 
