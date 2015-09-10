@@ -23,18 +23,17 @@
 		switch(event_type)
 			if(RESEARCH_BREAKTHROUGH)
 				newMsg.body = "A major breakthough in the field of [pick("plasma research","super-compressed materials","nano-augmentation","bluespace research","volatile power manipulation")] \
-				was announced [pick("yesterday","a few days ago","last week","earlier this month")] by a private firm on [affected_dest.name]. \
-				NanoTrasen declined to comment as to whether this could impinge on profits."
+				was announced [pick("yesterday","a few days ago","last week","earlier this month")] by a private firm on [affected_dest.name]."
 
 			if(ELECTION)
 				newMsg.body = "The pre-selection of an additional candidates was announced for the upcoming [pick("supervisors council","advisory board","governership","board of inquisitors")] \
 				election on [affected_dest.name] was announced earlier today, \
 				[pick("media mogul","web celebrity", "industry titan", "superstar", "famed chef", "popular gardener", "ex-army officer", "multi-billionaire")] \
 				[random_name(pick(MALE,FEMALE))]. In a statement to the media they said '[pick("My only goal is to help the [pick("sick","poor","children")]",\
-				"I will maintain NanoTrasen's record profits","I believe in our future","We must return to our moral core","Just like... chill out dudes")]'."
+				"I believe in our future","We must return to our moral core","Just like... chill out dudes")]'."
 
 			if(RESIGNATION)
-				newMsg.body = "NanoTrasen regretfully announces the resignation of [pick("Sector Admiral","Division Admiral","Ship Admiral","Vice Admiral")] [random_name(pick(MALE,FEMALE))]."
+				newMsg.body = "The USN regretfully announces the resignation of [pick("Sector Admiral","Division Admiral","Ship Admiral","Vice Admiral")] [random_name(pick(MALE,FEMALE))]."
 				if(prob(25))
 					var/locstring = pick("Segunda","Salusa","Cepheus","Andromeda","Gruis","Corona","Aquila","Asellus") + " " + pick("I","II","III","IV","V","VI","VII","VIII")
 					newMsg.body += " In a ceremony on [affected_dest.name] this afternoon, they will be awarded the \
@@ -148,7 +147,7 @@
 	"Pens proclaim pencils obsolete, 'lead is dead'.",\
 	"Rock and paper sues scissors for discrimination.",\
 	"Steak tell-all book reveals he never liked sitting by potato.",\
-	"Woodchuck stops counting how many times he’s chucked 'Never again'.",\
+	"Woodchuck stops counting how many times heÂ’s chucked 'Never again'.",\
 	"[affected_dest.name] clerk first person able to pronounce '@*$%!'.",\
 	"[affected_dest.name] delis serving boiled paperback dictionaries, 'Adjectives chewy' customers declare.",\
 	"[affected_dest.name] weather deemed 'boring'; meteors and rad storms to be imported.",\
@@ -163,9 +162,9 @@
 	"[pick("Unathi","Spacer")] gets tattoo of Tau Ceti on chest '[pick("CentComm","star","starship","asteroid")] tickles most'.",\
 	"Skrell marries computer; wedding attended by 100 modems.",\
 	"Chef reports successfully using harmonica as cheese grater.",\
-	"NanoTrasen invents handkerchief that says 'Bless you' after sneeze.",\
-	"Clone accused of posing for other clones’s school photo.",\
-	"Clone accused of stealing other clones’s employee of the month award.",\
+	"ArcFiendi invents handkerchief that says 'Bless you' after sneeze.",\
+	"Clone accused of posing for other clonesÂ’s school photo.",\
+	"Clone accused of stealing other clonesÂ’s employee of the month award.",\
 	"Woman robs station with hair dryer; crewmen love new style.",\
 	"This space for rent.",\
 	"[affected_dest.name] Baker Wins Pickled Crumpet Toss Three Years Running",\
