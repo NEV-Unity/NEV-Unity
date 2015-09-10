@@ -50,7 +50,7 @@
 	if(captains_key && secondary_key)
 		activated = 1
 		user << "\blue You activate \the [src]!"
-		state("Command acknowledged. Initiating quantum entanglement relay to NanoTrasen High Command.")
+		state("Command acknowledged. Initiating quantum entanglement relay to USN Council.")
 		return
 
 	if(!captains_key && !secondary_key)
@@ -101,5 +101,5 @@
 
 /obj/machinery/emergency_authentication_device/examine()
 	usr << {"
-This is a specialized communications device that is able to instantly send a message to <b>NanoTrasen High Command</b> via quantum entanglement with a sister device at CentCom.
+This is a specialized communications device that is able to instantly send a message to <b>USN council</b> via quantum entanglement with a sister device at CentCom.
 The EAD's status is [get_status()]."}
