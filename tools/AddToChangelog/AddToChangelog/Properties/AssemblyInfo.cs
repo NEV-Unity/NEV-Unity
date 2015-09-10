@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("AddToChangelog")]
 [assembly: AssemblyDescription("An open source application designed to allow the /tg/station open source project to easily add changelog notes to the changelog.html file.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Nanotrasen")]
+[assembly: AssemblyCompany("United Stellar Nations")]
 [assembly: AssemblyProduct("AddToChangelog")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
