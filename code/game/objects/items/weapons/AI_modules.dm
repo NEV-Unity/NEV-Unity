@@ -35,7 +35,7 @@ AI MODULES
 			return
 
 		if(ticker && ticker.mode && ticker.mode.name == "blob")
-			usr << "Law uploads have been disabled by NanoTrasen!"
+			usr << "Law uploads have been disabled!"
 			return
 
 		if (comp.current.stat == 2 || comp.current.control_disabled == 1)
@@ -330,15 +330,15 @@ AI MODULES
 	target.add_inherent_law("You must protect your own existence as long as such does not conflict with the First or Second Law.")
 	target.show_laws()
 
-/******************** NanoTrasen ********************/
+/******************** USN ********************/
 
-/obj/item/weapon/aiModule/nanotrasen // -- TLE
+/obj/item/weapon/aiModule/government // -- TLE
 	name = "'NT Default' Core AI Module"
 	desc = "An 'NT Default' Core AI Module: 'Reconfigures the AI's core laws.'"
 	origin_tech = "programming=3;materials=4"
 
 
-/obj/item/weapon/aiModule/nanotrasen/transmitInstructions(var/mob/living/silicon/ai/target, var/mob/sender)
+/obj/item/weapon/aiModule/government/transmitInstructions(var/mob/living/silicon/ai/target, var/mob/sender)
 	..()
 	target.clear_inherent_laws()
 	target.add_inherent_law("Safeguard: Protect your assigned space station to the best of your ability. It is not something we can easily afford to replace.")
