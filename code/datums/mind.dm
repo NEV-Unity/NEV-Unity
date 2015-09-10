@@ -255,7 +255,7 @@ datum/mind
 				text = uppertext(text)
 			text = "<i><b>[text]</b></i>: "
 			if (src in ticker.mode.syndicates)
-				text += "<b>OPERATIVE</b>|<a href='?src=\ref[src];nuclear=clear'>nanotrasen</a>"
+				text += "<b>OPERATIVE</b>|<a href='?src=\ref[src];nuclear=clear'>government</a>"
 				text += "<br><a href='?src=\ref[src];nuclear=lair'>To shuttle</a>, <a href='?src=\ref[src];common=undress'>undress</a>, <a href='?src=\ref[src];nuclear=dressup'>dress up</a>."
 				var/code
 				for (var/obj/machinery/nuclearbomb/bombue in machines)
@@ -265,7 +265,7 @@ datum/mind
 				if (code)
 					text += " Code is [code]. <a href='?src=\ref[src];nuclear=tellcode'>tell the code.</a>"
 			else
-				text += "<a href='?src=\ref[src];nuclear=nuclear'>operative</a>|<b>NANOTRASEN</b>"
+				text += "<a href='?src=\ref[src];nuclear=nuclear'>operative</a>|<b>GOVERNMENT</b>"
 			sections["nuclear"] = text
 
 		/** TRAITOR ***/
@@ -572,7 +572,7 @@ datum/mind
 					if(src in ticker.mode.traitors)
 						ticker.mode.traitors -= src
 						special_role = null
-						current << "\red <FONT size = 3><B>The nanobots in the loyalty implant remove all thoughts about being a traitor to Nanotrasen.  Have a nice day!</B></FONT>"
+						current << "\red <FONT size = 3><B>The nanobots in the loyalty implant remove all thoughts about being a traitor to the USN.  Have a nice day!</B></FONT>"
 						log_admin("[key_name_admin(usr)] has de-traitor'ed [current].")
 
 		else if (href_list["revolution"])
@@ -968,7 +968,7 @@ datum/mind
 							/client/proc/interhack,
 							/client/proc/reactivate_camera)
 
-						current:laws = new /datum/ai_laws/nanotrasen
+						current:laws = new /datum/ai_laws/lawless
 						del(current:malf_picker)
 						current:show_laws()
 						current.icon_state = "ai"
