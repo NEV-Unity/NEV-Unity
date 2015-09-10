@@ -196,7 +196,7 @@ var/list/obj/machinery/requests_console/allConsoles = list()
 				dat += text("<BR><A href='?src=\ref[src];setScreen=0'>Back</A><BR>")
 
 			if(11)	//form database
-				dat += text("<B>NanoTrasen Corporate Forms</B><br><br>")
+				dat += text("<B>United Stellar Forms</B><br><br>")
 
 				establish_db_connection()
 
@@ -229,7 +229,7 @@ var/list/obj/machinery/requests_console/allConsoles = list()
 				dat += text("<BR><A href='?src=\ref[src];setScreen=0'>Back</A><BR>")
 
 			if(12) //directive index
-				dat += "<div align='center'><b>Station Directives<br>NanoTrasen<br>NSS Aurora</b></div><br>"
+				dat += "<div align='center'><b>Station Directives<br>United Stellar Naions<br>[station_name]</b></div><br>"
 
 				establish_db_connection()
 				if(!dbcon.IsConnected())
@@ -271,13 +271,10 @@ var/list/obj/machinery/requests_console/allConsoles = list()
 				dat += "<div align='center'><a href='?src=\ref[src];setScreen=0'>Return to Main Menu</a></div>"
 
 			if(14)	//directive description
-				dat += "<div align='center'><b>Regarding Station Directives</b></div><hr>"
-				dat += "<div align='justify'>The Station Directives are a set of specific orders and directives issued and enforced aboard a specific NanoTrasen Corporation installation. This terminal provides access to orders and directives enforced aboard the <i>NSS Aurora.</i> Note that these are only enforced upon NanoTrasen Employees, and not civilians or visitors, unless ruled otherwise by sector specific Central Command.<br><br>"
-				dat += "Overwriting power of general NanoTrasen Corporate Regulation is given to the Station Directives. Should a conflict emerge, the Station Directives active aboard the specific installation are to be adhered to, over Corporate Regulation.<br><br>"
-				dat += "Punishment for a violation of Station Directives should be escalated in the following fashion:<br><ul><li>Verbal warning, and citation. Ensure that the Employee is familiar with the Station Directives.</li><li>Charge of violating article i111 - Failure to Execute an Order - of NanoTrasen Corporate Regulation</li><li>Subsequent charge of violating article i206 - Neglect of Duty - of NanoTrasen Corporate Regulation, and review of Employee by the Employee's Head of Staff.</li><li>Subsequent failure to follow Station Directives should result in suspension of contract, if not imprisonment until transfer to Central Command station.</li></ul>"
-				dat += "Dependant on the violation and actual crimes concerned, punishment may be escalated faster, with intent to ensure in the safety of station, equipment and crew.<br>"
-				dat += "During non-standard operation, and highly abnormal circumstances, Station Directives may be overlooked, for the sake of a less costly solution to the given emergency. Note that should a follow-on review find this solution to have been more detrimental, and the breach of Directives and Regulation be unwarranted, then such an act will be punished.</div>"
-				dat += "<br><div align='center'><a href='?src=\ref[src];setScreen=12'>Return to Index</a></div>"
+				dat += "<div align='justify'>The Ship Directives are a set of specific orders and directives issued and enforced aboard a specific United Stellar Nations vessel. This terminal provides access to orders and directives enforced aboard the <i>[station_name].</i> Note that these are only enforced upon United Stellar Nations Employees, and not civilians or visitors, unless ruled otherwise by sector specific Central Command.<br><br>"
+				dat += "Punishment for a violation of Station Directives should be escalated in the following fashion:<br><ul><li>Verbal warning, and citation. Ensure that the Employee is familiar with the Station Directives.</li><li>Charge of violating article i111 - Failure to Execute an Order - of United Stellar Nations Regulation</li><li>Subsequent charge of violating article i206 - Neglect of Duty - of United Stellar Nations Regulation, and review of Employee by the Employee's Head of Staff.</li><li>Subsequent failure to follow Ship Directives should result in suspension of contract, termination of employment, and cryonic suspension until arrival next port</li></ul>"
+				dat += "Dependant on the violation and actual crimes concerned, punishment may be escalated faster, with intent to ensure in the safety of ship, equipment and crew under jurisdiction of the local marshal.<br>"
+				dat += "During non-standard operation, and highly abnormal circumstances, Station Directives may be overlooked, for the sake of a less costly solution to the given emergency. Note that should a follow-on review find this solution to have been more detrimental, and the breach of Directives and Regulation be unwarranted, then such an act will be punished.</div>"				dat += "<br><div align='center'><a href='?src=\ref[src];setScreen=12'>Return to Index</a></div>"
 				dat += "<div align='center'><a href='?src=\ref[src];setScreen=0'>Return to Main Menu</a></div>"
 
 			else	//main menu
@@ -292,8 +289,8 @@ var/list/obj/machinery/requests_console/allConsoles = list()
 				dat += text("<A href='?src=\ref[src];setScreen=1'>Request Assistance</A><BR>")
 				dat += text("<A href='?src=\ref[src];setScreen=2'>Request Supplies</A><BR>")
 				dat += text("<A href='?src=\ref[src];setScreen=3'>Relay Anonymous Information</A><BR>")
-				dat += text("<A href='?src=\ref[src];setScreen=12'>NanoTrasen Station Directives</A><BR>")
-				dat += text("<A href='?src=\ref[src];setScreen=11'>NanoTrasen Corporate Form Database</A><BR><BR>")
+				dat += text("<A href='?src=\ref[src];setScreen=12'>USN Ship Directives</A><BR>")
+				dat += text("<A href='?src=\ref[src];setScreen=11'>USN Form Database</A><BR><BR>")
 				if(announcementConsole)
 					dat += text("<A href='?src=\ref[src];setScreen=10'>Send station-wide announcement</A><BR><BR>")
 				if (silent)
@@ -464,7 +461,7 @@ var/list/obj/machinery/requests_console/allConsoles = list()
 		var/DBQuery/query = dbcon.NewQuery("SELECT id, name, department, info FROM aurora_forms WHERE id=[whatisid]")
 		query.Execute()
 
-		var/dat = "<center><b>NanoTrasen Corporate Form</b><br>"
+		var/dat = "<center><b>United Stellar Nation Forms</b><br>"
 
 		while(query.NextRow())
 			var/id = query.item[1]
