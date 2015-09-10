@@ -58,8 +58,8 @@
 	throw_speed = 4
 	throw_range = 20
 
-/obj/item/weapon/soap/nanotrasen
-	desc = "A Nanotrasen brand bar of soap. Smells of plasma."
+/obj/item/weapon/soap/government
+	desc = "A government brand bar of soap. Smells of politics."
 	icon_state = "soapnt"
 
 /obj/item/weapon/soap/deluxe
