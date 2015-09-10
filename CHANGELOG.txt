@@ -53,7 +53,7 @@ Added resprites for Mining RIG [Dae Tactica]
 Added resprites for Spacesuit (soft) [Dae Tactica]
 Added resprites for Prosthetic Limbs [Dae Tactica]
 Added resprites for PDAs
-Added USP-38 (NanoTrasen Naval Security service sidearm)
+Added USP-38 (REDACTED Naval Security service sidearm)
 Added Stunrod (Same function as stunbaton, to be developed further)
 Added Dark and White Winter Coats [Dae Tactica]
 Added Green Plaid Skirt [Meowness]
