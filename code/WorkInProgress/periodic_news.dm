@@ -5,7 +5,7 @@
 	var
 		round_time // time of the round at which this should be announced, in seconds
 		message // body of the message
-		author = "NanoTrasen Editor"
+		author = "USN Internal Leaks!"
 		channel_name = "Tau Ceti Daily"
 		can_be_redacted = 0
 
@@ -13,28 +13,52 @@
 
 		paycuts_suspicion
 			round_time = 60*10
-			message = {"Reports have leaked that Nanotrasen Inc. is planning to put paycuts into
-						effect on many of its Research Stations in Tau Ceti. Apparently these research
-						stations haven't been able to yield the expected revenue, and thus adjustments
-						have to be made."}
+			message = {"Breaking news! United Stellar Nations leadership threatens government shutdown after
+						political negotiations break down this week between Martian and Sol representatives.
+						Within the next hour the USN council will meet for a final time in an attempt
+						to prevent a shutdown, and ensure all government employees are paid. One representative
+						has already sworn that he will never budge on his moral values!"}
+			author = "Unauthorized"
+
+		tesau_filibuster
+			round_time = 60*20
+			message = {"Breaking news! The Pekhota delegates to the United Stellar Nations summit threatens 
+						filibuster the proposed budget discussions if more money is not allocated to
+						financial aid to minority groups. Supported by the Unathi and Kida delegates,
+						the Tesau representative has taken the floor to recite the entire Twilight series in
+						an attempt to prevent any further discussion on the budget."}
 			author = "Unauthorized"
 
 		paycuts_confirmation
 			round_time = 60*40
-			message = {"Earlier rumours about paycuts on Research Stations in the Tau Ceti system have
-						been confirmed. Shockingly, however, the cuts will only affect lower tier
-						personnel. Heads of Staff will, according to our sources, not be affected."}
+			message = {"Earlier rumours about a governent shutdown has been confirmed. Shockingly, however, 
+						the pay freeze will only affect lower tier personnel. 
+						Command Staff will, according to our sources, not be affected."}
+			author = "Unauthorized"
+
+		riots_in_europa
+			round_time = 60*60
+			message = {"Rioting has broken out on Europa, as over a million government employees walks off the job today
+						in protest of the government shutdown. Unionized government workers have begun to picket
+						military sites. There are reports of tear gas used by the military on the protestors."}
+		blackops
+			round_time = 60*75
+			message = {"Reports of several peaceful protesters being held in illegal detention camps without trial by the western Earth government have been
+						proven legitimate, in this dark hour. This reporter has went undercover into one of those camps
+						Many of which are populated by non-humans. Outrage has sparked throughout the alliance as many allies
+						of the western nations have denounced the USN as a whole, and many minor member-states have threatened
+						to leave the alliance."}
 			author = "Unauthorized"
 
 		human_experiments
 			round_time = 60*90
 			message = {"Unbelievable reports about human experimentation have reached our ears. According
-			 			to a refugee from one of the Tau Ceti Research Stations, their station, in order
+			 			to a refugee from one of the USSN research facilities, their station, in order
 			 			to increase revenue, has refactored several of their facilities to perform experiments
 			 			on live humans, including virology research, genetic manipulation, and \"feeding them
 			 			to the slimes to see what happens\". Allegedly, these test subjects were neither
-			 			humanified monkeys nor volunteers, but rather unqualified staff that were forced into
-			 			the experiments, and reported to have died in a \"work accident\" by Nanotrasen Inc."}
+			 			protohumans nor volunteers, but rather unqualified staff that were forced into
+			 			the experiments, and reported to have died in a \"work accident\" by The USN."}
 			author = "Unauthorized"
 
 	bluespace_research
