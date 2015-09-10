@@ -89,7 +89,7 @@
 
 /obj/item/weapon/storage/lockbox/dutyofficer
 	name = "silver lockbox"
-	desc = "A silver lockbox with a NanoTrasen symbol etched onto it."
+	desc = "A silver lockbox."
 	req_access = list(access_cent_general)
 	storage_slots = 6
 
