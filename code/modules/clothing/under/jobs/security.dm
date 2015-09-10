@@ -207,7 +207,7 @@
 
 /obj/item/clothing/under/rank/navy/hos
 	name = "Naval Commander Uniform"
-	desc = "A service uniform worn by a Commander of the NanoTrasen Naval branch."
+	desc = "A service uniform worn by a Commander of the navy."
 	icon_state = "hosdnavyclothes"
 	item_state = "hosdnavyclothes"
 	item_color = "hosdnavyclothes"
@@ -231,7 +231,7 @@
 
 /obj/item/clothing/under/rank/navy/warden
 	name = "Naval Chief Petty Officer Uniform"
-	desc = "A service uniform worn by a Chief Petty Officer of the NanoTrasen Naval branch."
+	desc = "A service uniform worn by a Chief Petty Officer of the Navy."
 	icon_state = "wardendnavyclothes"
 	item_state = "wardendnavyclothes"
 	item_color = "wardendnavyclothes"
@@ -262,7 +262,7 @@
 
 /obj/item/clothing/under/rank/navy/officer
 	name = "Naval Officer Uniform"
-	desc = "A service unfirom worn by an officer of the NanoTrasen Naval branch."
+	desc = "A service unfirom worn by an officer of the Navy."
 	icon_state = "officerdnavyclothes"
 	item_state = "officerdnavyclothes"
 	item_color = "officerdnavyclothes"
