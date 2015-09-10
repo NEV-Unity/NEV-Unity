@@ -1,8 +1,8 @@
 //Cheap to put a single item per file, but fuck it! - Skull132
 
 /obj/structure/banner
-	name = "Corporate Banner"
-	desc = "A blue flag emblazoned with a golden logo of Nanotrasen hanging from a wooden stand."
+	name = "Government Banner"
+	desc = "A blue flag emblazoned with a logo of the United Stellar Nations hanging from a wooden stand."
 	anchored = 1
 	density = 1
 	layer = 9
