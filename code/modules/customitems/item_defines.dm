@@ -126,7 +126,7 @@
 
 /obj/item/clothing/under/rank/fluff/steven_unfirom //Naval Working Uniform - Steven Machnaughton - sgtsammac - INVESTIGATE
 	name = "Naval Working Uniform"
-	desc = "A working unfirom of the NanoTrasen Navy."
+	desc = "A working unfirom of the Navy."
 	icon = 'icons/obj/custom_items/steven_uniform.dmi'
 	icon_state = "steven_uniform"
 	contained_sprite = 1
@@ -219,7 +219,7 @@
 
 /obj/item/clothing/head/beret/centcom/officer/fluff/mirkoloio_beret //Navy beret - Fabian Goellstein - mirkoloio - DONE
 	name = "navy beret"
-	desc = "A NanoTrasen Navy beret, it has the name Goellstein inside of it. It has the NT Navy insignia on it."
+	desc = "A Navy beret, it has the name Goellstein inside of it. It has the NT Navy insignia on it."
 
 /obj/item/device/pda/fluff/meowykins_pda //Data-Tablet - Miyako Yukimura - meowykins - DONE
 	name = "Data-tablet"
@@ -249,7 +249,7 @@
 
 /obj/item/clothing/suit/storage/fluff/fabian_coat //NT Navy coat - Fabian Goellstein - mirkoloio - DONE
 	name = "NT Navy coat"
-	desc = "A working coat of the NanoTrasen Navy. The nameplate carries the letters 'GOELLSTEIN'."
+	desc = "A working coat of the Navy. The nameplate carries the letters 'GOELLSTEIN'."
 	icon = 'icons/obj/custom_items/fabian_coat.dmi'
 	icon_state = "fabian_coat_open"
 	contained_sprite = 1
@@ -509,7 +509,7 @@
 
 /obj/item/fluff/delivander_ring //Old wedding ring - Delivander Starbreeze - gollee - DONE
 	name = "old wedding ring"
-	desc = "A tarnished gold ring, there is writing inside it, “To Liura, forever.”"
+	desc = "A tarnished gold ring, there is writing inside it, Â“To Liura, forever.Â”"
 	icon = 'icons/obj/custom_items/delivander_ring.dmi'
 	icon_state = "delivander_ring"
 	item_state = ""
@@ -769,7 +769,7 @@ THIS SHIT IS MISSING ANY AND ALL SPRITE FILES
 			user.visible_message("\red [user] flashes their [src].\nIt reads: Muhammad Hamil, Internal Investigations, Persepolis..","\red You display the [src].\nIt reads: Muhammad Hamil, Internal Investigations, Persepolis.")
 
 /obj/item/clothing/mask/gas/fluff/stefan_mask // Modified Gas Mask - Oliver Stefan - Nbielinski - DONE
-	desc = "This odd looking gas mask is quite clearly not of NanoTrasen origin as it sports a black metal polish, as well as a reflective face plate that mirrors the view of the mask itself. This particular mask appears to breathe with the user, hissing when they exhale, and whining softly as they inhale."
+	desc = "This odd looking gas mask. It sports a black metal polish, as well as a reflective face plate that mirrors the view of the mask itself. This particular mask appears to breathe with the user, hissing when they exhale, and whining softly as they inhale."
 	name = "Modified Gas Mask"
 	icon = 'icons/obj/custom_items/stefan_mask.dmi'
 	icon_state = "stefan_mask"
@@ -908,7 +908,7 @@ THIS SHIT IS MISSING ANY AND ALL SPRITE FILES
 
 /obj/item/device/taperecorder/fluff/language_processor //Advanced Language Processing Board - Android - TheCritsyBear
 	name = "Advanced Language Processing Board"
-	desc = "A slightly advanced, but not uncommon upgrade module considered to be the cheapest of its kind. It has the markings of an independent retailer- not standard NanoTrasen hardware."
+	desc = "A slightly advanced, but not uncommon upgrade module considered to be the cheapest of its kind. It has the markings of an independent retailer."
 	icon = 'icons/obj/module.dmi'
 	icon_state = "cyborg_upgrade3"
 	item_state = "dermal"
@@ -1032,7 +1032,7 @@ THIS SHIT IS MISSING ANY AND ALL SPRITE FILES
 
 /obj/item/clothing/suit/armor/vest/fluff/sam_armour // Stabproof Vest - Sam Macnaughton - Sgtsammac
 	name = "stab proof vest"
-	desc = "It's a red vest, with high visibility strips. You can see the emblem of the NanoTrasen security division on the right breast."
+	desc = "It's a red vest, with high visibility strips. You can see the emblem of the security division on the right breast."
 	icon = 'icons/obj/custom_items/sam_armour.dmi'
 	icon_state = "sam_armour"
 	contained_sprite = 1
