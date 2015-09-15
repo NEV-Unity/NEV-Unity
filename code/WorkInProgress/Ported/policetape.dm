@@ -27,7 +27,6 @@
 /obj/item/tape/police
 	name = "police tape"
 	desc = "A length of police tape.  Do not cross."
-	req_access = list(access_security)
 	icon_base = "police"
 
 /obj/item/taperoll/engineering
@@ -40,7 +39,6 @@
 /obj/item/tape/engineering
 	name = "engineering tape"
 	desc = "A length of engineering tape. Better not cross it."
-	req_one_access = list(access_engine,access_atmospherics)
 	icon_base = "engineering"
 
 /obj/item/taperoll/attack_self(mob/user as mob)
@@ -107,9 +105,8 @@
 		user << "\blue You finish placing the [src]."
 
 /obj/item/tape/Bumped(M as mob)
-	if(src.allowed(M))
-		var/turf/T = get_turf(src)
-		M:loc = T
+	var/turf/T = get_turf(src)
+	M:loc = T
 
 /obj/item/tape/CanPass(atom/movable/mover, turf/target, height=0, air_group=0)
 	if(!density) return 1
@@ -124,7 +121,7 @@
 	breaktape(W, user)
 
 /obj/item/tape/attack_hand(mob/user as mob)
-	if (user.a_intent == "help" && src.allowed(user))
+	if (user.a_intent == "help" )
 		user.show_viewers("\blue [user] lifts [src], allowing passage.")
 		src.density = 0
 		spawn(200)
@@ -136,7 +133,7 @@
 	breaktape(/obj/item/weapon/wirecutters,user)
 
 /obj/item/tape/proc/breaktape(obj/item/weapon/W as obj, mob/user as mob)
-	if(user.a_intent == "help" && ((!can_puncture(W) && src.allowed(user))))
+	if(user.a_intent == "help" && ((!can_puncture(W) )))
 		user << "You can't break the [src] with that!"
 		return
 	user.show_viewers("\blue [user] breaks the [src]!")

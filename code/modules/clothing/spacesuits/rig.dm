@@ -543,16 +543,12 @@
 	icon_state = "rig0-white"
 	item_state = "ce_helm"
 	item_color = "white"
-	sprite_sheets_refit = null
-	sprite_sheets_obj = null
 
 /obj/item/clothing/suit/space/rig/engineering/chief
 	icon_state = "rig-white"
 	name = "command hardsuit"
 	desc = "An advanced suit that protects against hazardous, low pressure environments. Shines with a high polish."
 	item_state = "ce_hardsuit"
-	sprite_sheets_refit = null
-	sprite_sheets_obj = null
 
 //Mining rig
 /obj/item/clothing/head/helmet/space/rig/mining
