@@ -66,7 +66,7 @@ var/list/weighted_mundaneevent_locations = list()
 
 /datum/trade_destination/beltway
 	name = "Beltway mining chain"
-	description = "A co-operative effort between Beltway and [pick("Vey Med", "Einstein Engines")] to exploit the rich outer asteroid belt of the Tau Ceti system."
+	description = "A co-operative effort between Beltway and Einstein Engines to exploit the rich outer asteroid belt of the Tau Ceti system."
 	distance = 7.5
 	willing_to_buy = list()
 	willing_to_sell = list()

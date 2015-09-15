@@ -230,7 +230,7 @@ var/list/awaydestinations = list()	//a list of landmarks that the warpgate can t
 	// MySQL configuration
 
 var/awayZLevel = 7
-var/onPlanet = 0
+var/onPlanet = 1
 var/shuttleAway = 0
 var/sqladdress = "localhost"
 var/sqlport = "3306"

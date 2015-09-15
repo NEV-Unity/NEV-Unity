@@ -363,7 +363,7 @@
 		user << "Waving around a badge before swiping an ID would be pretty pointless."
 		return
 	if(isliving(user))
-		user.visible_message("\red [user] displays their Internal Security Legal Authorization Badge.\nIt reads: [stored_name], NT Security.","\red You display your Internal Security Legal Authorization Badge.\nIt reads: [stored_name], NT Security.")
+		user.visible_message("\red [user] displays their Internal Security Legal Authorization Badge.\nIt reads: [stored_name], USN Marshal Corps.","\red You display your Internal Security Legal Authorization Badge.\nIt reads: [stored_name], USN Marshal Corps.")
 
 /obj/item/clothing/tie/holobadge/attackby(var/obj/item/O as obj, var/mob/user as mob)
 
