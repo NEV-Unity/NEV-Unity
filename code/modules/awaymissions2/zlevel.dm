@@ -20,6 +20,32 @@
 						var/turf/simulated/floor/FF = get_step(src,direction)
 						FF.update_icon() //so siding get updated properly
 
+/turf/unsimulated/floor/grass/proc/make_plating()
+	//Called by using a shovel on unsimulated grass tiles. Turns the tile to dirt. Maybe have wonky ZAS interactions. Untested.
+	var/turf/simulated/floor/plating/spawned = new /turf/simulated/floor/plating(src)
+	spawned.name = "dirt"
+	spawned.icon_plating = "plating"
+	spawned.spawnedicon = 'icons/turf/floors.dmi'
+	spawned.icon_state = "asteroid"
+	spawned.icon_plating = "asteroid"
+	footstep_sound = "gravelstep"
+	spawned.update_icon()
+
+/turf/unsimulated/floor/grass/attackby(obj/item/C as obj, mob/user as mob)
+
+	if(!C || !user)
+		return 0
+//Some interaction for unsiulated tiles. Allow cable placement and shovels on grass. Untested
+	if(istype(C, /obj/item/weapon/cable_coil))
+		var/obj/item/weapon/cable_coil/coil = C
+		coil.turf_place(src, user)
+//Code to test below, making unsimulated zones into simulated tiles with a shovel
+	if(istype(C, /obj/item/weapon/shovel))
+		new /obj/item/weapon/ore/glass(src)
+		new /obj/item/weapon/ore/glass(src) //Make some sand if you shovel grass
+		user << "\blue You shovel the grass."
+		make_plating()
+
 proc/createAwayMission()
 	var/list/potentialRandomZlevels = list()
 	world << "\red \b DEBUG: Searching for away missions..."
