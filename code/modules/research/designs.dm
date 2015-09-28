@@ -1904,12 +1904,12 @@ datum/design/superiorweldgoggles
 
 datum/design/beacon
 	name = "Tracking Beacon"
-	desc = "A blue space tracking beacon."
+	desc = "Triangulates the approximate co-ordinates using a nearby satellite network."
 	id = "beacon"
 	req_tech = list("bluespace" = 1)
 	build_type = PROTOLATHE
 	materials = list ("$metal" = 20, "$glass" = 10)
-	build_path = "/obj/item/device/radio/beacon"
+	build_path = "/obj/item/device/gps"
 	category = "Bluespace Technology"
 
 datum/design/bag_holding
@@ -2211,3 +2211,5 @@ datum/design/cart_captain
 	build_path = "/obj/item/weapon/cartridge/captain"
 	locked = 1
 	category = "PDA Cartridges"
+
+

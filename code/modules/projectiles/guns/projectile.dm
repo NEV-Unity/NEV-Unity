@@ -11,6 +11,7 @@
 	w_class = 3.0
 	matter = list("metal" = 1000)
 	recoil = 1
+	var/isloaded = 1
 	var/ammo_type = "/obj/item/ammo_casing/a357"
 	var/list/loaded = list()
 	var/max_shells = 7
@@ -22,9 +23,10 @@
 
 /obj/item/weapon/gun/projectile/New()
 	..()
-	if(ammo_type)	//So that we can have weapons spawn empty.
-		for(var/i = 1, i <= max_shells, i++)
-			loaded += new ammo_type(src)
+	if(isloaded) //So that we can have weapons spawn empty.
+		if(ammo_type)	//So that we can have weapons spawn empty.
+			for(var/i = 1, i <= max_shells, i++)
+				loaded += new ammo_type(src)
 	update_icon()
 	return
 

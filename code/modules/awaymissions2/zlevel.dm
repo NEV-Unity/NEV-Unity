@@ -25,7 +25,7 @@
 	var/turf/simulated/floor/plating/spawned = new /turf/simulated/floor/plating(src)
 	spawned.name = "dirt"
 	spawned.icon_plating = "plating"
-	spawned.spawnedicon = 'icons/turf/floors.dmi'
+	spawned.icon = 'icons/turf/floors.dmi'
 	spawned.icon_state = "asteroid"
 	spawned.icon_plating = "asteroid"
 	footstep_sound = "gravelstep"
@@ -99,7 +99,8 @@ proc/createAwayMission()
 
 		for(var/obj/effect/landmark/zoneloader/x in world)
 			loadRandomZone(x)
-
+		world << "\red \b Away mission loaded."
+		lighting_controller.Initialize(awayZLevel)
 	if(ship.curplanet.planet_type == "Habit")
 		for(var/turf/unsimulated/floor/grass/x in world) //MARK
 			if(x.z == awayZLevel)
@@ -117,7 +118,6 @@ proc/createAwayMission()
 				if(ship.curplanet.temp > 315)
 					x.icon_state = pick("deadtree_1", "deadtree_2", "deadtree_3","deadtree_4","deadtree_5","deadtree_6")
 
-		world << "\red \b Away mission loaded."
 
 
  //remove the random away zone from the list

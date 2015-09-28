@@ -69,7 +69,7 @@
 
 	equip(var/mob/living/carbon/human/H)
 		if(!H)	return 0
-		H.equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sec(H), slot_l_ear)
+		H.equip_to_slot_or_del(new /obj/item/device/radio/headset/heads/cpo(H), slot_l_ear)
 		switch(H.backbag)
 			if(2) H.equip_to_slot_or_del(new /obj/item/weapon/storage/backpack/security(H), slot_back)
 			if(3) H.equip_to_slot_or_del(new /obj/item/weapon/storage/backpack/satchel_sec(H), slot_back)

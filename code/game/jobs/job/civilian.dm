@@ -118,7 +118,7 @@
 
 	equip(var/mob/living/carbon/human/H)
 		if(!H)	return 0
-		H.equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_cargo(H), slot_l_ear)
+		H.equip_to_slot_or_del(new /obj/item/device/radio/headset/heads/qm(H), slot_l_ear)
 		H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/cargo(H), slot_w_uniform)
 		H.equip_to_slot_or_del(new /obj/item/clothing/shoes/brown(H), slot_shoes)
 		H.equip_to_slot_or_del(new /obj/item/device/pda/quartermaster(H), slot_belt)

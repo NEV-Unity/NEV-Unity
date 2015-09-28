@@ -103,7 +103,8 @@
 		"/obj/item/taperoll/police",
 		"/obj/item/weapon/gun/energy/taser",
 		"/obj/item/weapon/grenade/chem_grenade",
-		"/obj/item/weapon/grenade/empgrenade"
+		"/obj/item/weapon/grenade/empgrenade",
+		"/obj/item/weapon/kitchenknife/combat"
 		)
 
 /obj/item/weapon/storage/belt/soulstone
