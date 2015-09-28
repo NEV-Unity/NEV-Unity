@@ -15,7 +15,7 @@ proc/move_mining_shuttle()
 			fromArea = locate(/area/shuttle/mining/station)
 			toArea = locate(/area/shuttle/mining/outpost)
 
-		var/list/dstturfs = list()
+		var/list/dstturfs = list() //Arrival area turfs
 		var/throwy = world.maxy
 
 		for(var/turf/T in toArea)
@@ -40,6 +40,7 @@ proc/move_mining_shuttle()
 			if(istype(T, /turf/simulated))
 				del(T)
 
+
 		for(var/mob/living/carbon/bug in toArea) // If someone somehow is still in the shuttle's docking area...
 			bug.gib()
 
@@ -47,6 +48,15 @@ proc/move_mining_shuttle()
 			pest.gib()
 
 		fromArea.move_contents_to(toArea)
+
+		//Spawn in empty tiles behind
+//		for(var/turf/T in fromArea)
+//			if(T.z == 1)
+//				T = new /turf/simulated/floor/plating()
+//			else
+//				T = new /turf/simulated/floor/plating/airless/asteroid()
+
+
 		if (mining_shuttle_location)
 			mining_shuttle_location = 0
 		else

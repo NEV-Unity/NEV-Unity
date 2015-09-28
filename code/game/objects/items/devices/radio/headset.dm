@@ -142,6 +142,20 @@
 	item_state = "headset"
 	keyslot2 = new /obj/item/device/encryptionkey/heads/hos
 
+/obj/item/device/radio/headset/heads/cpo
+	name = "chief petty officer's headset"
+	desc = "The headset of the man who maintains order. To access the security channel, use :s. For command, use :c."
+	icon_state = "com_headset"
+	item_state = "headset"
+	keyslot2 = new /obj/item/device/encryptionkey/heads/hos
+
+/obj/item/device/radio/headset/heads/qm
+	name = "quartermaster's headset"
+	desc = "The headset of the guy who maintains your equipment. Channels are as follows: :u - supply, :c - command, :s - security"
+	icon_state = "com_headset"
+	item_state = "headset"
+	keyslot2 = new /obj/item/device/encryptionkey/heads/hop
+
 /obj/item/device/radio/headset/heads/ce
 	name = "chief engineer's headset"
 	desc = "The headset of the guy who is in charge of morons. To access the engineering channel, use :e. For command, use :c."

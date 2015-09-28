@@ -4,10 +4,11 @@
 
 /obj/item/device/gps
 	name = "relay positioning device"
-	desc = "Triangulates the approximate co-ordinates using a nearby satellite network."
+	desc = "Triangulates the approximate co-ordinates using ship sensors."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "locator"
 	item_state = "locator"
+	origin_tech = "bluespace=1"
 	w_class = 2
 
 /obj/item/device/gps/attack_self(var/mob/user as mob)

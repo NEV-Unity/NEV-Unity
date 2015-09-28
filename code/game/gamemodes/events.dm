@@ -245,7 +245,7 @@
 			continue
 		M.apply_effect((rand(15,75)),IRRADIATE,0)
 	sleep(100)
-	command_alert("High levels of radiation detected near the station. Please report to the Med-bay if you feel strange.", "Anomaly Alert")
+	command_alert("High levels of radiation detected near the ship. Please report to the Med-bay if you feel strange.", "Anomaly Alert")
 	for(var/mob/M in player_list)
 		M << sound('sound/AI/radiation.ogg')
 

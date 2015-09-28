@@ -107,7 +107,14 @@
 	if(movetarget)
 		locked = 1
 		onPlanet = 0
-		command_alert("Movement Initated. Destination:" + movetarget.name+ ". All hands please prepare for bluespace transit. ETA:5 minutes.", "NEV Unity Autopilot")
+		command_alert("Movement Initated. Destination:" + movetarget.name+ ". All hands please prepare for slipspace transit. ETD: 30 seconds.", "NEV Unity Autopilot")
+		power_failure(0)
+		sleep(300)
+		power_restore(0)
+		command_alert("Slipspace Manuver In Progress. ETA:5 minutes.", "NEV Unity Autopilot")
+		shakeAll()
+
+
 //		for(var/mob/M in player_list)
 //			M << sound('sound/music/All Hands.ogg')
 		for(var/turf/space/x in world)
@@ -125,8 +132,12 @@
 		for(var/turf/space/x in world)
 			if(!istype(x, /turf/space/transit))
 				x.icon_state = "x[((x.x + x.y) ^ ~(x.x * x.y) + x.z) % 25]"
+		command_alert("All hands please prepare for arrival. ETA: 30 seconds", "NEV Unity Autopilot")
+		sleep(300)
+		shakeAll()
 		command_alert("Movement Complete. The ship has reached "+ movetarget.name+ "", "NEV Unity Autopilot")
 		locked = 0
+
 /obj/machinery/computer/navigation/proc/move(var/datum/system/movetarget)
 	switch(alert("Are you sure you wish to move the ship? This action is irreversible!",,"Yes","No"))
 		if("No")
@@ -134,13 +145,21 @@
 	if(movetarget)
 		locked = 1
 		onPlanet = 0
-		command_alert("Movement Initiated. Destination:"+ movetarget.name+ ". All hands please prepare for bluespace transit. ETA: 15 minutes.", "NEV Unity Autopilot")
+		command_alert("Movement Initiated. Destination:"+ movetarget.name+ ". All hands please prepare for slipspace transit. ETD: 10 seconds.", "NEV Unity Autopilot")
+		power_failure(0)
+		sleep 300
+		power_restore(0)
+		command_alert("Movement Initiated. Destination:"+ movetarget.name+ ". All hands please prepare for arrival. ETA: 15 minutes.", "NEV Unity Autopilot")
+		shakeAll()
 //		for(var/mob/M in player_list)
 //			M << sound('sound/music/All Hands.ogg')
 		for(var/turf/space/x in world)
 			if(!(istype(x, /turf/space/transit)))
 				x.icon_state = "[((x.x + x.y) ^ ~(x.x * x.y) + x.z) % 25]"
 		sleep 9000 //This will be 9000 eventually. (15min) - set to 10s for testing
+		command_alert("All hands please prepare for arrival. ETA: 30 seconds", "NEV Unity Autopilot")
+		sleep(300)
+		shakeAll()
 		command_alert("Movement Complete. The ship has reached "+ movetarget.name+ "", "NEV Unity Autopilot")
 		for(var/turf/space/x in world)
 			if(!istype(x, /turf/space/transit))
@@ -292,3 +311,15 @@
 		playsound(src.loc, 'sound/machines/chime.ogg', 50, 1)
 		locked = 0
 	return
+proc/shakeAll()
+	for(var/mob/M in world)
+		if(M.loc.z == 1)
+			if(M.client)
+				spawn(0)
+					if(M.buckled)
+						shake_camera(M, 3, 1) // buckled, not a lot of shaking
+					else
+						shake_camera(M, 10, 1) // unbuckled, HOLY SHIT SHAKE THE ROOM
+			if(istype(M, /mob/living/carbon))
+				if(!M.buckled)
+					M.Weaken(3)

@@ -303,6 +303,7 @@ BLIND     // can't see anything
 	var/blood_overlay_type = "suit"
 	siemens_coefficient = 0.9
 	w_class = 3
+	sprite_sheets = list("Vox" = 'icons/mob/species/vox/suit.dmi',"Tesau" = 'icons/mob/species/tajaran/suit.dmi')
 
 /obj/item/clothing/suit/update_clothing_icon()
 	if (ismob(src.loc))

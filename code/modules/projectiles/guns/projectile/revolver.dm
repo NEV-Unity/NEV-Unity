@@ -95,13 +95,14 @@
 	return
 
 /obj/item/weapon/gun/projectile/detective/secgun
-	desc = "a sec gun that shoots big sec bullets for taking down big sec criminals. more like taking dead"
-	name = "\improper sec gun"
+	desc = "The standard sidearm of the Espatier corps"
+	name = "\improper sidearm"
 	caliber = ".45"
-	icon_state = "secgun"
+	icon_state = "mini-uzi"
 	max_shells = 7
 	ammo_type = "/obj/item/ammo_casing/c45s"
 	load_method = 2
+	isloaded = 0
 
 
 /obj/item/weapon/gun/projectile/mateba
