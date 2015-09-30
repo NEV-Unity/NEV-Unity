@@ -1,5 +1,5 @@
-"a" = (/turf/unsimulated/floor/grass,/area)
-"b" = (/obj/structure/flora/tree/pine,/turf/unsimulated/floor/grass,/area)
+"a" = (/turf/simulated/floor/plating/away/grass,/area)
+"b" = (/obj/structure/flora/tree/pine,/turf/simulated/floor/plating/away/grass,/area)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaa

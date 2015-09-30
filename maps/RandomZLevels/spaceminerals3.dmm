@@ -1,4 +1,4 @@
-"a" = (/turf/space,/area)
+"a" = (/turf/simulated/floor/plating/away,/area)
 "b" = (/turf/simulated/mineral/random/high_chance,/area)
 "c" = (/obj/effect/alien/resin,/turf/simulated/mineral/random/high_chance,/area)
 "d" = (/obj/effect/alien/weeds,/turf/simulated/floor/plating/airless/asteroid,/area)
