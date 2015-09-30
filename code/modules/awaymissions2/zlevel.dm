@@ -5,7 +5,13 @@
 	anchored = 1.0
 	unacidable = 1
 
-/turf/unsimulated/floor/grass
+/turf/simulated/floor/plating/away/
+	name = "Ground"
+	icon_state = "asteroid"
+
+
+
+/turf/simulated/floor/plating/away/grass
 	name = "Grass patch"
 	icon_state = "grass1"
 	footstep_sound = "grassstep"
@@ -20,32 +26,18 @@
 						var/turf/simulated/floor/FF = get_step(src,direction)
 						FF.update_icon() //so siding get updated properly
 
-/turf/unsimulated/floor/grass/proc/make_plating()
-	//Called by using a shovel on unsimulated grass tiles. Turns the tile to dirt. Maybe have wonky ZAS interactions. Untested.
-	var/turf/simulated/floor/plating/spawned = new /turf/simulated/floor/plating(src)
-	spawned.name = "dirt"
-	spawned.icon_plating = "plating"
-	spawned.icon = 'icons/turf/floors.dmi'
-	spawned.icon_state = "asteroid"
-	spawned.icon_plating = "asteroid"
-	footstep_sound = "gravelstep"
-	spawned.update_icon()
 
-/turf/unsimulated/floor/grass/attackby(obj/item/C as obj, mob/user as mob)
+/turf/simulated/floor/plating/away/grass/attackby(obj/item/C as obj, mob/user as mob)
 
 	if(!C || !user)
 		return 0
-//Some interaction for unsiulated tiles. Allow cable placement and shovels on grass. Untested
-	if(istype(C, /obj/item/weapon/cable_coil))
-		var/obj/item/weapon/cable_coil/coil = C
-		coil.turf_place(src, user)
-//Code to test below, making unsimulated zones into simulated tiles with a shovel
 	if(istype(C, /obj/item/weapon/shovel))
 		new /obj/item/weapon/ore/glass(src)
 		new /obj/item/weapon/ore/glass(src) //Make some sand if you shovel grass
 		user << "\blue You shovel the grass."
 		make_plating()
-
+		return 0
+	..()
 proc/createAwayMission()
 	var/list/potentialRandomZlevels = list()
 	world << "\red \b DEBUG: Searching for away missions..."
@@ -100,9 +92,8 @@ proc/createAwayMission()
 		for(var/obj/effect/landmark/zoneloader/x in world)
 			loadRandomZone(x)
 		world << "\red \b Away mission loaded."
-		lighting_controller.Initialize(awayZLevel)
 	if(ship.curplanet.planet_type == "Habit")
-		for(var/turf/unsimulated/floor/grass/x in world) //MARK
+		for(var/turf/simulated/floor/plating/away/grass/x in world) //MARK
 			if(x.z == awayZLevel)
 				x.temperature = ship.curplanet.temp
 				if(ship.curplanet.temp < 273)

@@ -1,4 +1,4 @@
-"a" = (/turf/space,/area)
+"a" = (/turf/simulated/floor/plating/away,/area)
 "b" = (/turf/simulated/mineral/random/high_chance,/area)
 "c" = (/obj/machinery/artifact,/turf/simulated/floor/engine,/area)
 

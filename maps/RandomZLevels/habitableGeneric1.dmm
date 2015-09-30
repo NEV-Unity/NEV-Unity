@@ -1,7 +1,7 @@
-"a" = (/turf/unsimulated/floor/grass,/area/awaymission/habit)
-"b" = (/obj/structure/flora/ausbushes/sparsegrass,/turf/unsimulated/floor/grass,/area/awaymission/habit)
+"a" = (/turf/simulated/floor/plating/away/grass,/area/awaymission/habit)
+"b" = (/obj/structure/flora/ausbushes/sparsegrass,/turf/simulated/floor/plating/away/grass,/area/awaymission/habit)
 "c" = (/turf/unsimulated/beach/water,/area/awaymission/habit)
-"d" = (/obj/structure/flora/ausbushes/fullgrass,/turf/unsimulated/floor/grass,/area/awaymission/habit)
+"d" = (/obj/structure/flora/ausbushes/fullgrass,/turf/simulated/floor/plating/away/grass,/area/awaymission/habit)
 "e" = (/mob/living/simple_animal/hostile/giantwasp,/turf/unsimulated/beach/water,/area/awaymission/habit)
 "f" = (/obj/structure/flora/ausbushes/reedbush,/turf/unsimulated/beach/water,/area/awaymission/habit)
 

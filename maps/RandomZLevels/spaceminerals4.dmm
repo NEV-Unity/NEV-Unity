@@ -1,11 +1,11 @@
-"a" = (/turf/space,/area)
+"a" = (/turf/simulated/floor/plating/away,/area)
 "b" = (/turf/simulated/mineral/random/high_chance,/area)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaa
 aaabbbaabbaaaabbbaaa
-aaaabbbbaaaaaabbbaaa
+aaaabbbaaaaaaabbbaaa
 aaaabbaaaaaaaaaaaaaa
 aaaaaaaaaabbaaaaaaaa
 aaaaaaaaaabbaaaaaaaa

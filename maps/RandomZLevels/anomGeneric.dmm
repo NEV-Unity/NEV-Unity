@@ -1,4 +1,4 @@
-"a" = (/turf/space,/area)
+"a" = (/turf/simulated/floor/plating/away,/area)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaa
