@@ -9,16 +9,44 @@
 	use_power = 0
 	idle_power_usage = 0
 	active_power_usage = 0
+	var/panel = 0 // 0 is closed, 1 is open
+	var/deployed = 0 // 0 is not deployed, 1 is deployed
 	var/health = 10
+	var/list/cablelengths
 	
 /obj/machinery/power/cathode/New(var/turf/loc, var/process = 1)
 	..(loc)
 	connect_to_network(process)
 
 /obj/machinery/power/cathode/attackby(obj/item/weapon/W, mob/user)
-
+	//Crowbars open and close the maint panel
 	if(iscrowbar(W))
-/*
+		panel = !panel //if we are closed, open, if we are open, close
+		if(panel)//if the panel is open after that
+			usr << "You open the maintainence panel."
+		else
+			usr << "You close the maintainence panel."
+		return
+		
+	if(panel) continue //if the panel is open, continue
+	else return //else we are done here. You can't manipulate it further
+	
+	if(istype(W, /obj/item/weapon/wirecutters)) //If we use wirecutters
+		if(cableleengths.len>0) //and we have any cable loaded...
+			
+	if (istype(W, /obj/item/stack/tether_cable))
+		if(cablelengths.len < 10)
+			switch(W.level)
+				case(1) cablelengths.add(new /obj/structure/tether/metal())
+				case(2) cablelengths.add(new /obj/structure/tether/silver())
+				case(3) cablelengths.add(new /obj/structure/tether/gold())
+				else return
+			W.use(1)
+			usr << "You add a length of [src] to the reel."
+		else
+			usr << "You cannot add any more cable to the reel."
+			return
+		/*
 		playsound(src.loc, 'sound/machines/click.ogg', 50, 1)
 		if(do_after(user, 50))
 			var/obj/item/solar_assembly/S = locate() in src
@@ -150,3 +178,30 @@
 	matter = list("gold" = 2000)
 	icon_state = "gtether"
 	origin_tech = "materials=4"
+//TETHER STRUCTURE
+/obj/structure/tether
+	name = "Tether"
+	desc = "A heavy superconductive cable used by eletromagnetic tethers."
+	icon = "tether"
+	var/level = 1
+	var/deployed = 0
+	var/obj/structure/tether/child
+/obj/structure/tether/metal
+	icon = "tether"
+/obj/structure/tether/silver
+	icon = "stether"
+/obj/structure/tether/gold
+	icon = "gtether"
+/obj/structure/tether/broken()
+//If something breaks the teather, it breaks all child objects of the tether, then spawns cable in on the object, then deletes the object.
+	switch(level)
+		case(1)
+			new /obj/item/stack/tether_cable/metal(src.loc)	
+		case(2)
+			new /obj/item/stack/tether_cable/silver(src.loc)
+		case(3)
+			new /obj/item/stack/tether_cable/gold(src.loc)
+		else
+	if(child)
+		child.broken()
+	src.del()
