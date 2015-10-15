@@ -129,12 +129,12 @@
 		createAwayMission()
 		awayZLevel++
 		onPlanet = 1
-		for(var/turf/space/x in world)
-			if(!istype(x, /turf/space/transit))
-				x.icon_state = "x[((x.x + x.y) ^ ~(x.x * x.y) + x.z) % 25]"
 		command_alert("All hands please prepare for arrival. ETA: 30 seconds", "NEV Unity Autopilot")
 		sleep(300)
 		shakeAll()
+		for(var/turf/space/x in world)
+			if(!istype(x, /turf/space/transit))
+				x.icon_state = "x[((x.x + x.y) ^ ~(x.x * x.y) + x.z) % 25]"
 		command_alert("Movement Complete. The ship has reached "+ movetarget.name+ "", "NEV Unity Autopilot")
 		locked = 0
 
@@ -153,13 +153,13 @@
 		shakeAll()
 //		for(var/mob/M in player_list)
 //			M << sound('sound/music/All Hands.ogg')
-		for(var/turf/space/x in world)
-			if(!(istype(x, /turf/space/transit)))
-				x.icon_state = "[((x.x + x.y) ^ ~(x.x * x.y) + x.z) % 25]"
 		sleep 9000 //This will be 9000 eventually. (15min) - set to 10s for testing
 		command_alert("All hands please prepare for arrival. ETA: 30 seconds", "NEV Unity Autopilot")
 		sleep(300)
 		shakeAll()
+		for(var/turf/space/x in world)
+			if(!(istype(x, /turf/space/transit)))
+				x.icon_state = "[((x.x + x.y) ^ ~(x.x * x.y) + x.z) % 25]"
 		command_alert("Movement Complete. The ship has reached "+ movetarget.name+ "", "NEV Unity Autopilot")
 		for(var/turf/space/x in world)
 			if(!istype(x, /turf/space/transit))

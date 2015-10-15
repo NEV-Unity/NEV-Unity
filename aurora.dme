@@ -1491,6 +1491,7 @@
 #include "code\modules\telesci\gps.dm"
 #include "code\modules\telesci\telepad.dm"
 #include "code\modules\telesci\telesci_computer.dm"
+#include "code\modules\tether\tether.dm"
 #include "code\modules\unity\organ_advanced.dm"
 #include "code\modules\unity\specialsnacks.dm"
 #include "code\modules\vehicles\cargo_train.dm"

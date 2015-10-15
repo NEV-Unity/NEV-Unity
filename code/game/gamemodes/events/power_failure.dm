@@ -16,7 +16,7 @@
 		S.updateicon()
 		S.power_change()
 
-	var/list/skipped_areas = list(/area/engine, /area/turret_protected/ai)
+	var/list/skipped_areas = list(/area/engine, /area/turret_protected/ai, /area/server, /area/comms)
 
 	for(var/area/A in world)
 		if( !A.requires_power || A.always_unpowered )
