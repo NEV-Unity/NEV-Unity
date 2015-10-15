@@ -8,12 +8,14 @@
 /turf/simulated/floor/plating/away/
 	name = "Ground"
 	icon_state = "asteroid"
+	icon_plating = "asteroid"
 
 
 
 /turf/simulated/floor/plating/away/grass
 	name = "Grass patch"
 	icon_state = "grass1"
+	icon_plating = "grass1"
 	footstep_sound = "grassstep"
 
 	New()
@@ -99,9 +101,11 @@ proc/createAwayMission()
 				if(ship.curplanet.temp < 273)
 					x.icon_state = "snow"
 					x.name = "snow"
+					x.icon_plating = "snow"
 				if(ship.curplanet.temp > 315)
-					x.icon_state = "desert"
+					x.icon_state = "asteroid"
 					x.name = "desert"
+					x.icon_plating = "asteroid"
 		for(var/obj/structure/flora/tree/pine/x in world)
 			if(x.z == awayZLevel)
 				if(ship.curplanet.temp < 273)
