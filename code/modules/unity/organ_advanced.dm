@@ -43,7 +43,8 @@
 	set name = "Toggle Nightvision"
 	set desc = "Toggle your nightvision."
 	if(src.see_in_dark == 2)
-		src.see_in_dark = 5
+		src.see_in_dark = 8
 		src.nutrition -= 100 //activating nv verb costs you 1/4 of your max nutrition as a downside.
+		src.see_invisible = SEE_INVISIBLE_MINIMUM //If this doesn't work, we will need to add a flag and something in life/process in life.dm to make it work. Non-ideal, might need to normalize with regular NVG?
 	else
 		src.see_in_dark = 2
