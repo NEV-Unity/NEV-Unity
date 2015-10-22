@@ -1,3 +1,16 @@
+/obj/item/organ/translator
+	name = "universal translator"
+	icon_state = "brain-prosthetic"
+	organ_tag = "translator"
+	prosthetic_name = "universal translator"
+	robotic = 2
+	organ_type = /datum/organ/internal/translator
+
+/datum/organ/internal/translator
+	name = "universal translator"
+	parent_organ = "head"
+	removed_type = /obj/item/organ/translator
+
 /obj/item/organ/eyes/shielded
 	name = "eyeballs"
 	icon_state = "eyes"
@@ -48,3 +61,10 @@
 		src.see_invisible = SEE_INVISIBLE_MINIMUM //If this doesn't work, we will need to add a flag and something in life/process in life.dm to make it work. Non-ideal, might need to normalize with regular NVG?
 	else
 		src.see_in_dark = 2
+/mob/living/carbon/human/proc/has_translator() //Check if humans have a translator
+	var/datum/organ/internal/ORGAN
+	ORGAN = organs_by_name["translator"]
+	if(!ORGAN || ORGAN.status == ORGAN_DESTROYED)
+		return 0
+	else
+		return 1
