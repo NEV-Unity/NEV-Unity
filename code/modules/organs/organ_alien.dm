@@ -220,8 +220,10 @@
 	name = "cortical stack"
 	icon_state = "brain-prosthetic"
 	organ_tag = "stack"
+	prosthetic_name = "cortical stack"
 	robotic = 2
 	organ_type = /datum/organ/internal/stack
 
 /obj/item/organ/stack/vox
 	name = "vox cortical stack"
+	prosthetic_name = "vox cortical stack"
