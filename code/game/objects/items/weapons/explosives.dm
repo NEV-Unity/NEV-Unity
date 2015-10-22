@@ -55,7 +55,7 @@
 
 				explosion(location, -1, -1, 2, 3)
 				if (istype(target, /turf/simulated/wall)) target:dismantle_wall(1)
-				else target.ex_act(1)
+				else target.ex_act(3)
 				if (isobj(target))
 					if (target)
 						del(target)
