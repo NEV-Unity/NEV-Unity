@@ -19,6 +19,11 @@ proc/populate_gear_list()
 
 //Standard gear datums.
 //Small Items and simple visual accessories are 1 point
+/datum/gear/organ/translator
+	display_name = "universal translator implant"
+	path = /obj/item/organ/translator
+	cost = 8
+	organ = 1
 
 /datum/gear/organ/stack
 	display_name = "cortical stack"
