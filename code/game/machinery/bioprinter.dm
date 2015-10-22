@@ -22,7 +22,8 @@
 		"eyes" =    list(/obj/item/organ/eyes,   30),
 		"liver" =   list(/obj/item/organ/liver,  50),
 		"shielded visual prosthetic" = list(/obj/item/organ/eyes/shielded, 200),
-		"cortical stack" = list(/obj/item/organ/stack, 200)
+		"cortical stack" = list(/obj/item/organ/stack, 200),
+		"universal translator" = list(/obj/item/organ/translator, 200)
 		)
 
 /obj/machinery/bioprinter/prosthetics
