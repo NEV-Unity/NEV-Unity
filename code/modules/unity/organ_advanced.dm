@@ -66,7 +66,7 @@
 	set category = "Abilities"
 	set name = "Activate Pain Dampner"
 	set desc = "Releases painkillers into your system"
-	src.reagents.add_reagent("tramadol", 2) //lasts for 1 minute 20seconds
+	src.reagents.add_reagent("paracetamol", 2) //lasts for 1 minute 20seconds.
 	src.druggy = max(src.druggy, 2) //activating the implant gives you the druggy overlay
 
 /obj/item/organ/binarychip
