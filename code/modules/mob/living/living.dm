@@ -626,25 +626,27 @@
 				ExtinguishMob()
 			return
 //straightjacket code. You can try and wiggle free of a jacket while buckled or restrained, but it takes twice as long.
-		if (istype(CM.wear_suit, /obj/item/clothing/suit/straight_jacket))
-			var/obj/item/clothing/suit/straight_jacket/ST = CM.wear_suit
-			var/breakouttime = 3000 //A default in case you are somehow handcuffed with something that isn't an obj/item/weapon/handcuffs type
-			if(CM.buckled)
-				breakouttime = 6000
-			var/displaytime = breakouttime / 600 //Minutes to display in the "this will take X minutes."
-			CM << "\red You attempt to remove \the [ST]. (This will take around [displaytime] minutes and you need to stand still)"
-			for(var/mob/O in viewers(CM))
-				O.show_message( "\red <B>[usr] struggles to remove \the [ST]!</B>", 1)
-			spawn(0)
-				if(do_after(CM, breakouttime))
-					for(var/mob/O in viewers(CM))
-						O.show_message("\red <B>[CM] manages to remove the [ST]!</B>", 1)
-					if(prob(20))
-						CM << "\red You injure yourself as you struggle free of the [ST]!"
-						CM.adjustBruteLoss(10)
-					CM << "\blue You successfully remove \the [ST]."
+		if(istype(CM, /mob/living/carbon/human))
+			var/mob/living/carbon/human/HM = CM
+			if (istype(HM.wear_suit, /obj/item/clothing/suit/straight_jacket))
+				var/obj/item/clothing/suit/straight_jacket/ST = HM.wear_suit
+				var/breakouttime = 3000 //A default in case you are somehow handcuffed with something that isn't an obj/item/weapon/handcuffs type
+				if(HM.buckled)
+					breakouttime = 6000
+				var/displaytime = breakouttime / 600 //Minutes to display in the "this will take X minutes."
+				HM << "\red You attempt to remove \the [ST]. (This will take around [displaytime] minutes and you need to stand still)"
+				for(var/mob/O in viewers(HM))
+					O.show_message( "\red <B>[usr] struggles to remove \the [ST]!</B>", 1)
+				spawn(0)
+					if(do_after(HM, breakouttime))
+						for(var/mob/O in viewers(HM))
+							O.show_message("\red <B>[HM] manages to remove the [ST]!</B>", 1)
+						if(prob(20))
+							HM << "\red You injure yourself as you struggle free of the [ST]!"
+							HM.adjustBruteLoss(10)
+						HM << "\blue You successfully remove \the [ST]."
 
-					CM.drop_from_inventory(CM.wear_suit)
+						HM.drop_from_inventory(HM.wear_suit)
 
 //end straightjacket
 		if(CM.handcuffed && CM.canmove && (CM.last_special <= world.time))

@@ -165,7 +165,13 @@
 
 	var/mob/living/carbon/human/H = new /mob/living/carbon/human(src, R.dna.species)
 	occupant = H
-
+	//Vox need some nitrogen!
+	if(H.species.name == "Vox")
+		var/obj/item/weapon/tank/nitrogen/N = new /obj/item/weapon/tank/nitrogen()
+		H.equip_to_slot_or_del(new /obj/item/clothing/mask/breath/vox(src), slot_wear_mask)
+		H.equip_to_slot_or_del(N, slot_back)
+		H.internal = N
+		H.internals.icon_state = "internal1"
 	if(!R.dna.real_name)	//to prevent null names
 		R.dna.real_name = "clone ([rand(0,999)])"
 	H.real_name = R.dna.real_name
