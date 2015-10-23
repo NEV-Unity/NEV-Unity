@@ -171,7 +171,6 @@
 		H.equip_to_slot_or_del(new /obj/item/clothing/mask/breath/vox(src), slot_wear_mask)
 		H.equip_to_slot_or_del(N, slot_back)
 		H.internal = N
-		H.internals.icon_state = "internal1"
 	if(!R.dna.real_name)	//to prevent null names
 		R.dna.real_name = "clone ([rand(0,999)])"
 	H.real_name = R.dna.real_name
@@ -188,7 +187,6 @@
 	clonemind.transfer_to(H)
 	H.ckey = R.ckey
 	H << "<span class='notice'><b>Consciousness slowly creeps over you as your body regenerates.</b><br><i>So this is what cloning feels like?</i></span>"
-
 	// -- Mode/mind specific stuff goes here
 	callHook("clone", list(H))
 

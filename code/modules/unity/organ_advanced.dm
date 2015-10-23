@@ -51,7 +51,6 @@
 	else
 		return 1
 /mob/living/carbon/human/proc/has_night_vision()
-	world << "Called!"
 	var/datum/organ/internal/ORGAN
 	ORGAN = internal_organs_by_name["nightvision"]
 	if(!ORGAN || ORGAN.status == ORGAN_DESTROYED)
