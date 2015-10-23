@@ -36,6 +36,7 @@
 		src << "Your body goes limp as your medichines begin to slowly stitch your body together"
 		src.reagents.add_reagent("spaceacillin", 5) //infection control
 		src.reagents.add_reagent("tricordrazine",1) //mild healing
+		src.reagents.add_reagent("inaprovaline",15) //stablize the dying
 		src.weaken(5) 
 		src.druggy = max(src.druggy, 5) //activating the implant gives you the druggy overlay
 		ORGAN.damage += 1
