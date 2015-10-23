@@ -19,6 +19,19 @@ proc/populate_gear_list()
 
 //Standard gear datums.
 //Small Items and simple visual accessories are 1 point
+
+/datum/gear/organ/medichine
+	display_name = "medical nanite hive"
+	path = /obj/item/organ/medichine
+	cost = 8
+	organ = 1
+	
+/datum/gear/organ/paindamp
+	display_name = "pain dampner implant"
+	path = /obj/item/organ/paindamp
+	cost = 8
+	organ = 1
+
 /datum/gear/organ/binarychip
 	display_name = "wireless binary chip"
 	path = /obj/item/organ/binarychip
