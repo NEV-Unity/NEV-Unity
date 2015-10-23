@@ -23,7 +23,9 @@
 		"liver" =   list(/obj/item/organ/liver,  50),
 		"shielded visual prosthetic" = list(/obj/item/organ/eyes/shielded, 200),
 		"cortical stack" = list(/obj/item/organ/stack, 200),
-		"universal translator" = list(/obj/item/organ/translator, 200)
+		"universal translator" = list(/obj/item/organ/translator, 200),
+		"medical nanite hive" = list(/obj/item/organ/medichine, 200),
+		"pain dampner implant" = list(/obj/item/organ/paindamp,200)
 		)
 
 /obj/machinery/bioprinter/prosthetics
