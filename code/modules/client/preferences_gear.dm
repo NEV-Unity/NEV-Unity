@@ -19,6 +19,12 @@ proc/populate_gear_list()
 
 //Standard gear datums.
 //Small Items and simple visual accessories are 1 point
+/datum/gear/organ/binarychip
+	display_name = "wireless binary chip"
+	path = /obj/item/organ/binarychip
+	cost = 8
+	organ = 1
+
 /datum/gear/organ/translator
 	display_name = "universal translator implant"
 	path = /obj/item/organ/translator
@@ -38,7 +44,7 @@ proc/populate_gear_list()
 	organ = 1
 
 /datum/gear/organ/nvgeyes
-	display_name = "Infrared Prosthesis"
+	display_name = "infrared retinal overlay"
 	path = /obj/item/organ/eyes/night
 	cost = 8
 	organ = 1
