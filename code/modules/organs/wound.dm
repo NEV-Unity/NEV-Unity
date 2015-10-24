@@ -43,7 +43,7 @@
 	var/damage_type = CUT
 	// whether this wound needs a bandage/salve to heal at all
 	// the maximum amount of damage that this wound can have and still autoheal
-	var/autoheal_cutoff = 15
+	var/autoheal_cutoff = 5
 
 
 
@@ -282,7 +282,7 @@ datum/wound/cut/massive
 	stages = list("monumental bruise" = 80, "huge bruise" = 50, "large bruise" = 30,\
 				  "moderate bruise" = 20, "small bruise" = 10, "tiny bruise" = 5)
 	max_bleeding_stage = 3
-	autoheal_cutoff = 30
+	autoheal_cutoff = 10
 	damage_type = BRUISE
 
 /** BURNS **/

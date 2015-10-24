@@ -19,17 +19,39 @@ proc/populate_gear_list()
 
 //Standard gear datums.
 //Small Items and simple visual accessories are 1 point
-/datum/gear/organ/translator
-	display_name = "universal translator implant"
-	path = /obj/item/organ/translator
-	cost = 8
-	organ = 1
 
 /datum/gear/organ/stack
 	display_name = "cortical stack"
 	path = /obj/item/organ/stack
 	cost = 1
 	organ = 1
+
+/datum/gear/organ/paindamp
+	display_name = "pain dampner implant"
+	path = /obj/item/organ/paindamp
+	cost = 4
+	organ = 1
+
+/datum/gear/organ/medichine
+	display_name = "medical nanite hive"
+	path = /obj/item/organ/medichine
+	cost = 6 //May need to be adjusted
+	organ = 1
+	
+
+/datum/gear/organ/binarychip
+	display_name = "wireless binary chip"
+	path = /obj/item/organ/binarychip
+	cost = 8
+	organ = 1
+
+/datum/gear/organ/translator
+	display_name = "universal translator implant"
+	path = /obj/item/organ/translator
+	cost = 8
+	organ = 1
+
+
 
 /datum/gear/organ/shieldeyes
 	display_name = "Shielded Prosthesis"
@@ -38,7 +60,7 @@ proc/populate_gear_list()
 	organ = 1
 
 /datum/gear/organ/nvgeyes
-	display_name = "Infrared Prosthesis"
+	display_name = "infrared retinal overlay"
 	path = /obj/item/organ/eyes/night
 	cost = 8
 	organ = 1
