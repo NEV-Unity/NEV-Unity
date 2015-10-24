@@ -25,6 +25,7 @@
 		"shielded visual prosthetic" = list(/obj/item/organ/eyes/night, 500),
 		"cortical stack" = list(/obj/item/organ/stack, 200),
 		"universal translator" = list(/obj/item/organ/translator, 200),
+		"wireless binary chip" = list(/obj/item/organ/binarychip, 200),
 		"medical nanite hive" = list(/obj/item/organ/medichine, 500),
 		"pain dampner implant" = list(/obj/item/organ/paindamp,500)
 		)

@@ -1,11 +1,11 @@
 /obj/item/organ/medichine
 	name = "medical nanite hive"
-	icon_state = "implant_prosthetic"
+	icon_state = "implant-prosthetic"
 	organ_tag = "medichine"
 	prosthetic_name = "medical nanite hive"
 	robotic = 2
 	organ_type = /datum/organ/internal/medichine
-	
+
 /datum/organ/internal/medichine
 	name = "medichine"
 	parent_organ = "groin"
@@ -27,29 +27,29 @@
 	var/datum/organ/internal/ORGAN
 	ORGAN = internal_organs_by_name["medichine"]
 	if(!ORGAN || ORGAN.status == ORGAN_DESTROYED)
-		src << "/red Your groin burns in agony as your medichines malfunction!"
+		src << "\red Your groin burns in agony as your medichines malfunction!"
 		src.adjustBruteLoss(5)
 		src.adjustFireLoss(5)
 		src.adjustToxLoss(5)
 		return 0
 	else
-		src << "/blue our body goes limp as your medichines begin to slowly stitch your body together"
+		src << "\blue our body goes limp as your medichines begin to slowly stitch your body together"
 		src.reagents.add_reagent("spaceacillin", 5) //infection control
-		src.reagents.add_reagent("tricordrazine",1) //mild healing
+		src.reagents.add_reagent("tricordrazine", 5) //mild healing
 		src.reagents.add_reagent("inaprovaline",15) //stablize the dying
-		src.weaken(5) 
-		src.druggy = max(src.druggy, 5) //activating the implant gives you the druggy overlay
+		src.weakened += 5
+		src.druggy = max(src.drowsyness, 10) //activating the implant gives you the druggy overlay
 		ORGAN.damage += 1
 		src.nutrition -= 100 //activating nv verb costs you 1/4 of your max nutrition as a downside.
 
 /obj/item/organ/paindamp
 	name = "pain dampner"
-	icon_state = "implant_prosthetic"
+	icon_state = "implant-prosthetic"
 	organ_tag = "painblock"
 	prosthetic_name = "pain dampner"
 	robotic = 2
 	organ_type = /datum/organ/internal/paindamp
-	
+
 /datum/organ/internal/paindamp
 	name = "pain dampner"
 	parent_organ = "groin"
@@ -68,14 +68,15 @@
 	set category = "Abilities"
 	set name = "Activate Pain Dampner"
 	set desc = "Releases painkillers into your system"
-	ORGAN = internal_organs_by_name["medichine"]
+	var/datum/organ/internal/ORGAN
+	ORGAN = internal_organs_by_name["painblock"]
 	if(!ORGAN || ORGAN.status == ORGAN_DESTROYED)
-		src << "/red Your groin burns in agony as your pain dampners fail!"
+		src << "\red Your groin burns in agony as your pain dampners fail!"
 		src.adjustHalLoss(70)
 	else
-		src << "/blue You pain dims as you activate your pain dampners."
+		src << "\blue You pain dims as you activate your pain dampners."
 		src.reagents.add_reagent("paracetamol", 2) //lasts for 1 minute 20seconds.
-		src.druggy = max(src.druggy, 2) //activating the implant gives you the druggy overlay
+		src.drowsyness = max(src.drowsyness, 10) //activating the implant gives you the druggy overlay
 		src.nutrition -= 50 //activating nv verb costs you 1/8 of your max nutrition as a downside.
 
 /obj/item/organ/binarychip

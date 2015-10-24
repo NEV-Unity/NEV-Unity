@@ -533,7 +533,6 @@
 /obj/item/clothing/head/helmet/greenbandana/fluff/taryn_kifer_1 //themij: Taryn Kifer
 	name = "orange bandana"
 	desc = "Hey, I think we're missing a hazard vest..."
-	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "o_bandanna"
 
 /obj/item/clothing/head/fluff/bruce_hachert //Stup1dg33kz: Bruce Hachert

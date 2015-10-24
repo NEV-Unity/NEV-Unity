@@ -62,6 +62,9 @@ var/list/department_radio_keys = list(
 		return
 
 	var/mob/living/carbon/human/H = src
+	if(H.languages)
+		for(var/datum/language/binary/B in H.languages)
+			return 1
 	if (H.l_ear || H.r_ear)
 		var/obj/item/device/radio/headset/dongle
 		if(istype(H.l_ear,/obj/item/device/radio/headset))
