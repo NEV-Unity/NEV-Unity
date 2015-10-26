@@ -77,10 +77,13 @@
 		src << "\red Your groin burns in agony as your pain dampners fail!"
 		src.adjustHalLoss(70)
 	else
-		src << "\blue You pain dims as you activate your pain dampners."
-		src.reagents.add_reagent("paracetamol", 2) //lasts for 1 minute 20seconds.
-		src.drowsyness = max(src.drowsyness, 10) //activating the implant gives you the druggy overlay
-		src.nutrition -= 50 //activating nv verb costs you 1/8 of your max nutrition as a downside.
+		if(src.nutrition == 0)
+			src << "\red Your pain dampners fail to activate."
+		else
+			src << "\blue You pain dims as you activate your pain dampners."
+			src.reagents.add_reagent("paracetamol", 2) //lasts for 1 minute 20seconds.
+			src.drowsyness = max(src.drowsyness, 10) //activating the implant gives you the druggy overlay
+			src.nutrition -= 50 //activating nv verb costs you 1/8 of your max nutrition as a downside.
 
 /obj/item/organ/binarychip
 	name = "wireless binary chip"
