@@ -37,7 +37,7 @@ proc/populate_gear_list()
 	path = /obj/item/organ/medichine
 	cost = 6 //May need to be adjusted
 	organ = 1
-	
+
 
 /datum/gear/organ/binarychip
 	display_name = "wireless binary chip"
@@ -48,7 +48,7 @@ proc/populate_gear_list()
 /datum/gear/organ/translator
 	display_name = "universal translator implant"
 	path = /obj/item/organ/translator
-	cost = 8
+	cost = 6
 	organ = 1
 
 
