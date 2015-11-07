@@ -1,3 +1,26 @@
+/obj/item/weapon/reagent_containers/food/snacks/npaste/feedstock
+	name = "nanite feedstock"
+	icon_state = "npaste"
+	attack(mob/M as mob, mob/user as mob, def_zone)
+		var/datum/organ/internal/medichine/ORGAN
+		if(istype(M, /mob/living/carbon/human))
+			var/mob/living/carbon/human/N = M
+			ORGAN = N.internal_organs_by_name["medichine"]
+			if(ORGAN)
+				if(ORGAN.uses < 4)
+					ORGAN.uses++
+		..()
+	attackby(var/obj/I as obj, var/mob/user as mob)
+		return
+
+
+/datum/recipe/feedstock
+	items = list(
+		/obj/item/weapon/reagent_containers/food/snacks/npaste,
+		/obj/item/stack/nanopaste
+	)
+	result = /obj/item/weapon/reagent_containers/food/snacks/npaste/feedstock
+
 /obj/item/weapon/reagent_containers/food/snacks/npaste
 	name = "nutrient paste"
 	icon_state = "npaste"

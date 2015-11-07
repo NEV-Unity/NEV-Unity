@@ -46,15 +46,12 @@ proc/move_mining_shuttle()
 
 		for(var/mob/living/simple_animal/pest in toArea) // And for the other kind of bug...
 			pest.gib()
+		
+		if(mining_shuttle_location == 1)
+			fromArea.move_contents_to(toArea, /turf/simulated/floor/plating/airless/asteroid) //This will leave asteroid turfs behind the shuttle
+		else
+			fromArea.move_contents_to(toArea, /turf/simulated/floor/plating) //this should cause us to spawn plating behind the shuttle.
 
-		fromArea.move_contents_to(toArea)
-
-		//Spawn in empty tiles behind
-//		for(var/turf/T in fromArea)
-//			if(T.z == 1)
-//				T = new /turf/simulated/floor/plating()
-//			else
-//				T = new /turf/simulated/floor/plating/airless/asteroid()
 
 
 		if (mining_shuttle_location)

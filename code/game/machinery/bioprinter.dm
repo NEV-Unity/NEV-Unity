@@ -13,7 +13,7 @@
 	icon_state = "bioprinter"
 
 	var/prints_prosthetics
-	var/stored_matter = 200
+	var/stored_plastics = 200
 	var/loaded_dna //Blood sample for DNA hashing.
 	var/list/products = list(
 		"heart" =   list(/obj/item/organ/heart,  50),
@@ -41,9 +41,9 @@
 	if(!choice)
 		return
 
-	if(stored_matter >= products[choice][2])
+	if(stored_plastics >= products[choice][2])
 
-		stored_matter -= products[choice][2]
+		stored_plastics -= products[choice][2]
 		var/new_organ = products[choice][1]
 		var/obj/item/organ/O = new new_organ(get_turf(src))
 
@@ -78,17 +78,17 @@
 		return
 	// Meat for biomass.
 	else if(!prints_prosthetics && istype(W, /obj/item/weapon/reagent_containers/food/snacks/meat))
-		stored_matter += 50
+		stored_plastics += 50
 		user.drop_item()
-		user << "<span class='info'>\The [src] processes \the [W]. Levels of stored biomass now: [stored_matter]</span>"
+		user << "<span class='info'>\The [src] processes \the [W]. Levels of stored biomass now: [stored_plastics]</span>"
 		del(W)
 		return
 	// Steel for matter.
-	else if(prints_prosthetics && istype(W, /obj/item/stack/sheet/metal))
-		var/obj/item/stack/sheet/metal/M = W
-		stored_matter += M.amount * 10
+	else if(prints_prosthetics && istype(W, /obj/item/stack/sheet/mineral/plastic))
+		var/obj/item/stack/sheet/mineral/plastic/M = W
+		stored_plastics += M.amount * 10
 		user.drop_item()
-		user << "<span class='info'>\The [src] processes \the [W]. Levels of stored matter now: [stored_matter]</span>"
+		user << "<span class='info'>\The [src] processes \the [W]. Levels of stored matter now: [stored_plastics]</span>"
 		del(W)
 		return
 	else
@@ -107,6 +107,6 @@
 	within seconds of receiving input. The substitute organs are ready for transplantation right after the printing is completed!</p>
 	<4>Restocking</h4>
 	<p>Each printjob requires a set of materials. Should you ever run out of materials, then the HP 4000 series model prosthetics fabricator can be easily restocked by simply
-	feeding metal sheets into its receptor port.</p>
+	feeding plastic sheets into its receptor port.</p>
 	<font size=1>This technology produced under license from Thinktronic Systems, LTD.<br>
 	Thinktronic Systems, LTD. cannot be held liable for the quality of the substitute organs created, or the inherint issues that come from using such mechanical devices.</font>"}

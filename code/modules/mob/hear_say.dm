@@ -211,7 +211,7 @@
 	if(say_understands(speaker, language))
 		message = "<span class='game say'><span class='name'>[speaker.real_name]</span>[alt_name] [track][verb], <span class='message'>\"[message]\"</span></span>"
 	else
-		message = "<B>[speaker.real_name]</B> gestures."
+		message = "<B>[speaker.real_name]</B> gestures in a sign language."
 
 	if(src.status_flags & PASSEMOTES)
 		for(var/obj/item/weapon/holder/H in src.contents)

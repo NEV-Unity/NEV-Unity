@@ -581,6 +581,11 @@
 		name = "Dwarf Beard"
 		icon_state = "facial_dwarf"
 
+	kitty
+		name = "Kitty biomod"
+		icon_state = "kitty"
+		gender = NEUTER
+
 /*
 ///////////////////////////////////
 /  =---------------------------=  /

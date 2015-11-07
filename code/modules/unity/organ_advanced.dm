@@ -10,6 +10,8 @@
 	name = "medichine"
 	parent_organ = "groin"
 	removed_type = /obj/item/organ/medichine
+	var/uses = 4
+	var/lastused = 0
 
 /obj/item/organ/medichine/replaced(var/mob/living/carbon/human/target)
 	//gives the paindamp verb
@@ -24,23 +26,24 @@
 	set category = "Abilities"
 	set name = "Activate Medical Nanites"
 	set desc = "Releases medical nanites into your system"
-	var/datum/organ/internal/ORGAN
+	var/datum/organ/internal/medichine/ORGAN
 	ORGAN = internal_organs_by_name["medichine"]
-	if(!ORGAN || ORGAN.status == ORGAN_DESTROYED)
+	if(!ORGAN || ORGAN.status == ORGAN_DESTROYED|| ORGAN.uses == 0)
 		src << "\red Your groin burns in agony as your medichines malfunction!"
 		src.adjustBruteLoss(5)
 		src.adjustFireLoss(5)
 		src.adjustToxLoss(5)
 		return 0
 	else
-		src << "\blue our body goes limp as your medichines begin to slowly stitch your body together"
-		src.reagents.add_reagent("spaceacillin", 5) //infection control
-		src.reagents.add_reagent("tricordrazine", 5) //mild healing
-		src.reagents.add_reagent("inaprovaline",15) //stablize the dying
-		src.weakened += 5
-		src.druggy = max(src.drowsyness, 10) //activating the implant gives you the druggy overlay
-		ORGAN.damage += 1
-		src.nutrition -= 100 //activating nv verb costs you 1/4 of your max nutrition as a downside.
+		if((world.time - 300) < ORGAN.lastused)
+			src << "\red Your medichines are not ready yet!"
+		else
+			src << "\blue Your body goes limp as your medichines begin to slowly stitch your body together"
+			src.reagents.add_reagent("spaceacillin", 15) //infection control
+			src.reagents.add_reagent("tricordrazine", 15) //mild healing
+			src.reagents.add_reagent("inaprovaline",15) //stablize the dying
+			src.druggy = max(src.drowsyness, 20) //activating the implant gives you the druggy overlay
+			src.nutrition -= 100 //activating nv verb costs you 1/4 of your max nutrition as a downside.
 
 /obj/item/organ/paindamp
 	name = "pain dampner"
@@ -74,10 +77,13 @@
 		src << "\red Your groin burns in agony as your pain dampners fail!"
 		src.adjustHalLoss(70)
 	else
-		src << "\blue You pain dims as you activate your pain dampners."
-		src.reagents.add_reagent("paracetamol", 2) //lasts for 1 minute 20seconds.
-		src.drowsyness = max(src.drowsyness, 10) //activating the implant gives you the druggy overlay
-		src.nutrition -= 50 //activating nv verb costs you 1/8 of your max nutrition as a downside.
+		if(src.nutrition == 0)
+			src << "\red Your pain dampners fail to activate."
+		else
+			src << "\blue You pain dims as you activate your pain dampners."
+			src.reagents.add_reagent("paracetamol", 2) //lasts for 1 minute 20seconds.
+			src.drowsyness = max(src.drowsyness, 10) //activating the implant gives you the druggy overlay
+			src.nutrition -= 50 //activating nv verb costs you 1/8 of your max nutrition as a downside.
 
 /obj/item/organ/binarychip
 	name = "wireless binary chip"

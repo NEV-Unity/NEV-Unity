@@ -176,7 +176,7 @@ proc/populate_language_list()
 	exclaim_verb = "yowls"
 	colour = "tajaran"
 	key = "j"
-	cost = 4
+	cost = 3
 	syllables = list("tajr","kir","raj","kii","mir","kra","ak","nal","vah","khaz","jrri","ran","darr", \
 	"mita","dynh","manq","rhe","zar","rrhaz","kal","char","eech","thaa","dra","jarl","mah","sana","dra","ii'r", \
 	"ka","aasi","far","wa","baq","ara","qara","zir","sam","mak","hrar","nja","rir","khan","jan","dar","rik","kah", \
@@ -190,7 +190,7 @@ proc/populate_language_list()
 	exclaim_verb = "yowls"
 	colour = "tajaran2"
 	key = "z"
-	cost = 4
+	cost = 3
 	syllables = list("rr","rr","kir","ruj","kii","mir","kru","uhk","nul","vuh","khuz","jri","run","durr", \
 	"mi","jri","dynh","munq","rhe","zur","rrhuz","eech","thuu","dru","jurl","muh","sunu","dru","ii'r","zic", "tus", \
 	"ku","uusi","fur","wu","buq","uru","quru","zir","sum","muk","hrur","nju","rir","khun","jun","dur","rik","kuh", \
@@ -203,7 +203,7 @@ proc/populate_language_list()
 	signlang_verb = list("reports")
 	key = "6"
 	flags = SIGNLANG
-	cost = 4
+	cost = 3
 
 //Unathi Languages
 
@@ -216,7 +216,7 @@ proc/populate_language_list()
 	colour = "soghun"
 	key = "o"
 	syllables = list("ss","ss","ss","ss","skak","seeki","resh","las","esi","kor","sh")
-	cost = 4
+	cost = 3
 
 /datum/language/unathiue
 	name = "Uwe"
@@ -227,7 +227,7 @@ proc/populate_language_list()
 	colour = "soghun"
 	key = "f"
 	syllables = list("ss","ss","ss","ss","sauk","ssekri","rish","lash","si","kor","sah")
-	cost = 4
+	cost = 3
 
 /datum/language/unathweis
 	name = "Weis"
@@ -238,7 +238,7 @@ proc/populate_language_list()
 	colour = "soghun"
 	key = "7"
 	syllables = list("ss","ss","ss","ss","wausk","ssewri","rush","kash","ui","korwa","swe")
-	cost = 4
+	cost = 3
 
 //Skrell Languages
 
@@ -251,7 +251,7 @@ proc/populate_language_list()
 	colour = "skrell"
 	key = "k"
 	syllables = list("qr","qrr","xuq","qil","quum","xuqm","vol","xrim","zaoo","qu-uu","qix","qoo","zix","*","!")
-	cost = 4
+	cost = 3
 
 /datum/language/sini
 	name = "Sini"
@@ -260,7 +260,7 @@ proc/populate_language_list()
 	colour = "skrell"
 	key = "y"
 	syllables = list("ur","urr","xuu","uil","uuum","xuum","gol","xrim","gaoo","uu-uu","uix","uoo","zix","*","!")
-	cost = 4
+	cost = 3
 
 //Kida - We may get more of these if kida become more popular
 
@@ -272,7 +272,7 @@ proc/populate_language_list()
 	key = "p"
 	flags = WHITELISTED
 	syllables = list("kic","klic","\'tic","kit","lit","xic","vil","xrit","tshh","qix","qlit","zix","\'","!")
-	cost = 4
+	cost = 3
 
 //Trade and common Languages
 
@@ -339,7 +339,7 @@ proc/populate_language_list()
 	whisper_verb = "whispers"
 	colour = "solcom2"
 	key = "1"
-	cost = 4
+	cost = 3
 	syllables = list("tao","shi","tzu","yi","com","be","is","i","op","vi","ed","lec","mo","cle","te","dis","e")
 
 /datum/language/zho/get_spoken_verb(var/msg_end)
@@ -357,7 +357,7 @@ proc/populate_language_list()
 	whisper_verb = "whispers"
 	colour = "solcom"
 	key = "8"
-	cost = 4
+	cost = 3
 	syllables = list("tao","shi","tzu","yi","com","be","is","i","op","vi","ed","lec","mo","cle","te","dis","e")
 
 /datum/language/ara/get_spoken_verb(var/msg_end)
@@ -375,7 +375,7 @@ proc/populate_language_list()
 	whisper_verb = "whispers"
 	colour = "solcom"
 	key = "9"
-	cost = 4
+	cost = 3
 	syllables = list("tao","shi","tzu","yi","com","be","is","i","op","vi","ed","lec","mo","cle","te","dis","e")
 
 /datum/language/hindi/get_spoken_verb(var/msg_end)
