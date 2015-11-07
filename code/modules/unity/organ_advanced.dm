@@ -35,7 +35,7 @@
 		src.adjustToxLoss(5)
 		return 0
 	else
-		if((world.time - 300) < lastused)
+		if((world.time - 300) < ORGAN.lastused)
 			src << "\red Your medichines are not ready yet!"
 		else
 			src << "\blue Your body goes limp as your medichines begin to slowly stitch your body together"

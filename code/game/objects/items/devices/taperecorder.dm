@@ -22,7 +22,7 @@
 /obj/item/device/taperecorder/hear_talk(mob/living/M as mob, msg, var/verb="says")
 	if(translating)
 		var/turf/T = get_turf(src)
-		T.visible_message("\[[time2text(timerecorded*10,"mm:ss")]\] [M.name] [verb], \"[msg]\"")
+		T.visible_message("\[M.name] [verb], \"[msg]\"")
 	if(recording)
 		//var/ending = copytext(msg, length(msg))
 		timestamp+= timerecorded
@@ -117,7 +117,7 @@
 	if(translating == 1)
 		translating = 0
 		var/turf/T = get_turf(src)
-
+		T.visible_message("<font color=Maroon><B>Tape Recorder</B>: Begin Live Translation.</font>")
 
 /obj/item/device/taperecorder/verb/clear_memory()
 	set name = "Clear Memory"
@@ -238,12 +238,11 @@
 	if(emagged == 1)
 		usr << "\red The tape recorder makes a scratchy noise."
 		return
-	if(!canprint)
-		usr << "<span class='notice'>The recorder can't print that fast!</span>"
-		return
 	if(recording == 1 || playing == 1)
 		usr << "<span class='notice'>You can't print the transcript while playing or recording!</span>"
 		return
+	icon_state = "taperecorderplaying"
+	usr << "<span class='notice'>Translation started.</span>"
 	translating = 1
 	return
 
@@ -286,6 +285,13 @@
 			var/turf/T = get_turf(src)
 			for(var/mob/O in hearers(world.view-1, T))
 				O.show_message("<font color=Maroon><B>Tape Recorder</B>: Playback stopped.</font>",2)
+			icon_state = "taperecorderidle"
+			return
+		else if(translating == 1)
+			translating = 0
+			var/turf/T = get_turf(src)
+			for(var/mob/O in hearers(world.view-1, T))
+				O.show_message("<font color=Maroon><B>Tape Recorder</B>: Translation stopped.</font>",2)
 			icon_state = "taperecorderidle"
 			return
 		else
