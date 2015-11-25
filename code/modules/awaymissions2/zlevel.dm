@@ -224,7 +224,7 @@ proc/loadRandomZone(var/obj/effect/landmark/zoneloader/target)
 
 	else
 		world << "\red \b No away zone found."
-
+	world.SetupXenoarchZ(awayZLevel)
 		return
 
 
