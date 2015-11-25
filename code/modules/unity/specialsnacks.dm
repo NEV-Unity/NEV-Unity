@@ -1,6 +1,6 @@
 /obj/item/weapon/reagent_containers/food/snacks/npaste/feedstock
 	name = "nanite feedstock"
-	icon_state = "npaste"
+	icon_state = "fishfingers"
 	attack(mob/M as mob, mob/user as mob, def_zone)
 		var/datum/organ/internal/medichine/ORGAN
 		if(istype(M, /mob/living/carbon/human))

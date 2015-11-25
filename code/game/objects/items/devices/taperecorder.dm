@@ -22,7 +22,7 @@
 /obj/item/device/taperecorder/hear_talk(mob/living/M as mob, msg, var/verb="says")
 	if(translating)
 		var/turf/T = get_turf(src)
-		T.visible_message("\[M.name] [verb], \"[msg]\"")
+		T.visible_message("[M.name] [verb], \"[msg]\"")
 	if(recording)
 		//var/ending = copytext(msg, length(msg))
 		timestamp+= timerecorded

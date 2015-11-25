@@ -26,16 +26,16 @@ datum/directive/terminations/alien_fraud/get_description()
 datum/directive/terminations/alien_fraud/meets_prerequisites()
 	// There must be at least one Tesau and at least one Unathi, but the total
 	// of the Tesaus and Unathi combined can't be more than 1/3rd of the crew.
-	var/tajarans = 0
+	var/tesau = 0
 	var/unathi = 0
 	for(var/mob/M in player_list)
 		var/species = M.get_species()
 		if(species == "Tesau")
-			tajarans++
+			tesau++
 		if(species == "Unathi")
 			unathi++
 
-	if (!tajarans || !unathi)
+	if (!tesau || !unathi)
 		return 0
 
-	return (tajarans + unathi) <= (player_list.len / 3)
+	return (tesau + unathi) <= (player_list.len / 3)

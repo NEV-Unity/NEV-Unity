@@ -294,6 +294,15 @@
 					set_picture("ai_facepalm")
 				if("Friend Computer")
 					set_picture("ai_friend")
+				if("Dog")
+					set_picture("ai_dog")
+				if("Egypt")
+					set_picture("ai_sphinx")
+				if("Grow")
+					set_picture("ai_plump")
+				if("Colors")
+					set_picture("ai_tribunal")
+
 
 			return
 

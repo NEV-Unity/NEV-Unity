@@ -6,6 +6,8 @@
 	maxHealth = 200
 	health = 200
 
+	var/base_icon
+
 	var/sight_mode = 0
 	var/custom_name = ""
 	var/custom_sprite = 0 //Due to all the sprites involved, a var for our custom borgs may be best
@@ -1000,8 +1002,8 @@
 		overlays += "[icon_state]-shield"
 
 	if(modtype == "Combat")
-		var/base_icon = ""
-		base_icon = icon_state
+		if(!base_icon)
+			base_icon = icon_state
 		if(module_active && istype(module_active,/obj/item/borg/combat/mobility))
 			icon_state = "[icon_state]-roll"
 		else

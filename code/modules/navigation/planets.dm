@@ -5,6 +5,7 @@ datum/system
 	var/star_type //Approximate surface temperature of the star
 	var/luminosity //Total radiation emitted by star. Luminosity differentiates stars within a class by size
 	var/luminosity2 //binary star info
+	var/rads //radiation output numeric value
 /*
  Types
 O, Blue, Over 25,000K (Ionized Helium )
@@ -48,21 +49,32 @@ datum/system/New()
 		luminosity2 = 0
 		star_number = 1
 
-//planet creation! Some of these are not planets, so make up to 20 sites!
+//planet creation! Some of these are not planets, so make up to 20 sites! Also determine the radiation of this star. Ranging from 1-7.
 	var/pnumber = 0
 	switch(luminosity)
 		if("VII")
 			pnumber = rand(1,3)
+			rads = 1
 		if("VI")
 			pnumber = rand(1,7)
+			rads = 1
 		if("V")
 			pnumber = rand(1,12)
+			rads = 2
 		if("IV")
 			pnumber = rand(1,12)
+			rads = 3
 		if("III")
 			pnumber = rand(1,18)
+			rads = 4
 		else
 			pnumber = rand(1,23)
+			rads = 5
+	switch(luminosity2)
+		if("V")
+			rads += 2
+		if("VI" || "VII")
+			rads += 1
 	while(pnumber > 0)
 		var/seed = rand(0,99)
 		switch(star_type)
