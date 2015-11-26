@@ -211,7 +211,6 @@ proc/loadRandomZone(var/obj/effect/landmark/zoneloader/target)
 			continue
 
 		potentialRandomZones.Add(name)
-
 	if(potentialRandomZones.len)
 		world << "\red \b Loading away zone."
 
@@ -224,7 +223,7 @@ proc/loadRandomZone(var/obj/effect/landmark/zoneloader/target)
 
 	else
 		world << "\red \b No away zone found."
-	world.SetupXenoarchZ(awayZLevel)
+		SetupXenoarchZ(awayZLevel)
 		return
 
 

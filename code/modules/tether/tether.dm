@@ -12,6 +12,7 @@
 	use_power = 0
 	idle_power_usage = 0
 	active_power_usage = 0
+	var/genLevel = 0
 	var/panel = 0 // 0 is closed, 1 is open
 	var/deployed = 0 // 0 is not deployed, 1 is deployed
 	var/health = 10
@@ -48,6 +49,7 @@
 	cableamount = child.retract()
 	sleep(5)
 	del(child)
+	overlays.Cut()
 	return
 
 /obj/machinery/power/cathode/verb/retractcable()
@@ -83,13 +85,13 @@
 		else
 			usr << "\blue You close the maintainence panel."
 		return
-	user << panel
 	if(!panel) return //if the panel is not open, stop
 
 	if(istype(W, /obj/item/weapon/wirecutters)) //If we use wirecutters
 		if(deployed)
 			playsound(usr.loc, 'sound/items/Wirecutter.ogg', 100, 1)
 			usr << "\red You cut the deployed cable."
+			return
 			src.detach_cable()
 		if(cableamount == 0)
 			usr << "\red Nothing to cut!"
@@ -126,6 +128,7 @@
 /obj/machinery/power/cathode/proc/detach_cable()
 	child.broken()
 	deployed = 0
+	overlays.Cut()
 	return
 /obj/machinery/power/cathode/blob_act()
 	src.health--
@@ -144,19 +147,34 @@
 			return
 	return
 
-/obj/machinery/power/cathode/update_icon()
-	..()
-	if(stat & BROKEN)
-//		icon = test //ADD BROKEN ICON HERE
-	else
-//		icon = test //ADD WORKING ICON HERE
-//	return
-/obj/machinery/power/cathode/process()
-	if(stat & BROKEN)	return
-	if(!deployed) return
-	if(child)
-		add_avail(src.child.getpower())
 
+/obj/machinery/power/cathode/proc/updateicon()
+
+	if(stat & (NOPOWER|BROKEN))
+		overlays.Cut()
+	else
+		overlays.Cut()
+
+		if(genLevel != 0)
+			overlays += image('icons/obj/power.dmi', "teg-op[genLevel]")
+
+/obj/machinery/power/cathode/process()
+	if(stat & BROKEN)
+		return
+	if(!deployed)
+		return
+	if(child)
+		var/powerOut = src.child.getpower()
+		genLevel = 1
+		add_avail(powerOut)
+		if(powerOut < 10001) genLevel = 1
+		else if(powerOut < 20001 && powerOut > 10000) genLevel = 2
+		else if(powerOut < 40001 && powerOut > 20000) genLevel = 5
+		else if(powerOut < 60001 && powerOut > 40000) genLevel = 7
+		else if(powerOut < 80001 && powerOut > 60000) genLevel = 8
+		else if(powerOut < 100001 && powerOut > 80000) genLevel = 9
+		else genLevel = 11
+		updateicon()
 
 /obj/machinery/power/cathode/proc/broken()
 	stat |= BROKEN
@@ -286,10 +304,58 @@
 //If something breaks the teather, it breaks all child objects of the tether, then spawns cable in on the object, then deletes the object.
 	if(child)
 		child.broken()
-	sleep(5)
 	switch(quality)
 		if(1) new /obj/item/stack/tether_cable/metal(src.loc)
 		if(2) new /obj/item/stack/tether_cable/silver(src.loc)
 		if(3) new /obj/item/stack/tether_cable/gold(src.loc)
 	del(src)
 
+/obj/structure/tether/attackby(obj/item/W, mob/user)
+	if(istype(W, /obj/item/weapon/wirecutters)) //If we use wirecutters
+		playsound(usr.loc, 'sound/items/Wirecutter.ogg', 100, 1)
+		usr << "\red You cut the cable."
+		src.broken()
+
+/obj/machinery/computer/tethercontrol
+	var/deployed = 0
+	icon_state = "solar"
+	anchored = 1
+	density = 1
+	name = "tether control console"
+	desc = "A controller for electromagnetic tethers."
+/obj/machinery/computer/tethercontrol/attack_hand(user as mob)
+	if(..(user))
+		return
+	src.add_fingerprint(usr)
+	var/dat = "<center>Tether operation console:<br> <b><A href='?src=\ref[src];move=[1]'>"
+	if(deployed)
+		dat += "Deploy Cable</A></b></center>"
+		deployed = 0
+	else
+		dat +="Retract Cable</A></b></center>"
+		deployed = 1
+	user << browse("[dat]", "window=miningshuttle;size=200x100")
+
+/obj/machinery/computer/tethercontrol/Topic(href, href_list)
+	if(..())
+		return
+	usr.set_machine(src)
+	src.add_fingerprint(usr)
+	if(href_list["move"])
+		//if(ticker.mode.name == "blob")
+		//	if(ticker.mode:declared)
+		//		usr << "Under directive 7-10, [station_name()] is quarantined until further notice."
+		//		return
+		if (!deployed)
+			deploy()
+			return
+		else
+			retract()
+			return
+
+/obj/machinery/computer/tethercontrol/proc/deploy()
+	for(var/obj/machinery/power/cathode/H in range(1,src))
+		H.deploy()
+/obj/machinery/computer/tethercontrol/proc/retract()
+	for(var/obj/machinery/power/cathode/H in range(1,src))
+		H.retract()

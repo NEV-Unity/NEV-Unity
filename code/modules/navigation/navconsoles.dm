@@ -113,7 +113,8 @@
 		power_restore(0)
 		command_alert("Slipspace Manuver In Progress. ETA:5 minutes.", "NEV Unity Autopilot")
 		shakeAll()
-
+		for(var/obj/machinery/power/cathode/H in world)
+			H.detach_cable()
 
 //		for(var/mob/M in player_list)
 //			M << sound('sound/music/All Hands.ogg')
@@ -132,6 +133,8 @@
 		command_alert("All hands please prepare for arrival. ETA: 30 seconds", "NEV Unity Autopilot")
 		sleep(300)
 		shakeAll()
+		for(var/obj/machinery/power/cathode/H in world)
+			H.detach_cable()
 		for(var/turf/space/x in world)
 			if(!istype(x, /turf/space/transit))
 				x.icon_state = "x[((x.x + x.y) ^ ~(x.x * x.y) + x.z) % 25]"
@@ -151,6 +154,8 @@
 		power_restore(0)
 		command_alert("Movement Initiated. Destination:"+ movetarget.name+ ". All hands please prepare for arrival. ETA: 15 minutes.", "NEV Unity Autopilot")
 		shakeAll()
+		for(var/obj/machinery/power/cathode/H in world)
+			H.detach_cable()
 		for(var/turf/space/x in world)
 			if(!(istype(x, /turf/space/transit)))
 				x.icon_state = "[((x.x + x.y) ^ ~(x.x * x.y) + x.z) % 25]"
@@ -160,6 +165,8 @@
 		command_alert("All hands please prepare for arrival. ETA: 30 seconds", "NEV Unity Autopilot")
 		sleep(300)
 		shakeAll()
+		for(var/obj/machinery/power/cathode/H in world)
+			H.detach_cable()
 
 		command_alert("Movement Complete. The ship has reached "+ movetarget.name+ "", "NEV Unity Autopilot")
 		for(var/turf/space/x in world)
