@@ -59,7 +59,7 @@
 	species_restricted = list("Unathi")
 
 /obj/item/clothing/gloves/latex/tajara
-	name = "tajara latex gloves"
+	name = "tesau latex gloves"
 	desc = "Sterile latex gloves. Designed for Tesau use."
 	species_restricted = list("Tesau")
 

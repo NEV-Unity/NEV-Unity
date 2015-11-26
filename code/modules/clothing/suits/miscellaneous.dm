@@ -240,29 +240,6 @@
 	item_state = "red_pyjamas"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 
-//coats
-
-/obj/item/clothing/suit/leathercoat
-	name = "leather coat"
-	desc = "A long, thick black leather coat."
-	icon_state = "leathercoat"
-	item_state = "leathercoat"
-	flags = FPRINT | TABLEPASS
-
-/obj/item/clothing/suit/browncoat
-	name = "brown leather coat"
-	desc = "A long, brown leather coat."
-	icon_state = "browncoat"
-	item_state = "browncoat"
-	flags = FPRINT | TABLEPASS
-
-/obj/item/clothing/suit/neocoat
-	name = "black coat"
-	desc = "A flowing, black coat."
-	icon_state = "neocoat"
-	item_state = "neocoat"
-	flags = FPRINT | TABLEPASS
-
 //stripper
 
 /obj/item/clothing/under/stripper/stripper_pink
@@ -279,19 +256,6 @@
 	item_color = "stripper_g"
 	siemens_coefficient = 1
 
-/obj/item/clothing/suit/stripper/stripper_pink
-	name = "pink skimpy dress"
-	desc = "A rather skimpy pink dress."
-	icon_state = "stripper_p_over"
-	item_state = "stripper_p"
-	siemens_coefficient = 1
-
-/obj/item/clothing/suit/stripper/stripper_green
-	name = "green skimpy dress"
-	desc = "A rather skimpy green dress."
-	icon_state = "stripper_g_over"
-	item_state = "stripper_g"
-	siemens_coefficient = 1
 
 /obj/item/clothing/under/stripper/mankini
 	name = "the mankini"

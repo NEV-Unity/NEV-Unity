@@ -140,7 +140,7 @@
 	//newMsg.is_admin_message = 1
 	var/datum/trade_destination/affected_dest = pick(weighted_mundaneevent_locations)
 	newMsg.body = pick(
-	"Tree stuck in tajaran; firefighters baffled.",\
+	"Tree stuck in tesau; firefighters baffled.",\
 	"Armadillos want aardvarks removed from dictionary claims 'here first'.",\
 	"Angel found dancing on pinhead ordered to stop; cited for public nuisance.",\
 	"Letters claim they are better than number; 'Always have been'.",\
@@ -156,7 +156,7 @@
 	"Question mark worshipped as deity by ancient [affected_dest.name] dwellers.",\
 	"Spilled milk causes whole [affected_dest.name] populace to cry.",\
 	"World largest carp patty at display on [affected_dest.name].",\
-	"'Here kitty kitty' no longer preferred tajaran retrieval technique.",\
+	"'Here kitty kitty' no longer preferred tesau retrieval technique.",\
 	"Man travels 7000 light years to retrieve lost hankie, 'It was my favourite'.",\
 	"New bowling lane that shoots mini-meteors at bowlers very popular.",\
 	"[pick("Unathi","Spacer")] gets tattoo of Tau Ceti on chest '[pick("CentComm","star","starship","asteroid")] tickles most'.",\

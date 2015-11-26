@@ -496,6 +496,14 @@
 		name = "yellow IPC screen"
 		icon_state = "ipc_yellow"
 		species_allowed = list("Machine")
+	icp_dome_red
+		name = "red IPC dome"
+		icon_state = "ipc_domed"
+		species_allowed = list("Machine")
+	icp_wires_red
+		name = "red IPC wires"
+		icon_state = "ipc_wirehead"
+		species_allowed = list("Machine")
 
 /*
 ///////////////////////////////////

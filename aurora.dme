@@ -1494,6 +1494,7 @@
 #include "code\modules\tether\tether.dm"
 #include "code\modules\unity\organ_advanced.dm"
 #include "code\modules\unity\specialsnacks.dm"
+#include "code\modules\unity\Xenoboots.dm"
 #include "code\modules\vehicles\cargo_train.dm"
 #include "code\modules\vehicles\train.dm"
 #include "code\modules\vehicles\vehicle.dm"

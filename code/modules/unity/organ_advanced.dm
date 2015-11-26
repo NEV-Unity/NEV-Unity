@@ -28,13 +28,15 @@
 	set desc = "Releases medical nanites into your system"
 	var/datum/organ/internal/medichine/ORGAN
 	ORGAN = internal_organs_by_name["medichine"]
-	if(!ORGAN || ORGAN.status == ORGAN_DESTROYED|| ORGAN.uses == 0)
+	if(!ORGAN || ORGAN.status == ORGAN_DESTROYED)
 		src << "\red Your groin burns in agony as your medichines malfunction!"
 		src.adjustBruteLoss(5)
 		src.adjustFireLoss(5)
 		src.adjustToxLoss(5)
 		return 0
 	else
+		if(ORGAN.uses == 0)
+			src << "\red Your medichines are out of feedstock!"
 		if((world.time - 300) < ORGAN.lastused)
 			src << "\red Your medichines are not ready yet!"
 		else
@@ -44,7 +46,8 @@
 			src.reagents.add_reagent("inaprovaline",15) //stablize the dying
 			src.druggy = max(src.drowsyness, 20) //activating the implant gives you the druggy overlay
 			src.nutrition -= 100 //activating nv verb costs you 1/4 of your max nutrition as a downside.
-
+			ORGAN.lastused = world.time
+			ORGAN.uses--
 /obj/item/organ/paindamp
 	name = "pain dampner"
 	icon_state = "implant-prosthetic"
