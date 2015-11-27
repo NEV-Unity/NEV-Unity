@@ -241,11 +241,13 @@
 	quality = 2
 	matter = list("silver" = 2000)
 	origin_tech = "materials=3"
+	icon_state = "tether_coil_silver"
 /obj/item/stack/tether_cable/gold
 	desc = "Specialized superconductive cable for electromagnetic tethers. It has a gold core"
 	quality = 3
 	matter = list("gold" = 2000)
 	origin_tech = "materials=4"
+	icon_state = "tether_coil_gold"
 //TETHER STRUCTURE
 /obj/structure/tether
 	name = "Tether"
