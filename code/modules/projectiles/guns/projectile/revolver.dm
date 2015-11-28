@@ -95,11 +95,11 @@
 	return
 
 /obj/item/weapon/gun/projectile/detective/secgun
-	desc = "The standard sidearm of the Espatier corps"
-	name = "\improper sidearm"
+	desc = "A carbine version of the P90 bullpup used primarily for self-defense. The standard sidearm of the Espatier corps"
+	name = "\improper PS90 Carbine"
 	caliber = ".45"
-	icon_state = "mini-uzi"
-	max_shells = 7
+	icon_state = "PS90"
+	max_shells = 10
 	ammo_type = "/obj/item/ammo_casing/c45s"
 	load_method = 2
 	isloaded = 0
