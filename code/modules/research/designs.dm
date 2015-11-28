@@ -2211,5 +2211,30 @@ datum/design/cart_captain
 	build_path = "/obj/item/weapon/cartridge/captain"
 	locked = 1
 	category = "PDA Cartridges"
-
-
+datum/design/tether_cable_metal
+	name = "Electromagnetic Tether"
+	desc = "Cabling for electromagnetic tethers"
+	id = "tether_metal"
+	req_tech = list("engineering" = 2, "materials" = 2)
+	build_type = PROTOLATHE
+	materials = list("$metal" = 1000, "$glass" = 1000)
+	build_path = "/obj/item/stack/tether_cable/metal"
+	category = "Engineering Equipment"
+datum/design/tether_cable_silver
+	name = "Electromagnetic Tether (Silver Core)"
+	desc = "Cabling for electromagnetic tethers"
+	id = "tether_silver"
+	req_tech = list("engineering" = 3, "materials" = 3)
+	build_type = PROTOLATHE
+	materials = list("$silver" = 1000, "$glass" = 1000)
+	build_path = "/obj/item/stack/tether_cable/silver"
+	category = "Engineering Equipment"
+datum/design/tether_cable_silver
+	name = "Electromagnetic Tether (Gold Core)"
+	desc = "Cabling for electromagnetic tethers"
+	id = "tether_gold"
+	req_tech = list("engineering" = 4, "materials" = 4)
+	build_type = PROTOLATHE
+	materials = list("$gold" = 1000, "$glass" = 1000)
+	build_path = "/obj/item/stack/tether_cable/gold"
+	category = "Engineering Equipment"
