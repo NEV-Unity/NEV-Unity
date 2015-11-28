@@ -4,7 +4,7 @@
 	icon_state = "tesjackboots"
 	item_state = "tesjackboots"
 	item_color = "hosred"
-	species_restricted = "Tesau"
+	species_restricted = list("Tesau")
 
 /obj/item/clothing/shoes/jackboots/unathi
 	name = "unathi jackboots"
@@ -12,18 +12,18 @@
 	icon_state = "jackboots"
 	item_state = "jackboots"
 	item_color = "hosred"
-	species_restricted = "Unathi"
+	species_restricted = list("Unathi")
 
 /obj/item/clothing/shoes/work_boots/tesau
 	name = "Steel Toe Boots"
 	desc = "Steel Toe cap working boots for engineers and miners. They are fitted for a digitigrade foot."
 	icon_state = "tessteelboots"
 	item_state = "tessteelboots"
-	species_restricted = "Tesau"
+	species_restricted = list("Tesau")
 
 /obj/item/clothing/shoes/work_boots/unathi
 	name = "Steel Toe Boots"
 	desc = "Steel Toe cap working boots for engineers and miners. They have extra space to accomidate Unathi claws."
 	icon_state = "steelboots"
 	item_state = "steelboots"
-	species_restricted = "Unathi"
+	species_restricted = list("Unathi")
