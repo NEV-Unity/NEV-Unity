@@ -110,9 +110,9 @@ Please contact me on #coderbus IRC. ~Carn x
 #define DAMAGE_LAYER			3
 #define SURGERY_LEVEL			4
 #define UNIFORM_LAYER			5
-#define TAIL_LAYER				6		//bs12 specific. this hack is probably gonna come back to haunt me
-#define ID_LAYER				7
-#define SHOES_LAYER				8
+#define ID_LAYER				6
+#define SHOES_LAYER				7
+#define TAIL_LAYER				8		//long live the SS13 furries?
 #define GLOVES_LAYER			9
 #define SUIT_LAYER				10
 #define GLASSES_LAYER			11
