@@ -29,8 +29,8 @@
 
 /obj/item/projectile/bullet/midbullet
 	damage = 20
-	stun = 5
-	weaken = 5
+/*	stun = 5
+	weaken = 5 */
 
 /obj/item/projectile/bullet/midbullet2
 	damage = 25
