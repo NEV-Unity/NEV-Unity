@@ -28,7 +28,7 @@
 	item_state = "steelboots"
 	species_restricted = list("Unathi")
 
-/obj/item/weapon/storage/belt/advanced //Jace's Toolbelt - Jace Evans - Wittme91
+/obj/item/weapon/storage/belt/advanced
 	name = "Custom Toolbelt"
 	desc = "A large, well-worn toolbelt favored by career engineers."
 	icon = 'icons/obj/custom_items/jace_belt.dmi'
