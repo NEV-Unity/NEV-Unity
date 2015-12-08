@@ -395,6 +395,11 @@ proc/populate_gear_list()
 
 //Edge case department gear
 
+/datum/gear/advanced_belt
+	display_name = "custom toolbelt"
+	path = /obj/item/weapon/storage/belt/advanced
+	cost = 3
+
 /datum/gear/cigar_case
 	display_name = "cigar case"
 	path = /obj/item/weapon/storage/fancy/cigars
