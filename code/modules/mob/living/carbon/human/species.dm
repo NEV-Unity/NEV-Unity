@@ -213,6 +213,9 @@
 	unarmed_type = /datum/unarmed_attack/punch
 
 	flags = HAS_SKIN_TONE | HAS_LIPS | HAS_UNDERWEAR
+	inherent_verbs = list(
+		/mob/living/carbon/human/verb/hold_breath
+		)
 
 	//If you wanted to add a species-level ability:
 	/*abilities = list(/client/proc/test_ability)*/
@@ -243,6 +246,9 @@
 
 	reagent_tag = IS_UNATHI
 	base_color = "#066000"
+	inherent_verbs = list(
+		/mob/living/carbon/human/verb/hold_breath
+		)
 
 /datum/species/tajaran
 	name = "TesauOLD"
@@ -293,6 +299,9 @@
 	flags = IS_WHITELISTED | HAS_LIPS | HAS_SKIN_COLOR
 	flesh_color = "#AFA59E"
 	base_color = "#333333"
+	inherent_verbs = list(
+		/mob/living/carbon/human/verb/hold_breath
+		)
 
 /datum/species/skrell
 	name = "Skrell"
@@ -307,6 +316,10 @@
 	flesh_color = "#8CD7A3"
 
 	reagent_tag = IS_SKRELL
+	
+	inherent_verbs = list(
+		/mob/living/carbon/human/verb/hold_breath
+		)
 
 /datum/species/vox
 	name = "Vox"
@@ -343,7 +356,8 @@
 	reagent_tag = IS_VOX
 
 	inherent_verbs = list(
-		/mob/living/carbon/human/proc/leap
+		/mob/living/carbon/human/proc/leap,
+		/mob/living/carbon/human/verb/hold_breath
 		)
 
 	has_organ = list(
@@ -394,7 +408,8 @@
 	inherent_verbs = list(
 		/mob/living/carbon/human/proc/leap,
 		/mob/living/carbon/human/proc/gut,
-		/mob/living/carbon/human/proc/commune
+		/mob/living/carbon/human/proc/commune,
+		/mob/living/carbon/human/verb/hold_breath
 		)
 
 /datum/species/diona
@@ -532,7 +547,8 @@
 	flesh_color = "#575757" //this is a placeholder also.
 
 	inherent_verbs = list(
-		/mob/living/carbon/human/proc/bugbite //weaker version of gut. can't gib hums, dam/time outstripped lots by melee weapons
+		/mob/living/carbon/human/proc/bugbite, //weaker version of gut. can't gib hums, dam/time outstripped lots by melee weapons
+		/mob/living/carbon/human/verb/hold_breath
 		)
 
 	//make has_organ list when we can be bothered with bug gut sprites.  it'll be cool, i promise
