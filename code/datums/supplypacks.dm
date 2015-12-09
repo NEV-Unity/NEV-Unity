@@ -664,6 +664,31 @@ var/list/all_supply_groups = list("Operations","Security","Hospitality","Enginee
 	access = access_security
 	group = "Security"
 
+/datum/supply_packs/smgs
+	name = "P93 x3 crate"
+	contains = list(/obj/item/weapon/gun/projectile/automatic/p93,
+					/obj/item/weapon/gun/projectile/automatic/p93,
+					/obj/item/weapon/gun/projectile/automatic/p93)
+	cost = 30
+	containertype = /obj/structure/closet/crate/secure/weapon
+	containername = "P93 crate"
+	access = access_security
+	group = "Security"
+
+/datum/supply_packs/smgs
+	name = "P93 ammunition crate"
+	contains = list(/obj/item/ammo_magazine/c57m/30,
+					/obj/item/ammo_magazine/c57m/30,
+					/obj/item/ammo_magazine/c57m/30,
+					/obj/item/ammo_magazine/c57m/30,
+					/obj/item/ammo_magazine/c57m/30,
+					/obj/item/ammo_magazine/c57m/30)
+	cost = 30
+	containertype = /obj/structure/closet/crate/secure/weapon
+	containername = "Ammo crate"
+	access = access_security
+	group = "Security"
+
 /datum/supply_packs/eweapons
 	name = "Experimental weapons crate"
 	contains = list(/obj/item/weapon/flamethrower/full,

@@ -194,6 +194,17 @@
 	path = /obj/item/ammo_magazine/c45s
 	category = "Arms and Ammunition"
 
+/datum/autolathe/recipe/p93_10rd
+	name = "ammunition ( 5.7mm ) 10 rounds"
+	path = /obj/item/ammo_magazine/c57m/10
+	category = "Arms and Ammunition"
+
+/datum/autolathe/recipe/p93_30rd
+	name = "ammunition ( 5.7mm ) 30 rounds"
+	path = /obj/item/ammo_magazine/c57m/30
+	category = "Arms and Ammunition"
+	hidden = 1
+
 /datum/autolathe/recipe/shotgun_blanks
 	name = "ammunition (shotgun, blanks)"
 	path = /obj/item/ammo_casing/shotgun/blank
