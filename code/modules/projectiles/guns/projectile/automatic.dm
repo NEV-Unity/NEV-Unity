@@ -41,6 +41,7 @@
 	isloaded = 0
 	fire_sound = 'sound/weapons/Gunshot_smg.ogg'
 	ejectshell = 0
+	recoil = 0
 
 
 	afterattack(atom/target as mob|obj|turf|area, mob/living/user as mob|obj, flag)
