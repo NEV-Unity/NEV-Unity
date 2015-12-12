@@ -52,6 +52,11 @@
 	caliber = ".45"
 	projectile_type = "/obj/item/projectile/bullet/midbullet"
 
+/obj/item/ammo_casing/c57
+	desc = "A 5.7x28mm caseless cartridge."
+	caliber = "5.7mm"
+	projectile_type = "/obj/item/projectile/bullet/midbullet"
+
 /obj/item/ammo_casing/c45r
 	desc = "A .45 rubber bullet casing."
 	caliber = ".45"

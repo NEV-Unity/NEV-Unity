@@ -30,6 +30,37 @@
 //	isHandgun()
 //		return 0
 
+/obj/item/weapon/gun/projectile/automatic/p93
+	desc = "The P93 is a bullpup submachine gun developed specifically for the USN Guard. The standard firearm of USN Espatiers."
+	name = "\improper P93 SMG"
+	caliber = "5.7mm"
+	icon_state = "P93-empty"
+	max_shells = 30
+	ammo_type = "/obj/item/ammo_casing/c57"
+	load_method = 2
+	isloaded = 0
+	fire_sound = 'sound/weapons/Gunshot_smg.ogg'
+	ejectshell = 0
+	recoil = 0
+
+
+	afterattack(atom/target as mob|obj|turf|area, mob/living/user as mob|obj, flag)
+		..()
+		if(!loaded.len && empty_mag)
+			empty_mag.loc = get_turf(src.loc)
+			empty_mag = null
+			user << "<span class='notice'>The empty magazine is automatically ejected.</span>"
+			update_icon()
+		return
+
+	update_icon()
+		..()
+		if(empty_mag)
+			icon_state = "P93-[empty_mag.max_ammo]rd"
+		else
+			icon_state = "P93-empty"
+		return
+
 
 /obj/item/weapon/gun/projectile/automatic/mini_uzi
 	name = "Uzi"
@@ -74,7 +105,6 @@
 			playsound(user, 'sound/weapons/smg_empty_alarm.ogg', 40, 1)
 			update_icon()
 		return
-
 
 	update_icon()
 		..()

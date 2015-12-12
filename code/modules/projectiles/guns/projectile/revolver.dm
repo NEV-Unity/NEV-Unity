@@ -95,11 +95,11 @@
 	return
 
 /obj/item/weapon/gun/projectile/detective/secgun
-	desc = "A carbine version of the P93 bullpup used primarily for self-defense. The standard sidearm of the Espatier corps"
-	name = "\improper P93 Carbine"
+	desc = "The P93 is a bullpup submachine gun developed specifically for the USN Guard. The standard firearm of USN Espatiers."
+	name = "\improper P93 SMG"
 	caliber = ".45"
 	icon_state = "P93-empty"
-	max_shells = 10
+	max_shells = 30
 	ammo_type = "/obj/item/ammo_casing/c45s"
 	load_method = 2
 	isloaded = 0
