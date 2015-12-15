@@ -368,17 +368,17 @@
 				var/obj/location_as_object = loc
 				location_as_object.handle_internal_lifeform(src, 0)
 		else
-			//First, check if the mob is holding its breath. 
+			//First, check if the mob is holding its breath.
 			if(holdbreath)//Are you holding your breath?
 				if(stat == CONSCIOUS) //Gotta be consious to hold your breath.
 					src.adjustOxyLoss(HUMAN_MAX_OXYLOSS) //You slowly suffocate while holding your breath. The same rate as if you were not breathing
 					oxygen_alert = max(oxygen_alert, 1) //Visual alert shows while you are holding your breath!
-					var/oxymessage
+					var/oxymessage = ""
 					if(oxyloss < 25)
 						oxymessage = "\blue You easily hold your breath!"
-					elseif(oxyloss > 24 && oxyloss < 50)
+					else if(oxyloss > 24 && oxyloss < 50)
 						oxymessage = "\red Your lungs are starting to ache!"
-					elseif(oxyloss > 49 && oxyloss < 75)
+					else if(oxyloss > 49 && oxyloss < 75)
 						oxymessage = "\red Your vision swims as your lungs scream for air!"
 					else
 						src << "\red You lose consiousness"
@@ -389,7 +389,7 @@
 				else
 					oxygen_alert = 0
 					holdbreath = 0
-			
+
 			//Check for air from internal atmosphere (using an air tank and mask generally)
 			breath = get_breath_from_internal(BREATH_VOLUME) // Super hacky -- TLE
 			//breath = get_breath_from_internal(0.5) // Manually setting to old BREATH_VOLUME amount -- TLE

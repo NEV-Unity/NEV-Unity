@@ -277,14 +277,11 @@
 /datum/species/tesau
 	name = "Tesau"
 	name_plural = "Tesau"
-	icobase = 'icons/mob/human_races/r_tajaran.dmi'
-	deform = 'icons/mob/human_races/r_def_tajaran.dmi'
+	icobase = 'icons/mob/human_races/r_tesau.dmi'
+	deform = 'icons/mob/human_races/r_tesau.dmi'
 	tail = "testail"
 	unarmed_type = /datum/unarmed_attack/claws
 	darksight = 8
-
-	icobase = 'icons/mob/human_races/r_tesau.dmi'
-	deform = 'icons/mob/human_races/r_tesau.dmi'
 
 	cold_level_1 = 200 //Default 260
 	cold_level_2 = 140 //Default 200
@@ -316,7 +313,7 @@
 	flesh_color = "#8CD7A3"
 
 	reagent_tag = IS_SKRELL
-	
+
 	inherent_verbs = list(
 		/mob/living/carbon/human/verb/hold_breath
 		)
