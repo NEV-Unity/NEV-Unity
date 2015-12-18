@@ -306,7 +306,8 @@ proc/get_damage_icon_part(damage_state, body_part)
 
 			if(part.status & ORGAN_DESTROYED)
 				continue
-
+			if(part.name == "chest")
+				continue
 			if (istype(part, /datum/organ/external/groin) || istype(part, /datum/organ/external/head))
 				temp = part.get_icon(race_icon,deform_icon,g)
 			else
