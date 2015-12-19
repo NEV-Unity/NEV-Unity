@@ -47,6 +47,9 @@
 	afterattack(atom/target as mob|obj|turf|area, mob/living/user as mob|obj, flag)
 		..()
 		if(!loaded.len && empty_mag)
+			var mag_type = "/obj/item/ammo_magazine/c57m/m[empty_mag.max_ammo]rd/empty"
+			del(empty_mag)
+			empty_mag = new mag_type(src)
 			empty_mag.loc = get_turf(src.loc)
 			empty_mag = null
 			user << "<span class='notice'>The empty magazine is automatically ejected.</span>"
