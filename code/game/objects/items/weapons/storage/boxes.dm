@@ -187,6 +187,37 @@
 		new /obj/item/weapon/grenade/flashbang(src)
 		new /obj/item/weapon/grenade/flashbang(src)
 
+/obj/item/weapon/storage/box/incendiaries
+	name = "box of incendiary grenades (WARNING)"
+	desc = "<B>WARNING: These devices are extremely dangerous and can compromise the integrity of the ship.</B>"
+	icon_state = "flashbang"
+
+	New()
+		..()
+		new /obj/item/weapon/grenade/chem_grenade/incendiary(src)
+		new /obj/item/weapon/grenade/chem_grenade/incendiary(src)
+		new /obj/item/weapon/grenade/chem_grenade/incendiary(src)
+		new /obj/item/weapon/grenade/chem_grenade/incendiary(src)
+		new /obj/item/weapon/grenade/chem_grenade/incendiary(src)
+		new /obj/item/weapon/grenade/chem_grenade/incendiary(src)
+		new /obj/item/weapon/grenade/chem_grenade/incendiary(src)
+
+/obj/item/weapon/storage/box/concussion
+	name = "box of concussion grenades (WARNING)"
+	desc = "<B>WARNING: These devices are extremely dangerous and can compromise the integrity of the ship.</B>"
+	icon_state = "flashbang"
+
+	New()
+		..()
+		new /obj/item/weapon/grenade/chem_grenade/concussion(src)
+		new /obj/item/weapon/grenade/chem_grenade/concussion(src)
+		new /obj/item/weapon/grenade/chem_grenade/concussion(src)
+		new /obj/item/weapon/grenade/chem_grenade/concussion(src)
+		new /obj/item/weapon/grenade/chem_grenade/concussion(src)
+		new /obj/item/weapon/grenade/chem_grenade/concussion(src)
+		new /obj/item/weapon/grenade/chem_grenade/concussion(src)
+
+
 /obj/item/weapon/storage/box/emps
 	name = "box of emp grenades"
 	desc = "A box with 5 emp grenades."
