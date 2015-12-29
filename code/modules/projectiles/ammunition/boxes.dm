@@ -20,6 +20,42 @@
 	max_ammo = 6
 	multiple_sprites = 1
 
+/obj/item/ammo_magazine/c57m/m10rd
+	name = "magazine (5.7mm)"
+	desc = "A 10-round magazine for the P93 SMG, loaded with 5.7x28mm caseless rounds."
+	icon_state = "p93-10rd"
+	ammo_type = "/obj/item/ammo_casing/c57"
+	max_ammo = 10
+	multiple_sprites = 1
+	matter = list("metal" = 53750)
+
+/obj/item/ammo_magazine/c57m/m10rd/empty
+	name = "magazine (5.7mm)"
+	desc = "A 10-round magazine for the P93 SMG, empty."
+	icon_state = "p93-10rd-0"
+	ammo_type = "/obj/item/ammo_casing/c57"
+	max_ammo = 0
+	multiple_sprites = 0
+	matter = list("metal" = 3750)
+
+/obj/item/ammo_magazine/c57m/m30rd
+	name = "magazine (5.7mm)"
+	desc = "A 30-round magazine for the P93 SMG, loaded with 5.7x28mm caseless rounds."
+	icon_state = "p93-30rd"
+	ammo_type = "/obj/item/ammo_casing/c57"
+	max_ammo = 30
+	multiple_sprites = 1
+	matter = list("metal" = 153750)
+
+/obj/item/ammo_magazine/c57m/m30rd/empty
+	name = "magazine (5.7mm)"
+	desc = "A 30-round magazine for the P93 SMG, empty."
+	icon_state = "p93-30rd-0"
+	ammo_type = "/obj/item/ammo_casing/c57"
+	max_ammo = 0
+	multiple_sprites = 0
+	matter = list("metal" = 3750)
+
 /obj/item/ammo_magazine/c45m
 	name = "magazine (.45)"
 	icon_state = "45"
