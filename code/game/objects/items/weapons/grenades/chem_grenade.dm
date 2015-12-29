@@ -211,11 +211,34 @@
 		var/obj/item/weapon/reagent_containers/glass/beaker/B1 = new(src)
 		var/obj/item/weapon/reagent_containers/glass/beaker/B2 = new(src)
 
-		B1.reagents.add_reagent("aluminum", 15)
-		B1.reagents.add_reagent("fuel",20)
-		B2.reagents.add_reagent("plasma", 15)
-		B2.reagents.add_reagent("sacid", 15)
-		B1.reagents.add_reagent("fuel",20)
+
+		B1.reagents.add_reagent("plasma", 30)
+		B1.reagents.add_reagent("aluminum", 30)
+		B2.reagents.add_reagent("sacid", 30)
+
+		detonator = new/obj/item/device/assembly_holder/timer_igniter(src)
+
+		beakers += B1
+		beakers += B2
+		icon_state = initial(icon_state) +"_locked"
+
+/obj/item/weapon/grenade/chem_grenade/concussion
+	name = "Concussion Grenade"
+	desc = "An explosive offensive grenade."
+	path = 1
+	stage = 2
+
+	New()
+		..()
+		var/obj/item/weapon/reagent_containers/glass/beaker/B1 = new(src)
+		var/obj/item/weapon/reagent_containers/glass/beaker/B2 = new(src)
+
+
+		B1.reagents.add_reagent("plasma", 10)
+		B1.reagents.add_reagent("aluminum", 10)
+		B1.reagents.add_reagent("water", 40)
+		B2.reagents.add_reagent("sacid", 10)
+		B2.reagents.add_reagent("potassium", 40)
 
 		detonator = new/obj/item/device/assembly_holder/timer_igniter(src)
 

@@ -32,7 +32,7 @@
 /obj/item/ammo_magazine/c57m/m10rd/empty
 	name = "magazine (5.7mm)"
 	desc = "A 10-round magazine for the P93 SMG, empty."
-	icon_state = "p93-10rd"
+	icon_state = "p93-10rd-0"
 	ammo_type = "/obj/item/ammo_casing/c57"
 	max_ammo = 0
 	multiple_sprites = 0
@@ -50,7 +50,7 @@
 /obj/item/ammo_magazine/c57m/m30rd/empty
 	name = "magazine (5.7mm)"
 	desc = "A 30-round magazine for the P93 SMG, empty."
-	icon_state = "p93-30rd"
+	icon_state = "p93-30rd-0"
 	ammo_type = "/obj/item/ammo_casing/c57"
 	max_ammo = 0
 	multiple_sprites = 0
