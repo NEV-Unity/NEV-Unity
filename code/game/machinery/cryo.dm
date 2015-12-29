@@ -52,7 +52,7 @@
 	if(abs(temperature_archived-air_contents.temperature) > 1)
 		network.update = 1
 
-	updateUsrDialog()
+//	updateUsrDialog() This should fix the window spammage
 	return 1
 
 

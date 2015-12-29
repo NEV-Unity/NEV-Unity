@@ -540,7 +540,67 @@
 				else
 					message = "<B>[src]</B> makes a very loud noise."
 					m_type = 2
+		if("beep")
+			if(!src.species.name)
+				return
+			if(!src.species.name == "Machine")
+				return
+			var/M = null
+			if(param)
+				for (var/mob/A in view(null, null))
+					if (param == A.name)
+						M = A
+						break
+			if(!M)
+				param = null
 
+			if (param)
+				message = "<B>[src]</B> beeps at [param]."
+			else
+				message = "<B>[src]</B> beeps."
+			playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 0)
+			m_type = 1
+
+		if("ping")
+			if(!src.species.name)
+				return
+			if(!src.species.name == "Machine")
+				return
+			var/M = null
+			if(param)
+				for (var/mob/A in view(null, null))
+					if (param == A.name)
+						M = A
+						break
+			if(!M)
+				param = null
+
+			if (param)
+				message = "<B>[src]</B> pings at [param]."
+			else
+				message = "<B>[src]</B> pings."
+			playsound(src.loc, 'sound/machines/ping.ogg', 50, 0)
+			m_type = 1
+		if("buzz")
+			if(!src.species.name)
+				return
+			if(!src.species.name == "Machine")
+				return
+			var/M = null
+			if(param)
+				for (var/mob/A in view(null, null))
+					if (param == A.name)
+						M = A
+						break
+			if(!M)
+				param = null
+
+			if (param)
+				message = "<B>[src]</B> buzzes at [param]."
+			else
+				message = "<B>[src]</B> buzzes."
+			playsound(src.loc, 'sound/machines/buzz-sigh.ogg', 50, 0)
+			m_type = 1
 		if ("help")
 			src << "blink, blink_r, blush, bow-(none)/mob, burp, choke, chuckle, clap, collapse, cough,\ncry, custom, deathgasp, drool, eyebrow, frown, gasp, giggle, groan, grumble, handshake, hug-(none)/mob, glare-(none)/mob,\ngrin, laugh, look-(none)/mob, moan, mumble, nod, pale, point-atom, raise, salute, shake, shiver, shrug,\nsigh, signal-#1-10, smile, sneeze, sniff, snore, stare-(none)/mob, tremble, twitch, twitch_s, whimper,\nwink, yawn"
 
