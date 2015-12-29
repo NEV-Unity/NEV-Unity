@@ -599,7 +599,7 @@
 	if (href_list["injectRejuvenators"])
 		if (!connected.occupant)
 			return 0
-		var/inject_amount = round(text2num(href_list["injectRejuvenators"]), 5) // round to nearest 5
+		var/inject_amount = text2num(href_list["injectRejuvenators"])
 		if (inject_amount < 0) // Since the user can actually type the commands himself, some sanity checking
 			inject_amount = 0
 		if (inject_amount > 50)
