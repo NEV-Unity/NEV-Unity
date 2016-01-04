@@ -35,7 +35,13 @@
 			return
 		if(istype(W, /obj/item/weapon/wrench))
 			if(welded)
+				usr << "\red [src] is welded to the floor!"
 			else
+				if(anchored)
+					usr << "\blue You loosen the bolts on [src]"
+				else
+					usr << "\blue You tighten down the bolts on [src]"
+				//playsound rachet.ogg here
 				anchored = !anchored
 				core.unlink()
 
