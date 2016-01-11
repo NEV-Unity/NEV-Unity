@@ -5,7 +5,7 @@
 	var/welded = 1 //is this object welded down? Components tend to fail if they are not welded properly.
 	var/covered = 1 //this is 1 if the object's cover is closed
 	icon = null //put an icon file here
-
+	icon_state = null //put an icon name here. This will be changed to icon_state + "_fried" whenever a component is fried
 	var/obj/structure/thruster/core = null//This object represents the parent core object. Not used/null for the core object itself.
 
 
@@ -46,6 +46,7 @@
 			continue
 		if(!covered) //if the cover is open, fry the component and continue
 			fried = 1
+			icon_state = icon_state + "_fried"
 			continue
 	attackby(obj/item/weapon/W as obj, mob/user as mob) //This is called after sub-object manipulation. Part manipulation checkes if cover is open first.
 		if(istype(W, /obj/item/weapon/crowbar))
@@ -139,11 +140,13 @@
 				continue
 			else
 				fried = 1//No bin for the core? Fry the core but fly
+				icon_state = icon_state + "_fried"
 				continue
 			if(corecap)
 				continue
 			else
 				fried = 1//No capacitor for the core? Fry the core, but fly.
+				icon_state = icon_state + "_fried"
 				continue
 		return canLaunch //If we can launch we return a 1
 
@@ -166,8 +169,11 @@
             Link them to core
         -Calls linkup() on all sub-components.*/
 	unlink()//   -performs the same steps as linkup(), but runs unlink() on the objects and then removes the references from the core object.
-	ex_act()//We need to replace ex_act so that this object isn't destroyed by its own explosion. The component remains, but devestates the surroundings.
-
+	ex_act()//Thruser cores cannot be destroyed in explosions.
+	verb/debuglinkUp()
+	verb/debugCheck()
+	verb/debugActivate
+	verb/debugUnlink
 /obj/structure/thruster/inject //The fuel injector for thrusters
 /obj/structure/thruster/fieldgen //the field generators for thrusters
 /obj/structure/thruster/emgrid //The output object for thrusters (WARNING, RADIATION)
