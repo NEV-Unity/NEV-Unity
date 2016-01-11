@@ -66,7 +66,7 @@
 
 
 /obj/structure/thruster/core //The core object for thrusters
-
+	height = 5
 	var/list/containment = null //This object is the linked containment fields. 6 of these babies are required in specific places to function.
 	var/obj/structure/thruster/inject/fuelInjector = null//Injector - This object is the linked fuel injector
 	var/obj/strcture/thruster/emgrid/gridArray = null//Gridarray - This object is the linked emgrid object
