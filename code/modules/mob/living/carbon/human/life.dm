@@ -606,7 +606,7 @@
 		if(toxins_pp > safe_toxins_max)
 			var/ratio = (poison/safe_toxins_max) * 10
 			if(reagents)
-				reagents.add_reagent("plasma", Clamp(ratio, MIN_PLASMA_DAMAGE, MAX_PLASMA_DAMAGE))
+				reagents.add_reagent("plasmatox", Clamp(ratio, MIN_PLASMA_DAMAGE, MAX_PLASMA_DAMAGE))
 				breath.adjust_gas(poison_type, -poison/6, update = 0) //update after
 			toxins_alert = max(toxins_alert, 1)
 		else
