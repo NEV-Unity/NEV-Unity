@@ -1680,7 +1680,33 @@ datum
 				M.apply_effect(10,IRRADIATE,0)
 				..()
 				return
-
+		toxin/plasmacompound
+			name = "Carbon Diphoride"
+			id = "plasmatox"
+			description = "A compound consisting of a carbon, oxygen, and plasma formed almost exclusively in carbon-based life-forms. Highly toxic."
+			reagent_state = LIQUID
+			color = "#E71B00" // rgb: 231, 27, 0
+			toxpwr = 1
+			
+			on_mob_life(var/mob/living/M as mob)
+				if(!M) M = holder.my_atom
+				holder.remove_reagent("inaprovaline", REM)
+				..()
+				return
+			reaction_obj(var/obj/O, var/volume)
+				src = null
+				/*if(istype(O,/obj/item/weapon/reagent_containers/food/snacks/egg/slime))
+					var/obj/item/weapon/reagent_containers/food/snacks/egg/slime/egg = O
+					if (egg.grown)
+						egg.Hatch()*/
+				if((!O) || (!volume))	return 0
+				var/turf/the_turf = get_turf(O)
+				the_turf.assume_gas("volatile_fuel", volume, T20C)
+			reaction_turf(var/turf/T, var/volume)
+				src = null
+				T.assume_gas("volatile_fuel", volume, T20C)
+				return			
+			
 		toxin/plasma
 			name = "Plasma"
 			id = "plasma"
