@@ -176,6 +176,8 @@
 			if (speech_sound)
 				sound_vol *= 0.5
 
+	if(speaking && !(speaking.flags & SIGNLANG) && !(speaking.flags & HIVEMIND))
+		src.holdbreath = 0
 	..(message, speaking, verb, alt_name, italics, message_range, speech_sound, sound_vol)	//ohgod we should really be passing a datum here.
 
 /mob/living/carbon/human/proc/forcesay(list/append)
@@ -213,7 +215,7 @@
 /mob/living/carbon/human/say_understands(var/mob/other,var/datum/language/speaking = null)
 	if(has_translator()) //universal translators translate everything! These things are nifty!
 		return 1
-		
+
 	if(has_brain_worms()) //Brain worms translate everything. Even mice and alien speak.
 		return 1
 

@@ -2187,6 +2187,13 @@ datum
 			required_reagents = list("coffee" = 1, "milk" = 1)
 			result_amount = 2
 
+		unstable_hydrobaron
+			name = "Unstable Hydrocarbon"
+			id = "coffeeplus"
+			result = "coffeeplus"
+			required_reagents = list("coffee" = 1, "dr_gibb" = 1)
+			result_amount = 2
+
 		acidspit
 			name = "Acid Spit"
 			id = "acidspit"

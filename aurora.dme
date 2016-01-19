@@ -6,6 +6,8 @@
 // BEGIN_FILE_DIR
 #define FILE_DIR .
 #define FILE_DIR "code"
+#define FILE_DIR "code/modules"
+#define FILE_DIR "code/modules/navigation"
 #define FILE_DIR "code/TriDimension"
 #define FILE_DIR "code/WorkInProgress"
 #define FILE_DIR "code/WorkInProgress/Cael_Aislinn"
@@ -1242,6 +1244,7 @@
 #include "code\modules\navigation\navconsoles.dm"
 #include "code\modules\navigation\planets.dm"
 #include "code\modules\navigation\probe.dm"
+#include "code\modules\navigation\thrusters.dm"
 #include "code\modules\organs\blood.dm"
 #include "code\modules\organs\organ.dm"
 #include "code\modules\organs\organ_alien.dm"

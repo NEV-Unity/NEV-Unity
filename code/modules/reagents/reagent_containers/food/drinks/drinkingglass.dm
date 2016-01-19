@@ -439,6 +439,14 @@
 					icon_state = "grapesoda"
 					name = "Can of Grape Soda"
 					desc = "Looks like a delicious drank!"
+				if("coffeeplus")
+					icon_state = "cafe_deadly"
+					name = "Unstable Hydrocarbon"
+					desc = "It smells like burnt rubber. This can't be good for you..."
+				if("tea")
+					icon_state = "glass_brown"
+					name = "Tea"
+					desc = "Tasty black tea, it has antioxidants, it's good for you!"
 				if("icetea")
 					icon_state = "icedteaglass"
 					name = "Iced Tea"

@@ -371,7 +371,7 @@
 			//First, check if the mob is holding its breath.
 			if(holdbreath)//Are you holding your breath?
 				if(stat == CONSCIOUS) //Gotta be consious to hold your breath.
-					src.adjustOxyLoss(HUMAN_MAX_OXYLOSS) //You slowly suffocate while holding your breath. The same rate as if you were not breathing
+					src.adjustOxyLoss(HUMAN_MAX_OXYLOSS * 2) //You slowly suffocate while holding your breath. Twice as fast as if you were not breathing
 					oxygen_alert = max(oxygen_alert, 1) //Visual alert shows while you are holding your breath!
 					var/oxymessage = ""
 					if(oxyloss < 25)
