@@ -263,6 +263,13 @@ datum
 			required_catalysts = list("plasma" = 5)
 			result_amount = 1
 
+		plasmacompound
+			name = "Carbon Diphoride"
+			id = "plasmatox"
+			result = "plasmatox"
+			required_reagents = list("plasma" = 1, "carbon" = 2, "dexalin" = 1)
+			result_amount = 2
+
 		dermaline
 			name = "Dermaline"
 			id = "dermaline"
@@ -2178,6 +2185,13 @@ datum
 			id = "cafe_latte"
 			result = "cafe_latte"
 			required_reagents = list("coffee" = 1, "milk" = 1)
+			result_amount = 2
+
+		unstable_hydrobaron
+			name = "Unstable Hydrocarbon"
+			id = "coffeeplus"
+			result = "coffeeplus"
+			required_reagents = list("coffee" = 1, "dr_gibb" = 1)
 			result_amount = 2
 
 		acidspit

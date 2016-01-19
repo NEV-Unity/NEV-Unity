@@ -854,7 +854,7 @@ datum
 			id = "sterilizine"
 			description = "Sterilizes wounds in preparation for surgery."
 			reagent_state = LIQUID
-			color = "#FFFFFF" 
+			color = "#FFFFFF"
 
 			//makes you squeaky clean
 			reaction_mob(var/mob/living/M, var/method=TOUCH, var/volume)
@@ -1284,7 +1284,7 @@ datum
 			id = "synaptizine"
 			description = "Synaptizine is used to treat various diseases."
 			reagent_state = LIQUID
-			color = "#A0A0A0" 
+			color = "#A0A0A0"
 			custom_metabolism = 0.01
 			overdose = REAGENTS_OVERDOSE
 
@@ -1305,7 +1305,7 @@ datum
 			id = "impedrezene"
 			description = "Impedrezene is a narcotic that impedes one's ability by slowing down the higher brain cell functions."
 			reagent_state = LIQUID
-			color = "#A0A0A0" 
+			color = "#A0A0A0"
 			overdose = REAGENTS_OVERDOSE
 
 			on_mob_life(var/mob/living/M as mob)
@@ -1679,6 +1679,32 @@ datum
 				if(!M) M = holder.my_atom
 				M.apply_effect(10,IRRADIATE,0)
 				..()
+				return
+		toxin/plasmacompound
+			name = "Carbon Diphoride"
+			id = "plasmatox"
+			description = "A compound consisting of a carbon, oxygen, and plasma formed almost exclusively in carbon-based life-forms. Highly toxic."
+			reagent_state = LIQUID
+			color = "#E71B00" // rgb: 231, 27, 0
+			toxpwr = 1
+
+			on_mob_life(var/mob/living/M as mob)
+				if(!M) M = holder.my_atom
+				holder.remove_reagent("inaprovaline", REM)
+				..()
+				return
+			reaction_obj(var/obj/O, var/volume)
+				src = null
+				/*if(istype(O,/obj/item/weapon/reagent_containers/food/snacks/egg/slime))
+					var/obj/item/weapon/reagent_containers/food/snacks/egg/slime/egg = O
+					if (egg.grown)
+						egg.Hatch()*/
+				if((!O) || (!volume))	return 0
+				var/turf/the_turf = get_turf(O)
+				the_turf.assume_gas("volatile_fuel", volume, T20C)
+			reaction_turf(var/turf/T, var/volume)
+				src = null
+				T.assume_gas("volatile_fuel", volume, T20C)
 				return
 
 		toxin/plasma
@@ -2936,6 +2962,19 @@ datum
 				if(M.getToxLoss() && prob(20))
 					M.adjustToxLoss(-1)
 				return
+
+		drink/unstable_hydrobaron
+			name = "Unstable Hydrocarbon"
+			id = "coffeeplus"
+			description = "It smells like burnt rubber. This can't be good for you..."
+			color = "#482000" // rgb: 72, 32, 0
+			on_mob_life(var/mob/living/M as mob)
+				..()
+				M.make_jittery(25)
+				if(adj_temp > 0)
+					holder.remove_reagent("frostoil", 10*REAGENTS_METABOLISM)
+
+				holder.remove_reagent(src.id, 0.1)
 
 		drink/tea/icetea
 			name = "Iced Tea"

@@ -371,7 +371,7 @@
 			//First, check if the mob is holding its breath.
 			if(holdbreath)//Are you holding your breath?
 				if(stat == CONSCIOUS) //Gotta be consious to hold your breath.
-					src.adjustOxyLoss(HUMAN_MAX_OXYLOSS) //You slowly suffocate while holding your breath. The same rate as if you were not breathing
+					src.adjustOxyLoss(HUMAN_MAX_OXYLOSS * 2) //You slowly suffocate while holding your breath. Twice as fast as if you were not breathing
 					oxygen_alert = max(oxygen_alert, 1) //Visual alert shows while you are holding your breath!
 					var/oxymessage = ""
 					if(oxyloss < 25)
@@ -606,7 +606,7 @@
 		if(toxins_pp > safe_toxins_max)
 			var/ratio = (poison/safe_toxins_max) * 10
 			if(reagents)
-				reagents.add_reagent("plasma", Clamp(ratio, MIN_PLASMA_DAMAGE, MAX_PLASMA_DAMAGE))
+				reagents.add_reagent("plasmatox", Clamp(ratio, MIN_PLASMA_DAMAGE, MAX_PLASMA_DAMAGE))
 				breath.adjust_gas(poison_type, -poison/6, update = 0) //update after
 			toxins_alert = max(toxins_alert, 1)
 		else
