@@ -59,11 +59,22 @@
 		//display to all nearby users that the anchors are deployed
 	
 	anchored = !anchored
+
 /* Damage procs here */
 /obj/structure/holodummy/bullet_act(var/obj/item/projectile/Proj) //This covers lasers and projectiles
 
 /obj/structure/holodummy/attackby(obj/item/I as obj, mob/user as mob) //This covers handheld weapons
+	//We add a string to the report including the name of the object, force applied (1 Force = 2.5N, probably will end up with some pretty wild things...), and target zone.
+	var/multiplier = 2.5
+	if(I.sharp)
+		multiplier = 1
 
+	var/hitstring = I.name + " struck the " + user.zone_sel.selecting + " with a force of " + (I.force * multiplier) + " N."
+	
+	if(recenthits)
+		recenthits += hitstring
+	else
+		recenthits = hitstring
 /obj/structure/holodummy/attack_hand(mob/user as mob) //This covers hand to hand attacks. The AI shouldn't be able to interact with this.
 
 /obj/structure/holodummy/attack_paw(mob/user as mob) //this covers hand to hand attacks.
